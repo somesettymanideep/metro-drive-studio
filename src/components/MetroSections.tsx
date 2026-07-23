@@ -889,15 +889,6 @@ export function ProcessSection() {
           ))}
         </div>
 
-        <div className="mt-14 text-center">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-bold uppercase tracking-wide text-sm shadow-[0_15px_40px_-15px_rgba(255,90,0,0.7)] hover:scale-105 transition-transform"
-            style={{ background: "var(--gradient-orange)" }}
-          >
-            Start Your Journey <ArrowRight className="size-4" />
-          </a>
-        </div>
       </div>
     </section>
   );
