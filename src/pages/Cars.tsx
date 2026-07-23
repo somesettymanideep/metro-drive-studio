@@ -129,7 +129,7 @@ export default function Cars() {
           width={1920}
           height={720}
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
