@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Search, Fuel, Gauge, Cog, X, SlidersHorizontal } from "lucide-react";
+import { Search, Fuel, Gauge, Cog, X, SlidersHorizontal, ArrowRight, Palette, Calendar } from "lucide-react";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter } from "@/components/MetroSections";
 import { cars, type Car } from "@/data/cars";
