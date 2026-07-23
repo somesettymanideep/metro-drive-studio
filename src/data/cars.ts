@@ -45,7 +45,10 @@ import bmwX1Rear from "@/assets/bmwx1-4-rear.jpeg.asset.json";
 import bmwX1Dash from "@/assets/bmwx1-5-dash.jpeg.asset.json";
 import bmwX1Interior from "@/assets/bmwx1-6-interior.jpeg.asset.json";
 import xl6 from "@/assets/car-xl6.jpg";
-import audiQ3 from "@/assets/car-audi-q3.jpg";
+import audiQ3Front from "@/assets/audiq3-1-front.jpeg.asset.json";
+import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
+import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
+import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
 
 
 
@@ -226,7 +229,7 @@ export const cars: Car[] = [
   },
   {
     slug: "audi-q3-2016",
-    img: audiQ3,
+    img: audiQ3Front.url,
     name: "Audi Q3",
     year: 2016,
     fuel: "Diesel",
@@ -240,7 +243,7 @@ export const cars: Car[] = [
     bodyType: "Luxury SUV",
     description:
       "Audi Q3 diesel automatic — refined luxury SUV with quattro capability, premium interiors and effortless power delivery.",
-    gallery: [audiQ3],
+    gallery: [audiQ3Front.url, audiQ3Side.url, audiQ3Dash.url, audiQ3RearSeats.url],
   },
 ];
 
