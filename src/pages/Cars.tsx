@@ -1,7 +1,7 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Search, Fuel, Gauge, Cog, X, SlidersHorizontal } from "lucide-react";
+import { Search, Fuel, Gauge, Cog, X, SlidersHorizontal, ArrowRight, Palette, Calendar } from "lucide-react";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter } from "@/components/MetroSections";
 import { cars, type Car } from "@/data/cars";
@@ -253,9 +253,9 @@ function CarCard({ car }: { car: Car }) {
   return (
     <Link
       to={`/car/${car.slug}`}
-      className="group rounded-2xl overflow-hidden border border-black/10 bg-white hover:border-[var(--brand-orange)]/50 transition-all shadow-sm hover:shadow-md"
+      className="group flex flex-col rounded-2xl overflow-hidden border border-border bg-card hover:border-primary/50 transition-all shadow-sm hover:shadow-lg hover:-translate-y-1"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f5f5]">
+      <div className="relative aspect-[16/10] overflow-hidden bg-muted">
         <img
           src={car.img}
           alt={car.name}
@@ -264,21 +264,46 @@ function CarCard({ car }: { car: Car }) {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-black/60 backdrop-blur text-[10px] uppercase tracking-wider text-white/90 border border-white/10">
-          {car.year}
+          <span className="inline-flex items-center gap-1"><Calendar className="size-3" />{car.year}</span>
         </div>
+        {car.bodyType && (
+          <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-primary text-primary-foreground text-[10px] uppercase tracking-wider font-semibold">
+            {car.bodyType}
+          </div>
+        )}
       </div>
-      <div className="p-4">
-        <h3 className="text-black font-bold truncate">{car.name}</h3>
-        <div className="flex flex-wrap gap-3 mt-2 text-xs text-black/60">
-          <span className="inline-flex items-center gap-1"><Fuel className="size-3" />{car.fuel}</span>
-          <span className="inline-flex items-center gap-1"><Cog className="size-3" />{car.trans}</span>
-          <span className="inline-flex items-center gap-1"><Gauge className="size-3" />{car.km}</span>
+      <div className="p-4 flex flex-col flex-1">
+        <div className="mb-3">
+          <h3 className="text-base font-bold text-card-foreground line-clamp-1">{car.name}</h3>
+          <p className="text-xs text-muted-foreground mt-0.5">{car.variant || `${car.brand} ${car.model}`}</p>
         </div>
-        <div className="mt-4 flex items-end justify-between">
-          <span className="text-xl font-bold text-[var(--brand-orange)]">{car.price}</span>
-          <span className="text-xs text-black/50 group-hover:text-black transition">View →</span>
+
+        <div className="grid grid-cols-2 gap-2 mb-4">
+          <CarSpec icon={<Fuel className="size-3" />} label={car.fuel} />
+          <CarSpec icon={<Cog className="size-3" />} label={car.trans} />
+          <CarSpec icon={<Gauge className="size-3" />} label={car.km} />
+          {car.color && <CarSpec icon={<Palette className="size-3" />} label={car.color} />}
+        </div>
+
+        <div className="mt-auto pt-3 border-t border-border flex items-center justify-between">
+          <div>
+            <span className="text-xl font-bold text-primary">{car.price}</span>
+            <span className="block text-[10px] text-muted-foreground">On-road price</span>
+          </div>
+          <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:translate-x-1 transition-transform">
+            View Details <ArrowRight className="size-3" />
+          </span>
         </div>
       </div>
     </Link>
+  );
+}
+
+function CarSpec({ icon, label }: { icon: ReactNode; label: string }) {
+  return (
+    <div className="flex items-center gap-1.5 text-xs text-muted-foreground bg-muted/50 rounded-lg px-2 py-1.5">
+      <span className="text-primary">{icon}</span>
+      <span className="truncate">{label}</span>
+    </div>
   );
 }
