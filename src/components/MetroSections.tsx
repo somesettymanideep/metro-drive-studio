@@ -194,13 +194,6 @@ export function AboutSection() {
             ))}
           </div>
 
-          <a
-            href="#inventory"
-            className="mt-10 inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-bold uppercase tracking-wide text-sm shadow-[0_15px_40px_-15px_rgba(255,90,0,0.6)] hover:scale-105 transition-transform"
-            style={{ background: "var(--gradient-orange)" }}
-          >
-            Learn More <ArrowRight className="size-4" />
-          </a>
         </motion.div>
       </div>
     </section>
