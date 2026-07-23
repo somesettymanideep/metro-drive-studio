@@ -299,7 +299,7 @@ function CarCard({ car }: { car: Car }) {
   );
 }
 
-function CarSpec({ icon, label }: { icon: React.ReactNode; label: string }) {
+function CarSpec({ icon, label }: { icon: ReactNode; label: string }) {
   return (
     <div className="flex items-center gap-1.5 text-xs text-muted-foreground bg-muted/50 rounded-lg px-2 py-1.5">
       <span className="text-primary">{icon}</span>
