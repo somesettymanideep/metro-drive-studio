@@ -17,6 +17,11 @@ import wagonr4 from "@/assets/car-wagonr-4.jpg";
 import wagonr5 from "@/assets/car-wagonr-5.jpg";
 import venue7 from "@/assets/car-venue-7.jpg";
 import tiagoEv from "@/assets/car-tiago-ev.jpg";
+import tiagoFront from "@/assets/car-tiago-front.jpg.asset.json";
+import tiagoRear from "@/assets/car-tiago-rear.jpg.asset.json";
+import tiagoSideLeft from "@/assets/car-tiago-side-left.jpg.asset.json";
+import tiagoSideRight from "@/assets/car-tiago-side-right.jpg.asset.json";
+import tiagoInterior from "@/assets/car-tiago-interior.jpg.asset.json";
 import xuv500 from "@/assets/car-xuv500.jpg";
 import hondaVx from "@/assets/car-honda-vx.jpg";
 import ecosport from "@/assets/car-ecosport.jpg";
@@ -95,7 +100,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-tiago-ev-xt-lr",
-    img: tiagoEv,
+    img: tiagoFront.url,
     name: "Tata Tiago EV XT Long Range",
     year: 2023,
     fuel: "Electric",
@@ -109,7 +114,7 @@ export const cars: Car[] = [
     bodyType: "Electric Hatchback",
     description:
       "Tata Tiago EV XT Long Range — zero emissions, low running cost and modern EV features. Well maintained with low kilometres.",
-    gallery: [tiagoEv],
+    gallery: [tiagoFront.url, tiagoSideRight.url, tiagoSideLeft.url, tiagoRear.url, tiagoInterior.url, tiagoEv],
   },
   {
     slug: "mahindra-xuv-500-2019",
