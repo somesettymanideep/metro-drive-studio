@@ -1143,8 +1143,8 @@ export function CTASection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           >
-            <a
-              href="#inventory"
+            <Link
+              to="/cars"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold uppercase text-sm tracking-wider text-black transition-all duration-300 hover:scale-105"
               style={{
                 background: "var(--gradient-orange)",
@@ -1159,14 +1159,7 @@ export function CTASection() {
             >
               Browse Inventory
               <ArrowRight className="size-5" />
-            </a>
-
-            <a
-              href="#enquiry"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white/80 text-white font-bold uppercase text-sm tracking-wider transition-all duration-300 hover:bg-white hover:text-black hover:border-white"
-            >
-              Book Test Drive
-            </a>
+            </Link>
           </motion.div>
 
           {/* Trust Elements */}
