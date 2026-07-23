@@ -27,7 +27,11 @@ import xuvSideLeft from "@/assets/car-xuv500-side-left.jpg.asset.json";
 import xuvRear from "@/assets/car-xuv500-rear.jpg.asset.json";
 import xuvDashboard from "@/assets/car-xuv500-dashboard.jpg.asset.json";
 import xuvInterior from "@/assets/car-xuv500-interior.jpg.asset.json";
-import hondaVx from "@/assets/car-honda-vx.jpg";
+import amazeFront from "@/assets/amaze1-front.jpeg.asset.json";
+import amazeSide from "@/assets/amaze2-side.jpeg.asset.json";
+import amazeDash from "@/assets/amaze3-dash.jpeg.asset.json";
+import amazeInterior from "@/assets/amaze4-interior.jpeg.asset.json";
+import amazeRearSeats from "@/assets/amaze5-rear-seats.jpeg.asset.json";
 import ecosport from "@/assets/car-ecosport.jpg";
 import bmwX1 from "@/assets/car-bmw-x1.jpg";
 import xl6 from "@/assets/car-xl6.jpg";
@@ -139,9 +143,9 @@ export const cars: Car[] = [
     gallery: [xuvFront.url, xuvSideRight.url, xuvSideLeft.url, xuvRear.url, xuvDashboard.url, xuvInterior.url],
   },
   {
-    slug: "honda-city-vx-2024",
-    img: hondaVx,
-    name: "Honda City VX",
+    slug: "honda-amaze-2024",
+    img: amazeFront.url,
+    name: "Honda Amaze",
     year: 2024,
     fuel: "Petrol",
     trans: "Automatic",
@@ -149,12 +153,12 @@ export const cars: Car[] = [
     price: "₹8.50 L",
     cat: "Sedan",
     brand: "Honda",
-    model: "City",
-    variant: "VX Petrol AT",
+    model: "Amaze",
+    variant: "VX Petrol CVT",
     bodyType: "Sedan",
     description:
-      "Premium Honda City VX petrol automatic — refined ride, feature-loaded cabin and excellent build quality.",
-    gallery: [hondaVx],
+      "Premium Honda Amaze petrol automatic — refined ride, feature-loaded cabin and excellent build quality.",
+    gallery: [amazeFront.url, amazeSide.url, amazeDash.url, amazeInterior.url, amazeRearSeats.url],
   },
   {
     slug: "ford-ecosport-2016",
