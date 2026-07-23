@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroSedan from "@/assets/hero-sedan.jpg";
 import heroSuv from "@/assets/hero-suv.jpg";
 import heroHandover from "@/assets/hero-handover.jpg";
@@ -11,24 +12,24 @@ const slides = [
     eyebrow: "Premium Pre-Owned",
     title: "Find Your Perfect Pre-Owned Car",
     desc: "Certified used cars with complete transparency and trusted quality in Vijayawada.",
-    cta1: { label: "View Inventory", href: "#inventory" },
-    cta2: { label: "Book Test Drive", href: "#contact" },
+    cta1: { label: "View Inventory", href: "/cars" },
+    cta2: { label: "Book Test Drive", href: "https://wa.me/919000000000?text=Hi%20Metro%20Cars%2C%20I%27d%20like%20to%20book%20a%20test%20drive." },
   },
   {
     img: heroSuv,
     eyebrow: "Inspected. Verified. Trusted.",
     title: "Drive Home With Confidence",
     desc: "Every vehicle is thoroughly inspected and verified before delivery.",
-    cta1: { label: "Browse Cars", href: "#inventory" },
-    cta2: { label: "Get Finance Assistance", href: "#contact" },
+    cta1: { label: "Browse Cars", href: "/cars" },
+    cta2: { label: "Get Finance Assistance", href: "https://wa.me/919000000000?text=Hi%20Metro%20Cars%2C%20I%20need%20finance%20assistance." },
   },
   {
     img: heroHandover,
     eyebrow: "Vijayawada's #1 Dealer",
     title: "Trusted Used Car Dealer in Vijayawada",
     desc: "Hundreds of satisfied customers choose Metro Cars for reliability and value.",
-    cta1: { label: "Explore Cars", href: "#inventory" },
-    cta2: { label: "Contact Us", href: "#contact" },
+    cta1: { label: "Explore Cars", href: "/cars" },
+    cta2: { label: "Contact Us", href: "https://wa.me/919000000000?text=Hi%20Metro%20Cars%2C%20I%27d%20like%20to%20know%20more." },
   },
 ];
 
@@ -95,16 +96,18 @@ export function MetroHero() {
                 {s.desc}
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
-                <a
-                  href={s.cta1.href}
+                <Link
+                  to={s.cta1.href}
                   className="group inline-flex items-center gap-2 px-7 py-4 rounded-full text-white font-bold uppercase tracking-wide text-sm transition-all hover:scale-105 shadow-[0_20px_50px_-15px_rgba(255,90,0,0.7)]"
                   style={{ background: "var(--gradient-orange)" }}
                 >
                   {s.cta1.label}
                   <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
                 <a
                   href={s.cta2.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-4 rounded-full glass-card text-white font-bold uppercase tracking-wide text-sm hover:bg-white/15 transition-all"
                 >
                   {s.cta2.label}
