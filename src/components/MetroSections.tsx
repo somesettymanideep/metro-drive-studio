@@ -537,6 +537,22 @@ export function InventorySection() {
             </motion.article>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-12 flex justify-center"
+        >
+          <Link
+            to="/cars"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-bold uppercase text-sm tracking-wide text-white hover:shadow-[0_10px_25px_-10px_rgba(255,90,0,0.7)] transition-all"
+            style={{ background: "var(--gradient-orange)" }}
+          >
+            Explore Cars <ArrowRight className="size-4" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
