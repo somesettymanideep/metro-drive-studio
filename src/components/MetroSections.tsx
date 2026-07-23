@@ -336,15 +336,6 @@ export function FounderSection() {
             ))}
           </div>
 
-          <div className="mt-8">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-bold uppercase text-sm tracking-wide hover:opacity-90 transition-opacity"
-              style={{ background: "var(--gradient-orange)" }}
-            >
-              Meet Our Team <ArrowRight className="size-4" />
-            </a>
-          </div>
         </motion.div>
       </div>
     </section>
