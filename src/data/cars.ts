@@ -16,7 +16,6 @@ import wagonr3 from "@/assets/car-wagonr-3.jpg";
 import wagonr4 from "@/assets/car-wagonr-4.jpg";
 import wagonr5 from "@/assets/car-wagonr-5.jpg";
 import venue7 from "@/assets/car-venue-7.jpg";
-import tiagoEv from "@/assets/car-tiago-ev.jpg";
 import tiagoFront from "@/assets/car-tiago-front.jpg.asset.json";
 import tiagoRear from "@/assets/car-tiago-rear.jpg.asset.json";
 import tiagoSideLeft from "@/assets/car-tiago-side-left.jpg.asset.json";
@@ -114,7 +113,7 @@ export const cars: Car[] = [
     bodyType: "Electric Hatchback",
     description:
       "Tata Tiago EV XT Long Range — zero emissions, low running cost and modern EV features. Well maintained with low kilometres.",
-    gallery: [tiagoFront.url, tiagoSideRight.url, tiagoSideLeft.url, tiagoRear.url, tiagoInterior.url, tiagoEv],
+    gallery: [tiagoFront.url, tiagoSideRight.url, tiagoSideLeft.url, tiagoRear.url, tiagoInterior.url],
   },
   {
     slug: "mahindra-xuv-500-2019",
