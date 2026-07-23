@@ -922,10 +922,11 @@ export function EnquirySection() {
           <div className="rounded-3xl overflow-hidden border border-white/10 min-h-[450px]">
             <iframe
               title="Metro Cars Vijayawada Location"
-              src="https://www.google.com/maps?q=Vijayawada,Andhra+Pradesh&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.2006890229245!2d80.6688701110621!3d16.51596288416441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fabcfe85f329%3A0xee1a1240f0c4bb40!2sMetro%20Cars!5e0!3m2!1sen!2sin!4v1784804705143!5m2!1sen!2sin"
               className="w-full h-full min-h-[450px] grayscale-[0.3] contrast-[1.1]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
             />
           </div>
 
