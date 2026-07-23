@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Search, Fuel, Gauge, Cog, X, SlidersHorizontal, ArrowRight, Palette, Calendar } from "lucide-react";
