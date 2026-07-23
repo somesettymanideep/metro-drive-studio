@@ -144,7 +144,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-amaze-2024",
-    img: amazeFront,
+    img: amazeFront.url,
     name: "Honda Amaze",
     year: 2024,
     fuel: "Petrol",
@@ -158,7 +158,7 @@ export const cars: Car[] = [
     bodyType: "Sedan",
     description:
       "Premium Honda Amaze petrol automatic — refined ride, feature-loaded cabin and excellent build quality.",
-    gallery: [amazeFront, amazeSide, amazeDash, amazeInterior, amazeRearSeats],
+    gallery: [amazeFront.url, amazeSide.url, amazeDash.url, amazeInterior.url, amazeRearSeats.url],
   },
   {
     slug: "ford-ecosport-2016",
