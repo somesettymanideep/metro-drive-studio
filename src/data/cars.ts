@@ -21,7 +21,12 @@ import tiagoRear from "@/assets/car-tiago-rear.jpg.asset.json";
 import tiagoSideLeft from "@/assets/car-tiago-side-left.jpg.asset.json";
 import tiagoSideRight from "@/assets/car-tiago-side-right.jpg.asset.json";
 import tiagoInterior from "@/assets/car-tiago-interior.jpg.asset.json";
-import xuv500 from "@/assets/car-xuv500.jpg";
+import xuvFront from "@/assets/car-xuv500-front.jpg.asset.json";
+import xuvSideRight from "@/assets/car-xuv500-side-right.jpg.asset.json";
+import xuvSideLeft from "@/assets/car-xuv500-side-left.jpg.asset.json";
+import xuvRear from "@/assets/car-xuv500-rear.jpg.asset.json";
+import xuvDashboard from "@/assets/car-xuv500-dashboard.jpg.asset.json";
+import xuvInterior from "@/assets/car-xuv500-interior.jpg.asset.json";
 import hondaVx from "@/assets/car-honda-vx.jpg";
 import ecosport from "@/assets/car-ecosport.jpg";
 import bmwX1 from "@/assets/car-bmw-x1.jpg";
@@ -117,7 +122,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-xuv-500-2019",
-    img: xuv500,
+    img: xuvFront.url,
     name: "Mahindra XUV 500",
     year: 2019,
     fuel: "Diesel",
@@ -131,7 +136,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Powerful Mahindra XUV 500 diesel with manual transmission. Spacious 7-seater SUV ideal for family and highway trips.",
-    gallery: [xuv500],
+    gallery: [xuvFront.url, xuvSideRight.url, xuvSideLeft.url, xuvRear.url, xuvDashboard.url, xuvInterior.url],
   },
   {
     slug: "honda-city-vx-2024",
