@@ -236,14 +236,14 @@ export default function CarDetails() {
 
                 <div className="mt-6 grid gap-3">
                   <a
-                    href="tel:+919999999999"
+href="tel:+919059987777"
                     className="inline-flex items-center justify-center gap-2 py-3 rounded-full text-white font-bold uppercase text-sm tracking-wide"
                     style={{ background: "var(--gradient-orange)" }}
                   >
                     <Phone className="size-4" /> Call Dealer
                   </a>
                   <a
-                    href={`https://wa.me/919999999999?text=${encodeURIComponent(`Hi, I'm interested in the ${car.name} (${car.year}) listed at ${car.price}.`)}`}
+                    href={`https://wa.me/919059987777?text=${encodeURIComponent(`Hi, I'm interested in the ${car.name} (${car.year}) listed at ${car.price}.`)}`}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center justify-center gap-2 py-3 rounded-full bg-[#25D366] text-white font-bold uppercase text-sm tracking-wide hover:bg-[#1ebe57] transition-colors"
@@ -254,7 +254,7 @@ export default function CarDetails() {
                     WhatsApp Enquiry
                   </a>
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+919059987777"
                     className="inline-flex items-center justify-center gap-2 py-3 rounded-full bg-black text-white font-bold uppercase text-sm tracking-wide hover:bg-[var(--brand-orange)] transition-colors"
                   >
                     Schedule Test Drive
