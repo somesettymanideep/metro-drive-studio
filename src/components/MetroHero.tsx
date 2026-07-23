@@ -13,7 +13,7 @@ const slides = [
     title: "Find Your Perfect Pre-Owned Car",
     desc: "Certified used cars with complete transparency and trusted quality in Vijayawada.",
     cta1: { label: "View Inventory", href: "/cars" },
-    cta2: { label: "Book Test Drive", href: "https://wa.me/919000000000?text=Hi%20Metro%20Cars%2C%20I%27d%20like%20to%20book%20a%20test%20drive." },
+    cta2: { label: "Book Test Drive", href: "https://wa.me/919059987777?text=Hi%20Metro%20Cars%2C%20I%27d%20like%20to%20book%20a%20test%20drive." },
   },
   {
     img: heroSuv,
@@ -21,7 +21,7 @@ const slides = [
     title: "Drive Home With Confidence",
     desc: "Every vehicle is thoroughly inspected and verified before delivery.",
     cta1: { label: "Browse Cars", href: "/cars" },
-    cta2: { label: "Get Finance Assistance", href: "https://wa.me/919000000000?text=Hi%20Metro%20Cars%2C%20I%20need%20finance%20assistance." },
+    cta2: { label: "Get Finance Assistance", href: "https://wa.me/919059987777?text=Hi%20Metro%20Cars%2C%20I%20need%20finance%20assistance." },
   },
   {
     img: heroHandover,
@@ -29,7 +29,7 @@ const slides = [
     title: "Trusted Used Car Dealer in Vijayawada",
     desc: "Hundreds of satisfied customers choose Metro Cars for reliability and value.",
     cta1: { label: "Explore Cars", href: "/cars" },
-    cta2: { label: "Contact Us", href: "https://wa.me/919000000000?text=Hi%20Metro%20Cars%2C%20I%27d%20like%20to%20know%20more." },
+    cta2: { label: "Contact Us", href: "https://wa.me/919059987777?text=Hi%20Metro%20Cars%2C%20I%27d%20like%20to%20know%20more." },
   },
 ];
 
