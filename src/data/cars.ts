@@ -32,7 +32,12 @@ import amazeSide from "@/assets/amaze2-side.jpeg.asset.json";
 import amazeDash from "@/assets/amaze3-dash.jpeg.asset.json";
 import amazeInterior from "@/assets/amaze4-interior.jpeg.asset.json";
 import amazeRearSeats from "@/assets/amaze5-rear-seats.jpeg.asset.json";
-import ecosport from "@/assets/car-ecosport.jpg";
+import ecosportFront from "@/assets/ecosport1-front.jpeg.asset.json";
+import ecosportSideRight from "@/assets/ecosport2-side-right.jpeg.asset.json";
+import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg.asset.json";
+import ecosportRear from "@/assets/ecosport4-rear.jpeg.asset.json";
+import ecosportDash from "@/assets/ecosport5-dash.jpeg.asset.json";
+import ecosportInterior from "@/assets/ecosport6-interior.jpeg.asset.json";
 import bmwX1 from "@/assets/car-bmw-x1.jpg";
 import xl6 from "@/assets/car-xl6.jpg";
 import audiQ3 from "@/assets/car-audi-q3.jpg";
@@ -162,7 +167,7 @@ export const cars: Car[] = [
   },
   {
     slug: "ford-ecosport-2016",
-    img: ecosport,
+    img: ecosportFront.url,
     name: "Ford EcoSport",
     year: 2016,
     fuel: "Petrol",
@@ -176,7 +181,7 @@ export const cars: Car[] = [
     bodyType: "Compact SUV",
     description:
       "Ford EcoSport petrol automatic — solid build, comfortable ride and easy city driving.",
-    gallery: [ecosport],
+    gallery: [ecosportFront.url, ecosportSideRight.url, ecosportSideLeft.url, ecosportRear.url, ecosportDash.url, ecosportInterior.url],
   },
   {
     slug: "bmw-x1-2017",
