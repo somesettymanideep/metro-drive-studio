@@ -5,6 +5,7 @@ import { Search, Fuel, Gauge, Cog, X, SlidersHorizontal } from "lucide-react";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter } from "@/components/MetroSections";
 import { cars, type Car } from "@/data/cars";
+import bannerImg from "@/assets/cars-page-banner.jpg";
 
 const parsePrice = (p: string) => {
   // e.g. "₹7.80 L" -> 780000
@@ -65,30 +66,30 @@ export default function Cars() {
 
   const Sidebar = (
     <aside className="w-full lg:w-72 shrink-0">
-      <div className="lg:sticky lg:top-24 space-y-6 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur p-5">
+      <div className="lg:sticky lg:top-24 space-y-6 rounded-2xl border border-black/10 bg-white p-5 shadow-sm">
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-bold text-white uppercase tracking-wide">Filters</h2>
+          <h2 className="text-lg font-bold text-black uppercase tracking-wide">Filters</h2>
           <button onClick={clearAll} className="text-xs text-[var(--brand-orange)] hover:underline">
             Clear all
           </button>
         </div>
 
         <div>
-          <label className="text-xs uppercase tracking-wider text-white/60 mb-2 block">Search</label>
+          <label className="text-xs uppercase tracking-wider text-black/60 mb-2 block">Search</label>
           <div className="relative">
-            <Search className="size-4 absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
+            <Search className="size-4 absolute left-3 top-1/2 -translate-y-1/2 text-black/40" />
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Search cars…"
-              className="w-full pl-9 pr-3 py-2.5 rounded-lg bg-black/40 border border-white/10 text-sm text-white placeholder:text-white/40 focus:border-[var(--brand-orange)] outline-none"
+              className="w-full pl-9 pr-3 py-2.5 rounded-lg bg-[#fafafa] border border-black/10 text-sm text-black placeholder:text-black/40 focus:border-[var(--brand-orange)] outline-none"
             />
           </div>
         </div>
 
         <div>
-          <label className="text-xs uppercase tracking-wider text-white/60 mb-2 block">
-            Max Price: <span className="text-white font-semibold">{fmt(max)}</span>
+          <label className="text-xs uppercase tracking-wider text-black/60 mb-2 block">
+            Max Price: <span className="text-black font-semibold">{fmt(max)}</span>
           </label>
           <input
             type="range"
@@ -99,7 +100,7 @@ export default function Cars() {
             onChange={(e) => setMax(Number(e.target.value))}
             className="w-full accent-[var(--brand-orange)]"
           />
-          <div className="flex justify-between text-[10px] text-white/50 mt-1">
+          <div className="flex justify-between text-[10px] text-black/50 mt-1">
             <span>{fmt(priceMin)}</span>
             <span>{fmt(priceMax)}</span>
           </div>
@@ -113,20 +114,38 @@ export default function Cars() {
   );
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#fafafa]">
       <Helmet>
         <title>All Cars — Metro Cars Vijayawada</title>
         <meta name="description" content="Browse our complete inventory of certified pre-owned cars. Filter by brand, fuel, transmission and price range." />
       </Helmet>
       <MetroHeader />
 
-      <section className="relative pt-32 pb-10 border-b border-white/10 bg-gradient-to-b from-[#111] to-black">
-        <div className="container mx-auto px-4 lg:px-8">
-          <p className="text-xs uppercase tracking-[0.25em] text-[var(--brand-orange)] mb-3">Inventory</p>
-          <h1 className="text-3xl lg:text-5xl font-bold text-white uppercase">Explore All Cars</h1>
-          <p className="mt-3 text-white/60 max-w-2xl">
-            {filtered.length} certified vehicles ready for you. Use the filters to find your perfect match.
-          </p>
+      {/* Sub-page banner */}
+      <section className="relative pt-28 lg:pt-32 h-[280px] lg:h-[360px] overflow-hidden">
+        <img
+          src={bannerImg}
+          alt="Metro Cars Vijayawada premium inventory showroom"
+          width={1920}
+          height={720}
+          loading="eager"
+          fetchpriority="high"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
+        <div className="absolute -bottom-24 -right-24 size-[420px] rounded-full bg-[var(--brand-orange)]/25 blur-3xl" />
+        <div className="relative container mx-auto px-4 lg:px-8 h-full flex flex-col justify-end pb-8 lg:pb-12">
+          <div className="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-white/10 backdrop-blur border border-white/20 mb-3">
+            <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-white">Certified Pre-Owned</span>
+          </div>
+          <h1 className="text-3xl lg:text-5xl font-extrabold uppercase text-white leading-[0.95]">
+            Explore All Cars
+          </h1>
+          <div className="mt-3 flex flex-wrap items-center gap-3 text-white/80 text-sm">
+            <Link to="/" className="hover:text-[var(--brand-orange)]">Home</Link>
+            <span className="text-white/40">/</span>
+            <span className="text-[var(--brand-orange)] font-semibold">Inventory</span>
+          </div>
         </div>
       </section>
 
@@ -138,17 +157,17 @@ export default function Cars() {
             <div className="flex items-center justify-between mb-5 gap-3">
               <button
                 onClick={() => setOpenMobile(true)}
-                className="lg:hidden inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 text-white text-sm"
+                className="lg:hidden inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-black/10 text-black text-sm bg-white shadow-sm"
               >
                 <SlidersHorizontal className="size-4" /> Filters
               </button>
-              <div className="text-sm text-white/60 hidden sm:block">
-                Showing <span className="text-white font-semibold">{filtered.length}</span> of {cars.length}
+              <div className="text-sm text-black/60 hidden sm:block">
+                Showing <span className="text-black font-semibold">{filtered.length}</span> of {cars.length}
               </div>
               <select
                 value={sort}
                 onChange={(e) => setSort(e.target.value)}
-                className="px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-sm text-white outline-none"
+                className="px-3 py-2 rounded-lg bg-white border border-black/10 text-sm text-black outline-none"
               >
                 <option value="newest">Newest First</option>
                 <option value="price-asc">Price: Low to High</option>
@@ -157,8 +176,8 @@ export default function Cars() {
             </div>
 
             {filtered.length === 0 ? (
-              <div className="rounded-2xl border border-white/10 p-16 text-center">
-                <p className="text-white/70">No cars match your filters.</p>
+              <div className="rounded-2xl border border-black/10 bg-white p-16 text-center">
+                <p className="text-black/70">No cars match your filters.</p>
                 <button onClick={clearAll} className="mt-4 text-[var(--brand-orange)] hover:underline">
                   Reset filters
                 </button>
@@ -178,9 +197,9 @@ export default function Cars() {
       {openMobile && (
         <div className="fixed inset-0 z-50 lg:hidden">
           <div className="absolute inset-0 bg-black/70" onClick={() => setOpenMobile(false)} />
-          <div className="absolute inset-y-0 left-0 w-[85%] max-w-sm bg-[#0a0a0a] border-r border-white/10 overflow-y-auto p-4">
+          <div className="absolute inset-y-0 left-0 w-[85%] max-w-sm bg-white border-r border-black/10 overflow-y-auto p-4">
             <div className="flex justify-end mb-2">
-              <button onClick={() => setOpenMobile(false)} className="text-white/70">
+              <button onClick={() => setOpenMobile(false)} className="text-black/70">
                 <X className="size-5" />
               </button>
             </div>
@@ -207,7 +226,7 @@ function FilterGroup({
 }) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-wider text-white/60 mb-2 block">{label}</label>
+      <label className="text-xs uppercase tracking-wider text-black/60 mb-2 block">{label}</label>
       <div className="flex flex-wrap gap-2">
         {options.map((o) => {
           const active = selected.includes(o);
@@ -218,7 +237,7 @@ function FilterGroup({
               className={`px-3 py-1.5 rounded-full text-xs border transition-all ${
                 active
                   ? "bg-[var(--brand-orange)] border-[var(--brand-orange)] text-white"
-                  : "border-white/15 text-white/70 hover:border-white/40"
+                  : "border-black/15 text-black/70 hover:border-black/40"
               }`}
             >
               {o}
@@ -234,9 +253,9 @@ function CarCard({ car }: { car: Car }) {
   return (
     <Link
       to={`/car/${car.slug}`}
-      className="group rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] hover:border-[var(--brand-orange)]/50 transition-all"
+      className="group rounded-2xl overflow-hidden border border-black/10 bg-white hover:border-[var(--brand-orange)]/50 transition-all shadow-sm hover:shadow-md"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-black">
+      <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f5f5]">
         <img
           src={car.img}
           alt={car.name}
@@ -249,15 +268,15 @@ function CarCard({ car }: { car: Car }) {
         </div>
       </div>
       <div className="p-4">
-        <h3 className="text-white font-bold truncate">{car.name}</h3>
-        <div className="flex flex-wrap gap-3 mt-2 text-xs text-white/60">
+        <h3 className="text-black font-bold truncate">{car.name}</h3>
+        <div className="flex flex-wrap gap-3 mt-2 text-xs text-black/60">
           <span className="inline-flex items-center gap-1"><Fuel className="size-3" />{car.fuel}</span>
           <span className="inline-flex items-center gap-1"><Cog className="size-3" />{car.trans}</span>
           <span className="inline-flex items-center gap-1"><Gauge className="size-3" />{car.km}</span>
         </div>
         <div className="mt-4 flex items-end justify-between">
           <span className="text-xl font-bold text-[var(--brand-orange)]">{car.price}</span>
-          <span className="text-xs text-white/50 group-hover:text-white transition">View →</span>
+          <span className="text-xs text-black/50 group-hover:text-black transition">View →</span>
         </div>
       </div>
     </Link>
