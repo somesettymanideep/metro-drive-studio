@@ -57,7 +57,7 @@ export type Car = {
 export const cars: Car[] = [
   {
     slug: "hyundai-venue-s-o",
-    img: venue1,
+    img: venue7,
     name: "Hyundai Venue S(O)",
     year: 2022,
     fuel: "Petrol",
@@ -73,11 +73,11 @@ export const cars: Car[] = [
 
     description:
       "Well-maintained Hyundai Venue S(O) petrol variant. Spacious compact SUV with modern features, comfortable interiors and excellent fuel efficiency. Perfect for city driving and highway cruising.",
-    gallery: [venue1, venue2, venue3, venue4, venue5, venue6, venue7],
+    gallery: [venue7, venue1, venue2, venue3, venue4, venue5, venue6],
   },
   {
     slug: "maruti-wagonr-2024",
-    img: wagonr1,
+    img: wagonr5,
     name: "Maruti Suzuki WagonR",
     year: 2024,
     fuel: "Petrol",
@@ -91,7 +91,7 @@ export const cars: Car[] = [
     bodyType: "Hatchback",
     description:
       "Almost new 2024 Maruti Suzuki WagonR petrol automatic. Spacious cabin, excellent mileage and easy city driving with AMT transmission. Well-maintained with low kilometres.",
-    gallery: [wagonr1, wagonr2, wagonr3, wagonr4, wagonr5],
+    gallery: [wagonr5, wagonr1, wagonr2, wagonr3, wagonr4],
   },
   {
     slug: "tata-tiago-ev-xt-lr",
