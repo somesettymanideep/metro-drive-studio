@@ -44,7 +44,12 @@ import bmwX1SideLeft from "@/assets/bmwx1-3-side-left.jpeg.asset.json";
 import bmwX1Rear from "@/assets/bmwx1-4-rear.jpeg.asset.json";
 import bmwX1Dash from "@/assets/bmwx1-5-dash.jpeg.asset.json";
 import bmwX1Interior from "@/assets/bmwx1-6-interior.jpeg.asset.json";
-import xl6 from "@/assets/car-xl6.jpg";
+import xl6Front from "@/assets/xl6-front.jpeg.asset.json";
+import xl6Side1 from "@/assets/xl6-side1.jpeg.asset.json";
+import xl6Side2 from "@/assets/xl6-side2.jpeg.asset.json";
+import xl6Interior from "@/assets/xl6-interior.jpeg.asset.json";
+import xl6RearSeats from "@/assets/xl6-rear-seats.jpeg.asset.json";
+import xl6Rear from "@/assets/xl6-rear.jpeg.asset.json";
 import audiQ3Front from "@/assets/audiq3-1-front.jpeg.asset.json";
 import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
 import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
@@ -211,7 +216,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-xl6-2021",
-    img: xl6,
+    img: xl6Front.url,
     name: "Maruti Suzuki XL6",
     year: 2021,
     fuel: "Petrol",
@@ -225,7 +230,7 @@ export const cars: Car[] = [
     bodyType: "MPV",
     description:
       "Maruti Suzuki XL6 petrol manual — premium 6-seater MPV with captain seats and comfortable ride.",
-    gallery: [xl6],
+    gallery: [xl6Front.url, xl6Side1.url, xl6Side2.url, xl6Interior.url, xl6RearSeats.url, xl6Rear.url],
   },
   {
     slug: "audi-q3-2016",
