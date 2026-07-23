@@ -38,7 +38,12 @@ import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg.asset.json";
 import ecosportRear from "@/assets/ecosport4-rear.jpeg.asset.json";
 import ecosportDash from "@/assets/ecosport5-dash.jpeg.asset.json";
 import ecosportInterior from "@/assets/ecosport6-interior.jpeg.asset.json";
-import bmwX1 from "@/assets/car-bmw-x1.jpg";
+import bmwX1Front from "@/assets/bmwx1-1-front.jpeg.asset.json";
+import bmwX1SideRight from "@/assets/bmwx1-2-side-right.jpeg.asset.json";
+import bmwX1SideLeft from "@/assets/bmwx1-3-side-left.jpeg.asset.json";
+import bmwX1Rear from "@/assets/bmwx1-4-rear.jpeg.asset.json";
+import bmwX1Dash from "@/assets/bmwx1-5-dash.jpeg.asset.json";
+import bmwX1Interior from "@/assets/bmwx1-6-interior.jpeg.asset.json";
 import xl6 from "@/assets/car-xl6.jpg";
 import audiQ3 from "@/assets/car-audi-q3.jpg";
 
@@ -185,7 +190,7 @@ export const cars: Car[] = [
   },
   {
     slug: "bmw-x1-2017",
-    img: bmwX1,
+    img: bmwX1Front.url,
     name: "BMW X1",
     year: 2017,
     fuel: "Diesel",
@@ -199,7 +204,7 @@ export const cars: Car[] = [
     bodyType: "Luxury SUV",
     description:
       "BMW X1 diesel automatic — luxury SUV with premium interiors, powerful performance and iconic BMW handling.",
-    gallery: [bmwX1],
+    gallery: [bmwX1Front.url, bmwX1SideRight.url, bmwX1SideLeft.url, bmwX1Rear.url, bmwX1Dash.url, bmwX1Interior.url],
   },
   {
     slug: "maruti-suzuki-xl6-2021",
