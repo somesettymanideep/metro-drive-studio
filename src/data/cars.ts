@@ -57,7 +57,11 @@ import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
 import mgHectorSide from "@/assets/mg-hector-side.jpeg.asset.json";
 import mgHectorDash from "@/assets/mg-hector-dash.jpeg.asset.json";
 import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg.asset.json";
-import toyotaUrbanCruiser2024 from "@/assets/toyota-urban-cruiser-2024.jpg";
+import hyryderFront from "@/assets/hyryder-front.jpeg.asset.json";
+import hyryderSideLeft from "@/assets/hyryder-side-left.jpeg.asset.json";
+import hyryderSideRight from "@/assets/hyryder-side-right.jpeg.asset.json";
+import hyryderRear from "@/assets/hyryder-rear.jpeg.asset.json";
+import hyryderInterior from "@/assets/hyryder-interior.jpeg.asset.json";
 import tharRoxxFront from "@/assets/thar-roxx-front.jpeg.asset.json";
 import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg.asset.json";
 import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg.asset.json";
@@ -279,7 +283,7 @@ export const cars: Car[] = [
   },
   {
     slug: "toyota-urban-cruiser-hyryder-2024",
-    img: toyotaUrbanCruiser2024,
+    img: hyryderFront.url,
     name: "Toyota Urban Cruiser Hyryder",
     year: 2024,
     fuel: "Diesel",
@@ -294,7 +298,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Toyota Urban Cruiser Hyryder diesel automatic — feature-loaded SUV with refined ride quality and premium comfort.",
-    gallery: [toyotaUrbanCruiser2024],
+    gallery: [hyryderFront.url, hyryderSideLeft.url, hyryderSideRight.url, hyryderRear.url, hyryderInterior.url],
   },
   {
     slug: "thar-roxx-2024",
