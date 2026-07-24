@@ -16,12 +16,10 @@ import wagonr3 from "@/assets/car-wagonr-3.jpg";
 import wagonr4 from "@/assets/car-wagonr-4.jpg";
 import wagonr5 from "@/assets/car-wagonr-5.jpg";
 import venue7 from "@/assets/car-venue-7.jpg";
-import tiagoFront from "@/assets/car-tiago-front.jpg.asset.json";
 import tiagoRear from "@/assets/car-tiago-rear.jpg.asset.json";
 import tiagoSideLeft from "@/assets/car-tiago-side-left.jpg.asset.json";
 import tiagoSideRight from "@/assets/car-tiago-side-right.jpg.asset.json";
 import tiagoInterior from "@/assets/car-tiago-interior.jpg.asset.json";
-import xuvFront from "@/assets/car-xuv500-front.jpg.asset.json";
 import xuvSideRight from "@/assets/car-xuv500-side-right.jpg.asset.json";
 import xuvSideLeft from "@/assets/car-xuv500-side-left.jpg.asset.json";
 import xuvRear from "@/assets/car-xuv500-rear.jpg.asset.json";
@@ -38,19 +36,16 @@ import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg.asset.json";
 import ecosportRear from "@/assets/ecosport4-rear.jpeg.asset.json";
 import ecosportDash from "@/assets/ecosport5-dash.jpeg.asset.json";
 import ecosportInterior from "@/assets/ecosport6-interior.jpeg.asset.json";
-import bmwX1Front from "@/assets/bmwx1-1-front.jpeg.asset.json";
 import bmwX1SideRight from "@/assets/bmwx1-2-side-right.jpeg.asset.json";
 import bmwX1SideLeft from "@/assets/bmwx1-3-side-left.jpeg.asset.json";
 import bmwX1Rear from "@/assets/bmwx1-4-rear.jpeg.asset.json";
 import bmwX1Dash from "@/assets/bmwx1-5-dash.jpeg.asset.json";
 import bmwX1Interior from "@/assets/bmwx1-6-interior.jpeg.asset.json";
-import xl6Front from "@/assets/xl6-front.jpeg.asset.json";
 import xl6Side1 from "@/assets/xl6-side1.jpeg.asset.json";
 import xl6Side2 from "@/assets/xl6-side2.jpeg.asset.json";
 import xl6Interior from "@/assets/xl6-interior.jpeg.asset.json";
 import xl6RearSeats from "@/assets/xl6-rear-seats.jpeg.asset.json";
 import xl6Rear from "@/assets/xl6-rear.jpeg.asset.json";
-import audiQ3Front from "@/assets/audiq3-1-front.jpeg.asset.json";
 import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
 import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
 import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
@@ -75,6 +70,12 @@ import tharRoxxMain from "@/assets/thar-roxx-main.png.asset.json";
 import hyryderMain from "@/assets/hyryder-main.png.asset.json";
 import cretaMain from "@/assets/creta-main.png.asset.json";
 import amaze19Main from "@/assets/amaze19-main.png.asset.json";
+import xuvMain from "@/assets/xuv500-main.png.asset.json";
+import xl6Main from "@/assets/xl6-main.png.asset.json";
+import tiagoMain from "@/assets/tiago-main.png.asset.json";
+import audiQ3Main from "@/assets/audiq3-main.png.asset.json";
+import bmwX1Main from "@/assets/bmwx1-main.png.asset.json";
+import ecosportMain from "@/assets/ecosport-main.png.asset.json";
 
 
 
@@ -146,7 +147,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-tiago-ev-xt-lr",
-    img: tiagoFront.url,
+    img: tiagoMain.url,
     name: "Tata Tiago EV XT Long Range",
     year: 2023,
     fuel: "Electric",
@@ -160,11 +161,11 @@ export const cars: Car[] = [
     bodyType: "Electric Hatchback",
     description:
       "Tata Tiago EV XT Long Range — zero emissions, low running cost and modern EV features. Well maintained with low kilometres.",
-    gallery: [tiagoFront.url, tiagoSideRight.url, tiagoSideLeft.url, tiagoRear.url, tiagoInterior.url],
+    gallery: [tiagoMain.url, tiagoSideRight.url, tiagoSideLeft.url, tiagoRear.url, tiagoInterior.url],
   },
   {
     slug: "mahindra-xuv-500-2019",
-    img: xuvFront.url,
+    img: xuvMain.url,
     name: "Mahindra XUV 500",
     year: 2019,
     fuel: "Diesel",
@@ -178,7 +179,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Powerful Mahindra XUV 500 diesel with manual transmission. Spacious 7-seater SUV ideal for family and highway trips.",
-    gallery: [xuvFront.url, xuvSideRight.url, xuvSideLeft.url, xuvRear.url, xuvDashboard.url, xuvInterior.url],
+    gallery: [xuvMain.url, xuvSideRight.url, xuvSideLeft.url, xuvRear.url, xuvDashboard.url, xuvInterior.url],
   },
   {
     slug: "honda-amaze-2024",
@@ -200,7 +201,7 @@ export const cars: Car[] = [
   },
   {
     slug: "ford-ecosport-2016",
-    img: ecosportFront.url,
+    img: ecosportMain.url,
     name: "Ford EcoSport",
     year: 2016,
     fuel: "Petrol",
@@ -214,11 +215,11 @@ export const cars: Car[] = [
     bodyType: "Compact SUV",
     description:
       "Ford EcoSport petrol automatic — solid build, comfortable ride and easy city driving.",
-    gallery: [ecosportFront.url, ecosportSideRight.url, ecosportSideLeft.url, ecosportRear.url, ecosportDash.url, ecosportInterior.url],
+    gallery: [ecosportMain.url, ecosportSideRight.url, ecosportSideLeft.url, ecosportRear.url, ecosportDash.url, ecosportInterior.url],
   },
   {
     slug: "bmw-x1-2017",
-    img: bmwX1Front.url,
+    img: bmwX1Main.url,
     name: "BMW X1",
     year: 2017,
     fuel: "Diesel",
@@ -232,11 +233,11 @@ export const cars: Car[] = [
     bodyType: "Luxury SUV",
     description:
       "BMW X1 diesel automatic — luxury SUV with premium interiors, powerful performance and iconic BMW handling.",
-    gallery: [bmwX1Front.url, bmwX1SideRight.url, bmwX1SideLeft.url, bmwX1Rear.url, bmwX1Dash.url, bmwX1Interior.url],
+    gallery: [bmwX1Main.url, bmwX1SideRight.url, bmwX1SideLeft.url, bmwX1Rear.url, bmwX1Dash.url, bmwX1Interior.url],
   },
   {
     slug: "maruti-suzuki-xl6-2021",
-    img: xl6Front.url,
+    img: xl6Main.url,
     name: "Maruti Suzuki XL6",
     year: 2021,
     fuel: "Petrol",
@@ -250,11 +251,11 @@ export const cars: Car[] = [
     bodyType: "MPV",
     description:
       "Maruti Suzuki XL6 petrol manual — premium 6-seater MPV with captain seats and comfortable ride.",
-    gallery: [xl6Front.url, xl6Side1.url, xl6Side2.url, xl6Interior.url, xl6RearSeats.url, xl6Rear.url],
+    gallery: [xl6Main.url, xl6Side1.url, xl6Side2.url, xl6Interior.url, xl6RearSeats.url, xl6Rear.url],
   },
   {
     slug: "audi-q3-2016",
-    img: audiQ3Front.url,
+    img: audiQ3Main.url,
     name: "Audi Q3",
     year: 2016,
     fuel: "Diesel",
@@ -268,7 +269,7 @@ export const cars: Car[] = [
     bodyType: "Luxury SUV",
     description:
       "Audi Q3 diesel automatic — refined luxury SUV with quattro capability, premium interiors and effortless power delivery.",
-    gallery: [audiQ3Front.url, audiQ3Side.url, audiQ3Dash.url, audiQ3RearSeats.url],
+    gallery: [audiQ3Main.url, audiQ3Side.url, audiQ3Dash.url, audiQ3RearSeats.url],
   },
   {
     slug: "mg-hector-2021",
