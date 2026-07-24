@@ -70,6 +70,11 @@ import cretaFront from "@/assets/creta-front.jpeg.asset.json";
 import cretaSide from "@/assets/creta-side.jpeg.asset.json";
 import cretaInterior from "@/assets/creta-interior.jpeg.asset.json";
 import cretaRear from "@/assets/creta-rear.jpeg.asset.json";
+import amaze19Front from "@/assets/amaze2019-front.jpeg.asset.json";
+import amaze19Side from "@/assets/amaze2019-side.jpeg.asset.json";
+import amaze19Rear from "@/assets/amaze2019-rear.jpeg.asset.json";
+import amaze19Interior from "@/assets/amaze2019-interior.jpeg.asset.json";
+import amaze19RearSeats from "@/assets/amaze2019-rear-seats.jpeg.asset.json";
 
 
 
@@ -340,6 +345,25 @@ export const cars: Car[] = [
     description:
       "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
     gallery: [cretaFront.url, cretaSide.url, cretaInterior.url, cretaRear.url],
+  },
+  {
+    slug: "honda-amaze-2019",
+    img: amaze19Front.url,
+    name: "Honda Amaze",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "96,000 km",
+    price: "₹6.00 L",
+    cat: "Sedan",
+    brand: "Honda",
+    model: "Amaze",
+    variant: "VX Petrol MT",
+    color: "White",
+    bodyType: "Sedan",
+    description:
+      "Honda Amaze VX petrol manual — well-maintained sedan with spacious cabin, comfortable ride and excellent fuel efficiency.",
+    gallery: [amaze19Front.url, amaze19Side.url, amaze19Rear.url, amaze19Interior.url, amaze19RearSeats.url],
   },
 ];
 
