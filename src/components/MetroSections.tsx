@@ -211,7 +211,7 @@ const services = [
     emoji: "🚗",
     title: "Buy Used Cars",
     features: ["Certified pre-owned vehicles", "Quality inspection", "Warranty support"],
-    cta: { label: "Explore Inventory", href: "#inventory" },
+    cta: { label: "Explore Inventory", href: "/cars" },
   },
   {
     icon: Tag,
@@ -424,16 +424,27 @@ export function ServicesSection() {
                       ))}
                     </ul>
 
-                    <a
-                      href={`https://wa.me/919059987777?text=${encodeURIComponent(`Hi Metro Cars, I'm interested in "${s.title}" service. ${s.cta.label}.`)}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-auto inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full text-white font-bold uppercase tracking-wide text-xs transition-all hover:scale-[1.02]"
-                      style={{ background: "var(--gradient-orange)" }}
-                    >
-                      {s.cta.label}
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                    </a>
+                    {s.cta.href === "/cars" ? (
+                      <Link
+                        to="/cars"
+                        className="mt-auto inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full text-white font-bold uppercase tracking-wide text-xs transition-all hover:scale-[1.02]"
+                        style={{ background: "var(--gradient-orange)" }}
+                      >
+                        {s.cta.label}
+                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                      </Link>
+                    ) : (
+                      <a
+                        href={`https://wa.me/919059987777?text=${encodeURIComponent(`Hi Metro Cars, I'm interested in "${s.title}" service. ${s.cta.label}.`)}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-auto inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full text-white font-bold uppercase tracking-wide text-xs transition-all hover:scale-[1.02]"
+                        style={{ background: "var(--gradient-orange)" }}
+                      >
+                        {s.cta.label}
+                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
