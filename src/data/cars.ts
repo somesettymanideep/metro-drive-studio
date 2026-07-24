@@ -54,27 +54,27 @@ import audiQ3Front from "@/assets/audiq3-1-front.jpeg.asset.json";
 import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
 import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
 import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
-import mgHectorSide from "@/assets/mg-hector-side.jpeg.asset.json";
 import mgHectorDash from "@/assets/mg-hector-dash.jpeg.asset.json";
 import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg.asset.json";
-import hyryderFront from "@/assets/hyryder-front.jpeg.asset.json";
 import hyryderSideLeft from "@/assets/hyryder-side-left.jpeg.asset.json";
 import hyryderSideRight from "@/assets/hyryder-side-right.jpeg.asset.json";
 import hyryderRear from "@/assets/hyryder-rear.jpeg.asset.json";
 import hyryderInterior from "@/assets/hyryder-interior.jpeg.asset.json";
-import tharRoxxFront from "@/assets/thar-roxx-front.jpeg.asset.json";
 import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg.asset.json";
 import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg.asset.json";
 import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.jpeg.asset.json";
-import cretaFront from "@/assets/creta-front.jpeg.asset.json";
 import cretaSide from "@/assets/creta-side.jpeg.asset.json";
 import cretaInterior from "@/assets/creta-interior.jpeg.asset.json";
 import cretaRear from "@/assets/creta-rear.jpeg.asset.json";
-import amaze19Front from "@/assets/amaze2019-front.jpeg.asset.json";
 import amaze19Side from "@/assets/amaze2019-side.jpeg.asset.json";
 import amaze19Rear from "@/assets/amaze2019-rear.jpeg.asset.json";
 import amaze19Interior from "@/assets/amaze2019-interior.jpeg.asset.json";
 import amaze19RearSeats from "@/assets/amaze2019-rear-seats.jpeg.asset.json";
+import mgHectorMain from "@/assets/mg-hector-main.png.asset.json";
+import tharRoxxMain from "@/assets/thar-roxx-main.png.asset.json";
+import hyryderMain from "@/assets/hyryder-main.png.asset.json";
+import cretaMain from "@/assets/creta-main.png.asset.json";
+import amaze19Main from "@/assets/amaze19-main.png.asset.json";
 
 
 
@@ -272,7 +272,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mg-hector-2021",
-    img: mgHectorSide.url,
+    img: mgHectorMain.url,
     name: "MG Hector",
     year: 2021,
     fuel: "Diesel",
@@ -287,11 +287,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Premium MG Hector diesel manual — spacious SUV with modern features, comfortable cabin and powerful performance.",
-    gallery: [mgHectorSide.url, mgHectorDash.url, mgHectorRearSeats.url],
+    gallery: [mgHectorMain.url, mgHectorDash.url, mgHectorRearSeats.url],
   },
   {
     slug: "toyota-urban-cruiser-hyryder-2024",
-    img: hyryderFront.url,
+    img: hyryderMain.url,
     name: "Toyota Urban Cruiser Hyryder",
     year: 2024,
     fuel: "Diesel",
@@ -306,11 +306,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Toyota Urban Cruiser Hyryder diesel automatic — feature-loaded SUV with refined ride quality and premium comfort.",
-    gallery: [hyryderFront.url, hyryderSideLeft.url, hyryderSideRight.url, hyryderRear.url, hyryderInterior.url],
+    gallery: [hyryderMain.url, hyryderSideLeft.url, hyryderSideRight.url, hyryderRear.url, hyryderInterior.url],
   },
   {
     slug: "thar-roxx-2024",
-    img: tharRoxxFront.url,
+    img: tharRoxxMain.url,
     name: "Mahindra Thar Roxx",
     year: 2024,
     fuel: "Diesel",
@@ -325,11 +325,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Mahindra Thar Roxx diesel automatic with sunroof — iconic off-road capability paired with modern features and open-air driving.",
-    gallery: [tharRoxxFront.url, tharRoxxSideRight.url, tharRoxxSideLeft.url, tharRoxxRearSeats.url],
+    gallery: [tharRoxxMain.url, tharRoxxSideRight.url, tharRoxxSideLeft.url, tharRoxxRearSeats.url],
   },
   {
     slug: "hyundai-creta-2022",
-    img: cretaFront.url,
+    img: cretaMain.url,
     name: "Hyundai Creta",
     year: 2022,
     fuel: "Petrol",
@@ -344,11 +344,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
-    gallery: [cretaFront.url, cretaSide.url, cretaInterior.url, cretaRear.url],
+    gallery: [cretaMain.url, cretaSide.url, cretaInterior.url, cretaRear.url],
   },
   {
     slug: "honda-amaze-2019",
-    img: amaze19Front.url,
+    img: amaze19Main.url,
     name: "Honda Amaze",
     year: 2019,
     fuel: "Petrol",
@@ -363,7 +363,7 @@ export const cars: Car[] = [
     bodyType: "Sedan",
     description:
       "Honda Amaze VX petrol manual — well-maintained sedan with spacious cabin, comfortable ride and excellent fuel efficiency.",
-    gallery: [amaze19Front.url, amaze19Side.url, amaze19Rear.url, amaze19Interior.url, amaze19RearSeats.url],
+    gallery: [amaze19Main.url, amaze19Side.url, amaze19Rear.url, amaze19Interior.url, amaze19RearSeats.url],
   },
 ];
 
