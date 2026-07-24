@@ -54,7 +54,9 @@ import audiQ3Front from "@/assets/audiq3-1-front.jpeg.asset.json";
 import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
 import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
 import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
-import mgHector2021 from "@/assets/mg-hector-2021.jpg";
+import mgHectorSide from "@/assets/mg-hector-side.jpeg.asset.json";
+import mgHectorDash from "@/assets/mg-hector-dash.jpeg.asset.json";
+import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg.asset.json";
 import toyotaUrbanCruiser2024 from "@/assets/toyota-urban-cruiser-2024.jpg";
 import tharRoxx2024 from "@/assets/thar-roxx-2024.jpg";
 import hyundaiCreta2022 from "@/assets/hyundai-creta-2022.jpg";
@@ -255,7 +257,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mg-hector-2021",
-    img: mgHector2021,
+    img: mgHectorSide.url,
     name: "MG Hector",
     year: 2021,
     fuel: "Diesel",
@@ -266,11 +268,11 @@ export const cars: Car[] = [
     brand: "MG",
     model: "Hector",
     variant: "Diesel MT",
-    color: "Grey",
+    color: "White",
     bodyType: "SUV",
     description:
       "Premium MG Hector diesel manual — spacious SUV with modern features, comfortable cabin and powerful performance.",
-    gallery: [mgHector2021],
+    gallery: [mgHectorSide.url, mgHectorDash.url, mgHectorRearSeats.url],
   },
   {
     slug: "toyota-urban-cruiser-hyryder-2024",
