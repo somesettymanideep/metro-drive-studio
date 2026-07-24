@@ -211,7 +211,7 @@ const services = [
     emoji: "🚗",
     title: "Buy Used Cars",
     features: ["Certified pre-owned vehicles", "Quality inspection", "Warranty support"],
-    cta: { label: "Explore Inventory", href: "#inventory" },
+    cta: { label: "Explore Inventory", href: "/cars" },
   },
   {
     icon: Tag,
