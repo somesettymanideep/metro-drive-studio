@@ -66,7 +66,10 @@ import tharRoxxFront from "@/assets/thar-roxx-front.jpeg.asset.json";
 import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg.asset.json";
 import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg.asset.json";
 import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.jpeg.asset.json";
-import hyundaiCreta2022 from "@/assets/hyundai-creta-2022.jpg";
+import cretaFront from "@/assets/creta-front.jpeg.asset.json";
+import cretaSide from "@/assets/creta-side.jpeg.asset.json";
+import cretaInterior from "@/assets/creta-interior.jpeg.asset.json";
+import cretaRear from "@/assets/creta-rear.jpeg.asset.json";
 
 
 
@@ -321,7 +324,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-creta-2022",
-    img: hyundaiCreta2022,
+    img: cretaFront.url,
     name: "Hyundai Creta",
     year: 2022,
     fuel: "Petrol",
@@ -336,7 +339,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
-    gallery: [hyundaiCreta2022],
+    gallery: [cretaFront.url, cretaSide.url, cretaInterior.url, cretaRear.url],
   },
 ];
 
