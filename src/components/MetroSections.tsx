@@ -1385,7 +1385,7 @@ export function MetroFooter() {
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/80 to-black/60" />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div>
             <img src={logoUrl} alt="Metro Cars" className="h-24 lg:h-28 w-auto mb-4" />
             <p className="text-white/60 text-sm leading-relaxed">
@@ -1396,14 +1396,6 @@ export function MetroFooter() {
             <h4 className="font-extrabold uppercase tracking-wider mb-5 text-[var(--brand-orange)]">Quick Links</h4>
             <ul className="space-y-2.5 text-white/70">
               {["Home", "About Us", "Inventory", "Why Choose Us", "Testimonials", "Contact"].map((l) => (
-                <li key={l}><a href="#" className="hover:text-[var(--brand-orange)] transition-colors">{l}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-extrabold uppercase tracking-wider mb-5 text-[var(--brand-orange)]">Inventory</h4>
-            <ul className="space-y-2.5 text-white/70">
-              {["Sedans", "SUVs", "Hatchbacks", "Luxury Cars", "Budget Cars", "MPVs"].map((l) => (
                 <li key={l}><a href="#" className="hover:text-[var(--brand-orange)] transition-colors">{l}</a></li>
               ))}
             </ul>
