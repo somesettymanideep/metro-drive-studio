@@ -634,6 +634,9 @@ export function TestimonialsSection() {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const [muted, setMuted] = useState(true);
+  const [autoPlay, setAutoPlay] = useState(false);
+  const autoPlayRef = useRef<NodeJS.Timeout | null>(null);
+  const isHoveringRef = useRef(false);
 
   const scrollBy = (dir: 1 | -1) => {
     const el = scrollerRef.current;
@@ -657,6 +660,60 @@ export function TestimonialsSection() {
     const card = el.querySelector<HTMLElement>("[data-testimonial-card]");
     const step = card ? card.offsetWidth + 24 : el.clientWidth * 0.8;
     el.scrollTo({ left: i * step, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1023px)");
+    const update = () => setAutoPlay(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    const start = () => {
+      autoPlayRef.current = setInterval(() => {
+        if (isHoveringRef.current) return;
+        const el = scrollerRef.current;
+        if (!el) return;
+        const card = el.querySelector<HTMLElement>("[data-testimonial-card]");
+        const step = card ? card.offsetWidth + 24 : el.clientWidth * 0.8;
+        const maxScroll = el.scrollWidth - el.clientWidth;
+        if (el.scrollLeft >= maxScroll - 4) {
+          el.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          el.scrollBy({ left: step, behavior: "smooth" });
+        }
+      }, 4000);
+    };
+    start();
+    return () => {
+      if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    };
+  }, [autoPlay]);
+
+  const pauseAutoPlay = () => {
+    isHoveringRef.current = true;
+    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+  };
+
+  const resumeAutoPlay = () => {
+    isHoveringRef.current = false;
+    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    autoPlayRef.current = setInterval(() => {
+      if (isHoveringRef.current) return;
+      const el = scrollerRef.current;
+      if (!el) return;
+      const card = el.querySelector<HTMLElement>("[data-testimonial-card]");
+      const step = card ? card.offsetWidth + 24 : el.clientWidth * 0.8;
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      if (el.scrollLeft >= maxScroll - 4) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        el.scrollBy({ left: step, behavior: "smooth" });
+      }
+    }, 4000);
   };
 
   return (
@@ -691,6 +748,10 @@ export function TestimonialsSection() {
           <div
             ref={scrollerRef}
             onScroll={onScroll}
+            onMouseEnter={pauseAutoPlay}
+            onMouseLeave={resumeAutoPlay}
+            onTouchStart={pauseAutoPlay}
+            onTouchEnd={resumeAutoPlay}
             className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-6 -mx-4 px-4 sm:px-6 scrollbar-hide lg:justify-center"
             style={{ scrollbarWidth: "none" }}
           >
