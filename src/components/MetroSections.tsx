@@ -1412,7 +1412,7 @@ export function MetroFooter() {
             <h4 className="font-extrabold uppercase tracking-wider mb-5 text-[var(--brand-orange)]">Contact</h4>
             <ul className="space-y-3 text-white/70 text-sm">
               <li className="flex gap-3"><Phone className="size-4 text-[var(--brand-orange)] shrink-0 mt-0.5" /> 90599 87777</li>
-              <li className="flex gap-3"><Mail className="size-4 text-[var(--brand-orange)] shrink-0 mt-0.5" /> metrocarsused@gmail.com</li>
+              <li className="flex gap-3"><Mail className="size-4 text-[var(--brand-orange)] shrink-0 mt-0.5" /> metrocarsusedcars@gmail.com</li>
               <li className="flex gap-3"><MapPin className="size-4 text-[var(--brand-orange)] shrink-0 mt-0.5" /> Opp Government Hospital, Nagarjuna Nagar, Sri Ramachandra Nagar, Vijayawada, Andhra Pradesh - 520007</li>
               <li className="flex gap-3"><Clock className="size-4 text-[var(--brand-orange)] shrink-0 mt-0.5" /> Mon–Sun: 9:00 AM – 9:00 PM</li>
             </ul>
