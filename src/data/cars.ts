@@ -30,7 +30,7 @@ import amazeSide from "@/assets/amaze2-side.jpeg.asset.json";
 import amazeDash from "@/assets/amaze3-dash.jpeg.asset.json";
 import amazeInterior from "@/assets/amaze4-interior.jpeg.asset.json";
 import amazeRearSeats from "@/assets/amaze5-rear-seats.jpeg.asset.json";
-import ecosportFront from "@/assets/ecosport1-front.jpeg.asset.json";
+import ecosportMain from "@/assets/ecosport-main.png.asset.json";
 import ecosportSideRight from "@/assets/ecosport2-side-right.jpeg.asset.json";
 import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg.asset.json";
 import ecosportRear from "@/assets/ecosport4-rear.jpeg.asset.json";
