@@ -25,7 +25,7 @@ import xuvSideLeft from "@/assets/car-xuv500-side-left.jpg.asset.json";
 import xuvRear from "@/assets/car-xuv500-rear.jpg.asset.json";
 import xuvDashboard from "@/assets/car-xuv500-dashboard.jpg.asset.json";
 import xuvInterior from "@/assets/car-xuv500-interior.jpg.asset.json";
-import amazeFront from "@/assets/amaze1-front.jpeg.asset.json";
+import amazeFront from "@/assets/honda-amaze-main.webp.asset.json";
 import amazeSide from "@/assets/amaze2-side.jpeg.asset.json";
 import amazeDash from "@/assets/amaze3-dash.jpeg.asset.json";
 import amazeInterior from "@/assets/amaze4-interior.jpeg.asset.json";
