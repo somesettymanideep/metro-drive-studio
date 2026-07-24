@@ -340,7 +340,7 @@ export const cars: Car[] = [
     brand: "Hyundai",
     model: "Creta",
     variant: "Petrol MT",
-    color: "Silver",
+    color: "Black",
     bodyType: "SUV",
     description:
       "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
