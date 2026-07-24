@@ -58,7 +58,10 @@ import mgHectorSide from "@/assets/mg-hector-side.jpeg.asset.json";
 import mgHectorDash from "@/assets/mg-hector-dash.jpeg.asset.json";
 import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg.asset.json";
 import toyotaUrbanCruiser2024 from "@/assets/toyota-urban-cruiser-2024.jpg";
-import tharRoxx2024 from "@/assets/thar-roxx-2024.jpg";
+import tharRoxxFront from "@/assets/thar-roxx-front.jpeg.asset.json";
+import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg.asset.json";
+import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg.asset.json";
+import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.jpeg.asset.json";
 import hyundaiCreta2022 from "@/assets/hyundai-creta-2022.jpg";
 
 
@@ -295,7 +298,7 @@ export const cars: Car[] = [
   },
   {
     slug: "thar-roxx-2024",
-    img: tharRoxx2024,
+    img: tharRoxxFront.url,
     name: "Mahindra Thar Roxx",
     year: 2024,
     fuel: "Diesel",
@@ -306,11 +309,11 @@ export const cars: Car[] = [
     brand: "Mahindra",
     model: "Thar Roxx",
     variant: "Diesel AT Sunroof",
-    color: "Black",
+    color: "Brown",
     bodyType: "SUV",
     description:
       "Mahindra Thar Roxx diesel automatic with sunroof — iconic off-road capability paired with modern features and open-air driving.",
-    gallery: [tharRoxx2024],
+    gallery: [tharRoxxFront.url, tharRoxxSideRight.url, tharRoxxSideLeft.url, tharRoxxRearSeats.url],
   },
   {
     slug: "hyundai-creta-2022",
