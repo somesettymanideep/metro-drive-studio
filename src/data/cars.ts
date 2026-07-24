@@ -54,7 +54,10 @@ import audiQ3Front from "@/assets/audiq3-1-front.jpeg.asset.json";
 import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
 import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
 import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
-
+import mgHector2021 from "@/assets/mg-hector-2021.jpg";
+import toyotaUrbanCruiser2024 from "@/assets/toyota-urban-cruiser-2024.jpg";
+import tharRoxx2024 from "@/assets/thar-roxx-2024.jpg";
+import hyundaiCreta2022 from "@/assets/hyundai-creta-2022.jpg";
 
 
 
@@ -249,6 +252,82 @@ export const cars: Car[] = [
     description:
       "Audi Q3 diesel automatic — refined luxury SUV with quattro capability, premium interiors and effortless power delivery.",
     gallery: [audiQ3Front.url, audiQ3Side.url, audiQ3Dash.url, audiQ3RearSeats.url],
+  },
+  {
+    slug: "mg-hector-2021",
+    img: mgHector2021,
+    name: "MG Hector",
+    year: 2021,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "55,000 km",
+    price: "₹13.00 L",
+    cat: "SUV",
+    brand: "MG",
+    model: "Hector",
+    variant: "Diesel MT",
+    color: "Grey",
+    bodyType: "SUV",
+    description:
+      "Premium MG Hector diesel manual — spacious SUV with modern features, comfortable cabin and powerful performance.",
+    gallery: [mgHector2021],
+  },
+  {
+    slug: "toyota-urban-cruiser-hyryder-2024",
+    img: toyotaUrbanCruiser2024,
+    name: "Toyota Urban Cruiser Hyryder",
+    year: 2024,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "28,000 km",
+    price: "₹13.00 L",
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Urban Cruiser Hyryder",
+    variant: "Diesel AT",
+    color: "White",
+    bodyType: "SUV",
+    description:
+      "Toyota Urban Cruiser Hyryder diesel automatic — feature-loaded SUV with refined ride quality and premium comfort.",
+    gallery: [toyotaUrbanCruiser2024],
+  },
+  {
+    slug: "thar-roxx-2024",
+    img: tharRoxx2024,
+    name: "Mahindra Thar Roxx",
+    year: 2024,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "22,000 km",
+    price: "₹19.50 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "Thar Roxx",
+    variant: "Diesel AT Sunroof",
+    color: "Black",
+    bodyType: "SUV",
+    description:
+      "Mahindra Thar Roxx diesel automatic with sunroof — iconic off-road capability paired with modern features and open-air driving.",
+    gallery: [tharRoxx2024],
+  },
+  {
+    slug: "hyundai-creta-2022",
+    img: hyundaiCreta2022,
+    name: "Hyundai Creta",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "48,000 km",
+    price: "₹6.00 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Creta",
+    variant: "Petrol MT",
+    color: "Silver",
+    bodyType: "SUV",
+    description:
+      "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
+    gallery: [hyundaiCreta2022],
   },
 ];
 
