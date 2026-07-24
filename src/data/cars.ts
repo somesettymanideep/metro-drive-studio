@@ -54,7 +54,10 @@ import audiQ3Front from "@/assets/audiq3-1-front.jpeg.asset.json";
 import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
 import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
 import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
-
+import mgHector2021 from "@/assets/mg-hector-2021.jpg";
+import toyotaUrbanCruiser2024 from "@/assets/toyota-urban-cruiser-2024.jpg";
+import tharRoxx2024 from "@/assets/thar-roxx-2024.jpg";
+import hyundaiCreta2022 from "@/assets/hyundai-creta-2022.jpg";
 
 
 
