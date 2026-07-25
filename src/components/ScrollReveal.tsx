@@ -29,7 +29,9 @@ export function ScrollReveal() {
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
+      // threshold must stay 0: tall sections (e.g. the mobile 1-column car
+      // grid) can never reach a percentage threshold and would stay hidden.
+      { threshold: 0, rootMargin: "0px 0px -60px 0px" }
     );
 
     const attach = () => {
