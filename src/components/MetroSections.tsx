@@ -459,9 +459,10 @@ export function ServicesSection() {
 
 
 export function InventorySection() {
-  const brands = ["All", ...Array.from(new Set(cars.map(c => c.brand).filter(Boolean) as string[]))];
+  const allCars = useAllCars();
+  const brands = ["All", ...Array.from(new Set(allCars.map(c => c.brand).filter(Boolean) as string[]))];
   const [tab, setTab] = useState("All");
-  const filtered = (tab === "All" ? cars : cars.filter(c => c.brand === tab)).slice(0, 9);
+  const filtered = (tab === "All" ? allCars : allCars.filter(c => c.brand === tab)).slice(0, 9);
 
 
   return (

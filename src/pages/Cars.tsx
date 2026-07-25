@@ -4,7 +4,8 @@ import { Helmet } from "react-helmet-async";
 import { Search, Fuel, Gauge, Cog, X, SlidersHorizontal, ArrowRight, Palette, Calendar } from "lucide-react";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter } from "@/components/MetroSections";
-import { cars, type Car } from "@/data/cars";
+import { type Car } from "@/data/cars";
+import { useAllCars } from "@/lib/allCars";
 import bannerImg from "@/assets/cars-page-banner.jpg";
 
 const parsePrice = (p: string) => {
@@ -16,9 +17,10 @@ const parsePrice = (p: string) => {
 };
 
 const priceMin = 0;
-const priceMax = Math.max(...cars.map((c) => parsePrice(c.price))) + 50000;
 
 export default function Cars() {
+  const cars = useAllCars();
+  const priceMax = Math.max(0, ...cars.map((c) => parsePrice(c.price))) + 50000;
   const [q, setQ] = useState("");
   const [brands, setBrands] = useState<string[]>([]);
   const [fuels, setFuels] = useState<string[]>([]);
@@ -29,10 +31,10 @@ export default function Cars() {
 
   const brandList = useMemo(
     () => Array.from(new Set(cars.map((c) => c.brand || c.name.split(" ")[0]))).sort(),
-    []
+    [cars]
   );
-  const fuelList = useMemo(() => Array.from(new Set(cars.map((c) => c.fuel))).sort(), []);
-  const transList = useMemo(() => Array.from(new Set(cars.map((c) => c.trans))).sort(), []);
+  const fuelList = useMemo(() => Array.from(new Set(cars.map((c) => c.fuel))).sort(), [cars]);
+  const transList = useMemo(() => Array.from(new Set(cars.map((c) => c.trans))).sort(), [cars]);
 
   const toggle = (arr: string[], v: string, set: (x: string[]) => void) =>
     set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
@@ -51,7 +53,7 @@ export default function Cars() {
     else if (sort === "price-desc") out = [...out].sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
     else if (sort === "newest") out = [...out].sort((a, b) => b.year - a.year);
     return out;
-  }, [q, brands, fuels, trans, max, sort]);
+  }, [q, brands, fuels, trans, max, sort, cars]);
 
   const clearAll = () => {
     setQ("");
