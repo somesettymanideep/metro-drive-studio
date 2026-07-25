@@ -17,6 +17,7 @@ import {
 import logoUrl from "@/assets/metro-cars-logo.png";
 import {
   getInventoryItemRemote,
+  isAdminAuthed,
   logoutAdmin,
   saveInventoryItemRemote,
   type InventoryItem,
@@ -60,8 +61,7 @@ export default function AddInventory() {
   const navigate = useNavigate();
   const [params] = useSearchParams();
   const editId = params.get("edit");
-  const authed =
-    typeof window !== "undefined" && localStorage.getItem("mc_admin") === "1";
+  const authed = isAdminAuthed();
 
   const [form, setForm] = useState<FormState>(initial);
   const [images, setImages] = useState<ImageEntry[]>([]);

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import {
   deleteInventoryItemRemote,
+  isAdminAuthed,
   listInventoryAdmin,
   logoutAdmin,
   saveInventoryItemRemote,
@@ -26,8 +27,7 @@ import { AdminTopBar } from "./AddInventory";
 
 export default function AdminInventory() {
   const navigate = useNavigate();
-  const authed =
-    typeof window !== "undefined" && localStorage.getItem("mc_admin") === "1";
+  const authed = isAdminAuthed();
 
   const [items, setItems] = useState<InventoryItem[]>([]);
   const [query, setQuery] = useState("");
