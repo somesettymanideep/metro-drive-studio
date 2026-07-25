@@ -243,6 +243,14 @@ export default function AdminInventory() {
         <div className="mb-5 flex flex-wrap items-center gap-2">
           <button
             type="button"
+            onClick={downloadTemplate}
+            className="inline-flex items-center gap-2 text-sm px-3.5 py-2 rounded-lg border border-neutral-200 bg-white text-neutral-700 font-medium hover:border-neutral-300 hover:bg-neutral-50 transition"
+            aria-label="Download CSV import template"
+          >
+            <FileSpreadsheet className="size-4" aria-hidden="true" /> Download Template
+          </button>
+          <button
+            type="button"
             onClick={onExport}
             className="inline-flex items-center gap-2 text-sm px-3.5 py-2 rounded-lg border border-neutral-200 bg-white text-neutral-700 font-medium hover:border-neutral-300 hover:bg-neutral-50 transition"
           >
@@ -267,7 +275,7 @@ export default function AdminInventory() {
             />
           </label>
           <p className="text-xs text-neutral-500 ml-1">
-            CSV columns: name, brand, model, variant, year, price, km, fuel, trans, color, description, images (pipe-separated URLs).
+            CSV columns: id, name, brand, model, variant, year, price, km, fuel, trans, cat, bodyType, color, description, images (pipe-separated URLs), createdAt, updatedAt.
           </p>
         </div>
 
