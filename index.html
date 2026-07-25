@@ -27,6 +27,22 @@
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.__loadMetroStaticBuild = function () {
+        if (window.__metroStaticBuildLoaded) return;
+        window.__metroStaticBuildLoaded = true;
+
+        var stylesheet = document.createElement("link");
+        stylesheet.rel = "stylesheet";
+        stylesheet.href = "/assets/index-D4xpBQmT.css";
+        document.head.appendChild(stylesheet);
+
+        var script = document.createElement("script");
+        script.type = "module";
+        script.src = "/assets/index-CplWjQmU.js";
+        document.body.appendChild(script);
+      };
+    </script>
+    <script type="module" src="/src/main.tsx" onerror="window.__loadMetroStaticBuild && window.__loadMetroStaticBuild()"></script>
   </body>
 </html>
