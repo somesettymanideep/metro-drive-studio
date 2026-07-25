@@ -3,7 +3,7 @@ import { useNavigate, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Lock, User, Eye, EyeOff, Loader2, AlertCircle } from "lucide-react";
 import logoUrl from "@/assets/metro-cars-logo.png";
-import { loginAdmin } from "@/lib/inventoryStore";
+import { isAdminAuthed, loginAdmin } from "@/lib/inventoryStore";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [attempts, setAttempts] = useState(0);
 
-  if (typeof window !== "undefined" && localStorage.getItem("mc_admin") === "1") {
+  if (isAdminAuthed()) {
     return <Navigate to="/admin/inventory" replace />;
   }
 

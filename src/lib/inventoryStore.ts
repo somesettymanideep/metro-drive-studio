@@ -96,14 +96,44 @@ function adminToken() {
   return localStorage.getItem(ADMIN_TOKEN_KEY) ?? "";
 }
 
+function tokenIsValid(token: string): boolean {
+  if (!token || !token.includes(".")) return false;
+  try {
+    const payload = token.split(".")[0];
+    const normalized = payload.replace(/-/g, "+").replace(/_/g, "/");
+    const padded = normalized.padEnd(
+      normalized.length + ((4 - (normalized.length % 4)) % 4),
+      "="
+    );
+    const decoded = JSON.parse(atob(padded)) as { exp?: number };
+    return typeof decoded.exp === "number" && decoded.exp > Date.now() / 1000;
+  } catch {
+    return false;
+  }
+}
+
+/** Admin is only authenticated when a non-expired backend token is present. */
+export function isAdminAuthed(): boolean {
+  if (typeof window === "undefined") return false;
+  return localStorage.getItem("mc_admin") === "1" && tokenIsValid(adminToken());
+}
+
 async function callAdmin<T>(payload: Record<string, unknown>): Promise<T> {
+  const token = adminToken();
+  if (!tokenIsValid(token)) {
+    logoutAdmin();
+    throw new Error("Your admin session has expired. Please sign in again.");
+  }
   const { supabase } = await import("@/integrations/supabase/client");
   const { data, error } = await supabase.functions.invoke<AdminResponse<T>>(
     "admin-inventory",
-    { body: { token: adminToken(), ...payload } }
+    { body: { token, ...payload } }
   );
   if (error) throw new Error(error.message);
-  if (!data?.ok) throw new Error(data?.error || "Inventory request failed.");
+  if (!data?.ok) {
+    if ((data?.error || "").toLowerCase().includes("session")) logoutAdmin();
+    throw new Error(data?.error || "Inventory request failed.");
+  }
   if (typeof data.data === "undefined") throw new Error("Inventory request returned no data.");
   return data.data;
 }
