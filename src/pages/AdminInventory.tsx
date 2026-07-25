@@ -12,6 +12,7 @@ import {
   AlertTriangle,
   Download,
   Upload,
+  FileSpreadsheet,
 } from "lucide-react";
 import {
   listInventory,
@@ -175,6 +176,39 @@ export default function AdminInventory() {
     }
   };
 
+  const downloadTemplate = () => {
+    const header = CSV_COLS.join(",");
+    const sample = [
+      "Honda Amaze VX",
+      "Honda",
+      "Amaze",
+      "VX",
+      "2024",
+      "₹ 6,00,000",
+      "45,000kms",
+      "Petrol",
+      "Manual",
+      "",
+      "Sedan",
+      "White",
+      "Single owner, well maintained, company service record.",
+      "https://example.com/front.jpg|https://example.com/side.jpg",
+      "",
+      "",
+    ];
+    const csv = "\uFEFF" + header + "\n" + sample.map(escapeCsv).join(",");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "metro-cars-inventory-template.csv";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast.success("CSV template downloaded.");
+  };
+
   const target = confirmId ? items.find((i) => i.id === confirmId) : null;
 
   return (
@@ -209,6 +243,14 @@ export default function AdminInventory() {
         <div className="mb-5 flex flex-wrap items-center gap-2">
           <button
             type="button"
+            onClick={downloadTemplate}
+            className="inline-flex items-center gap-2 text-sm px-3.5 py-2 rounded-lg border border-neutral-200 bg-white text-neutral-700 font-medium hover:border-neutral-300 hover:bg-neutral-50 transition"
+            aria-label="Download CSV import template"
+          >
+            <FileSpreadsheet className="size-4" aria-hidden="true" /> Download Template
+          </button>
+          <button
+            type="button"
             onClick={onExport}
             className="inline-flex items-center gap-2 text-sm px-3.5 py-2 rounded-lg border border-neutral-200 bg-white text-neutral-700 font-medium hover:border-neutral-300 hover:bg-neutral-50 transition"
           >
@@ -233,7 +275,7 @@ export default function AdminInventory() {
             />
           </label>
           <p className="text-xs text-neutral-500 ml-1">
-            CSV columns: name, brand, model, variant, year, price, km, fuel, trans, color, description, images (pipe-separated URLs).
+            CSV columns: id, name, brand, model, variant, year, price, km, fuel, trans, cat, bodyType, color, description, images (pipe-separated URLs), createdAt, updatedAt.
           </p>
         </div>
 
