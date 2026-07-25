@@ -202,6 +202,7 @@ export function AboutSection() {
 
 /* ---------- Inventory ---------- */
 import { cars } from "@/data/cars";
+import { useAllCars } from "@/lib/allCars";
 const tabs = ["All", "Venue", "WagonR"];
 
 /* ---------- Services ---------- */
