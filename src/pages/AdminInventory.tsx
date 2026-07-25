@@ -10,10 +10,13 @@ import {
   Car as CarIcon,
   Image as ImageIcon,
   AlertTriangle,
+  Download,
+  Upload,
 } from "lucide-react";
 import {
   listInventory,
   deleteInventoryItem,
+  saveInventoryItem,
   type InventoryItem,
 } from "@/lib/inventoryStore";
 import { AdminTopBar } from "./AddInventory";
@@ -27,6 +30,7 @@ export default function AdminInventory() {
   const [query, setQuery] = useState("");
   const [confirmId, setConfirmId] = useState<string | null>(null);
   const [deleting, setDeleting] = useState(false);
+  const [importing, setImporting] = useState(false);
 
   useEffect(() => {
     setItems(listInventory());
@@ -61,6 +65,116 @@ export default function AdminInventory() {
     navigate("/login");
   };
 
+  const CSV_COLS: (keyof InventoryItem)[] = [
+    "id","name","brand","model","variant","year","price","km","fuel","trans",
+    "cat","bodyType","color","description","images","createdAt","updatedAt",
+  ];
+
+  const escapeCsv = (v: string) => {
+    const s = v ?? "";
+    return /[",\n\r]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+
+  const parseCsv = (text: string): string[][] => {
+    const rows: string[][] = [];
+    let row: string[] = [];
+    let cur = "";
+    let inQ = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (inQ) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { cur += '"'; i++; } else { inQ = false; }
+        } else cur += c;
+      } else {
+        if (c === '"') inQ = true;
+        else if (c === ",") { row.push(cur); cur = ""; }
+        else if (c === "\n" || c === "\r") {
+          if (c === "\r" && text[i + 1] === "\n") i++;
+          row.push(cur); cur = ""; rows.push(row); row = [];
+        } else cur += c;
+      }
+    }
+    if (cur.length || row.length) { row.push(cur); rows.push(row); }
+    return rows.filter((r) => r.some((c) => c.trim() !== ""));
+  };
+
+  const onExport = () => {
+    if (items.length === 0) {
+      toast.error("No inventory to export.");
+      return;
+    }
+    const header = CSV_COLS.join(",");
+    const body = items
+      .map((it) =>
+        CSV_COLS.map((k) => {
+          const v = it[k];
+          if (k === "images") return escapeCsv((v as string[] | undefined)?.join("|") ?? "");
+          return escapeCsv(String(v ?? ""));
+        }).join(",")
+      )
+      .join("\n");
+    const csv = "\uFEFF" + header + "\n" + body;
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `metro-cars-inventory-${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast.success(`Exported ${items.length} ${items.length === 1 ? "car" : "cars"} to CSV.`);
+  };
+
+  const onImportFile = async (file: File) => {
+    setImporting(true);
+    try {
+      const text = await file.text();
+      const rows = parseCsv(text.replace(/^\uFEFF/, ""));
+      if (rows.length < 2) throw new Error("CSV is empty.");
+      const headers = rows[0].map((h) => h.trim());
+      let added = 0;
+      let updated = 0;
+      for (let i = 1; i < rows.length; i++) {
+        const r = rows[i];
+        const obj: Record<string, string> = {};
+        headers.forEach((h, idx) => (obj[h] = (r[idx] ?? "").trim()));
+        const existingId = obj.id?.trim() || undefined;
+        const wasExisting =
+          !!existingId && listInventory().some((x) => x.id === existingId);
+        saveInventoryItem({
+          id: existingId,
+          name: obj.name ?? "",
+          brand: obj.brand ?? "",
+          model: obj.model ?? "",
+          variant: obj.variant ?? "",
+          year: obj.year ?? "",
+          price: obj.price ?? "",
+          km: obj.km ?? "",
+          fuel: obj.fuel ?? "",
+          trans: obj.trans ?? "",
+          cat: obj.cat ?? "",
+          bodyType: obj.bodyType ?? "",
+          color: obj.color ?? "",
+          description: obj.description ?? "",
+          images: obj.images ? obj.images.split("|").filter(Boolean) : [],
+        });
+        wasExisting ? updated++ : added++;
+      }
+      setItems(listInventory());
+      toast.success(
+        `Imported CSV: ${added} added${updated ? `, ${updated} updated` : ""}.`
+      );
+    } catch (e) {
+      toast.error(
+        e instanceof Error ? `Import failed: ${e.message}` : "Import failed."
+      );
+    } finally {
+      setImporting(false);
+    }
+  };
+
   const target = confirmId ? items.find((i) => i.id === confirmId) : null;
 
   return (
@@ -90,6 +204,37 @@ export default function AdminInventory() {
           >
             <Plus className="size-4" aria-hidden="true" /> Add new car
           </Link>
+        </div>
+
+        <div className="mb-5 flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={onExport}
+            className="inline-flex items-center gap-2 text-sm px-3.5 py-2 rounded-lg border border-neutral-200 bg-white text-neutral-700 font-medium hover:border-neutral-300 hover:bg-neutral-50 transition"
+          >
+            <Download className="size-4" aria-hidden="true" /> Export CSV
+          </button>
+          <label
+            className={`inline-flex items-center gap-2 text-sm px-3.5 py-2 rounded-lg border border-neutral-200 bg-white text-neutral-700 font-medium hover:border-neutral-300 hover:bg-neutral-50 transition cursor-pointer ${
+              importing ? "opacity-60 pointer-events-none" : ""
+            }`}
+          >
+            <Upload className="size-4" aria-hidden="true" />
+            {importing ? "Importing..." : "Import CSV"}
+            <input
+              type="file"
+              accept=".csv,text/csv"
+              className="sr-only"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                if (f) onImportFile(f);
+                e.target.value = "";
+              }}
+            />
+          </label>
+          <p className="text-xs text-neutral-500 ml-1">
+            CSV columns: name, brand, model, variant, year, price, km, fuel, trans, color, description, images (pipe-separated URLs).
+          </p>
         </div>
 
         <div className="mb-5">
