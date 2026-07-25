@@ -14,7 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      inventory_cars: {
+        Row: {
+          body_type: string
+          brand: string
+          cat: string
+          color: string
+          created_at: string
+          description: string
+          fuel: string
+          id: string
+          images: string[]
+          km: string
+          model: string
+          name: string
+          price: string
+          trans: string
+          updated_at: string
+          variant: string
+          year: string
+        }
+        Insert: {
+          body_type?: string
+          brand?: string
+          cat?: string
+          color?: string
+          created_at?: string
+          description?: string
+          fuel?: string
+          id?: string
+          images?: string[]
+          km?: string
+          model?: string
+          name: string
+          price?: string
+          trans?: string
+          updated_at?: string
+          variant?: string
+          year?: string
+        }
+        Update: {
+          body_type?: string
+          brand?: string
+          cat?: string
+          color?: string
+          created_at?: string
+          description?: string
+          fuel?: string
+          id?: string
+          images?: string[]
+          km?: string
+          model?: string
+          name?: string
+          price?: string
+          trans?: string
+          updated_at?: string
+          variant?: string
+          year?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

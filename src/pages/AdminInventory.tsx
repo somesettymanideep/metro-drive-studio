@@ -15,9 +15,11 @@ import {
   FileSpreadsheet,
 } from "lucide-react";
 import {
-  listInventory,
-  deleteInventoryItem,
-  saveInventoryItem,
+  deleteInventoryItemRemote,
+  listInventoryAdmin,
+  logoutAdmin,
+  saveInventoryItemRemote,
+  syncLocalInventoryToBackend,
   type InventoryItem,
 } from "@/lib/inventoryStore";
 import { AdminTopBar } from "./AddInventory";
@@ -32,10 +34,27 @@ export default function AdminInventory() {
   const [confirmId, setConfirmId] = useState<string | null>(null);
   const [deleting, setDeleting] = useState(false);
   const [importing, setImporting] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setItems(listInventory());
-  }, []);
+    if (!authed) {
+      setLoading(false);
+      return;
+    }
+    const load = async () => {
+      try {
+        const synced = await syncLocalInventoryToBackend();
+        const remote = await listInventoryAdmin();
+        setItems(remote);
+        if (synced) toast.success(`Published ${synced} saved ${synced === 1 ? "car" : "cars"} to the live inventory.`);
+      } catch (error) {
+        toast.error(error instanceof Error ? error.message : "Unable to load inventory.");
+      } finally {
+        setLoading(false);
+      }
+    };
+    void load();
+  }, [authed]);
 
   if (!authed) return <Navigate to="/login" replace />;
 
@@ -53,16 +72,21 @@ export default function AdminInventory() {
   const onDelete = (id: string) => {
     setDeleting(true);
     setTimeout(() => {
-      deleteInventoryItem(id);
-      setItems(listInventory());
+      deleteInventoryItemRemote(id).then(async () => {
+        setItems(await listInventoryAdmin());
+        window.dispatchEvent(new Event("metro-inventory-updated"));
+        toast.success("Car removed from inventory.");
+      }).catch((error) => {
+        toast.error(error instanceof Error ? error.message : "Unable to delete car.");
+      }).finally(() => {
       setDeleting(false);
       setConfirmId(null);
-      toast.success("Car removed from inventory.");
+      });
     }, 250);
   };
 
   const logout = () => {
-    localStorage.removeItem("mc_admin");
+    logoutAdmin();
     navigate("/login");
   };
 
@@ -142,9 +166,8 @@ export default function AdminInventory() {
         const obj: Record<string, string> = {};
         headers.forEach((h, idx) => (obj[h] = (r[idx] ?? "").trim()));
         const existingId = obj.id?.trim() || undefined;
-        const wasExisting =
-          !!existingId && listInventory().some((x) => x.id === existingId);
-        saveInventoryItem({
+        const wasExisting = !!existingId && items.some((x) => x.id === existingId);
+        await saveInventoryItemRemote({
           id: existingId,
           name: obj.name ?? "",
           brand: obj.brand ?? "",
@@ -163,7 +186,8 @@ export default function AdminInventory() {
         });
         wasExisting ? updated++ : added++;
       }
-      setItems(listInventory());
+      setItems(await listInventoryAdmin());
+      window.dispatchEvent(new Event("metro-inventory-updated"));
       toast.success(
         `Imported CSV: ${added} added${updated ? `, ${updated} updated` : ""}.`
       );
@@ -179,6 +203,7 @@ export default function AdminInventory() {
   const downloadTemplate = () => {
     const header = CSV_COLS.join(",");
     const sample = [
+      "",
       "Honda Amaze VX",
       "Honda",
       "Amaze",
@@ -228,7 +253,7 @@ export default function AdminInventory() {
               Manage Inventory
             </h1>
             <p className="text-neutral-500 mt-1 text-sm">
-              {items.length} {items.length === 1 ? "car" : "cars"} saved in this browser.
+              {loading ? "Loading inventory..." : `${items.length} ${items.length === 1 ? "car" : "cars"} published live.`}
             </p>
           </div>
           <Link
@@ -299,7 +324,11 @@ export default function AdminInventory() {
           </div>
         </div>
 
-        {items.length === 0 ? (
+        {loading ? (
+          <div className="bg-white border border-neutral-200 rounded-xl p-10 text-center text-neutral-600">
+            Loading inventory...
+          </div>
+        ) : items.length === 0 ? (
           <EmptyState />
         ) : filtered.length === 0 ? (
           <div className="bg-white border border-neutral-200 rounded-xl p-10 text-center">
@@ -397,8 +426,7 @@ function EmptyState() {
       </div>
       <h2 className="text-lg font-bold text-neutral-900">No cars yet</h2>
       <p className="text-sm text-neutral-500 mt-1 max-w-md mx-auto">
-        Add your first vehicle to start managing your inventory. Everything you save
-        here stays in this browser until you connect a backend.
+        Add your first vehicle to start managing the live website inventory.
       </p>
       <Link
         to="/admin/add-inventory"

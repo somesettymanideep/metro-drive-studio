@@ -16,8 +16,9 @@ import {
 } from "lucide-react";
 import logoUrl from "@/assets/metro-cars-logo.png";
 import {
-  getInventoryItem,
-  saveInventoryItem,
+  getInventoryItemRemote,
+  logoutAdmin,
+  saveInventoryItemRemote,
   type InventoryItem,
 } from "@/lib/inventoryStore";
 
@@ -76,29 +77,35 @@ export default function AddInventory() {
       setLoaded(true);
       return;
     }
-    const existing = getInventoryItem(editId);
-    if (existing) {
-      setForm({
-        name: existing.name,
-        brand: existing.brand,
-        model: existing.model,
-        variant: existing.variant,
-        year: existing.year,
-        price: existing.price,
-        km: existing.km,
-        fuel: existing.fuel || "Petrol",
-        trans: existing.trans || "Manual",
-        cat: existing.cat || "SUV",
-        bodyType: existing.bodyType,
-        color: existing.color,
-        description: existing.description,
-      });
-      setImages(existing.images.map((n) => ({ name: n, url: "" })));
-    } else {
-      toast.error("That inventory item couldn't be found.");
-      navigate("/admin/inventory", { replace: true });
-    }
-    setLoaded(true);
+    getInventoryItemRemote(editId)
+      .then((existing) => {
+        if (existing) {
+          setForm({
+            name: existing.name,
+            brand: existing.brand,
+            model: existing.model,
+            variant: existing.variant,
+            year: existing.year,
+            price: existing.price,
+            km: existing.km,
+            fuel: existing.fuel || "Petrol",
+            trans: existing.trans || "Manual",
+            cat: existing.cat || "SUV",
+            bodyType: existing.bodyType,
+            color: existing.color,
+            description: existing.description,
+          });
+          setImages(existing.images.map((n) => ({ name: n, url: n })));
+        } else {
+          toast.error("That inventory item couldn't be found.");
+          navigate("/admin/inventory", { replace: true });
+        }
+      })
+      .catch((error) => {
+        toast.error(error instanceof Error ? error.message : "Unable to load inventory item.");
+        navigate("/admin/inventory", { replace: true });
+      })
+      .finally(() => setLoaded(true));
   }, [editId, navigate]);
 
   if (!authed) return <Navigate to="/login" replace />;
@@ -115,10 +122,14 @@ export default function AddInventory() {
 
   const onFiles = (e: ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || []);
-    setImages((prev) => [
-      ...prev,
-      ...files.map((file) => ({ name: file.name, url: URL.createObjectURL(file) })),
-    ]);
+    files.forEach((file) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const url = typeof reader.result === "string" ? reader.result : "";
+        if (url) setImages((prev) => [...prev, { name: file.name, url }]);
+      };
+      reader.readAsDataURL(file);
+    });
     e.target.value = "";
   };
 
@@ -126,7 +137,7 @@ export default function AddInventory() {
     setImages((prev) => prev.filter((_, idx) => idx !== i));
 
   const logout = () => {
-    localStorage.removeItem("mc_admin");
+    logoutAdmin();
     navigate("/login");
   };
 
@@ -169,22 +180,28 @@ export default function AddInventory() {
         id?: string;
       } = {
         ...form,
-        images: images.map((i) => i.name),
+        images: images.map((i) => i.url || i.name).filter(Boolean),
       };
       if (editId) payload.id = editId;
-      saveInventoryItem(payload);
-      setSaving(false);
-      setSaved(true);
-      toast.success(editId ? "Car updated successfully." : "Car saved successfully.");
-      if (editId) {
-        setTimeout(() => navigate("/admin/inventory"), 800);
-      } else {
-        setTimeout(() => {
-          setForm(initial);
-          setImages([]);
-          setSaved(false);
-        }, 1600);
-      }
+      saveInventoryItemRemote(payload)
+        .then(() => {
+          window.dispatchEvent(new Event("metro-inventory-updated"));
+          setSaved(true);
+          toast.success(editId ? "Car updated successfully." : "Car saved successfully.");
+          if (editId) {
+            setTimeout(() => navigate("/admin/inventory"), 800);
+          } else {
+            setTimeout(() => {
+              setForm(initial);
+              setImages([]);
+              setSaved(false);
+            }, 1600);
+          }
+        })
+        .catch((error) => {
+          toast.error(error instanceof Error ? error.message : "Unable to save car.");
+        })
+        .finally(() => setSaving(false));
     }, 350);
   };
 
@@ -509,7 +526,7 @@ export default function AddInventory() {
                 </button>
               </div>
               <p className="text-xs text-neutral-500 mt-3 leading-relaxed">
-                Entries are saved locally in this browser. Connect a backend to publish cars live.
+                Entries are saved to the shared inventory and will appear on the public site.
               </p>
             </Card>
           </div>

@@ -3,9 +3,7 @@ import { useNavigate, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Lock, User, Eye, EyeOff, Loader2, AlertCircle } from "lucide-react";
 import logoUrl from "@/assets/metro-cars-logo.png";
-
-const USERNAME = "metrocars";
-const PASSWORD = "Metrocars@@2026";
+import { loginAdmin } from "@/lib/inventoryStore";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -28,11 +26,9 @@ export default function Login() {
       return;
     }
     setLoading(true);
-    setTimeout(() => {
-      if (username.trim() === USERNAME && password === PASSWORD) {
-        localStorage.setItem("mc_admin", "1");
-        navigate("/admin/inventory");
-      } else {
+    loginAdmin(username.trim(), password)
+      .then(() => navigate("/admin/inventory"))
+      .catch(() => {
         const next = attempts + 1;
         setAttempts(next);
         setError(
@@ -41,8 +37,7 @@ export default function Login() {
             : "Those credentials don't match. Please try again."
         );
         setLoading(false);
-      }
-    }, 400);
+      });
   };
 
   const hasError = Boolean(error);

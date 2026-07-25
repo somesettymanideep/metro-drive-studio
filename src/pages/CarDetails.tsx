@@ -15,16 +15,32 @@ import {
   MapPin,
   Award,
 } from "lucide-react";
-import { getAnyCarBySlug } from "@/lib/allCars";
+import { getAnyCarBySlug, getAnyCarBySlugRemote } from "@/lib/allCars";
+import { type Car } from "@/data/cars";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter, StickyContact } from "@/components/MetroSections";
 import bannerImg from "@/assets/car-details-banner.jpg";
 
 export default function CarDetails() {
   const { slug = "" } = useParams();
-  const car = getAnyCarBySlug(slug);
+  const [car, setCar] = useState<Car | undefined>(() => getAnyCarBySlug(slug));
   const gallery = car?.gallery && car.gallery.length ? car.gallery : car ? [car.img] : [];
   const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    let mounted = true;
+    setCar(getAnyCarBySlug(slug));
+    getAnyCarBySlugRemote(slug)
+      .then((found) => {
+        if (mounted) setCar(found);
+      })
+      .catch(() => {
+        if (mounted) setCar(getAnyCarBySlug(slug));
+      });
+    return () => {
+      mounted = false;
+    };
+  }, [slug]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
