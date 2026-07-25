@@ -16,65 +16,65 @@ import wagonr3 from "@/assets/car-wagonr-3.jpg";
 import wagonr4 from "@/assets/car-wagonr-4.jpg";
 import wagonr5 from "@/assets/car-wagonr-5.jpg";
 import venue7 from "@/assets/car-venue-7.jpg";
-import tiagoRear from "@/assets/car-tiago-rear.jpg.asset.json";
-import tiagoSideLeft from "@/assets/car-tiago-side-left.jpg.asset.json";
-import tiagoSideRight from "@/assets/car-tiago-side-right.jpg.asset.json";
-import tiagoInterior from "@/assets/car-tiago-interior.jpg.asset.json";
-import xuvSideRight from "@/assets/car-xuv500-side-right.jpg.asset.json";
-import xuvSideLeft from "@/assets/car-xuv500-side-left.jpg.asset.json";
-import xuvRear from "@/assets/car-xuv500-rear.jpg.asset.json";
-import xuvDashboard from "@/assets/car-xuv500-dashboard.jpg.asset.json";
-import xuvInterior from "@/assets/car-xuv500-interior.jpg.asset.json";
-import amazeFront from "@/assets/honda-amaze-main.webp.asset.json";
-import amazeSide from "@/assets/amaze2-side.jpeg.asset.json";
-import amazeDash from "@/assets/amaze3-dash.jpeg.asset.json";
-import amazeInterior from "@/assets/amaze4-interior.jpeg.asset.json";
-import amazeRearSeats from "@/assets/amaze5-rear-seats.jpeg.asset.json";
-import ecosportSideRight from "@/assets/ecosport2-side-right.jpeg.asset.json";
-import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg.asset.json";
-import ecosportRear from "@/assets/ecosport4-rear.jpeg.asset.json";
-import ecosportDash from "@/assets/ecosport5-dash.jpeg.asset.json";
-import ecosportInterior from "@/assets/ecosport6-interior.jpeg.asset.json";
-import bmwX1SideRight from "@/assets/bmwx1-2-side-right.jpeg.asset.json";
-import bmwX1SideLeft from "@/assets/bmwx1-3-side-left.jpeg.asset.json";
-import bmwX1Rear from "@/assets/bmwx1-4-rear.jpeg.asset.json";
-import bmwX1Dash from "@/assets/bmwx1-5-dash.jpeg.asset.json";
-import bmwX1Interior from "@/assets/bmwx1-6-interior.jpeg.asset.json";
-import xl6Side1 from "@/assets/xl6-side1.jpeg.asset.json";
-import xl6Side2 from "@/assets/xl6-side2.jpeg.asset.json";
-import xl6Interior from "@/assets/xl6-interior.jpeg.asset.json";
-import xl6RearSeats from "@/assets/xl6-rear-seats.jpeg.asset.json";
-import xl6Rear from "@/assets/xl6-rear.jpeg.asset.json";
-import audiQ3Side from "@/assets/audiq3-2-side.jpeg.asset.json";
-import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg.asset.json";
-import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg.asset.json";
-import mgHectorDash from "@/assets/mg-hector-dash.jpeg.asset.json";
-import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg.asset.json";
-import hyryderSideLeft from "@/assets/hyryder-side-left.jpeg.asset.json";
-import hyryderSideRight from "@/assets/hyryder-side-right.jpeg.asset.json";
-import hyryderRear from "@/assets/hyryder-rear.jpeg.asset.json";
-import hyryderInterior from "@/assets/hyryder-interior.jpeg.asset.json";
-import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg.asset.json";
-import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg.asset.json";
-import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.jpeg.asset.json";
-import cretaSide from "@/assets/creta-side.jpeg.asset.json";
-import cretaInterior from "@/assets/creta-interior.jpeg.asset.json";
-import cretaRear from "@/assets/creta-rear.jpeg.asset.json";
-import amaze19Side from "@/assets/amaze2019-side.jpeg.asset.json";
-import amaze19Rear from "@/assets/amaze2019-rear.jpeg.asset.json";
-import amaze19Interior from "@/assets/amaze2019-interior.jpeg.asset.json";
-import amaze19RearSeats from "@/assets/amaze2019-rear-seats.jpeg.asset.json";
-import mgHectorMain from "@/assets/mg-hector-main.png.asset.json";
-import tharRoxxMain from "@/assets/thar-roxx-main.png.asset.json";
-import hyryderMain from "@/assets/hyryder-main.png.asset.json";
-import cretaMain from "@/assets/creta-main.png.asset.json";
-import amaze19Main from "@/assets/amaze19-main.png.asset.json";
-import xuvMain from "@/assets/xuv500-main.png.asset.json";
-import xl6Main from "@/assets/xl6-main.png.asset.json";
-import tiagoMain from "@/assets/tiago-main.png.asset.json";
-import audiQ3Main from "@/assets/audiq3-main.png.asset.json";
-import bmwX1Main from "@/assets/bmwx1-main.png.asset.json";
-import ecosportMain from "@/assets/ecosport-main.png.asset.json";
+import tiagoRear from "@/assets/car-tiago-rear.jpg";
+import tiagoSideLeft from "@/assets/car-tiago-side-left.jpg";
+import tiagoSideRight from "@/assets/car-tiago-side-right.jpg";
+import tiagoInterior from "@/assets/car-tiago-interior.jpg";
+import xuvSideRight from "@/assets/car-xuv500-side-right.jpg";
+import xuvSideLeft from "@/assets/car-xuv500-side-left.jpg";
+import xuvRear from "@/assets/car-xuv500-rear.jpg";
+import xuvDashboard from "@/assets/car-xuv500-dashboard.jpg";
+import xuvInterior from "@/assets/car-xuv500-interior.jpg";
+import amazeFront from "@/assets/honda-amaze-main.webp";
+import amazeSide from "@/assets/amaze2-side.jpeg";
+import amazeDash from "@/assets/amaze3-dash.jpeg";
+import amazeInterior from "@/assets/amaze4-interior.jpeg";
+import amazeRearSeats from "@/assets/amaze5-rear-seats.jpeg";
+import ecosportSideRight from "@/assets/ecosport2-side-right.jpeg";
+import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg";
+import ecosportRear from "@/assets/ecosport4-rear.jpeg";
+import ecosportDash from "@/assets/ecosport5-dash.jpeg";
+import ecosportInterior from "@/assets/ecosport6-interior.jpeg";
+import bmwX1SideRight from "@/assets/bmwx1-2-side-right.jpeg";
+import bmwX1SideLeft from "@/assets/bmwx1-3-side-left.jpeg";
+import bmwX1Rear from "@/assets/bmwx1-4-rear.jpeg";
+import bmwX1Dash from "@/assets/bmwx1-5-dash.jpeg";
+import bmwX1Interior from "@/assets/bmwx1-6-interior.jpeg";
+import xl6Side1 from "@/assets/xl6-side1.jpeg";
+import xl6Side2 from "@/assets/xl6-side2.jpeg";
+import xl6Interior from "@/assets/xl6-interior.jpeg";
+import xl6RearSeats from "@/assets/xl6-rear-seats.jpeg";
+import xl6Rear from "@/assets/xl6-rear.jpeg";
+import audiQ3Side from "@/assets/audiq3-2-side.jpeg";
+import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg";
+import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg";
+import mgHectorDash from "@/assets/mg-hector-dash.jpeg";
+import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg";
+import hyryderSideLeft from "@/assets/hyryder-side-left.jpeg";
+import hyryderSideRight from "@/assets/hyryder-side-right.jpeg";
+import hyryderRear from "@/assets/hyryder-rear.jpeg";
+import hyryderInterior from "@/assets/hyryder-interior.jpeg";
+import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg";
+import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg";
+import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.jpeg";
+import cretaSide from "@/assets/creta-side.jpeg";
+import cretaInterior from "@/assets/creta-interior.jpeg";
+import cretaRear from "@/assets/creta-rear.jpeg";
+import amaze19Side from "@/assets/amaze2019-side.jpeg";
+import amaze19Rear from "@/assets/amaze2019-rear.jpeg";
+import amaze19Interior from "@/assets/amaze2019-interior.jpeg";
+import amaze19RearSeats from "@/assets/amaze2019-rear-seats.jpeg";
+import mgHectorMain from "@/assets/mg-hector-main.png";
+import tharRoxxMain from "@/assets/thar-roxx-main.png";
+import hyryderMain from "@/assets/hyryder-main.png";
+import cretaMain from "@/assets/creta-main.png";
+import amaze19Main from "@/assets/amaze19-main.png";
+import xuvMain from "@/assets/xuv500-main.png";
+import xl6Main from "@/assets/xl6-main.png";
+import tiagoMain from "@/assets/tiago-main.png";
+import audiQ3Main from "@/assets/audiq3-main.png";
+import bmwX1Main from "@/assets/bmwx1-main.png";
+import ecosportMain from "@/assets/ecosport-main.png";
 
 
 
@@ -146,7 +146,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-tiago-ev-xt-lr",
-    img: tiagoMain.url,
+    img: tiagoMain,
     name: "Tata Tiago EV XT Long Range",
     year: 2023,
     fuel: "Electric",
@@ -160,11 +160,11 @@ export const cars: Car[] = [
     bodyType: "Electric Hatchback",
     description:
       "Tata Tiago EV XT Long Range — zero emissions, low running cost and modern EV features. Well maintained with low kilometres.",
-    gallery: [tiagoMain.url, tiagoSideRight.url, tiagoSideLeft.url, tiagoRear.url, tiagoInterior.url],
+    gallery: [tiagoMain, tiagoSideRight, tiagoSideLeft, tiagoRear, tiagoInterior],
   },
   {
     slug: "mahindra-xuv-500-2019",
-    img: xuvMain.url,
+    img: xuvMain,
     name: "Mahindra XUV 500",
     year: 2019,
     fuel: "Diesel",
@@ -178,11 +178,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Powerful Mahindra XUV 500 diesel with manual transmission. Spacious 7-seater SUV ideal for family and highway trips.",
-    gallery: [xuvMain.url, xuvSideRight.url, xuvSideLeft.url, xuvRear.url, xuvDashboard.url, xuvInterior.url],
+    gallery: [xuvMain, xuvSideRight, xuvSideLeft, xuvRear, xuvDashboard, xuvInterior],
   },
   {
     slug: "honda-amaze-2024",
-    img: amazeFront.url,
+    img: amazeFront,
     name: "Honda Amaze",
     year: 2024,
     fuel: "Petrol",
@@ -196,11 +196,11 @@ export const cars: Car[] = [
     bodyType: "Sedan",
     description:
       "Premium Honda Amaze petrol automatic — refined ride, feature-loaded cabin and excellent build quality.",
-    gallery: [amazeFront.url, amazeSide.url, amazeDash.url, amazeInterior.url, amazeRearSeats.url],
+    gallery: [amazeFront, amazeSide, amazeDash, amazeInterior, amazeRearSeats],
   },
   {
     slug: "ford-ecosport-2016",
-    img: ecosportMain.url,
+    img: ecosportMain,
     name: "Ford EcoSport",
     year: 2016,
     fuel: "Petrol",
@@ -214,11 +214,11 @@ export const cars: Car[] = [
     bodyType: "Compact SUV",
     description:
       "Ford EcoSport petrol automatic — solid build, comfortable ride and easy city driving.",
-    gallery: [ecosportMain.url, ecosportSideRight.url, ecosportSideLeft.url, ecosportRear.url, ecosportDash.url, ecosportInterior.url],
+    gallery: [ecosportMain, ecosportSideRight, ecosportSideLeft, ecosportRear, ecosportDash, ecosportInterior],
   },
   {
     slug: "bmw-x1-2017",
-    img: bmwX1Main.url,
+    img: bmwX1Main,
     name: "BMW X1",
     year: 2017,
     fuel: "Diesel",
@@ -232,11 +232,11 @@ export const cars: Car[] = [
     bodyType: "Luxury SUV",
     description:
       "BMW X1 diesel automatic — luxury SUV with premium interiors, powerful performance and iconic BMW handling.",
-    gallery: [bmwX1Main.url, bmwX1SideRight.url, bmwX1SideLeft.url, bmwX1Rear.url, bmwX1Dash.url, bmwX1Interior.url],
+    gallery: [bmwX1Main, bmwX1SideRight, bmwX1SideLeft, bmwX1Rear, bmwX1Dash, bmwX1Interior],
   },
   {
     slug: "maruti-suzuki-xl6-2021",
-    img: xl6Main.url,
+    img: xl6Main,
     name: "Maruti Suzuki XL6",
     year: 2021,
     fuel: "Petrol",
@@ -250,11 +250,11 @@ export const cars: Car[] = [
     bodyType: "MPV",
     description:
       "Maruti Suzuki XL6 petrol manual — premium 6-seater MPV with captain seats and comfortable ride.",
-    gallery: [xl6Main.url, xl6Side1.url, xl6Side2.url, xl6Interior.url, xl6RearSeats.url, xl6Rear.url],
+    gallery: [xl6Main, xl6Side1, xl6Side2, xl6Interior, xl6RearSeats, xl6Rear],
   },
   {
     slug: "audi-q3-2016",
-    img: audiQ3Main.url,
+    img: audiQ3Main,
     name: "Audi Q3",
     year: 2016,
     fuel: "Diesel",
@@ -268,11 +268,11 @@ export const cars: Car[] = [
     bodyType: "Luxury SUV",
     description:
       "Audi Q3 diesel automatic — refined luxury SUV with quattro capability, premium interiors and effortless power delivery.",
-    gallery: [audiQ3Main.url, audiQ3Side.url, audiQ3Dash.url, audiQ3RearSeats.url],
+    gallery: [audiQ3Main, audiQ3Side, audiQ3Dash, audiQ3RearSeats],
   },
   {
     slug: "mg-hector-2021",
-    img: mgHectorMain.url,
+    img: mgHectorMain,
     name: "MG Hector",
     year: 2021,
     fuel: "Diesel",
@@ -287,11 +287,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Premium MG Hector diesel manual — spacious SUV with modern features, comfortable cabin and powerful performance.",
-    gallery: [mgHectorMain.url, mgHectorDash.url, mgHectorRearSeats.url],
+    gallery: [mgHectorMain, mgHectorDash, mgHectorRearSeats],
   },
   {
     slug: "toyota-urban-cruiser-hyryder-2024",
-    img: hyryderMain.url,
+    img: hyryderMain,
     name: "Toyota Urban Cruiser Hyryder",
     year: 2024,
     fuel: "Diesel",
@@ -306,11 +306,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Toyota Urban Cruiser Hyryder diesel automatic — feature-loaded SUV with refined ride quality and premium comfort.",
-    gallery: [hyryderMain.url, hyryderSideLeft.url, hyryderSideRight.url, hyryderRear.url, hyryderInterior.url],
+    gallery: [hyryderMain, hyryderSideLeft, hyryderSideRight, hyryderRear, hyryderInterior],
   },
   {
     slug: "thar-roxx-2024",
-    img: tharRoxxMain.url,
+    img: tharRoxxMain,
     name: "Mahindra Thar Roxx",
     year: 2024,
     fuel: "Diesel",
@@ -325,11 +325,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Mahindra Thar Roxx diesel automatic with sunroof — iconic off-road capability paired with modern features and open-air driving.",
-    gallery: [tharRoxxMain.url, tharRoxxSideRight.url, tharRoxxSideLeft.url, tharRoxxRearSeats.url],
+    gallery: [tharRoxxMain, tharRoxxSideRight, tharRoxxSideLeft, tharRoxxRearSeats],
   },
   {
     slug: "hyundai-creta-2022",
-    img: cretaMain.url,
+    img: cretaMain,
     name: "Hyundai Creta",
     year: 2022,
     fuel: "Petrol",
@@ -344,11 +344,11 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
-    gallery: [cretaMain.url, cretaSide.url, cretaInterior.url, cretaRear.url],
+    gallery: [cretaMain, cretaSide, cretaInterior, cretaRear],
   },
   {
     slug: "honda-amaze-2019",
-    img: amaze19Main.url,
+    img: amaze19Main,
     name: "Honda Amaze",
     year: 2019,
     fuel: "Petrol",
@@ -363,7 +363,7 @@ export const cars: Car[] = [
     bodyType: "Sedan",
     description:
       "Honda Amaze VX petrol manual — well-maintained sedan with spacious cabin, comfortable ride and excellent fuel efficiency.",
-    gallery: [amaze19Main.url, amaze19Side.url, amaze19Rear.url, amaze19Interior.url, amaze19RearSeats.url],
+    gallery: [amaze19Main, amaze19Side, amaze19Rear, amaze19Interior, amaze19RearSeats],
   },
 ];
 
