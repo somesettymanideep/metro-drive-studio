@@ -9,6 +9,8 @@ import RefundPolicy from "./pages/RefundPolicy";
 import CarDetails from "./pages/CarDetails";
 import Product from "./pages/Product";
 import Cars from "./pages/Cars";
+import Login from "./pages/Login";
+import AddInventory from "./pages/AddInventory";
 import NotFound from "./pages/NotFound";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -27,6 +29,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/car/:slug" element={<CarDetails />} />
           <Route path="/product" element={<Product />} />
           <Route path="/cars" element={<Cars />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin/add-inventory" element={<AddInventory />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Toaster />
