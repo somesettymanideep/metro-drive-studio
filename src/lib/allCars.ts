@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { cars as staticCars, type Car } from "@/data/cars";
-import { listInventory, type InventoryItem } from "@/lib/inventoryStore";
+import {
+  listInventory,
+  listInventoryRemote,
+  type InventoryItem,
+} from "@/lib/inventoryStore";
 
 const slugify = (s: string) =>
   s
@@ -24,7 +28,7 @@ export function inventoryToCar(item: InventoryItem): Car {
       ? item.km
       : `${item.km} km`
     : "";
-  const primary = item.images?.[0] ?? "";
+  const primary = item.images?.[0] || staticCars[0]?.img || "";
   const nameParts = item.name || `${item.brand} ${item.model}`.trim();
   return {
     slug: `inv-${slugify(nameParts || item.id)}-${item.id.slice(-6)}`,
@@ -47,25 +51,46 @@ export function inventoryToCar(item: InventoryItem): Car {
 }
 
 export function getAllCars(): Car[] {
-  const inv = listInventory()
-    .filter((i) => (i.images?.[0] || "").length > 0)
-    .map(inventoryToCar);
+  const inv = listInventory().map(inventoryToCar);
   return [...inv, ...staticCars];
+}
+
+export async function getAllCarsRemote(): Promise<Car[]> {
+  const inv = await listInventoryRemote();
+  return [...inv.map(inventoryToCar), ...staticCars];
 }
 
 export function getAnyCarBySlug(slug: string): Car | undefined {
   return getAllCars().find((c) => c.slug === slug);
 }
 
+export async function getAnyCarBySlugRemote(slug: string): Promise<Car | undefined> {
+  const cars = await getAllCarsRemote();
+  return cars.find((c) => c.slug === slug) ?? getAnyCarBySlug(slug);
+}
+
 export function useAllCars(): Car[] {
   const [list, setList] = useState<Car[]>(() => getAllCars());
   useEffect(() => {
-    const reload = () => setList(getAllCars());
+    let mounted = true;
+    const reload = async () => {
+      setList(getAllCars());
+      try {
+        const remote = await getAllCarsRemote();
+        if (mounted) setList(remote);
+      } catch {
+        if (mounted) setList(getAllCars());
+      }
+    };
+    void reload();
     window.addEventListener("storage", reload);
     window.addEventListener("focus", reload);
+    window.addEventListener("metro-inventory-updated", reload);
     return () => {
+      mounted = false;
       window.removeEventListener("storage", reload);
       window.removeEventListener("focus", reload);
+      window.removeEventListener("metro-inventory-updated", reload);
     };
   }, []);
   return list;
