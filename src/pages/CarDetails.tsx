@@ -15,14 +15,14 @@ import {
   MapPin,
   Award,
 } from "lucide-react";
-import { getCarBySlug } from "@/data/cars";
+import { getAnyCarBySlug } from "@/lib/allCars";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter, StickyContact } from "@/components/MetroSections";
 import bannerImg from "@/assets/car-details-banner.jpg";
 
 export default function CarDetails() {
   const { slug = "" } = useParams();
-  const car = getCarBySlug(slug);
+  const car = getAnyCarBySlug(slug);
   const gallery = car?.gallery && car.gallery.length ? car.gallery : car ? [car.img] : [];
   const [active, setActive] = useState(0);
 
