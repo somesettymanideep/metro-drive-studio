@@ -37,6 +37,10 @@ export default function AdminInventory() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!authed) {
+      setLoading(false);
+      return;
+    }
     const load = async () => {
       try {
         const synced = await syncLocalInventoryToBackend();
@@ -50,7 +54,7 @@ export default function AdminInventory() {
       }
     };
     void load();
-  }, []);
+  }, [authed]);
 
   if (!authed) return <Navigate to="/login" replace />;
 
@@ -199,6 +203,7 @@ export default function AdminInventory() {
   const downloadTemplate = () => {
     const header = CSV_COLS.join(",");
     const sample = [
+      "",
       "Honda Amaze VX",
       "Honda",
       "Amaze",
