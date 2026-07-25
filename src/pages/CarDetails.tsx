@@ -129,9 +129,9 @@ export default function CarDetails() {
       <main className="pt-10 lg:pt-14 pb-24">
         <div className="container mx-auto px-4 lg:px-8">
 
-          <div className="grid lg:grid-cols-5 gap-10">
+          <div className="grid lg:grid-cols-5 gap-6 lg:gap-10">
             {/* Gallery */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 min-w-0">
               <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-neutral-900 to-neutral-700 aspect-[4/3]">
                 <img
                   src={gallery[active]}
@@ -208,8 +208,8 @@ export default function CarDetails() {
             </div>
 
             {/* Sidebar */}
-            <aside className="lg:col-span-2">
-              <div className="bg-white rounded-3xl p-7 border border-black/5 shadow-sm lg:sticky lg:top-28">
+            <aside className="lg:col-span-2 min-w-0">
+              <div className="bg-white rounded-3xl p-5 sm:p-7 border border-black/5 shadow-sm lg:sticky lg:top-28">
                 <div className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--brand-orange)]">
                   {car.brand ?? car.cat}
                 </div>
