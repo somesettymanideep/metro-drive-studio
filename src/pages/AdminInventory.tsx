@@ -176,6 +176,39 @@ export default function AdminInventory() {
     }
   };
 
+  const downloadTemplate = () => {
+    const header = CSV_COLS.join(",");
+    const sample = [
+      "Honda Amaze VX",
+      "Honda",
+      "Amaze",
+      "VX",
+      "2024",
+      "₹ 6,00,000",
+      "45,000kms",
+      "Petrol",
+      "Manual",
+      "",
+      "Sedan",
+      "White",
+      "Single owner, well maintained, company service record.",
+      "https://example.com/front.jpg|https://example.com/side.jpg",
+      "",
+      "",
+    ];
+    const csv = "\uFEFF" + header + "\n" + sample.map(escapeCsv).join(",");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "metro-cars-inventory-template.csv";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast.success("CSV template downloaded.");
+  };
+
   const target = confirmId ? items.find((i) => i.id === confirmId) : null;
 
   return (
