@@ -1387,7 +1387,7 @@ export function MetroFooter() {
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-t from-black via-black/80 to-black/60" />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <img src={logoUrl} alt="Metro Cars" className="h-24 lg:h-28 w-auto mb-4" />
             <p className="text-white/60 text-sm leading-relaxed">
@@ -1397,9 +1397,35 @@ export function MetroFooter() {
           <div>
             <h4 className="font-extrabold uppercase tracking-wider mb-5 text-[var(--brand-orange)]">Quick Links</h4>
             <ul className="space-y-2.5 text-white/70">
-              {["Home", "About Us", "Inventory", "Why Choose Us", "Testimonials", "Contact"].map((l) => (
-                <li key={l}><a href="#" className="hover:text-[var(--brand-orange)] transition-colors">{l}</a></li>
+              {[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/#about" },
+                { label: "Inventory", href: "/cars" },
+                { label: "Why Choose Us", href: "/#why-choose-us" },
+                { label: "Testimonials", href: "/#testimonials" },
+                { label: "Contact", href: "/#contact" },
+              ].map((l) => (
+                <li key={l.label}>
+                  <Link to={l.href} className="hover:text-[var(--brand-orange)] transition-colors">
+                    {l.label}
+                  </Link>
+                </li>
               ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-extrabold uppercase tracking-wider mb-5 text-[var(--brand-orange)]">Information</h4>
+            <ul className="space-y-2.5 text-white/70">
+              <li>
+                <Link to="/privacy-policy" className="hover:text-[var(--brand-orange)] transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/refund-policy" className="hover:text-[var(--brand-orange)] transition-colors">
+                  Refund Policy
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
