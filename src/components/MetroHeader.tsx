@@ -33,12 +33,16 @@ export function MetroHeader() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      setActiveSection(sectionId);
-    }
     setOpen(false);
+    setActiveSection(sectionId);
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      navigate(`/#${sectionId}`);
+    }
   };
 
   useEffect(() => {
