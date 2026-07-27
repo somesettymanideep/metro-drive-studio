@@ -55,6 +55,10 @@ import audiQ3Side2 from "@/assets/audiq3-side-2.jpeg";
 import audiQ3Rear2 from "@/assets/audiq3-rear-2.jpeg";
 import audiQ3Sunroof from "@/assets/audiq3-sunroof.jpeg";
 import mgHectorDash from "@/assets/mg-hector-dash.jpeg";
+import mgHectorSide2 from "@/assets/mg-hector-side-2.jpeg";
+import mgHectorRear2 from "@/assets/mg-hector-rear-2.jpeg";
+import mgHectorSunroof from "@/assets/mg-hector-sunroof.jpeg";
+import mgHectorExtra from "@/assets/mg-hector-extra.jpeg";
 import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg";
 import hyryderSideLeft from "@/assets/hyryder-side-left.jpeg";
 import hyryderSideRight from "@/assets/hyryder-side-right.jpeg";
@@ -300,7 +304,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Premium MG Hector diesel manual — spacious SUV with modern features, comfortable cabin and powerful performance.",
-    gallery: [mgHectorMain, mgHectorDash, mgHectorRearSeats],
+    gallery: [mgHectorMain, mgHectorSide2, mgHectorRear2, mgHectorSunroof, mgHectorExtra, mgHectorDash, mgHectorRearSeats],
   },
   {
     slug: "toyota-urban-cruiser-hyryder-2024",
