@@ -38,6 +38,7 @@ import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg";
 import ecosportRear from "@/assets/ecosport4-rear.jpeg";
 import ecosportDash from "@/assets/ecosport5-dash.jpeg";
 import ecosportInterior from "@/assets/ecosport6-interior.jpeg";
+import ecosportRearSeats from "@/assets/ecosport-rear-seats.jpeg";
 import bmwX1SideRight from "@/assets/bmwx1-2-side-right.jpeg";
 import bmwX1SideLeft from "@/assets/bmwx1-3-side-left.jpeg";
 import bmwX1Rear from "@/assets/bmwx1-4-rear.jpeg";
@@ -232,7 +233,7 @@ export const cars: Car[] = [
     bodyType: "Compact SUV",
     description:
       "Ford EcoSport petrol automatic — solid build, comfortable ride and easy city driving.",
-    gallery: [ecosportMain, ecosportSideRight, ecosportSideLeft, ecosportRear, ecosportDash, ecosportInterior],
+    gallery: [ecosportMain, ecosportSideRight, ecosportSideLeft, ecosportRear, ecosportDash, ecosportInterior, ecosportRearSeats],
   },
   {
     slug: "bmw-x1-2017",
