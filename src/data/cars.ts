@@ -64,6 +64,9 @@ import hyryderInterior2 from "@/assets/hyryder-interior-2.jpeg";
 import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg";
 import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg";
 import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.jpeg";
+import tharRoxxRear from "@/assets/thar-roxx-rear.jpeg";
+import tharRoxxDashboard from "@/assets/thar-roxx-dashboard.jpeg";
+import tharRoxxAirbag from "@/assets/thar-roxx-airbag.jpeg";
 import cretaSide from "@/assets/creta-side.jpeg";
 import cretaInterior from "@/assets/creta-interior.jpeg";
 import cretaRear from "@/assets/creta-rear.jpeg";
@@ -332,7 +335,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Mahindra Thar Roxx diesel automatic with sunroof — iconic off-road capability paired with modern features and open-air driving.",
-    gallery: [tharRoxxMain, tharRoxxSideRight, tharRoxxSideLeft, tharRoxxRearSeats],
+    gallery: [tharRoxxMain, tharRoxxSideRight, tharRoxxSideLeft, tharRoxxRearSeats, tharRoxxRear, tharRoxxDashboard, tharRoxxAirbag],
   },
   {
     slug: "hyundai-creta-2022",
