@@ -51,6 +51,9 @@ import xl6Rear from "@/assets/xl6-rear.jpeg";
 import audiQ3Side from "@/assets/audiq3-2-side.jpeg";
 import audiQ3Dash from "@/assets/audiq3-3-dash.jpeg";
 import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.jpeg";
+import audiQ3Side2 from "@/assets/audiq3-side-2.jpeg";
+import audiQ3Rear2 from "@/assets/audiq3-rear-2.jpeg";
+import audiQ3Sunroof from "@/assets/audiq3-sunroof.jpeg";
 import mgHectorDash from "@/assets/mg-hector-dash.jpeg";
 import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.jpeg";
 import hyryderSideLeft from "@/assets/hyryder-side-left.jpeg";
@@ -271,7 +274,7 @@ export const cars: Car[] = [
     bodyType: "Luxury SUV",
     description:
       "Audi Q3 diesel automatic — refined luxury SUV with quattro capability, premium interiors and effortless power delivery.",
-    gallery: [audiQ3Main, audiQ3Side, audiQ3Dash, audiQ3RearSeats],
+    gallery: [audiQ3Main, audiQ3Side2, audiQ3Rear2, audiQ3Sunroof, audiQ3Side, audiQ3Dash, audiQ3RearSeats],
   },
   {
     slug: "mg-hector-2021",
