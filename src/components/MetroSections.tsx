@@ -261,7 +261,7 @@ export function FounderSection() {
           <div className="absolute -inset-4 bg-[var(--brand-orange)]/10 rounded-3xl rotate-2" />
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-neutral-900">
             <img
-              src={founderImg}
+              src={founderImg.url}
               alt="Metro Cars Founder"
               loading="lazy"
               width={912}
