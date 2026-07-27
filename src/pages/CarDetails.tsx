@@ -26,6 +26,7 @@ export default function CarDetails() {
   const [car, setCar] = useState<Car | undefined>(() => getAnyCarBySlug(slug));
   const gallery = car?.gallery && car.gallery.length ? car.gallery : car ? [car.img] : [];
   const [active, setActive] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     let mounted = true;
@@ -47,12 +48,13 @@ export default function CarDetails() {
   }, [car]);
 
   useEffect(() => {
-    if (gallery.length <= 1) return;
+    if (gallery.length <= 1 || isPaused) return;
     const id = setInterval(() => {
       setActive((prev) => (prev + 1) % gallery.length);
     }, 3000);
     return () => clearInterval(id);
-  }, [gallery.length]);
+  }, [gallery.length, isPaused]);
+
 
 
   if (!car) {
@@ -132,7 +134,11 @@ export default function CarDetails() {
           <div className="grid lg:grid-cols-5 gap-6 lg:gap-10">
             {/* Gallery */}
             <div className="lg:col-span-3 min-w-0">
-              <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-neutral-900 to-neutral-700 aspect-[4/3]">
+              <div
+                className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-neutral-900 to-neutral-700 aspect-[4/3]"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+              >
                 <img
                   src={gallery[active]}
                   alt={car.name}
@@ -147,6 +153,7 @@ export default function CarDetails() {
 
 
               </div>
+
 
               {gallery.length > 1 && (
                 <div className="flex gap-3 mt-4 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-thin">
