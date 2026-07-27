@@ -70,7 +70,6 @@ export function MetroHeader() {
     return () => window.removeEventListener("scroll", handleIntersection);
   }, []);
 
-
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
