@@ -19,7 +19,7 @@ import { getAnyCarBySlug, getAnyCarBySlugRemote } from "@/lib/allCars";
 import { type Car } from "@/data/cars";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter, StickyContact } from "@/components/MetroSections";
-import bannerImg from "@/assets/car-details-banner.jpg";
+import bannerImg from "@/assets/car-details-banner.webp";
 
 export default function CarDetails() {
   const { slug = "" } = useParams();

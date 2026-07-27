@@ -36,25 +36,25 @@ import {
   VolumeX,
 } from "lucide-react";
 import showroom from "@/assets/showroom.webp";
-import founderImg from "@/assets/founder-portrait.png";
+import founderImg from "@/assets/founder-portrait.webp";
 
-import carSedan from "@/assets/car-sedan.jpg";
-import soldBaleno from "@/assets/happy-customers/sold-baleno.jpg";
-import soldNexon from "@/assets/happy-customers/sold-nexon.jpg";
-import soldCreta from "@/assets/happy-customers/sold-creta.jpg";
-import soldInnova from "@/assets/happy-customers/sold-innova.jpg";
-import soldFortuner from "@/assets/happy-customers/sold-fortuner.jpg";
-import soldAlto from "@/assets/happy-customers/sold-alto.jpg";
-import soldGrandi10 from "@/assets/happy-customers/sold-grandi10.jpg";
-import carSuv from "@/assets/car-suv.jpg";
-import carHatch from "@/assets/car-hatch.jpg";
-import carLuxury from "@/assets/car-luxury.jpg";
-import carInnova from "@/assets/car-innova.jpg";
-import carKia from "@/assets/car-kia.jpg";
-import logoUrl from "@/assets/metro-cars-logo.png";
-import ctaPremium from "@/assets/cta-premium.jpg";
-import faqSupportUrl from "@/assets/faq-support.jpg";
-import footerBgUrl from "@/assets/footer-bg.jpg";
+import carSedan from "@/assets/car-sedan.webp";
+import soldBaleno from "@/assets/happy-customers/sold-baleno.webp";
+import soldNexon from "@/assets/happy-customers/sold-nexon.webp";
+import soldCreta from "@/assets/happy-customers/sold-creta.webp";
+import soldInnova from "@/assets/happy-customers/sold-innova.webp";
+import soldFortuner from "@/assets/happy-customers/sold-fortuner.webp";
+import soldAlto from "@/assets/happy-customers/sold-alto.webp";
+import soldGrandi10 from "@/assets/happy-customers/sold-grandi10.webp";
+import carSuv from "@/assets/car-suv.webp";
+import carHatch from "@/assets/car-hatch.webp";
+import carLuxury from "@/assets/car-luxury.webp";
+import carInnova from "@/assets/car-innova.webp";
+import carKia from "@/assets/car-kia.webp";
+import logoUrl from "@/assets/metro-cars-logo.webp";
+import ctaPremium from "@/assets/cta-premium.webp";
+import faqSupportUrl from "@/assets/faq-support.webp";
+import footerBgUrl from "@/assets/footer-bg.webp";
 
 /* ---------- Counter ---------- */
 function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {

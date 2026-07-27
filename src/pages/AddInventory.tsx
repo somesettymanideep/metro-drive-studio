@@ -14,7 +14,7 @@ import {
   AlertCircle,
   List,
 } from "lucide-react";
-import logoUrl from "@/assets/metro-cars-logo.png";
+import logoUrl from "@/assets/metro-cars-logo.webp";
 import {
   getInventoryItemRemote,
   isAdminAuthed,

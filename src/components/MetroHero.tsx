@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroSedan from "@/assets/hero-sedan.jpg";
-import heroSuv from "@/assets/hero-suv.jpg";
-import heroHandover from "@/assets/hero-handover.jpg";
+import heroSedan from "@/assets/hero-sedan.webp";
+import heroSuv from "@/assets/hero-suv.webp";
+import heroHandover from "@/assets/hero-handover.webp";
 
 const slides = [
   {

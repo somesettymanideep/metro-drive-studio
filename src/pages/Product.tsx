@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter, StickyContact } from "@/components/MetroSections";
-import fortunerImg from "@/assets/featured-fortuner.png";
+import fortunerImg from "@/assets/featured-fortuner.webp";
 
 const specs = [
   { icon: Calendar, label: "2024 Model" },

@@ -6,7 +6,7 @@ import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter } from "@/components/MetroSections";
 import { type Car } from "@/data/cars";
 import { useAllCars } from "@/lib/allCars";
-import bannerImg from "@/assets/cars-page-banner.jpg";
+import bannerImg from "@/assets/cars-page-banner.webp";
 
 const parsePrice = (p: string) => {
   // e.g. "₹7.80 L" -> 780000

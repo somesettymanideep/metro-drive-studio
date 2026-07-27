@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, Menu, X } from "lucide-react";
-import logoUrl from "@/assets/metro-cars-logo.png";
+import logoUrl from "@/assets/metro-cars-logo.webp";
 
 const links = [
   { href: "#home", label: "Home", id: "home" },
