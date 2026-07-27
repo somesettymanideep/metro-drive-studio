@@ -36,7 +36,7 @@ import {
   VolumeX,
 } from "lucide-react";
 import showroom from "@/assets/showroom.webp";
-import founderImg from "@/assets/founder.webp";
+import founderImg from "@/assets/founder-new.png.asset.json";
 
 import carSedan from "@/assets/car-sedan.jpg";
 import soldBaleno from "@/assets/happy-customers/sold-baleno.jpg";
@@ -261,7 +261,7 @@ export function FounderSection() {
           <div className="absolute -inset-4 bg-[var(--brand-orange)]/10 rounded-3xl rotate-2" />
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-neutral-900">
             <img
-              src={founderImg}
+              src={founderImg.url}
               alt="Metro Cars Founder"
               loading="lazy"
               width={912}
