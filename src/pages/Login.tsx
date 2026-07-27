@@ -2,7 +2,7 @@ import { useState, FormEvent } from "react";
 import { useNavigate, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Lock, User, Eye, EyeOff, Loader2, AlertCircle } from "lucide-react";
-import logoUrl from "@/assets/metro-cars-logo.png";
+import logoUrl from "@/assets/metro-cars-logo.webp";
 import { isAdminAuthed, loginAdmin } from "@/lib/inventoryStore";
 
 export default function Login() {
@@ -51,7 +51,7 @@ export default function Login() {
 
       <div className="w-full max-w-md">
         <div className="flex flex-col items-center mb-6">
-          <img
+          <img loading="lazy" decoding="async"
             src={logoUrl}
             alt="Metro Cars"
             className="h-20 w-auto drop-shadow-[0_0_25px_rgba(255,90,0,0.45)]"

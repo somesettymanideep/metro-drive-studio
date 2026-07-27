@@ -19,7 +19,7 @@ import { getAnyCarBySlug, getAnyCarBySlugRemote } from "@/lib/allCars";
 import { type Car } from "@/data/cars";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter, StickyContact } from "@/components/MetroSections";
-import bannerImg from "@/assets/car-details-banner.jpg";
+import bannerImg from "@/assets/car-details-banner.webp";
 
 export default function CarDetails() {
   const { slug = "" } = useParams();
@@ -102,7 +102,7 @@ export default function CarDetails() {
 
       {/* Sub-page banner */}
       <section className="relative pt-28 lg:pt-32 h-[280px] lg:h-[360px] overflow-hidden">
-        <img
+        <img loading="lazy" decoding="async"
           src={bannerImg}
           alt="Metro Cars showroom banner"
           width={1920}
@@ -139,7 +139,7 @@ export default function CarDetails() {
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={gallery[active]}
                   alt={car.name}
                   className="w-full h-full object-cover"
@@ -165,7 +165,7 @@ export default function CarDetails() {
                         active === i ? "border-[var(--brand-orange)]" : "border-transparent opacity-70 hover:opacity-100"
                       }`}
                     >
-                      <img src={g} alt="" className="w-full h-full object-cover" />
+                      <img loading="lazy" decoding="async" src={g} alt="" className="w-full h-full object-cover" />
                     </button>
                   ))}
                 </div>

@@ -14,7 +14,7 @@ import {
   AlertCircle,
   List,
 } from "lucide-react";
-import logoUrl from "@/assets/metro-cars-logo.png";
+import logoUrl from "@/assets/metro-cars-logo.webp";
 import {
   getInventoryItemRemote,
   isAdminAuthed,
@@ -453,7 +453,7 @@ export default function AddInventory() {
                       className="relative aspect-square rounded-lg overflow-hidden bg-neutral-100 border border-neutral-200 group"
                     >
                       {img.url ? (
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={img.url}
                           alt={`Uploaded image ${i + 1}`}
                           className="w-full h-full object-cover"
@@ -600,7 +600,7 @@ function AdminTopBar({ onLogout }: { onLogout: () => void }) {
     <header className="sticky top-0 z-40 bg-black text-white border-b border-white/10">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <img src={logoUrl} alt="Metro Cars" className="h-10 w-auto" />
+          <img loading="lazy" decoding="async" src={logoUrl} alt="Metro Cars" className="h-10 w-auto" />
           <div className="hidden sm:block">
             <p className="text-xs uppercase tracking-widest text-white/50">Admin</p>
             <p className="text-sm font-semibold">Inventory Manager</p>

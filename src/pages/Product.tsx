@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter, StickyContact } from "@/components/MetroSections";
-import fortunerImg from "@/assets/featured-fortuner.png";
+import fortunerImg from "@/assets/featured-fortuner.webp";
 
 const specs = [
   { icon: Calendar, label: "2024 Model" },
@@ -249,7 +249,7 @@ export default function Product() {
                 style={{ y: carY, rotateX: springRX, rotateY: springRY, transformStyle: "preserve-3d" }}
                 className="relative"
               >
-                <img
+                <img decoding="async"
                   src={fortunerImg}
                   alt="Toyota Fortuner Legender 2024 featured car"
                   width={1600}

@@ -6,7 +6,7 @@ import { MetroHeader } from "@/components/MetroHeader";
 import { MetroFooter } from "@/components/MetroSections";
 import { type Car } from "@/data/cars";
 import { useAllCars } from "@/lib/allCars";
-import bannerImg from "@/assets/cars-page-banner.jpg";
+import bannerImg from "@/assets/cars-page-banner.webp";
 
 const parsePrice = (p: string) => {
   // e.g. "₹7.80 L" -> 780000
@@ -125,7 +125,7 @@ export default function Cars() {
 
       {/* Sub-page banner */}
       <section className="relative pt-28 lg:pt-32 h-[280px] lg:h-[360px] overflow-hidden">
-        <img
+        <img decoding="async"
           src={bannerImg}
           alt="Metro Cars Vijayawada premium inventory showroom"
           width={1920}
