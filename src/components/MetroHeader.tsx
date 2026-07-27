@@ -41,7 +41,7 @@ export function MetroHeader() {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     } else {
-      navigate(`/#${sectionId}`);
+      navigate(`/?section=${sectionId}`);
     }
   };
 
