@@ -81,6 +81,7 @@ import amaze19Side from "@/assets/amaze2019-side.jpeg";
 import amaze19Rear from "@/assets/amaze2019-rear.jpeg";
 import amaze19Interior from "@/assets/amaze2019-interior.jpeg";
 import amaze19RearSeats from "@/assets/amaze2019-rear-seats.jpeg";
+import amaze19Dash2 from "@/assets/amaze2019-dashboard-2.jpeg";
 import mgHectorMain from "@/assets/mg-hector-main.png";
 import tharRoxxMain from "@/assets/thar-roxx-main.png";
 import hyryderMain from "@/assets/hyryder-main.png";
@@ -380,7 +381,7 @@ export const cars: Car[] = [
     bodyType: "Sedan",
     description:
       "Honda Amaze VX petrol manual — well-maintained sedan with spacious cabin, comfortable ride and excellent fuel efficiency.",
-    gallery: [amaze19Main, amaze19Side, amaze19Rear, amaze19Interior, amaze19RearSeats],
+    gallery: [amaze19Main, amaze19Side, amaze19Rear, amaze19Interior, amaze19RearSeats, amaze19Dash2],
   },
 ];
 
