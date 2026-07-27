@@ -31,6 +31,8 @@ import amazeSide from "@/assets/amaze2-side.jpeg";
 import amazeDash from "@/assets/amaze3-dash.jpeg";
 import amazeInterior from "@/assets/amaze4-interior.jpeg";
 import amazeRearSeats from "@/assets/amaze5-rear-seats.jpeg";
+import amaze2024Side2 from "@/assets/amaze2024-side-2.jpeg";
+import amaze2024Rear2 from "@/assets/amaze2024-rear-2.jpeg";
 import ecosportSideRight from "@/assets/ecosport2-side-right.jpeg";
 import ecosportSideLeft from "@/assets/ecosport3-side-left.jpeg";
 import ecosportRear from "@/assets/ecosport4-rear.jpeg";
@@ -197,7 +199,7 @@ export const cars: Car[] = [
     bodyType: "Sedan",
     description:
       "Premium Honda Amaze petrol automatic — refined ride, feature-loaded cabin and excellent build quality.",
-    gallery: [amazeFront, amazeSide, amazeDash, amazeInterior, amazeRearSeats],
+    gallery: [amazeFront, amaze2024Side2, amaze2024Rear2, amazeSide, amazeDash, amazeInterior, amazeRearSeats],
   },
   {
     slug: "ford-ecosport-2016",
