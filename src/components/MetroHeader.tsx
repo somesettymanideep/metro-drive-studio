@@ -70,6 +70,18 @@ export function MetroHeader() {
     return () => window.removeEventListener("scroll", handleIntersection);
   }, []);
 
+  useEffect(() => {
+    if (location.pathname === "/" && location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  }, [location.pathname, location.hash]);
+
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
