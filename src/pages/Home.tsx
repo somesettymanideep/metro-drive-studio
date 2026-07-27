@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { MetroHeader } from "@/components/MetroHeader";
 import { MetroHero } from "@/components/MetroHero";
@@ -24,6 +25,23 @@ export default function Home() {
   const title = "Metro Cars Vijayawada | Buy Certified Pre-Owned Cars";
   const description =
     "Vijayawada's trusted used car showroom. Browse certified pre-owned sedans, SUVs, hatchbacks and luxury cars with transparent pricing, verified history and easy finance.";
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.hash.split("?")[1] || "");
+    const id = params.get("section");
+    if (id) {
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+      params.delete("section");
+      const base = window.location.hash.split("?")[0] || "#/";
+      window.history.replaceState(null, "", `${base}${params.toString() ? "?" + params.toString() : ""}`);
+    }
+  }, []);
+
   return (
     <main className="min-h-screen bg-white">
       <Helmet>
