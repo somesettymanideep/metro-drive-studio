@@ -70,21 +70,6 @@ export function MetroHeader() {
     return () => window.removeEventListener("scroll", handleIntersection);
   }, []);
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.hash.split("?")[1] || "");
-    const id = params.get("section");
-    if (location.pathname === "/" && id) {
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
-        params.delete("section");
-        const base = window.location.hash.split("?")[0] || "#/";
-        window.history.replaceState(null, "", `${base}${params.toString() ? "?" + params.toString() : ""}`);
-      }
-    }
-  }, [location.pathname]);
 
   return (
     <motion.header
