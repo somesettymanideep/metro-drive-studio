@@ -134,7 +134,11 @@ export default function CarDetails() {
           <div className="grid lg:grid-cols-5 gap-6 lg:gap-10">
             {/* Gallery */}
             <div className="lg:col-span-3 min-w-0">
-              <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-neutral-900 to-neutral-700 aspect-[4/3]">
+              <div
+                className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-neutral-900 to-neutral-700 aspect-[4/3]"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+              >
                 <img
                   src={gallery[active]}
                   alt={car.name}
@@ -149,6 +153,7 @@ export default function CarDetails() {
 
 
               </div>
+
 
               {gallery.length > 1 && (
                 <div className="flex gap-3 mt-4 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-thin">
