@@ -26,6 +26,7 @@ export default function CarDetails() {
   const [car, setCar] = useState<Car | undefined>(() => getAnyCarBySlug(slug));
   const gallery = car?.gallery && car.gallery.length ? car.gallery : car ? [car.img] : [];
   const [active, setActive] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     let mounted = true;
@@ -47,12 +48,13 @@ export default function CarDetails() {
   }, [car]);
 
   useEffect(() => {
-    if (gallery.length <= 1) return;
+    if (gallery.length <= 1 || isPaused) return;
     const id = setInterval(() => {
       setActive((prev) => (prev + 1) % gallery.length);
     }, 3000);
     return () => clearInterval(id);
-  }, [gallery.length]);
+  }, [gallery.length, isPaused]);
+
 
 
   if (!car) {
