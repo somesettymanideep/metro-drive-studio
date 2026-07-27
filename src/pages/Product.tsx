@@ -249,7 +249,7 @@ export default function Product() {
                 style={{ y: carY, rotateX: springRX, rotateY: springRY, transformStyle: "preserve-3d" }}
                 className="relative"
               >
-                <img
+                <img decoding="async"
                   src={fortunerImg}
                   alt="Toyota Fortuner Legender 2024 featured car"
                   width={1600}

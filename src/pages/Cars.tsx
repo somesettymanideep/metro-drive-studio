@@ -125,7 +125,7 @@ export default function Cars() {
 
       {/* Sub-page banner */}
       <section className="relative pt-28 lg:pt-32 h-[280px] lg:h-[360px] overflow-hidden">
-        <img
+        <img decoding="async"
           src={bannerImg}
           alt="Metro Cars Vijayawada premium inventory showroom"
           width={1920}

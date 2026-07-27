@@ -147,7 +147,7 @@ export function AboutSection() {
           className="relative"
         >
           <div className="absolute -inset-4 bg-[var(--brand-orange)]/10 rounded-3xl -rotate-2" />
-          <img
+          <img decoding="async"
             src={showroom}
             alt="Metro Cars Vijayawada showroom"
             loading="lazy"
@@ -260,7 +260,7 @@ export function FounderSection() {
         >
           <div className="absolute -inset-4 bg-[var(--brand-orange)]/10 rounded-3xl rotate-2" />
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-neutral-900">
-            <img
+            <img decoding="async"
               src={founderImg}
               alt="Metro Cars Founder"
               loading="lazy"
@@ -520,7 +520,7 @@ export function InventorySection() {
               className="group bg-white rounded-3xl overflow-hidden border border-black/5 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
             >
               <div className="relative overflow-hidden aspect-[4/3] bg-gradient-to-br from-neutral-900 to-neutral-700">
-                <img
+                <img decoding="async"
                   src={c.img}
                   alt={c.name}
                   loading="lazy"
@@ -1096,7 +1096,7 @@ export function FAQSection() {
             </p>
 
             <div className="relative rounded-2xl overflow-hidden mb-6 shadow-xl group">
-              <img
+              <img decoding="async"
                 src={faqSupportUrl}
                 alt="Metro Cars Vijayawada support team helping a customer"
                 loading="lazy"
@@ -1180,7 +1180,7 @@ export function CTASection() {
         className="absolute inset-0 -top-[15%] -bottom-[15%]"
         style={{ y: bgY }}
       >
-        <img
+        <img decoding="async"
           src={ctaPremium}
           alt="Luxury car on highway at sunset"
           className="w-full h-full object-cover"
@@ -1329,7 +1329,7 @@ export function HappyCustomersSection() {
                   key={i}
                   className="min-w-[calc(100%-1rem)] md:min-w-[calc(50%-0.75rem)] lg:min-w-[calc(33.333%-0.75rem)] flex items-center justify-center bg-white rounded-2xl shadow-lg overflow-hidden"
                 >
-                  <img
+                  <img decoding="async"
                     src={s.src}
                     alt={`Sold ${s.label} at Metro Cars Vijayawada`}
                     className="w-full h-auto max-h-[400px] object-contain"
@@ -1389,7 +1389,7 @@ export function MetroFooter() {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <img src={logoUrl} alt="Metro Cars" className="h-24 lg:h-28 w-auto mb-4" />
+            <img loading="lazy" decoding="async" src={logoUrl} alt="Metro Cars" className="h-24 lg:h-28 w-auto mb-4" />
             <p className="text-white/60 text-sm leading-relaxed">
               Vijayawada's trusted destination for certified pre-owned cars, transparent pricing and exceptional service.
             </p>

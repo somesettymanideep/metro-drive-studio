@@ -87,7 +87,7 @@ export function MetroHeader() {
           onClick={handleLogoClick}
           className="flex items-center gap-2 shrink-0 cursor-pointer"
         >
-          <img
+          <img loading="lazy" decoding="async"
             src={logoUrl}
             alt="Metro Cars Vijayawada"
             className="h-16 lg:h-20 w-auto drop-shadow-[0_0_20px_rgba(255,90,0,0.4)]"

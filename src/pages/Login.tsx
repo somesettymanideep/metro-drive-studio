@@ -51,7 +51,7 @@ export default function Login() {
 
       <div className="w-full max-w-md">
         <div className="flex flex-col items-center mb-6">
-          <img
+          <img loading="lazy" decoding="async"
             src={logoUrl}
             alt="Metro Cars"
             className="h-20 w-auto drop-shadow-[0_0_25px_rgba(255,90,0,0.45)]"
