@@ -70,6 +70,9 @@ import tharRoxxAirbag from "@/assets/thar-roxx-airbag.jpeg";
 import cretaSide from "@/assets/creta-side.jpeg";
 import cretaInterior from "@/assets/creta-interior.jpeg";
 import cretaRear from "@/assets/creta-rear.jpeg";
+import cretaSideRight from "@/assets/creta-side-right.jpeg";
+import cretaRearSeats from "@/assets/creta-rear-seats.jpeg";
+import cretaSunroof from "@/assets/creta-sunroof.jpeg";
 import amaze19Side from "@/assets/amaze2019-side.jpeg";
 import amaze19Rear from "@/assets/amaze2019-rear.jpeg";
 import amaze19Interior from "@/assets/amaze2019-interior.jpeg";
@@ -354,7 +357,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
-    gallery: [cretaMain, cretaSide, cretaInterior, cretaRear],
+    gallery: [cretaMain, cretaSide, cretaInterior, cretaRear, cretaSideRight, cretaRearSeats, cretaSunroof],
   },
   {
     slug: "honda-amaze-2019",
