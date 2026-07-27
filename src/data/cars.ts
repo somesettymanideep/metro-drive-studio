@@ -60,6 +60,7 @@ import hyryderSideLeft from "@/assets/hyryder-side-left.jpeg";
 import hyryderSideRight from "@/assets/hyryder-side-right.jpeg";
 import hyryderRear from "@/assets/hyryder-rear.jpeg";
 import hyryderInterior from "@/assets/hyryder-interior.jpeg";
+import hyryderInterior2 from "@/assets/hyryder-interior-2.jpeg";
 import tharRoxxSideRight from "@/assets/thar-roxx-side-right.jpeg";
 import tharRoxxSideLeft from "@/assets/thar-roxx-side-left.jpeg";
 import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.jpeg";
@@ -312,7 +313,7 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Toyota Urban Cruiser Hyryder diesel automatic — feature-loaded SUV with refined ride quality and premium comfort.",
-    gallery: [hyryderMain, hyryderSideLeft, hyryderSideRight, hyryderRear, hyryderInterior],
+    gallery: [hyryderMain, hyryderSideLeft, hyryderSideRight, hyryderRear, hyryderInterior, hyryderInterior2],
   },
   {
     slug: "thar-roxx-2024",
