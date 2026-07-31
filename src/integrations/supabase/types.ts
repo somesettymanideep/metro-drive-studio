@@ -14,6 +14,45 @@ export type Database = {
   }
   public: {
     Tables: {
+      contact_enquiries: {
+        Row: {
+          budget: string
+          created_at: string
+          email: string
+          id: string
+          is_read: boolean
+          message: string
+          name: string
+          phone: string
+          updated_at: string
+          vehicle: string
+        }
+        Insert: {
+          budget?: string
+          created_at?: string
+          email?: string
+          id?: string
+          is_read?: boolean
+          message?: string
+          name: string
+          phone?: string
+          updated_at?: string
+          vehicle?: string
+        }
+        Update: {
+          budget?: string
+          created_at?: string
+          email?: string
+          id?: string
+          is_read?: boolean
+          message?: string
+          name?: string
+          phone?: string
+          updated_at?: string
+          vehicle?: string
+        }
+        Relationships: []
+      }
       inventory_cars: {
         Row: {
           body_type: string
