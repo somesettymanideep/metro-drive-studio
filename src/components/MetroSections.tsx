@@ -986,6 +986,40 @@ export function ProcessSection() {
 
 /* ---------- Enquiry ---------- */
 export function EnquirySection() {
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [formError, setFormError] = useState("");
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+    const get = (k: string) => String(fd.get(k) ?? "").trim();
+    if (!get("name") || !get("phone")) {
+      setFormError("Please enter your name and phone number.");
+      return;
+    }
+    setFormError("");
+    setSending(true);
+    try {
+      const { submitEnquiry } = await import("@/lib/inventoryStore");
+      await submitEnquiry({
+        name: get("name"),
+        phone: get("phone"),
+        email: get("email"),
+        vehicle: get("vehicle"),
+        budget: get("budget"),
+        message: get("message"),
+      });
+      form.reset();
+      setSent(true);
+    } catch {
+      setFormError("Something went wrong. Please call us on +91 90599 87777.");
+    } finally {
+      setSending(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-24 lg:py-32 bg-black relative overflow-hidden">
       <div className="absolute -top-32 -right-32 size-[500px] rounded-full bg-[var(--brand-orange)]/15 blur-3xl" />
@@ -1012,10 +1046,7 @@ export function EnquirySection() {
           </div>
 
           <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Thanks! We'll call you back shortly.");
-            }}
+            onSubmit={onSubmit}
             className="rounded-3xl p-8 lg:p-10 glass-card space-y-4"
           >
             <div className="grid sm:grid-cols-2 gap-4">
@@ -1034,12 +1065,21 @@ export function EnquirySection() {
                 placeholder="Tell us what you're looking for..."
               />
             </div>
+            {sent && (
+              <p role="status" className="text-sm text-green-400">
+                Thanks! We've received your request and will call you back shortly.
+              </p>
+            )}
+            {formError && (
+              <p role="alert" className="text-sm text-red-400">{formError}</p>
+            )}
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 py-4 rounded-full text-white font-bold uppercase tracking-wide shadow-[0_15px_40px_-15px_rgba(255,90,0,0.7)] hover:scale-[1.02] transition-transform"
+              disabled={sending}
+              className="w-full inline-flex items-center justify-center gap-2 py-4 rounded-full text-white font-bold uppercase tracking-wide shadow-[0_15px_40px_-15px_rgba(255,90,0,0.7)] hover:scale-[1.02] transition-transform disabled:opacity-60"
               style={{ background: "var(--gradient-orange)" }}
             >
-              Request Callback <ArrowRight className="size-4" />
+              {sending ? "Sending..." : "Request Callback"} <ArrowRight className="size-4" />
             </button>
           </form>
         </div>
