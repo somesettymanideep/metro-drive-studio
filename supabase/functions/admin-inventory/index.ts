@@ -213,5 +213,33 @@ Deno.serve(async (req) => {
     return json({ ok: true, data: { deleted: true } });
   }
 
+  if (body.action === "enquiries_list") {
+    const { data, error } = await client
+      .from("contact_enquiries")
+      .select("*")
+      .order("created_at", { ascending: false });
+    if (error) return json({ ok: false, error: error.message }, 500);
+    return json({ ok: true, data: data ?? [] });
+  }
+
+  if (body.action === "enquiry_mark") {
+    const id = typeof body.id === "string" ? body.id : "";
+    if (!uuidPattern.test(id)) return json({ ok: false, error: "Invalid enquiry id." }, 400);
+    const { error } = await client
+      .from("contact_enquiries")
+      .update({ is_read: Boolean(body.isRead) })
+      .eq("id", id);
+    if (error) return json({ ok: false, error: error.message }, 500);
+    return json({ ok: true, data: { updated: true } });
+  }
+
+  if (body.action === "enquiry_delete") {
+    const id = typeof body.id === "string" ? body.id : "";
+    if (!uuidPattern.test(id)) return json({ ok: true, data: { deleted: true } });
+    const { error } = await client.from("contact_enquiries").delete().eq("id", id);
+    if (error) return json({ ok: false, error: error.message }, 500);
+    return json({ ok: true, data: { deleted: true } });
+  }
+
   return json({ ok: false, error: "Unknown action." }, 400);
 });
