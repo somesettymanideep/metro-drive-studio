@@ -13,6 +13,7 @@ import {
   Loader2,
   AlertCircle,
   List,
+  Inbox,
 } from "lucide-react";
 import logoUrl from "@/assets/metro-cars-logo.webp";
 import {
