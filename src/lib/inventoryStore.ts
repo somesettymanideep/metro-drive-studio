@@ -266,3 +266,48 @@ export async function syncLocalInventoryToBackend(): Promise<number> {
   if (synced === localItems.length) localStorage.removeItem(KEY);
   return synced;
 }
+/* ---------------- Contact enquiries ---------------- */
+
+export type ContactEnquiry = {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  vehicle: string;
+  budget: string;
+  message: string;
+  is_read: boolean;
+  created_at: string;
+};
+
+export async function submitEnquiry(payload: {
+  name: string;
+  phone: string;
+  email?: string;
+  vehicle?: string;
+  budget?: string;
+  message?: string;
+}): Promise<void> {
+  const { supabase } = await import("@/integrations/supabase/client");
+  const { error } = await supabase.from("contact_enquiries").insert({
+    name: payload.name.trim().slice(0, 120),
+    phone: (payload.phone ?? "").trim().slice(0, 30),
+    email: (payload.email ?? "").trim().slice(0, 160),
+    vehicle: (payload.vehicle ?? "").trim().slice(0, 160),
+    budget: (payload.budget ?? "").trim().slice(0, 80),
+    message: (payload.message ?? "").trim().slice(0, 2000),
+  });
+  if (error) throw new Error(error.message);
+}
+
+export async function listEnquiriesAdmin(): Promise<ContactEnquiry[]> {
+  return callAdmin<ContactEnquiry[]>({ action: "enquiries_list" });
+}
+
+export async function markEnquiryRead(id: string, isRead: boolean): Promise<void> {
+  await callAdmin<{ updated: boolean }>({ action: "enquiry_mark", id, isRead });
+}
+
+export async function deleteEnquiryAdmin(id: string): Promise<void> {
+  await callAdmin<{ deleted: boolean }>({ action: "enquiry_delete", id });
+}
