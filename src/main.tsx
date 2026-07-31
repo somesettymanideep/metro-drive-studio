@@ -12,6 +12,7 @@ import Cars from "./pages/Cars";
 import Login from "./pages/Login";
 import AddInventory from "./pages/AddInventory";
 import AdminInventory from "./pages/AdminInventory";
+import AdminEnquiries from "./pages/AdminEnquiries";
 import NotFound from "./pages/NotFound";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/login" element={<Login />} />
           <Route path="/admin/add-inventory" element={<AddInventory />} />
           <Route path="/admin/inventory" element={<AdminInventory />} />
+          <Route path="/admin/enquiries" element={<AdminEnquiries />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Toaster />
