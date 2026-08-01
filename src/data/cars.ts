@@ -72,12 +72,6 @@ import tharRoxxRearSeats from "@/assets/thar-roxx-rear-seats.webp";
 import tharRoxxRear from "@/assets/thar-roxx-rear.webp";
 import tharRoxxDashboard from "@/assets/thar-roxx-dashboard.webp";
 import tharRoxxAirbag from "@/assets/thar-roxx-airbag.webp";
-import cretaSide from "@/assets/creta-side.webp";
-import cretaInterior from "@/assets/creta-interior.webp";
-import cretaRear from "@/assets/creta-rear.webp";
-import cretaSideRight from "@/assets/creta-side-right.webp";
-import cretaRearSeats from "@/assets/creta-rear-seats.webp";
-import cretaSunroof from "@/assets/creta-sunroof.webp";
 import amaze19Side from "@/assets/amaze2019-side.webp";
 import amaze19Rear from "@/assets/amaze2019-rear.webp";
 import amaze19Interior from "@/assets/amaze2019-interior.webp";
@@ -86,7 +80,6 @@ import amaze19Dash2 from "@/assets/amaze2019-dashboard-2.webp";
 import mgHectorMain from "@/assets/mg-hector-main.webp";
 import tharRoxxMain from "@/assets/thar-roxx-main.webp";
 import hyryderMain from "@/assets/hyryder-main.webp";
-import cretaMain from "@/assets/creta-main.webp";
 import amaze19Main from "@/assets/amaze19-main.webp";
 import xuvMain from "@/assets/xuv500-main.webp";
 import xl6Main from "@/assets/xl6-main.webp";
@@ -345,25 +338,6 @@ export const cars: Car[] = [
     description:
       "Mahindra Thar Roxx diesel automatic with sunroof — iconic off-road capability paired with modern features and open-air driving.",
     gallery: [tharRoxxMain, tharRoxxSideRight, tharRoxxSideLeft, tharRoxxRearSeats, tharRoxxRear, tharRoxxDashboard, tharRoxxAirbag],
-  },
-  {
-    slug: "hyundai-creta-2022",
-    img: cretaMain,
-    name: "Hyundai Creta",
-    year: 2022,
-    fuel: "Petrol",
-    trans: "Manual",
-    km: "48,000 km",
-    price: "₹11.50 L",
-    cat: "SUV",
-    brand: "Hyundai",
-    model: "Creta",
-    variant: "Petrol MT",
-    color: "Black",
-    bodyType: "SUV",
-    description:
-      "Hyundai Creta petrol manual — stylish compact SUV with premium features, comfortable ride and excellent city manners.",
-    gallery: [cretaMain, cretaSide, cretaInterior, cretaRear, cretaSideRight, cretaRearSeats, cretaSunroof],
   },
   {
     slug: "honda-amaze-2019",
