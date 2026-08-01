@@ -140,6 +140,25 @@ export type Car = {
 
 export const cars: Car[] = [
   {
+    slug: "maruti-suzuki-brezza-zdi-plus-2017",
+    img: brezzaMain,
+    name: "Maruti Suzuki Vitara Brezza ZDi+",
+    year: 2017,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,11,857 km",
+    price: "₹7.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Vitara Brezza",
+    variant: "ZDi+ Diesel",
+    color: "Red",
+    bodyType: "SUV",
+    description:
+      "Maruti Suzuki Vitara Brezza ZDi+ diesel in striking red with dual-tone black roof — top-end trim with touchscreen infotainment, auto climate control, cruise control and push-button start.",
+    gallery: [brezzaMain, brezzaSideRight, brezzaSideLeft, brezzaRear, brezzaDash, brezzaInterior, brezzaRearSeats],
+  },
+  {
     slug: "tata-tiago-petrol-2023",
     img: tiagoPMain,
     name: "Tata Tiago",
