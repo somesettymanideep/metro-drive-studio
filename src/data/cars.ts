@@ -87,6 +87,13 @@ import tiagoMain from "@/assets/tiago-main.webp";
 import audiQ3Main from "@/assets/audiq3-main.webp";
 import bmwX1Main from "@/assets/bmwx1-main.webp";
 import ecosportMain from "@/assets/ecosport-main.webp";
+import i20Main from "@/assets/i20-main.webp";
+import i20SideRight from "@/assets/i20-side-right.webp";
+import i20SideLeft from "@/assets/i20-side-left.webp";
+import i20Rear from "@/assets/i20-rear.webp";
+import i20Dash from "@/assets/i20-dash.webp";
+import i20Interior from "@/assets/i20-interior.webp";
+import i20RearSeats from "@/assets/i20-rear-seats.webp";
 
 
 
@@ -118,6 +125,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "hyundai-i20-sportz-2021",
+    img: i20Main,
+    name: "Hyundai i20 Sportz",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "80,000 km",
+    price: "₹6.50 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Sportz Petrol MT",
+    color: "Red",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai i20 Sportz petrol manual — stylish premium hatchback with a well-kept cabin, refined engine and excellent everyday drivability.",
+    gallery: [i20Main, i20SideRight, i20SideLeft, i20Rear, i20Dash, i20Interior, i20RearSeats],
+  },
   {
     slug: "hyundai-venue-s-o",
     img: venue7,
