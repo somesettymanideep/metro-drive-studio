@@ -1,4 +1,11 @@
 import carSedan from "@/assets/car-sedan.webp";
+import brezzaMain from "@/assets/brezza-main.webp";
+import brezzaSideRight from "@/assets/brezza-side-right.webp";
+import brezzaSideLeft from "@/assets/brezza-side-left.webp";
+import brezzaRear from "@/assets/brezza-rear.webp";
+import brezzaDash from "@/assets/brezza-dash.webp";
+import brezzaInterior from "@/assets/brezza-interior.webp";
+import brezzaRearSeats from "@/assets/brezza-rear-seats.webp";
 import carSuv from "@/assets/car-suv.webp";
 import carHatch from "@/assets/car-hatch.webp";
 import carLuxury from "@/assets/car-luxury.webp";
@@ -132,6 +139,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "maruti-suzuki-brezza-zdi-plus-2017",
+    img: brezzaMain,
+    name: "Maruti Suzuki Vitara Brezza ZDi+",
+    year: 2017,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,11,857 km",
+    price: "₹7.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Vitara Brezza",
+    variant: "ZDi+ Diesel",
+    color: "Red",
+    bodyType: "SUV",
+    description:
+      "Maruti Suzuki Vitara Brezza ZDi+ diesel in striking red with dual-tone black roof — top-end trim with touchscreen infotainment, auto climate control, cruise control and push-button start.",
+    gallery: [brezzaMain, brezzaSideRight, brezzaSideLeft, brezzaRear, brezzaDash, brezzaInterior, brezzaRearSeats],
+  },
   {
     slug: "tata-tiago-petrol-2023",
     img: tiagoPMain,
