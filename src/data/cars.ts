@@ -135,6 +135,13 @@ import i20AstaSideLeft from "@/assets/i20asta-side-left.webp";
 import i20AstaRear from "@/assets/i20asta-rear.webp";
 import i20AstaDash from "@/assets/i20asta-dash.webp";
 import i20AstaFrontSeats from "@/assets/i20asta-front-seats.webp";
+import i20AstaPMain from "@/assets/i20asta-p-main.webp";
+import i20AstaPSideRight from "@/assets/i20asta-p-side-right.webp";
+import i20AstaPSideLeft from "@/assets/i20asta-p-side-left.webp";
+import i20AstaPRear from "@/assets/i20asta-p-rear.webp";
+import i20AstaPDash from "@/assets/i20asta-p-dash.webp";
+import i20AstaPFrontSeats from "@/assets/i20asta-p-front-seats.webp";
+import i20AstaPRearSeats from "@/assets/i20asta-p-rear-seats.webp";
 
 
 
@@ -166,6 +173,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "hyundai-i20-asta-petrol-2018",
+    img: i20AstaPMain,
+    name: "Hyundai i20 Asta",
+    year: 2018,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "97,000 km",
+    price: "₹6.20 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Asta Petrol MT",
+    color: "Silver",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai i20 Asta petrol manual in silver with beige dual-tone cabin, touchscreen infotainment, automatic climate control, alloy wheels and well-kept leatherette seats. Smooth, refined and ideal for city plus highway use.",
+    gallery: [i20AstaPMain, i20AstaPSideRight, i20AstaPSideLeft, i20AstaPRear, i20AstaPDash, i20AstaPFrontSeats, i20AstaPRearSeats],
+  },
   {
     slug: "hyundai-i20-asta-2018",
     img: i20AstaMain,
