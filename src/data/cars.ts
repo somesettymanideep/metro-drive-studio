@@ -122,6 +122,13 @@ import ertigaFrontSeats from "@/assets/ertiga-front-seats.webp";
 import ertigaDash from "@/assets/ertiga-dash.webp";
 import ertigaThirdRow from "@/assets/ertiga-third-row.webp";
 import ertigaRearSeats from "@/assets/ertiga-rear-seats.webp";
+import auraMain from "@/assets/aura-main.webp";
+import auraSideRight from "@/assets/aura-side-right.webp";
+import auraSideLeft from "@/assets/aura-side-left.webp";
+import auraRear from "@/assets/aura-rear.webp";
+import auraDash from "@/assets/aura-dash.webp";
+import auraFrontSeats from "@/assets/aura-front-seats.webp";
+import auraRearSeats from "@/assets/aura-rear-seats.webp";
 
 
 
@@ -153,6 +160,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "hyundai-aura-s-2025",
+    img: auraMain,
+    name: "Hyundai Aura S",
+    year: 2025,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "79,000 km",
+    price: "₹6.50 L",
+    cat: "Sedan",
+    brand: "Hyundai",
+    model: "Aura",
+    variant: "S Petrol (Taxi - Lifetime Tax)",
+    color: "White",
+    bodyType: "Sedan",
+    description:
+      "Hyundai Aura S petrol manual with lifetime tax (taxi registration converted). Well-kept white compact sedan with dual-tone cabin, leatherette seat covers and rear AC vents. Economical to run and ideal for city plus highway use.",
+    gallery: [auraMain, auraSideRight, auraSideLeft, auraRear, auraDash, auraFrontSeats, auraRearSeats],
+  },
   {
     slug: "maruti-suzuki-ertiga-2021",
     img: ertigaMain,
