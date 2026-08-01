@@ -94,6 +94,13 @@ import i20Rear from "@/assets/i20-rear.webp";
 import i20Dash from "@/assets/i20-dash.webp";
 import i20Interior from "@/assets/i20-interior.webp";
 import i20RearSeats from "@/assets/i20-rear-seats.webp";
+import tiagoPMain from "@/assets/tiago-petrol-main.webp";
+import tiagoPSideLeft from "@/assets/tiago-petrol-side-left.webp";
+import tiagoPSideRight from "@/assets/tiago-petrol-side-right.webp";
+import tiagoPRear from "@/assets/tiago-petrol-rear.webp";
+import tiagoPDash from "@/assets/tiago-petrol-dash.webp";
+import tiagoPInterior from "@/assets/tiago-petrol-interior.webp";
+import tiagoPRearSeats from "@/assets/tiago-petrol-rear-seats.webp";
 
 
 
@@ -125,6 +132,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "tata-tiago-petrol-2023",
+    img: tiagoPMain,
+    name: "Tata Tiago",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "5,500 km",
+    price: "₹7.20 L",
+    cat: "Hatchback",
+    brand: "Tata",
+    model: "Tiago",
+    variant: "Petrol AMT",
+    color: "Blue",
+    bodyType: "Hatchback",
+    description:
+      "Tata Tiago petrol automatic — barely driven at just 5,500 km, with a fresh cabin, touchscreen infotainment and effortless city drivability.",
+    gallery: [tiagoPMain, tiagoPSideRight, tiagoPSideLeft, tiagoPRear, tiagoPDash, tiagoPInterior, tiagoPRearSeats],
+  },
   {
     slug: "hyundai-i20-sportz-2021",
     img: i20Main,
