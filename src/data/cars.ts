@@ -115,6 +115,13 @@ import tiagoPRear from "@/assets/tiago-petrol-rear.webp";
 import tiagoPDash from "@/assets/tiago-petrol-dash.webp";
 import tiagoPInterior from "@/assets/tiago-petrol-interior.webp";
 import tiagoPRearSeats from "@/assets/tiago-petrol-rear-seats.webp";
+import ertigaMain from "@/assets/ertiga-main.webp";
+import ertigaSideRight from "@/assets/ertiga-side-right.webp";
+import ertigaRear from "@/assets/ertiga-rear.webp";
+import ertigaFrontSeats from "@/assets/ertiga-front-seats.webp";
+import ertigaDash from "@/assets/ertiga-dash.webp";
+import ertigaThirdRow from "@/assets/ertiga-third-row.webp";
+import ertigaRearSeats from "@/assets/ertiga-rear-seats.webp";
 
 
 
@@ -146,6 +153,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "maruti-suzuki-ertiga-2021",
+    img: ertigaMain,
+    name: "Maruti Suzuki Ertiga",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "83,000 km",
+    price: "₹9.20 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Ertiga",
+    variant: "Petrol AT",
+    color: "Silver",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki Ertiga petrol automatic — spacious 7-seater MPV with beige cabin, touchscreen infotainment and smooth automatic drive. Well maintained and ideal for families.",
+    gallery: [ertigaMain, ertigaSideRight, ertigaRear, ertigaDash, ertigaFrontSeats, ertigaRearSeats, ertigaThirdRow],
+  },
   {
     slug: "maruti-suzuki-brezza-zdi-plus-2017",
     img: brezzaMain,
