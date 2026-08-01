@@ -1,5 +1,12 @@
 import carSedan from "@/assets/car-sedan.webp";
 import brezzaMain from "@/assets/brezza-main.webp";
+import sonetMain from "@/assets/sonet-main.webp";
+import sonetSideRight from "@/assets/sonet-side-right.webp";
+import sonetSideLeft from "@/assets/sonet-side-left.webp";
+import sonetRear from "@/assets/sonet-rear.webp";
+import sonetDash from "@/assets/sonet-dash.webp";
+import sonetInterior from "@/assets/sonet-interior.webp";
+import sonetSunroof from "@/assets/sonet-sunroof.webp";
 import brezzaSideRight from "@/assets/brezza-side-right.webp";
 import brezzaSideLeft from "@/assets/brezza-side-left.webp";
 import brezzaRear from "@/assets/brezza-rear.webp";
@@ -435,6 +442,25 @@ export const cars: Car[] = [
     description:
       "Honda Amaze VX petrol manual — well-maintained sedan with spacious cabin, comfortable ride and excellent fuel efficiency.",
     gallery: [amaze19Main, amaze19Side, amaze19Rear, amaze19Interior, amaze19RearSeats, amaze19Dash2],
+  },
+  {
+    slug: "kia-sonet-2021",
+    img: sonetMain,
+    name: "Kia Sonet",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "1,26,500 km",
+    price: "₹8.50 L",
+    cat: "SUV",
+    brand: "Kia",
+    model: "Sonet",
+    variant: "GT Line Turbo Petrol AT",
+    color: "Red",
+    bodyType: "SUV",
+    description:
+      "Kia Sonet GT Line turbo petrol automatic in Intense Red — sunroof, Bose sound system, leatherette GT seats, 10.25-inch touchscreen and paddle shifters.",
+    gallery: [sonetMain, sonetSideRight, sonetSideLeft, sonetRear, sonetDash, sonetInterior, sonetSunroof],
   },
 ];
 
