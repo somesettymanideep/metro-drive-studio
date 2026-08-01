@@ -129,6 +129,12 @@ import auraRear from "@/assets/aura-rear.webp";
 import auraDash from "@/assets/aura-dash.webp";
 import auraFrontSeats from "@/assets/aura-front-seats.webp";
 import auraRearSeats from "@/assets/aura-rear-seats.webp";
+import i20AstaMain from "@/assets/i20asta-main.webp";
+import i20AstaSideRight from "@/assets/i20asta-side-right.webp";
+import i20AstaSideLeft from "@/assets/i20asta-side-left.webp";
+import i20AstaRear from "@/assets/i20asta-rear.webp";
+import i20AstaDash from "@/assets/i20asta-dash.webp";
+import i20AstaFrontSeats from "@/assets/i20asta-front-seats.webp";
 
 
 
@@ -160,6 +166,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "hyundai-i20-asta-2018",
+    img: i20AstaMain,
+    name: "Hyundai i20 Asta",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "80,000 km",
+    price: "₹6.30 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Asta Diesel MT",
+    color: "Red",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai i20 Asta diesel manual in fiery red with beige-brown leatherette cabin, touchscreen infotainment, alloy wheels and automatic climate control. Well maintained and fuel efficient.",
+    gallery: [i20AstaMain, i20AstaSideRight, i20AstaSideLeft, i20AstaRear, i20AstaDash, i20AstaFrontSeats],
+  },
   {
     slug: "hyundai-aura-s-2025",
     img: auraMain,
