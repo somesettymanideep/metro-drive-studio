@@ -80,7 +80,6 @@ import amaze19Dash2 from "@/assets/amaze2019-dashboard-2.webp";
 import mgHectorMain from "@/assets/mg-hector-main.webp";
 import tharRoxxMain from "@/assets/thar-roxx-main.webp";
 import hyryderMain from "@/assets/hyryder-main.webp";
-import cretaMain from "@/assets/creta-main.webp";
 import amaze19Main from "@/assets/amaze19-main.webp";
 import xuvMain from "@/assets/xuv500-main.webp";
 import xl6Main from "@/assets/xl6-main.webp";
