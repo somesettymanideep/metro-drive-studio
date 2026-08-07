@@ -142,6 +142,14 @@ import i20AstaPRear from "@/assets/i20asta-p-rear.webp";
 import i20AstaPDash from "@/assets/i20asta-p-dash.webp";
 import i20AstaPFrontSeats from "@/assets/i20asta-p-front-seats.webp";
 import i20AstaPRearSeats from "@/assets/i20asta-p-rear-seats.webp";
+import carnivalMain from "@/assets/carnival-main.webp";
+import carnivalSideRight from "@/assets/carnival-side-right.webp";
+import carnivalSideLeft from "@/assets/carnival-side-left.webp";
+import carnivalRear from "@/assets/carnival-rear.webp";
+import carnivalDash from "@/assets/carnival-dash.webp";
+import carnivalCaptainSeats from "@/assets/carnival-captain-seats.webp";
+import carnivalThirdRow from "@/assets/carnival-third-row.webp";
+import carnivalSunroof from "@/assets/carnival-sunroof.webp";
 
 
 
@@ -173,6 +181,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "kia-carnival-prestige-2020",
+    img: carnivalMain,
+    name: "Kia Carnival Prestige",
+    year: 2020,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "74,000 km",
+    price: "₹22.00 L",
+    cat: "SUV",
+    brand: "Kia",
+    model: "Carnival",
+    variant: "Prestige Diesel AT",
+    color: "White",
+    bodyType: "MPV",
+    description:
+      "Kia Carnival Prestige diesel automatic in pearl white — luxurious 7-seater MPV with captain seats, powered sliding doors, sunroof, beige leatherette cabin and effortless highway comfort.",
+    gallery: [carnivalMain, carnivalSideRight, carnivalSideLeft, carnivalRear, carnivalDash, carnivalCaptainSeats, carnivalThirdRow, carnivalSunroof],
+  },
   {
     slug: "hyundai-i20-asta-petrol-2018",
     img: i20AstaPMain,
