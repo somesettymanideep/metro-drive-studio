@@ -150,6 +150,14 @@ import carnivalDash from "@/assets/carnival-dash.webp";
 import carnivalCaptainSeats from "@/assets/carnival-captain-seats.webp";
 import carnivalThirdRow from "@/assets/carnival-third-row.webp";
 import carnivalSunroof from "@/assets/carnival-sunroof.webp";
+import safariMain from "@/assets/safari-main.webp";
+import safariSideRight from "@/assets/safari-side-right.webp";
+import safariSideLeft from "@/assets/safari-side-left.webp";
+import safariRear from "@/assets/safari-rear.webp";
+import safariDash from "@/assets/safari-dash.webp";
+import safariInterior from "@/assets/safari-interior.webp";
+import safariRearSeats from "@/assets/safari-rear-seats.webp";
+import safariThirdRow from "@/assets/safari-third-row.webp";
 
 
 
@@ -181,6 +189,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "tata-safari-75-p2-smt-2023",
+    img: safariMain,
+    name: "Tata Safari 75 P2 SMT(O)",
+    year: 2023,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "93,000 km",
+    price: "₹19.00 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Safari",
+    variant: "75 P2 SMT(O) Diesel MT",
+    color: "White",
+    bodyType: "SUV",
+    description:
+      "Tata Safari 75 P2 SMT(O) diesel manual in pristine white — commanding 7-seater SUV with beige leatherette cabin, large touchscreen infotainment, roof rails, side steps and strong highway presence.",
+    gallery: [safariMain, safariSideRight, safariSideLeft, safariRear, safariDash, safariInterior, safariRearSeats, safariThirdRow],
+  },
   {
     slug: "kia-carnival-prestige-2020",
     img: carnivalMain,
