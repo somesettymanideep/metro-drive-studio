@@ -218,7 +218,7 @@ export const cars: Car[] = [
   {
     slug: "tata-safari-75-p2-smt-2023",
     img: safariMain,
-    name: "Tata Safari 75 P2 SMT(O)",
+    name: "Tata Safari 7S P2 SMT(O)",
     year: 2023,
     fuel: "Diesel",
     trans: "Manual",
@@ -231,7 +231,7 @@ export const cars: Car[] = [
     color: "White",
     bodyType: "SUV",
     description:
-      "Tata Safari 75 P2 SMT(O) diesel manual in pristine white — commanding 7-seater SUV with beige leatherette cabin, large touchscreen infotainment, roof rails, side steps and strong highway presence.",
+      "Tata Safari 75 PS SMT(O) diesel manual in pristine white — commanding 7-seater SUV with beige leatherette cabin, large touchscreen infotainment, roof rails, side steps and strong highway presence.",
     gallery: [safariMain, safariSideRight, safariSideLeft, safariRear, safariDash, safariInterior, safariRearSeats, safariThirdRow],
   },
   {
