@@ -158,6 +158,13 @@ import safariDash from "@/assets/safari-dash.webp";
 import safariInterior from "@/assets/safari-interior.webp";
 import safariRearSeats from "@/assets/safari-rear-seats.webp";
 import safariThirdRow from "@/assets/safari-third-row.webp";
+import altrozMain from "@/assets/altroz-main.webp";
+import altrozSideRight from "@/assets/altroz-side-right.webp";
+import altrozSideLeft from "@/assets/altroz-side-left.webp";
+import altrozRear from "@/assets/altroz-rear.webp";
+import altrozDash from "@/assets/altroz-dash.webp";
+import altrozInterior from "@/assets/altroz-interior.webp";
+import altrozRearSeats from "@/assets/altroz-rear-seats.webp";
 
 
 
@@ -189,6 +196,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "tata-altroz-xz-2024",
+    img: altrozMain,
+    name: "Tata Altroz XZ",
+    year: 2024,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "52,000 km",
+    price: "₹8.00 L",
+    cat: "Hatchback",
+    brand: "Tata",
+    model: "Altroz",
+    variant: "XZ Diesel MT",
+    color: "Blue",
+    bodyType: "Hatchback",
+    description:
+      "Tata Altroz XZ diesel manual in deep blue — 5-star safety premium hatchback with beige cabin, Harman touchscreen infotainment, automatic climate control, alloy wheels and rear AC vents.",
+    gallery: [altrozMain, altrozSideRight, altrozSideLeft, altrozRear, altrozDash, altrozInterior, altrozRearSeats],
+  },
   {
     slug: "tata-safari-75-p2-smt-2023",
     img: safariMain,
