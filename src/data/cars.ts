@@ -6,18 +6,18 @@ import tigorRear from "@/assets/tigor-rear.webp";
 import tigorDash from "@/assets/tigor-dash.webp";
 import tigorInterior from "@/assets/tigor-interior.webp";
 import tigorRearSeats from "@/assets/tigor-rear-seats.webp";
+import creta16Main from "@/assets/creta-2016-main.png.asset.json";
+import creta16Side1 from "@/assets/creta-2016-side-1.png.asset.json";
+import creta16Rear from "@/assets/creta-2016-rear.png.asset.json";
+import creta16Side2 from "@/assets/creta-2016-side-2.png.asset.json";
+import creta16Int1 from "@/assets/creta-2016-int-1.png.asset.json";
+import creta16Int2 from "@/assets/creta-2016-int-2.png.asset.json";
+import creta16Int3 from "@/assets/creta-2016-int-3.png.asset.json";
 import creta21Main from "@/assets/creta21-main.webp";
 import creta21SideRight from "@/assets/creta21-side-right.webp";
 import creta21SideLeft from "@/assets/creta21-side-left.webp";
 import creta21Rear from "@/assets/creta21-rear.webp";
 import creta21Dash from "@/assets/creta21-dash.webp";
-import creta21Interior from "@/assets/creta21-interior.webp";
-import creta21RearSeats from "@/assets/creta21-rear-seats.webp";
-import brezzaMain from "@/assets/brezza-main.webp";
-import sonetMain from "@/assets/sonet-main.webp";
-import sonetSideRight from "@/assets/sonet-side-right.webp";
-import sonetSideLeft from "@/assets/sonet-side-left.webp";
-import sonetRear from "@/assets/sonet-rear.webp";
 import sonetDash from "@/assets/sonet-dash.webp";
 import sonetInterior from "@/assets/sonet-interior.webp";
 import sonetSunroof from "@/assets/sonet-sunroof.webp";
@@ -210,6 +210,33 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "hyundai-creta-1-4-s-plus-diesel-2016",
+    img: creta16Main.url,
+    name: "Hyundai Creta 1.4 S+",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,65,000 km",
+    price: "₹7.00 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Creta",
+    variant: "1.4 S+ Diesel MT",
+    color: "Red",
+    bodyType: "SUV",
+    description:
+      "Hyundai Creta 1.4 S+ diesel manual in red — well-maintained SUV with dual-tone red & black leatherette seats, touchscreen infotainment, reverse parking camera and spacious cabin.",
+    gallery: [
+      creta16Main.url,
+      creta16Side1.url,
+      creta16Rear.url,
+      creta16Side2.url,
+      creta16Int1.url,
+      creta16Int2.url,
+      creta16Int3.url,
+    ],
+  },
   {
     slug: "hyundai-creta-1-5-e-diesel-2021",
     img: creta21Main,
