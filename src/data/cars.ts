@@ -6,6 +6,13 @@ import tigorRear from "@/assets/tigor-rear.webp";
 import tigorDash from "@/assets/tigor-dash.webp";
 import tigorInterior from "@/assets/tigor-interior.webp";
 import tigorRearSeats from "@/assets/tigor-rear-seats.webp";
+import creta21Main from "@/assets/creta21-main.webp";
+import creta21SideRight from "@/assets/creta21-side-right.webp";
+import creta21SideLeft from "@/assets/creta21-side-left.webp";
+import creta21Rear from "@/assets/creta21-rear.webp";
+import creta21Dash from "@/assets/creta21-dash.webp";
+import creta21Interior from "@/assets/creta21-interior.webp";
+import creta21RearSeats from "@/assets/creta21-rear-seats.webp";
 import brezzaMain from "@/assets/brezza-main.webp";
 import sonetMain from "@/assets/sonet-main.webp";
 import sonetSideRight from "@/assets/sonet-side-right.webp";
@@ -203,6 +210,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "hyundai-creta-1-5-e-diesel-2021",
+    img: creta21Main,
+    name: "Hyundai Creta 1.5 E Diesel",
+    year: 2021,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,55,000 km",
+    price: "₹9.50 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Creta",
+    variant: "1.5 E Diesel MT",
+    color: "White",
+    bodyType: "SUV",
+    description:
+      "Hyundai Creta 1.5 E diesel manual in polar white — spacious SUV with tan leatherette seats, touchscreen infotainment, dual airbags and a comfortable, well-maintained cabin.",
+    gallery: [creta21Main, creta21SideRight, creta21SideLeft, creta21Rear, creta21Dash, creta21Interior, creta21RearSeats],
+  },
   {
     slug: "tata-tigor-xz-2017",
     img: tigorMain,
