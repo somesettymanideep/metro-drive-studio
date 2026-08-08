@@ -186,6 +186,13 @@ import altrozRear from "@/assets/altroz-rear.webp";
 import altrozDash from "@/assets/altroz-dash.webp";
 import altrozInterior from "@/assets/altroz-interior.webp";
 import altrozRearSeats from "@/assets/altroz-rear-seats.webp";
+import hyundaiCretaSmain from "@/assets/tata-main.webp";
+import hyundaiCretaSback from "@/assets/tata-back.webp";
+import hyundaiCretaSside from "@/assets/hy-1.webp";
+import hyundaiCretaSside2 from "@/assets/hy-2.webp";
+import hyundaiCretaSinterior from "@/assets/hy-3.webp";
+import hyundaiCretaSinterior2 from "@/assets/hy-4.webp";
+import hyundaiCretaSinterior3 from "@/assets/hy-5.webp";
 
 
 
@@ -219,7 +226,7 @@ export type Car = {
 export const cars: Car[] = [
   {
     slug: "hyundai-creta-1-4-s-plus-diesel-2016",
-    img: creta16Main.url,
+    img: hyundaiCretaSmain,
     name: "Hyundai Creta 1.4 S+",
     year: 2016,
     fuel: "Diesel",
@@ -234,14 +241,8 @@ export const cars: Car[] = [
     bodyType: "SUV",
     description:
       "Hyundai Creta 1.4 S+ diesel manual in red — well-maintained SUV with dual-tone red & black leatherette seats, touchscreen infotainment, reverse parking camera and spacious cabin.",
-    gallery: [
-      creta16Main.url,
-      creta16Side1.url,
-      creta16Rear.url,
-      creta16Side2.url,
-      creta16Int1.url,
-      creta16Int2.url,
-      creta16Int3.url,
+    gallery: [hyundaiCretaSmain, hyundaiCretaSback, hyundaiCretaSside, hyundaiCretaSside2, hyundaiCretaSinterior, hyundaiCretaSinterior2, hyundaiCretaSinterior3
+      
     ],
   },
   {
