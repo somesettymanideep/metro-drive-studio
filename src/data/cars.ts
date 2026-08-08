@@ -1,4 +1,11 @@
 import carSedan from "@/assets/car-sedan.webp";
+import tigorMain from "@/assets/tigor-main.webp";
+import tigorSideRight from "@/assets/tigor-side-right.webp";
+import tigorSideLeft from "@/assets/tigor-side-left.webp";
+import tigorRear from "@/assets/tigor-rear.webp";
+import tigorDash from "@/assets/tigor-dash.webp";
+import tigorInterior from "@/assets/tigor-interior.webp";
+import tigorRearSeats from "@/assets/tigor-rear-seats.webp";
 import brezzaMain from "@/assets/brezza-main.webp";
 import sonetMain from "@/assets/sonet-main.webp";
 import sonetSideRight from "@/assets/sonet-side-right.webp";
@@ -196,6 +203,25 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "tata-tigor-xz-2017",
+    img: tigorMain,
+    name: "Tata Tigor XZ",
+    year: 2017,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "93,000 km",
+    price: "₹4.50 L",
+    cat: "Sedan",
+    brand: "Tata",
+    model: "Tigor",
+    variant: "XZ Petrol MT",
+    color: "Red",
+    bodyType: "Sedan",
+    description:
+      "Tata Tigor XZ petrol manual in vibrant red — compact sedan with touchscreen infotainment, automatic climate control, alloy wheels, rear armrest and a well-kept black & red cabin.",
+    gallery: [tigorMain, tigorSideRight, tigorSideLeft, tigorRear, tigorDash, tigorInterior, tigorRearSeats],
+  },
   {
     slug: "tata-altroz-xz-2024",
     img: altrozMain,
