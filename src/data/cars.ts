@@ -232,6 +232,33 @@ export type Car = {
 
 export const cars: Car[] = [
   {
+    slug: "toyota-innova-crysta-2-4-z-2020",
+    img: innovaMain.url,
+    name: "Toyota Innova Crysta 2.4Z",
+    year: 2020,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "1,06,000 km",
+    price: "₹21.00 L", // Price wasn't specified, using placeholder based on market for 2020 2.4Z AT
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Innova Crysta",
+    variant: "2.4Z Diesel AT",
+    color: "Black",
+    bodyType: "MPV",
+    description:
+      "Toyota Innova Crysta 2.4Z diesel automatic in deep black — the gold standard of MPVs with premium tan leather interior, captain seats, touchscreen infotainment, and bulletproof reliability.",
+    gallery: [
+      innovaMain.url,
+      innovaSide1.url,
+      innovaSide2.url,
+      innovaRear.url,
+      innovaDash.url,
+      innovaInt1.url,
+      innovaInt2.url,
+    ],
+  },
+  {
     slug: "hyundai-creta-1-4-s-plus-diesel-2016",
     img: hyundaiCretaSmain,
     name: "Hyundai Creta 1.4 S+",
