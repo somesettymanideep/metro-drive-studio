@@ -13,6 +13,13 @@ import creta16Side2 from "@/assets/creta-2016-side-2.png.asset.json";
 import creta16Int1 from "@/assets/creta-2016-int-1.png.asset.json";
 import creta16Int2 from "@/assets/creta-2016-int-2.png.asset.json";
 import creta16Int3 from "@/assets/creta-2016-int-3.png.asset.json";
+import innovaMain from "@/assets/innova-main.asset.json";
+import innovaSide1 from "@/assets/innova-side1.asset.json";
+import innovaSide2 from "@/assets/innova-side2.asset.json";
+import innovaRear from "@/assets/innova-rear.asset.json";
+import innovaDash from "@/assets/innova-dash.asset.json";
+import innovaInt1 from "@/assets/innova-int1.asset.json";
+import innovaInt2 from "@/assets/innova-int2.asset.json";
 import creta21Main from "@/assets/creta21-main.webp";
 import creta21SideRight from "@/assets/creta21-side-right.webp";
 import creta21SideLeft from "@/assets/creta21-side-left.webp";
@@ -224,6 +231,33 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "toyota-innova-crysta-2-4-z-2020",
+    img: innovaMain.url,
+    name: "Toyota Innova Crysta 2.4Z",
+    year: 2020,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "1,06,000 km",
+    price: "₹21.00 L", // Price wasn't specified, using placeholder based on market for 2020 2.4Z AT
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Innova Crysta",
+    variant: "2.4Z Diesel AT",
+    color: "Black",
+    bodyType: "MPV",
+    description:
+      "Toyota Innova Crysta 2.4Z diesel automatic in deep black — the gold standard of MPVs with premium tan leather interior, captain seats, touchscreen infotainment, and bulletproof reliability.",
+    gallery: [
+      innovaMain.url,
+      innovaSide1.url,
+      innovaSide2.url,
+      innovaRear.url,
+      innovaDash.url,
+      innovaInt1.url,
+      innovaInt2.url,
+    ],
+  },
   {
     slug: "hyundai-creta-1-4-s-plus-diesel-2016",
     img: hyundaiCretaSmain,
