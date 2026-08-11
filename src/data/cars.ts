@@ -239,7 +239,7 @@ export const cars: Car[] = [
     fuel: "Diesel",
     trans: "Automatic",
     km: "1,06,000 km",
-    price: "₹21.00 L", // Price wasn't specified, using placeholder based on market for 2020 2.4Z AT
+    price: "₹22.00 L",
     cat: "SUV",
     brand: "Toyota",
     model: "Innova Crysta",
