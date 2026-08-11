@@ -361,7 +361,6 @@ export default function Product() {
                   <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#F97316] to-[#EA580C] bg-clip-text text-transparent">
                     ₹42,90,000
                   </div>
-                  <div className="text-sm text-white/40 line-through">₹48,50,000</div>
                 </div>
                 <div className="mt-2 text-sm text-white/60">
                   Finance starts from{" "}
