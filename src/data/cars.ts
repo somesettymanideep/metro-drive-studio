@@ -716,7 +716,7 @@ export const cars: Car[] = [
     year: 2024,
     fuel: "Diesel",
     trans: "Automatic",
-    km: "22,000 km",
+    km: "40,000 km",
     price: "₹19.50 L",
     cat: "SUV",
     brand: "Mahindra",
