@@ -40,28 +40,6 @@
     src="https://www.facebook.com/tr?id=1584625136396334&ev=PageView&noscript=1"
     /></noscript>
     <div id="root"></div>
-    <script>
-      window.__loadMetroStaticBuild = function () {
-        if (window.__metroStaticBuildLoaded) return;
-        window.__metroStaticBuildLoaded = true;
-        
-        var stylesheet = document.createElement("link");
-        stylesheet.rel = "stylesheet";
-        stylesheet.href = "/assets/index-Cwlm8gxQ.css";
-        document.head.appendChild(stylesheet);
-
-        var script = document.createElement("script");
-        script.type = "module";
-        script.src = "/assets/index-DQhNFfoN.js";
-        document.body.appendChild(script);
-      };
-      
-      // Auto-trigger fallback if Vite fails to load or for custom domain static serving
-      setTimeout(function() {
-        if (!document.getElementById("root").innerHTML) {
-          window.__loadMetroStaticBuild();
-        }
-      }, 1000);
-    </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
