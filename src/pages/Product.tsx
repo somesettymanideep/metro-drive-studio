@@ -362,10 +362,6 @@ export default function Product() {
                     ₹42,90,000
                   </div>
                 </div>
-                <div className="mt-2 text-sm text-white/60">
-                  Finance starts from{" "}
-                  <span className="text-white font-semibold">₹48,999/month</span>
-                </div>
               </div>
 
               <p className="mt-6 text-white/70 leading-relaxed text-sm md:text-base">
