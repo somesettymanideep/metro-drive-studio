@@ -232,7 +232,7 @@ const services = [
     icon: Banknote,
     emoji: "🏦",
     title: "Car Finance",
-    features: ["Easy EMI options", "Fast loan approvals", "Multiple finance partners"],
+    features: ["Fast loan approvals", "Multiple finance partners"],
     cta: { label: "Check Eligibility", href: "#contact" },
   },
 ];
