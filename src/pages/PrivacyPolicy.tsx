@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
               We employ industry-standard security measures to protect your data from unauthorised access, alteration, or disclosure. However, no transmission over the internet is 100% secure.
             </Block>
             <Block title="7. Your Rights">
-              You can request access, correction, or deletion of your personal data at any time by contacting us at metricarsused@gmail.com. You may also opt out of marketing communications.
+              You can request access, correction, or deletion of your personal data at any time by contacting us at metrocarsusedcars@gmail.com. You may also opt out of marketing communications.
             </Block>
             <Block title="8. Third-Party Links">
               Our website may contain links to third-party sites. We are not responsible for the privacy practices of those external websites.
@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
               We may revise this policy from time to time. The latest version will always be available on this page with the updated revision date.
             </Block>
             <Block title="10. Contact Us">
-              For any privacy-related questions, contact Metro Cars Vijayawada at <strong>+91 99999 99999</strong> or email <strong>metricarsused@gmail.com</strong>. Address: Benz Circle, Vijayawada, Andhra Pradesh.
+              For any privacy-related questions, contact Metro Cars Vijayawada at <strong>+91 90599 87777</strong> or email <strong>metrocarsusedcars@gmail.com</strong>. Address: Benz Circle, Vijayawada, Andhra Pradesh.
             </Block>
           </article>
 

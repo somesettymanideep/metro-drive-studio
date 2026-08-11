@@ -90,7 +90,7 @@ export default function RefundPolicy() {
             </Block>
             <Block title="7. Contact Us">
               For any clarifications regarding this policy, please contact Metro Cars Vijayawada at{" "}
-              <strong>+91 99999 99999</strong> or email <strong>metricarsused@gmail.com</strong> before making
+              <strong>+91 90599 87777</strong> or email <strong>metrocarsusedcars@gmail.com</strong> before making
               a purchase.
             </Block>
           </article>
