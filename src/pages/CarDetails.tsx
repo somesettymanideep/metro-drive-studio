@@ -226,7 +226,6 @@ export default function CarDetails() {
                 <div className="mt-3 flex items-baseline gap-2">
                   <div className="text-4xl font-extrabold text-[var(--brand-orange)]">{car.price}</div>
                 </div>
-                <div className="mt-1 text-sm text-black/60">EMI starts at ₹17,499/mo*</div>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 text-sm">
                   <Spec icon={Calendar} label="Year" value={String(car.year)} />
