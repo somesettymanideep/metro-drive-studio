@@ -193,6 +193,42 @@ import hyundaiCretaSside2 from "@/assets/hy-2.webp";
 import hyundaiCretaSinterior from "@/assets/hy-3.webp";
 import hyundaiCretaSinterior2 from "@/assets/hy-4.webp";
 import hyundaiCretaSinterior3 from "@/assets/hy-5.webp";
+import tucsonMain from "@/assets/tucson-main.jpg";
+import tucsonRear from "@/assets/tucson-rear.jpg";
+import tucsonInterior from "@/assets/tucson-interior.jpg";
+import tucsonSideLeft from "@/assets/tucson-side-left.jpg";
+import tucsonSideRight from "@/assets/tucson-side-right.jpg";
+import tucsonDash from "@/assets/tucson-dash.jpg";
+import tucsonBoot from "@/assets/tucson-boot.jpg";
+
+import ertiga24Main from "@/assets/ertiga2024-main.jpg";
+import ertiga24Rear from "@/assets/ertiga2024-rear.jpg";
+import ertiga24Interior from "@/assets/ertiga2024-interior.jpg";
+import ertiga24ThirdRow from "@/assets/ertiga2024-third-row.jpg";
+import ertiga24Side from "@/assets/ertiga2024-side.jpg";
+import ertiga24Dash from "@/assets/ertiga2024-dash.jpg";
+import ertiga24SideLeft from "@/assets/ertiga2024-side-left.jpg";
+import altrozCngMain from "@/assets/altroz-cng-main.jpg";
+import altrozCngRear from "@/assets/altroz-cng-rear.jpg";
+import altrozCngSideRight from "@/assets/altroz-cng-side-right.jpg";
+import altrozCngSideLeft from "@/assets/altroz-cng-side-left.jpg";
+import altrozCngInterior from "@/assets/altroz-cng-interior.jpg";
+import altrozCngDash from "@/assets/altroz-interior-front.jpeg";
+import altrozSunroof from "@/assets/altroz-sunroof.jpeg";
+import astamaino from "@/assets/asta-o-main.jpeg";
+import astasecond from "@/assets/asta-o-1.jpeg";
+import astathird from "@/assets/asta-2.jpeg";
+import astafourth from "@/assets/asta-3.jpeg";
+import astafifth from "@/assets/asta-4.jpeg";
+import astasixth from "@/assets/asta-5.jpeg";
+import astaseventh from "@/assets/asta-6.jpeg";
+import hondacityvmain from "@/assets/honda-city-v.jpeg";
+import hondasecond from "@/assets/hond-city-v-one.jpeg";
+import hondathird from "@/assets/honda-city-v-two.jpeg";
+import hondafourth from "@/assets/honda-city-v-three.jpeg";
+import hondafifth from "@/assets/honda-city-v-four.jpeg";
+import hondasixth from "@/assets/honda-city-v-five.jpeg";
+import hondaseventh from "@/assets/honda-city-v-six.jpeg";
 
 
 
@@ -224,6 +260,90 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "tata-altroz-xz-plus-cng-2023",
+    img: altrozCngMain,
+    name: "Tata Altroz XZ+",
+    year: 2023,
+    fuel: "L hybrid ( petrol +CNG)",
+    trans: "Manual",
+    km: "12,307 km",
+    price: "₹8.50 L",
+    cat: "Hatchback",
+    brand: "Tata",
+    model: "Altroz",
+    variant: "XZ+ Petrol CNG MT",
+    color: "Red",
+    registration: "5307",
+    bodyType: "Hatchback",
+    description:
+      "Tata Altroz XZ+ manual in dual-tone red with black contrast roof — L hybrid (petrol + CNG) premium hatchback with plush white leatherette seats, touchscreen infotainment, push-button start and climate control.",
+    gallery: [
+      altrozCngMain,
+      altrozCngSideRight,
+      altrozCngSideLeft,
+      altrozCngRear,
+      altrozCngInterior,
+      altrozCngDash,
+      altrozSunroof,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ertiga-zxi-plus-2024",
+    img: ertiga24Main,
+    name: "Maruti Suzuki Ertiga ZXI+",
+    year: 2024,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "50,000 km",
+    price: "₹11.80 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Ertiga",
+    variant: "ZXI+ Petrol MT",
+    color: "White",
+    registration: "0393",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki Ertiga ZXI+ petrol manual in pristine white — top-spec 7-seater MPV with Smart Hybrid technology, touchscreen infotainment, push-button start, alloy wheels, rear AC vents and well-maintained beige leatherette interior.",
+    gallery: [
+      ertiga24Main,
+      ertiga24Side,
+      ertiga24SideLeft,
+      ertiga24Rear,
+      ertiga24Dash,
+      ertiga24Interior,
+      ertiga24ThirdRow,
+    ],
+  },
+  {
+    slug: "hyundai-tucson-gls-4wd-2018",
+    img: tucsonMain,
+    name: "Hyundai Tucson GLS 4WD",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "1,27,000 km",
+    price: "₹14.00 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Tucson",
+    variant: "GLS 4WD AT",
+    color: "White",
+    registration: "7575",
+    bodyType: "SUV",
+    description:
+      "Hyundai Tucson GLS 4WD diesel automatic in polar white — premium 4WD SUV with sleek exterior styling, beige leather cabin, automatic transmission, touchscreen infotainment, dual-zone climate control, and powerful CRDi diesel engine.",
+    gallery: [
+      tucsonMain,
+      tucsonSideLeft,
+      tucsonSideRight,
+      tucsonRear,
+      tucsonDash,
+      tucsonInterior,
+      tucsonBoot,
+    ],
+  },
   {
     slug: "toyota-innova-crysta-2-4-z-2020",
     img: innovaMain,
@@ -404,6 +524,45 @@ export const cars: Car[] = [
     description:
       "Hyundai i20 Asta diesel manual in fiery red with beige-brown leatherette cabin, touchscreen infotainment, alloy wheels and automatic climate control. Well maintained and fuel efficient.",
     gallery: [i20AstaMain, i20AstaSideRight, i20AstaSideLeft, i20AstaRear, i20AstaDash, i20AstaFrontSeats],
+  },
+  {
+    slug: "hyundai-i20-asta-o-2018",
+    img: astamaino,
+    name: "Hyundai i20 Asta (O)",
+    year: 2018,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "76,213 km",
+    price: "₹6.30 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Asta (O) Petrol MT",
+    registration: "5259",
+    color: "grey",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai i20 Asta (O) petrol manual in white with a clean, well-kept cabin, smooth driving feel and excellent value for a reliable 2018 hatchback.",
+    gallery: [astamaino, astasecond, astathird, astafourth, astafifth, astasixth, astaseventh],
+  },
+  {
+    slug: "honda-city-v-cvt-2019",
+    img: hondacityvmain,
+    name: "Honda City V CVT",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "56,320 km",
+    price: "₹7.50 L",
+    cat: "Sedan",
+    brand: "Honda",
+    model: "City",
+    variant: "V CVT",
+    color: "White",
+    bodyType: "Sedan",
+    description:
+      "Honda City V CVT petrol automatic in a clean white finish, offering a refined automatic drive, spacious cabin and easy city-to-highway comfort.",
+    gallery: [hondacityvmain, hondasecond, hondathird, hondafourth, hondafifth, hondasixth, hondaseventh],
   },
   {
     slug: "hyundai-aura-s-2025",
