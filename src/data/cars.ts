@@ -229,6 +229,11 @@ import hondafourth from "@/assets/honda-city-v-three.jpeg";
 import hondafifth from "@/assets/honda-city-v-four.jpeg";
 import hondasixth from "@/assets/honda-city-v-five.jpeg";
 import hondaseventh from "@/assets/honda-city-v-six.jpeg";
+import innova05Main from "@/assets/innova05-main.jpg";
+import innova05SideLeft from "@/assets/innova05-side-left.jpg";
+import innova05SideRight from "@/assets/innova05-side-right.jpg";
+import innova05Rear from "@/assets/innova05-rear.jpg";
+import innova05Interior from "@/assets/innova05-interior.jpg";
 
 
 
@@ -265,7 +270,7 @@ export const cars: Car[] = [
     img: altrozCngMain,
     name: "Tata Altroz XZ+",
     year: 2023,
-    fuel: "L hybrid ( petrol +CNG)",
+    fuel: "hybrid ( petrol +CNG)",
     trans: "Manual",
     km: "12,307 km",
     price: "₹8.50 L",
@@ -558,6 +563,7 @@ export const cars: Car[] = [
     brand: "Honda",
     model: "City",
     variant: "V CVT",
+    registration: "0477",
     color: "White",
     bodyType: "Sedan",
     description:
@@ -805,6 +811,32 @@ export const cars: Car[] = [
     description:
       "Honda Amaze VX petrol manual — well-maintained sedan with spacious cabin, comfortable ride and excellent fuel efficiency.",
     gallery: [amaze19Main, amaze19Side, amaze19Rear, amaze19Interior, amaze19RearSeats, amaze19Dash2],
+  },
+  {
+    slug: "toyota-innova-2-5-v-2005",
+    img: innova05Main,
+    name: "Toyota Innova 2.5 V",
+    year: 2005,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "4,42,619 km",
+    price: "₹3.50 L",
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Innova",
+    variant: "2.5 V",
+    color: "Silver",
+    bodyType: "MPV",
+    registration: "7575",
+    description:
+      "Toyota Innova 2.5 V diesel manual in classic silver finish, featuring a well-kept dual-tone beige interior with custom diamond-stitched leatherette seats, front bumper guard with auxiliary driving lights, and premium black alloy wheels. An incredibly durable and comfortable family MPV.",
+    gallery: [
+      innova05Main,
+      innova05SideLeft,
+      innova05SideRight,
+      innova05Rear,
+      innova05Interior,
+    ],
   },
 ];
 
