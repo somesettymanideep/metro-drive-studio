@@ -191,16 +191,22 @@ import stormeRear from "@/assets/safari-storme-rear.jpg";
 import stormeSide1 from "@/assets/safari-storme-side1.jpg";
 import stormeSide2 from "@/assets/safari-storme-side2.jpg";
 import stormeInterior from "@/assets/safari-storme-interior.jpg";
+import stormeInteriorFront from "@/assets/safari-storme-interior-front.jpg";
+import stormeInteriorRear from "@/assets/safari-storme-interior-rear.jpg";
 import kwidMain from "@/assets/kwid-main.jpg";
 import kwidRear from "@/assets/kwid-rear.jpg";
 import kwidSideLeft from "@/assets/kwid-side-left.jpg";
 import kwidSideRight from "@/assets/kwid-side-right.jpg";
 import kwidInterior from "@/assets/kwid-interior.jpg";
+import kwidInteriorFront from "@/assets/kwid-interior-front.jpg";
+import kwidInteriorRear from "@/assets/kwid-interior-rear.jpg";
 import terranoMain from "@/assets/terrano-main.jpg";
 import terranoRear from "@/assets/terrano-rear.jpg";
 import terranoSideLeft from "@/assets/terrano-side-left.jpg";
 import terranoSideRight from "@/assets/terrano-side-right.jpg";
 import terranoInterior from "@/assets/terrano-interior.jpg";
+import terranoInteriorFront from "@/assets/terrano-interior-front.jpg";
+import terranoInteriorRear from "@/assets/terrano-interior-rear.jpg";
 import altrozMain from "@/assets/altroz-main.webp";
 import altrozSideRight from "@/assets/altroz-side-right.webp";
 import altrozSideLeft from "@/assets/altroz-side-left.webp";
@@ -518,7 +524,9 @@ export const cars: Car[] = [
       stormeSide1,
       stormeSide2,
       stormeRear,
-      stormeInterior
+      stormeInterior,
+      stormeInteriorFront,
+      stormeInteriorRear
     ],
   },
   {
@@ -610,7 +618,9 @@ export const cars: Car[] = [
       kwidSideRight,
       kwidSideLeft,
       kwidRear,
-      kwidInterior
+      kwidInterior,
+      kwidInteriorFront,
+      kwidInteriorRear
     ],
   },
   {
@@ -636,7 +646,9 @@ export const cars: Car[] = [
       terranoSideRight,
       terranoSideLeft,
       terranoRear,
-      terranoInterior
+      terranoInterior,
+      terranoInteriorFront,
+      terranoInteriorRear
     ],
   },
   {
