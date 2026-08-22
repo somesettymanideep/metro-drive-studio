@@ -52,12 +52,19 @@ export function inventoryToCar(item: InventoryItem): Car {
 
 export function getAllCars(): Car[] {
   const inv = listInventory().map(inventoryToCar);
-  return [...inv, ...staticCars];
+  const filteredInv = inv.filter(
+    (item) => !staticCars.some((sc) => sc.name.toLowerCase() === item.name.toLowerCase())
+  );
+  return [...filteredInv, ...staticCars];
 }
 
 export async function getAllCarsRemote(): Promise<Car[]> {
   const inv = await listInventoryRemote();
-  return [...inv.map(inventoryToCar), ...staticCars];
+  const remoteCars = inv.map(inventoryToCar);
+  const filteredRemote = remoteCars.filter(
+    (item) => !staticCars.some((sc) => sc.name.toLowerCase() === item.name.toLowerCase())
+  );
+  return [...filteredRemote, ...staticCars];
 }
 
 export function getAnyCarBySlug(slug: string): Car | undefined {

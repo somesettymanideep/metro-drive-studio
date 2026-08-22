@@ -156,6 +156,13 @@ import i20AstaSideLeft from "@/assets/i20asta-side-left.webp";
 import i20AstaRear from "@/assets/i20asta-rear.webp";
 import i20AstaDash from "@/assets/i20asta-dash.webp";
 import i20AstaFrontSeats from "@/assets/i20asta-front-seats.webp";
+import i20AstaRedFront from "@/assets/i20asta-red-front.webp";
+import i20AstaRedSide1 from "@/assets/i20asta-red-side1.webp";
+import i20AstaRedSide2 from "@/assets/i20asta-red-side2.webp";
+import i20AstaRedRear from "@/assets/i20asta-red-rear.webp";
+import i20AstaRedDash from "@/assets/i20asta-red-dash.webp";
+import i20AstaRedInt1 from "@/assets/i20asta-red-int1.webp";
+import i20AstaRedInt2 from "@/assets/i20asta-red-int2.webp";
 import i20AstaPMain from "@/assets/i20asta-p-main.webp";
 import i20AstaPSideRight from "@/assets/i20asta-p-side-right.webp";
 import i20AstaPSideLeft from "@/assets/i20asta-p-side-left.webp";
@@ -179,6 +186,11 @@ import safariDash from "@/assets/safari-dash.webp";
 import safariInterior from "@/assets/safari-interior.webp";
 import safariRearSeats from "@/assets/safari-rear-seats.webp";
 import safariThirdRow from "@/assets/safari-third-row.webp";
+import stormeMain from "@/assets/safari-storme-main.jpg";
+import stormeRear from "@/assets/safari-storme-rear.jpg";
+import stormeSide1 from "@/assets/safari-storme-side1.jpg";
+import stormeSide2 from "@/assets/safari-storme-side2.jpg";
+import stormeInterior from "@/assets/safari-storme-interior.jpg";
 import altrozMain from "@/assets/altroz-main.webp";
 import altrozSideRight from "@/assets/altroz-side-right.webp";
 import altrozSideLeft from "@/assets/altroz-side-left.webp";
@@ -474,6 +486,31 @@ export const cars: Car[] = [
     gallery: [safariMain, safariSideRight, safariSideLeft, safariRear, safariDash, safariInterior, safariRearSeats, safariThirdRow],
   },
   {
+    slug: "tata-safari-storme-vx-2018",
+    img: stormeMain,
+    name: "Tata Safari Storme VX",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,10,000 km",
+    price: "₹10.50 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Safari Storme",
+    variant: "VX Diesel MT",
+    color: "Grey",
+    bodyType: "SUV",
+    description:
+      "Tata Safari Storme VX diesel manual in urban grey — iconic SUV with powerful VARICOR 400 engine, spacious 7-seater cabin, legendary road presence, and well-maintained interior featuring premium leatherette upholstery and classic styling.",
+    gallery: [
+      stormeMain,
+      stormeSide1,
+      stormeSide2,
+      stormeRear,
+      stormeInterior
+    ],
+  },
+  {
     slug: "kia-carnival-prestige-2020",
     img: carnivalMain,
     name: "Kia Carnival Prestige",
@@ -513,13 +550,13 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-i20-asta-2018",
-    img: i20AstaMain,
+    img: i20AstaRedFront,
     name: "Hyundai i20 Asta",
     year: 2018,
     fuel: "Diesel",
     trans: "Manual",
-    km: "80,000 km",
-    price: "₹6.30 L",
+    km: "80,324 km",
+    price: "₹6.50 L",
     cat: "Hatchback",
     brand: "Hyundai",
     model: "i20",
@@ -527,8 +564,16 @@ export const cars: Car[] = [
     color: "Red",
     bodyType: "Hatchback",
     description:
-      "Hyundai i20 Asta diesel manual in fiery red with beige-brown leatherette cabin, touchscreen infotainment, alloy wheels and automatic climate control. Well maintained and fuel efficient.",
-    gallery: [i20AstaMain, i20AstaSideRight, i20AstaSideLeft, i20AstaRear, i20AstaDash, i20AstaFrontSeats],
+      "Hyundai i20 Asta diesel manual in vibrant red (Registration: 9349) with a premium dual-tone brown-beige leatherette cabin.",
+    gallery: [
+      i20AstaRedFront,
+      i20AstaRedSide1,
+      i20AstaRedSide2,
+      i20AstaRedRear,
+      i20AstaRedDash,
+      i20AstaRedInt1,
+      i20AstaRedInt2
+    ],
   },
   {
     slug: "hyundai-i20-asta-o-2018",
