@@ -191,6 +191,16 @@ import stormeRear from "@/assets/safari-storme-rear.jpg";
 import stormeSide1 from "@/assets/safari-storme-side1.jpg";
 import stormeSide2 from "@/assets/safari-storme-side2.jpg";
 import stormeInterior from "@/assets/safari-storme-interior.jpg";
+import kwidMain from "@/assets/kwid-main.jpg";
+import kwidRear from "@/assets/kwid-rear.jpg";
+import kwidSideLeft from "@/assets/kwid-side-left.jpg";
+import kwidSideRight from "@/assets/kwid-side-right.jpg";
+import kwidInterior from "@/assets/kwid-interior.jpg";
+import terranoMain from "@/assets/terrano-main.jpg";
+import terranoRear from "@/assets/terrano-rear.jpg";
+import terranoSideLeft from "@/assets/terrano-side-left.jpg";
+import terranoSideRight from "@/assets/terrano-side-right.jpg";
+import terranoInterior from "@/assets/terrano-interior.jpg";
 import altrozMain from "@/assets/altroz-main.webp";
 import altrozSideRight from "@/assets/altroz-side-right.webp";
 import altrozSideLeft from "@/assets/altroz-side-left.webp";
@@ -499,6 +509,7 @@ export const cars: Car[] = [
     model: "Safari Storme",
     variant: "VX Diesel MT",
     color: "Grey",
+    registration: "0444",
     bodyType: "SUV",
     description:
       "Tata Safari Storme VX diesel manual in urban grey — iconic SUV with powerful VARICOR 400 engine, spacious 7-seater cabin, legendary road presence, and well-maintained interior featuring premium leatherette upholstery and classic styling.",
@@ -562,6 +573,7 @@ export const cars: Car[] = [
     model: "i20",
     variant: "Asta Diesel MT",
     color: "Red",
+    registration: "9349",
     bodyType: "Hatchback",
     description:
       "Hyundai i20 Asta diesel manual in vibrant red (Registration: 9349) with a premium dual-tone brown-beige leatherette cabin.",
@@ -573,6 +585,58 @@ export const cars: Car[] = [
       i20AstaRedDash,
       i20AstaRedInt1,
       i20AstaRedInt2
+    ],
+  },
+  {
+    slug: "renault-kwid-rxt-2017",
+    img: kwidMain,
+    name: "Renault Kwid RXT",
+    year: 2017,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "91,600 km",
+    price: "₹2.60 L",
+    cat: "Hatchback",
+    brand: "Renault",
+    model: "Kwid",
+    variant: "RXT Manual",
+    color: "Bronze",
+    registration: "7189",
+    bodyType: "Hatchback",
+    description:
+      "Renault Kwid RXT manual in stylish bronze — fuel-efficient hatchback with a digital instrument cluster, touchscreen infotainment system, custom black & yellow leatherette seats, and a well-kept cabin.",
+    gallery: [
+      kwidMain,
+      kwidSideRight,
+      kwidSideLeft,
+      kwidRear,
+      kwidInterior
+    ],
+  },
+  {
+    slug: "nissan-terrano-xv-2014",
+    img: terranoMain,
+    name: "Nissan Terrano XV",
+    year: 2014,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,28,600 km",
+    price: "₹4.00 L",
+    cat: "SUV",
+    brand: "Nissan",
+    model: "Terrano",
+    variant: "XV dCi MT",
+    color: "White",
+    registration: "3333",
+    bodyType: "SUV",
+    description:
+      "Nissan Terrano XV diesel manual in solid white — premium SUV with dCi diesel engine, robust build quality, beige leatherette seat covers, spacious cabin, and excellent ride comfort.",
+    gallery: [
+      terranoMain,
+      terranoSideRight,
+      terranoSideLeft,
+      terranoRear,
+      terranoInterior
     ],
   },
   {
