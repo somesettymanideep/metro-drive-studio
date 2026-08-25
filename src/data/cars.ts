@@ -58,11 +58,6 @@ import wagonr3 from "@/assets/car-wagonr-3.webp";
 import wagonr4 from "@/assets/car-wagonr-4.webp";
 import wagonr5 from "@/assets/car-wagonr-5.webp";
 import venue7 from "@/assets/car-venue-7.webp";
-import tiagoRear from "@/assets/car-tiago-rear.webp";
-import tiagoSideLeft from "@/assets/car-tiago-side-left.webp";
-import tiagoSideRight from "@/assets/car-tiago-side-right.webp";
-import tiagoInterior from "@/assets/car-tiago-interior.webp";
-import tiagoInterior2 from "@/assets/tiago-interior-2.webp";
 import xuvSideRight from "@/assets/car-xuv500-side-right.webp";
 import xuvSideLeft from "@/assets/car-xuv500-side-left.webp";
 import xuvRear from "@/assets/car-xuv500-rear.webp";
@@ -97,12 +92,6 @@ import audiQ3RearSeats from "@/assets/audiq3-4-rear-seats.webp";
 import audiQ3Side2 from "@/assets/audiq3-side-2.webp";
 import audiQ3Rear2 from "@/assets/audiq3-rear-2.webp";
 import audiQ3Sunroof from "@/assets/audiq3-sunroof.webp";
-import mgHectorDash from "@/assets/mg-hector-dash.webp";
-import mgHectorSide2 from "@/assets/mg-hector-side-2.webp";
-import mgHectorRear2 from "@/assets/mg-hector-rear-2.webp";
-import mgHectorSunroof from "@/assets/mg-hector-sunroof.webp";
-import mgHectorExtra from "@/assets/mg-hector-extra.webp";
-import mgHectorRearSeats from "@/assets/mg-hector-rear-seats.webp";
 import hyryderSideLeft from "@/assets/hyryder-side-left.webp";
 import hyryderSideRight from "@/assets/hyryder-side-right.webp";
 import hyryderRear from "@/assets/hyryder-rear.webp";
@@ -119,13 +108,11 @@ import amaze19Rear from "@/assets/amaze2019-rear.webp";
 import amaze19Interior from "@/assets/amaze2019-interior.webp";
 import amaze19RearSeats from "@/assets/amaze2019-rear-seats.webp";
 import amaze19Dash2 from "@/assets/amaze2019-dashboard-2.webp";
-import mgHectorMain from "@/assets/mg-hector-main.webp";
 import tharRoxxMain from "@/assets/thar-roxx-main.webp";
 import hyryderMain from "@/assets/hyryder-main.webp";
 import amaze19Main from "@/assets/amaze19-main.webp";
 import xuvMain from "@/assets/xuv500-main.webp";
 import xl6Main from "@/assets/xl6-main.webp";
-import tiagoMain from "@/assets/tiago-main.webp";
 import audiQ3Main from "@/assets/audiq3-main.webp";
 import bmwX1Main from "@/assets/bmwx1-main.webp";
 import ecosportMain from "@/assets/ecosport-main.webp";
@@ -136,13 +123,6 @@ import tiagoPRear from "@/assets/tiago-petrol-rear.webp";
 import tiagoPDash from "@/assets/tiago-petrol-dash.webp";
 import tiagoPInterior from "@/assets/tiago-petrol-interior.webp";
 import tiagoPRearSeats from "@/assets/tiago-petrol-rear-seats.webp";
-import ertigaMain from "@/assets/ertiga-main.webp";
-import ertigaSideRight from "@/assets/ertiga-side-right.webp";
-import ertigaRear from "@/assets/ertiga-rear.webp";
-import ertigaFrontSeats from "@/assets/ertiga-front-seats.webp";
-import ertigaDash from "@/assets/ertiga-dash.webp";
-import ertigaThirdRow from "@/assets/ertiga-third-row.webp";
-import ertigaRearSeats from "@/assets/ertiga-rear-seats.webp";
 import auraMain from "@/assets/aura-main.webp";
 import auraSideRight from "@/assets/aura-side-right.webp";
 import auraSideLeft from "@/assets/aura-side-left.webp";
@@ -170,14 +150,6 @@ import i20AstaPRear from "@/assets/i20asta-p-rear.webp";
 import i20AstaPDash from "@/assets/i20asta-p-dash.webp";
 import i20AstaPFrontSeats from "@/assets/i20asta-p-front-seats.webp";
 import i20AstaPRearSeats from "@/assets/i20asta-p-rear-seats.webp";
-import carnivalMain from "@/assets/carnival-main.webp";
-import carnivalSideRight from "@/assets/carnival-side-right.webp";
-import carnivalSideLeft from "@/assets/carnival-side-left.webp";
-import carnivalRear from "@/assets/carnival-rear.webp";
-import carnivalDash from "@/assets/carnival-dash.webp";
-import carnivalCaptainSeats from "@/assets/carnival-captain-seats.webp";
-import carnivalThirdRow from "@/assets/carnival-third-row.webp";
-import carnivalSunroof from "@/assets/carnival-sunroof.webp";
 import safariMain from "@/assets/safari-main.webp";
 import safariSideRight from "@/assets/safari-side-right.webp";
 import safariSideLeft from "@/assets/safari-side-left.webp";
@@ -530,25 +502,6 @@ export const cars: Car[] = [
     ],
   },
   {
-    slug: "kia-carnival-prestige-2020",
-    img: carnivalMain,
-    name: "Kia Carnival Prestige",
-    year: 2020,
-    fuel: "Diesel",
-    trans: "Automatic",
-    km: "74,000 km",
-    price: "₹22.00 L",
-    cat: "SUV",
-    brand: "Kia",
-    model: "Carnival",
-    variant: "Prestige Diesel AT",
-    color: "White",
-    bodyType: "MPV",
-    description:
-      "Kia Carnival Prestige diesel automatic in pearl white — luxurious 7-seater MPV with captain seats, powered sliding doors, sunroof, beige leatherette cabin and effortless highway comfort.",
-    gallery: [carnivalMain, carnivalSideRight, carnivalSideLeft, carnivalRear, carnivalDash, carnivalCaptainSeats, carnivalThirdRow, carnivalSunroof],
-  },
-  {
     slug: "hyundai-i20-asta-petrol-2018",
     img: i20AstaPMain,
     name: "Hyundai i20 Asta",
@@ -711,25 +664,6 @@ export const cars: Car[] = [
     gallery: [auraMain, auraSideRight, auraSideLeft, auraRear, auraDash, auraFrontSeats, auraRearSeats],
   },
   {
-    slug: "maruti-suzuki-ertiga-2021",
-    img: ertigaMain,
-    name: "Maruti Suzuki Ertiga",
-    year: 2021,
-    fuel: "Petrol",
-    trans: "Automatic",
-    km: "83,000 km",
-    price: "₹9.20 L",
-    cat: "SUV",
-    brand: "Maruti Suzuki",
-    model: "Ertiga",
-    variant: "Petrol AT",
-    color: "Silver",
-    bodyType: "MPV",
-    description:
-      "Maruti Suzuki Ertiga petrol automatic — spacious 7-seater MPV with beige cabin, touchscreen infotainment and smooth automatic drive. Well maintained and ideal for families.",
-    gallery: [ertigaMain, ertigaSideRight, ertigaRear, ertigaDash, ertigaFrontSeats, ertigaRearSeats, ertigaThirdRow],
-  },
-  {
     slug: "tata-tiago-petrol-2023",
     img: tiagoPMain,
     name: "Tata Tiago",
@@ -767,24 +701,6 @@ export const cars: Car[] = [
     description:
       "Well-maintained Hyundai Venue S(O) petrol variant. Spacious compact SUV with modern features, comfortable interiors and excellent fuel efficiency. Perfect for city driving and highway cruising.",
     gallery: [venue7, venue1, venue2, venue3, venue4, venue5, venue6],
-  },
-  {
-    slug: "tata-tiago-ev-xt-lr",
-    img: tiagoMain,
-    name: "Tata Tiago EV XT Long Range",
-    year: 2023,
-    fuel: "Electric",
-    trans: "Automatic",
-    km: "26,000 km",
-    price: "₹6.80 L",
-    cat: "Hatchback",
-    brand: "Tata",
-    model: "Tiago EV",
-    variant: "XT Long Range",
-    bodyType: "Electric Hatchback",
-    description:
-      "Tata Tiago EV XT Long Range — zero emissions, low running cost and modern EV features. Well maintained with low kilometres.",
-    gallery: [tiagoMain, tiagoSideRight, tiagoSideLeft, tiagoRear, tiagoInterior, tiagoInterior2],
   },
   {
     slug: "mahindra-xuv-500-2019",
@@ -875,25 +791,6 @@ export const cars: Car[] = [
     description:
       "Audi Q3 diesel automatic — refined luxury SUV with quattro capability, premium interiors and effortless power delivery.",
     gallery: [audiQ3Main, audiQ3Side2, audiQ3Rear2, audiQ3Sunroof, audiQ3Side, audiQ3Dash, audiQ3RearSeats],
-  },
-  {
-    slug: "mg-hector-2021",
-    img: mgHectorMain,
-    name: "MG Hector",
-    year: 2021,
-    fuel: "Diesel",
-    trans: "Manual",
-    km: "61,000 km",
-    price: "₹13.00 L",
-    cat: "SUV",
-    brand: "MG",
-    model: "Hector",
-    variant: "Diesel MT",
-    color: "White",
-    bodyType: "SUV",
-    description:
-      "Premium MG Hector diesel manual — spacious SUV with modern features, comfortable cabin and powerful performance.",
-    gallery: [mgHectorMain, mgHectorSide2, mgHectorRear2, mgHectorSunroof, mgHectorExtra, mgHectorDash, mgHectorRearSeats],
   },
   {
     slug: "toyota-urban-cruiser-hyryder-2024",
