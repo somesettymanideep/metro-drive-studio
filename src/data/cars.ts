@@ -235,6 +235,30 @@ import innova05SideRight from "@/assets/innova05-side-right.jpg";
 import innova05Rear from "@/assets/innova05-rear.jpg";
 import innova05Interior from "@/assets/innova05-interior.jpg";
 
+import ertiga19Main from "@/assets/ertiga19-main.jpg";
+import ertiga19SideLeft from "@/assets/ertiga19-side-left.jpg";
+import ertiga19Rear from "@/assets/ertiga19-rear.jpg";
+import ertiga19SideRight from "@/assets/ertiga19-side-right.jpg";
+import ertiga19Interior from "@/assets/ertiga19-interior.jpg";
+import ertiga19ThirdRow from "@/assets/ertiga19-third-row.jpg";
+import ertiga19Dash from "@/assets/ertiga19-dash.jpg";
+
+
+import tiguan19Main from "@/assets/tiguan19-main.jpg";
+import tiguan19SideLeft from "@/assets/tiguan19-side-left.jpg";
+import tiguan19Rear from "@/assets/tiguan19-rear.jpg";
+import tiguan19SideRight from "@/assets/tiguan19-side-right.jpg";
+import tiguan19Interior from "@/assets/tiguan19-interior.jpg";
+import tiguan19RearSeats from "@/assets/tiguan19-rear-seats.jpg";
+import tiguan19Sunroof from "@/assets/tiguan19-sunroof.jpg";
+
+import hector23Main from "@/assets/hector23-main.jpg";
+import hector23SideLeft from "@/assets/hector23-side-left.jpg";
+import hector23Rear from "@/assets/hector23-rear.jpg";
+import hector23SideRight from "@/assets/hector23-side-right.jpg";
+import hector23Interior from "@/assets/hector23-interior.jpg";
+import hector23Dash from "@/assets/hector23-dash.jpg";
+import hector23RearSeats from "@/assets/hector23-rear-seats.jpg";
 
 
 export type Car = {
@@ -854,6 +878,89 @@ export const cars: Car[] = [
       innova05SideRight,
       innova05Rear,
       innova05Interior,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ertiga-vxi-2019",
+    img: ertiga19Main,
+    name: "Maruti Suzuki Ertiga Vxi",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "82,580 km",
+    price: "₹7.80 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Ertiga",
+    variant: "Vxi (S Hybrid) MT",
+    color: "White",
+    registration: "4644",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki Ertiga Vxi Smart Hybrid petrol manual in white finish, featuring a manual transmission, front and rear chrome/steel bumper guards, well-maintained beige leatherette seats, and a spacious 7-seater layout.",
+    gallery: [
+      ertiga19Main,
+      ertiga19SideLeft,
+      ertiga19SideRight,
+      ertiga19Rear,
+      ertiga19ThirdRow,
+      ertiga19Dash,
+      ertiga19Interior,
+    ],
+  },
+  {
+    slug: "volkswagen-tiguan-2019",
+    img: tiguan19Main,
+    name: "Volkswagen Tiguan",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "97,000 km",
+    price: "₹18.00 L",
+    cat: "SUV",
+    brand: "Volkswagen",
+    model: "Tiguan",
+    variant: "4Motion DSG",
+    color: "White",
+    registration: "0222",
+    bodyType: "SUV",
+    description:
+      "Premium Volkswagen Tiguan petrol automatic in white finish, featuring a 4Motion all-wheel-drive system, DSG automatic transmission, virtual cockpit, panoramic sunroof, premium white leather interior, and a spacious layout.",
+    gallery: [
+      tiguan19Main,
+      tiguan19SideLeft,
+      tiguan19SideRight,
+      tiguan19Rear,
+      tiguan19RearSeats,
+      tiguan19Sunroof,
+      tiguan19Interior,
+    ],
+  },
+  {
+    slug: "mg-hector-diesel-2023",
+    img: hector23Main,
+    name: "MG Hector",
+    year: 2023,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "25,646 km",
+    price: "₹15.50 L",
+    cat: "SUV",
+    brand: "MG",
+    model: "Hector",
+    variant: "Diesel MT",
+    color: "Black",
+    bodyType: "SUV",
+    description:
+      "MG Hector diesel manual in sleek black finish, featuring a 2.0L turbocharged diesel engine, manual transmission, custom red leatherette seats, touchscreen infotainment system, and a spacious premium cabin.",
+    gallery: [
+      hector23Main,
+      hector23SideLeft,
+      hector23SideRight,
+      hector23Rear,
+      hector23Dash,
+      hector23RearSeats,
+      hector23Interior,
     ],
   },
 ];
