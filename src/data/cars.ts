@@ -243,6 +243,15 @@ import ertiga19Interior from "@/assets/ertiga19-interior.jpg";
 import ertiga19ThirdRow from "@/assets/ertiga19-third-row.jpg";
 import ertiga19Dash from "@/assets/ertiga19-dash.jpg";
 
+import ertigaZxi19Main from "@/assets/ertiga-zxi-19-main.jpg";
+import ertigaZxi19SideLeft from "@/assets/ertiga-zxi-19-side-left.jpg";
+import ertigaZxi19Rear from "@/assets/ertiga-zxi-19-rear.jpg";
+import ertigaZxi19SideRight from "@/assets/ertiga-zxi-19-side-right.jpg";
+import ertigaZxi19Interior from "@/assets/ertiga-zxi-19-interior.jpg";
+import ertigaZxi19IntFront from "@/assets/ertiga-zxi-19-int-front.jpg";
+import ertigaZxi19IntMiddle from "@/assets/ertiga-zxi-19-int-middle.jpg";
+import ertigaZxi19IntRear from "@/assets/ertiga-zxi-19-int-rear.jpg";
+
 
 import tiguan19Main from "@/assets/tiguan19-main.jpg";
 import tiguan19SideLeft from "@/assets/tiguan19-side-left.jpg";
@@ -259,6 +268,15 @@ import hector23SideRight from "@/assets/hector23-side-right.jpg";
 import hector23Interior from "@/assets/hector23-interior.jpg";
 import hector23Dash from "@/assets/hector23-dash.jpg";
 import hector23RearSeats from "@/assets/hector23-rear-seats.jpg";
+
+import xl621Main from "@/assets/xl6-21-main.jpg";
+import xl621Side1 from "@/assets/xl6-21-side1.jpg";
+import xl621Side2 from "@/assets/xl6-21-side2.jpg";
+import xl621Rear from "@/assets/xl6-21-rear.jpg";
+import xl621Int1 from "@/assets/xl6-21-int1.jpg";
+import xl621Dash from "@/assets/xl6-21-dash.jpg";
+import xl621RearSeats from "@/assets/xl6-21-rear-seats.jpg";
+import xl621Int2 from "@/assets/xl6-21-int2.jpg";
 
 
 export type Car = {
@@ -937,6 +955,34 @@ export const cars: Car[] = [
     ],
   },
   {
+    slug: "maruti-suzuki-ertiga-zxi-plus-2019",
+    img: ertigaZxi19Main,
+    name: "Maruti Suzuki Ertiga ZXI+",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "1,07,106 km",
+    price: "₹8.80 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Ertiga",
+    variant: "ZXI+ (S Hybrid) MT",
+    color: "Grey",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki Ertiga ZXI+ Smart Hybrid petrol manual in grey finish — top-spec 7-seater MPV with Smart Hybrid technology, manual transmission, touchscreen infotainment, push-button start, alloy wheels, and well-maintained leatherette interior.",
+    gallery: [
+      ertigaZxi19Main,
+      ertigaZxi19SideLeft,
+      ertigaZxi19SideRight,
+      ertigaZxi19Rear,
+      ertigaZxi19Interior,
+      ertigaZxi19IntFront,
+      ertigaZxi19IntMiddle,
+      ertigaZxi19IntRear,
+    ],
+  },
+  {
     slug: "mg-hector-diesel-2023",
     img: hector23Main,
     name: "MG Hector",
@@ -961,6 +1007,34 @@ export const cars: Car[] = [
       hector23Dash,
       hector23RearSeats,
       hector23Interior,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-xl6-zeta-2021",
+    img: xl621Main,
+    name: "Maruti Suzuki XL6 Zeta",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "61,915 km",
+    price: "₹9.80 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "XL6",
+    variant: "Zeta (S Hybrid) MT",
+    color: "Khaki",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki XL6 Zeta Smart Hybrid petrol manual in Brave Khaki — premium 6-seater MPV with Smart Hybrid technology, manual transmission, spacious cabin with captain seats, steering-mounted controls, and efficient performance.",
+    gallery: [
+      xl621Main,
+      xl621Side1,
+      xl621Side2,
+      xl621Rear,
+      xl621Int1,
+      xl621Dash,
+      xl621RearSeats,
+      xl621Int2,
     ],
   },
 ];
