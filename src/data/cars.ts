@@ -278,6 +278,22 @@ import xl621Dash from "@/assets/xl6-21-dash.jpg";
 import xl621RearSeats from "@/assets/xl6-21-rear-seats.jpg";
 import xl621Int2 from "@/assets/xl6-21-int2.jpg";
 
+import mgZsev24Main from "@/assets/mg-zsev-24-main.jpg";
+import mgZsev24SideLeft from "@/assets/mg-zsev-24-side-left.jpg";
+import mgZsev24SideRight from "@/assets/mg-zsev-24-side-right.jpg";
+import mgZsev24Rear from "@/assets/mg-zsev-24-rear.jpg";
+import mgZsev24Dash from "@/assets/mg-zsev-24-dash.jpg";
+import mgZsev24Int1 from "@/assets/mg-zsev-24-int1.jpg";
+import mgZsev24Int2 from "@/assets/mg-zsev-24-int2.jpg";
+
+import i20Cvt18Main from "@/assets/i20-cvt-18-main.jpg";
+import i20Cvt18SideLeft from "@/assets/i20-cvt-18-side-left.jpg";
+import i20Cvt18SideRight from "@/assets/i20-cvt-18-side-right.jpg";
+import i20Cvt18Rear from "@/assets/i20-cvt-18-rear.jpg";
+import i20Cvt18Dash from "@/assets/i20-cvt-18-dash.jpg";
+import i20Cvt18Int1 from "@/assets/i20-cvt-18-int1.jpg";
+import i20Cvt18Int2 from "@/assets/i20-cvt-18-int2.jpg";
+
 
 export type Car = {
   slug: string;
@@ -1035,6 +1051,62 @@ export const cars: Car[] = [
       xl621Dash,
       xl621RearSeats,
       xl621Int2,
+    ],
+  },
+  {
+    slug: "mg-zs-ev-exclusive-plus-2024",
+    img: mgZsev24Main,
+    name: "MG ZS EV Exclusive Plus",
+    year: 2024,
+    fuel: "Electric",
+    trans: "Automatic",
+    km: "88,422 km",
+    price: "₹14.00 L",
+    cat: "SUV",
+    brand: "MG",
+    model: "ZS EV",
+    variant: "Exclusive Plus",
+    color: "White",
+    registration: "7677",
+    bodyType: "SUV",
+    description:
+      "MG ZS EV Exclusive Plus in pristine white finish — feature-loaded, fully electric SUV with automatic transmission, large touchscreen infotainment, premium black leatherette interior, and zero-emission electric motor.",
+    gallery: [
+      mgZsev24Main,
+      mgZsev24SideLeft,
+      mgZsev24SideRight,
+      mgZsev24Rear,
+      mgZsev24Dash,
+      mgZsev24Int1,
+      mgZsev24Int2,
+    ],
+  },
+  {
+    slug: "hyundai-i20-asta-cvt-2018",
+    img: i20Cvt18Main,
+    name: "Hyundai i20 Asta CVT",
+    year: 2018,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "82,095 km",
+    price: "₹6.30 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Asta CVT",
+    color: "White",
+    registration: "6669",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai i20 Asta CVT petrol automatic in clean white finish — premium hatchback with smooth CVT automatic transmission, touchscreen infotainment, dual-tone beige-black cabin, and automatic climate control.",
+    gallery: [
+      i20Cvt18Main,
+      i20Cvt18SideLeft,
+      i20Cvt18SideRight,
+      i20Cvt18Rear,
+      i20Cvt18Dash,
+      i20Cvt18Int1,
+      i20Cvt18Int2,
     ],
   },
 ];
