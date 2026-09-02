@@ -294,6 +294,23 @@ import i20Cvt18Dash from "@/assets/i20-cvt-18-dash.jpg";
 import i20Cvt18Int1 from "@/assets/i20-cvt-18-int1.jpg";
 import i20Cvt18Int2 from "@/assets/i20-cvt-18-int2.jpg";
 
+import creta22Main from "@/assets/creta22-main.jpg";
+import creta22SideRight from "@/assets/creta22-side-right.jpg";
+import creta22SideLeft from "@/assets/creta22-side-left.jpg";
+import creta22Rear from "@/assets/creta22-rear.jpg";
+import creta22Dash from "@/assets/creta22-dash.jpg";
+import creta22FrontSeats from "@/assets/creta22-front-seats.jpg";
+import creta22RearSeats from "@/assets/creta22-rear-seats.jpg";
+
+import evoque23Main from "@/assets/evoque23-main.jpg";
+import evoque23SideRight from "@/assets/evoque23-side-right.jpg";
+import evoque23SideLeft from "@/assets/evoque23-side-left.jpg";
+import evoque23Rear from "@/assets/evoque23-rear.jpg";
+import evoque23Interior from "@/assets/evoque23-interior.jpg";
+import evoque23Dash from "@/assets/evoque23-dash.jpg";
+import evoque23RearSeats from "@/assets/evoque23-rear-seats.jpg";
+import evoque23Roof from "@/assets/evoque23-roof.jpg";
+
 
 export type Car = {
   slug: string;
@@ -323,6 +340,63 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "range-rover-evoque-diesel-2023",
+    img: evoque23Main,
+    name: "Range Rover Evoque",
+    year: 2023,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "49,159 km",
+    price: "₹57.00 L",
+    cat: "Luxury",
+    brand: "Range Rover",
+    model: "Evoque",
+    variant: "2.0 Diesel AT AWD",
+    color: "White / Black Roof",
+    registration: "7777",
+    bodyType: "Luxury SUV",
+    description:
+      "Range Rover Evoque diesel automatic in Fuji White with contrast black roof (Registration: 7777) — prestigious luxury SUV featuring a 2.0L turbocharged Ingenium diesel engine, 9-speed automatic transmission, AWD, dual-tone garnet and black premium leather cabin, flush deployable door handles, sleek LED lights, and gloss black alloy wheels.",
+    gallery: [
+      evoque23Main,
+      evoque23SideRight,
+      evoque23SideLeft,
+      evoque23Rear,
+      evoque23Roof,
+      evoque23Dash,
+      evoque23Interior,
+      evoque23RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-creta-1-5-e-diesel-2022",
+    img: creta22Main,
+    name: "Hyundai Creta 1.5 E",
+    year: 2022,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "40,853 km",
+    price: "₹11.00 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Creta",
+    variant: "1.5 E Diesel MT",
+    color: "White",
+    registration: "2244",
+    bodyType: "SUV",
+    description:
+      "Hyundai Creta 1.5 E diesel manual in pristine white (Registration: 2244) — feature-packed SUV with 1.5L CRDi diesel engine, 6-speed manual transmission, touchscreen infotainment system, stylish dual-tone cabin, and only 40,853 kms driven.",
+    gallery: [
+      creta22Main,
+      creta22SideRight,
+      creta22SideLeft,
+      creta22Rear,
+      creta22Dash,
+      creta22FrontSeats,
+      creta22RearSeats,
+    ],
+  },
   {
     slug: "tata-altroz-xz-plus-cng-2023",
     img: altrozCngMain,
