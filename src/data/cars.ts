@@ -208,6 +208,56 @@ import ertiga24ThirdRow from "@/assets/ertiga2024-third-row.jpg";
 import ertiga24Side from "@/assets/ertiga2024-side.jpg";
 import ertiga24Dash from "@/assets/ertiga2024-dash.jpg";
 import ertiga24SideLeft from "@/assets/ertiga2024-side-left.jpg";
+
+import ertiga24Zxi2793Main from "@/assets/ertiga24-2793-main.jpg";
+import ertiga24Zxi2793SideRight from "@/assets/ertiga24-2793-side-right.jpg";
+import ertiga24Zxi2793SideLeft from "@/assets/ertiga24-2793-side-left.jpg";
+import ertiga24Zxi2793Rear from "@/assets/ertiga24-2793-rear.jpg";
+import ertiga24Zxi2793Dash from "@/assets/ertiga24-2793-dash.jpg";
+import ertiga24Zxi2793Interior from "@/assets/ertiga24-2793-interior.jpg";
+import ertiga24Zxi2793RearSeats from "@/assets/ertiga24-2793-rear-seats.jpg";
+import ertiga24Zxi2793ThirdRow from "@/assets/ertiga24-2793-third-row.jpg";
+
+import innova12Main from "@/assets/innova12-6566-main.jpg";
+import innova12SideRight from "@/assets/innova12-6566-side-right.jpg";
+import innova12SideLeft from "@/assets/innova12-6566-side-left.jpg";
+import innova12Rear from "@/assets/innova12-6566-rear.jpg";
+import innova12Dash from "@/assets/innova12-6566-dash.jpg";
+import innova12Interior from "@/assets/innova12-6566-interior.jpg";
+import innova12RearSeats from "@/assets/innova12-6566-rear-seats.jpg";
+import innova12ThirdRow from "@/assets/innova12-6566-third-row.jpg";
+
+import altoK10Main from "@/assets/altok10-13-3791-main.jpg";
+import altoK10SideRight from "@/assets/altok10-13-3791-side-right.jpg";
+import altoK10SideLeft from "@/assets/altok10-13-3791-side-left.jpg";
+import altoK10Rear from "@/assets/altok10-13-3791-rear.jpg";
+import altoK10Dash from "@/assets/altok10-13-3791-dash.jpg";
+import altoK10Interior from "@/assets/altok10-13-3791-interior.jpg";
+import altoK10RearSeats from "@/assets/altok10-13-3791-rear-seats.jpg";
+
+import brezza22Main from "@/assets/brezza22-4356-main.jpg";
+import brezza22SideRight from "@/assets/brezza22-4356-side-right.jpg";
+import brezza22SideLeft from "@/assets/brezza22-4356-side-left.jpg";
+import brezza22Rear from "@/assets/brezza22-4356-rear.jpg";
+import brezza22Dash from "@/assets/brezza22-4356-dash.jpg";
+import brezza22Interior from "@/assets/brezza22-4356-interior.jpg";
+import brezza22RearSeats from "@/assets/brezza22-4356-rear-seats.jpg";
+import brezza22Sunroof from "@/assets/brezza22-4356-sunroof.jpg";
+import crysta20Main from "@/assets/crysta20-1899-main.jpg";
+import crysta20SideRight from "@/assets/crysta20-1899-side-right.jpg";
+import crysta20SideLeft from "@/assets/crysta20-1899-side-left.jpg";
+import crysta20Rear from "@/assets/crysta20-1899-rear.jpg";
+import crysta20Dash from "@/assets/crysta20-1899-dash.jpg";
+import crysta20Interior from "@/assets/crysta20-1899-interior.jpg";
+import crysta20RearSeats from "@/assets/crysta20-1899-rear-seats.jpg";
+import crysta20ThirdRow from "@/assets/crysta20-1899-third-row.jpg";
+import i20Sportz21Main from "@/assets/i20-21-8888-main.jpg";
+import i20Sportz21SideRight from "@/assets/i20-21-8888-side-right.jpg";
+import i20Sportz21SideLeft from "@/assets/i20-21-8888-side-left.jpg";
+import i20Sportz21Rear from "@/assets/i20-21-8888-rear.jpg";
+import i20Sportz21Dash from "@/assets/i20-21-8888-dash.jpg";
+import i20Sportz21Interior from "@/assets/i20-21-8888-interior.jpg";
+import i20Sportz21RearSeats from "@/assets/i20-21-8888-rear-seats.jpg";
 import altrozCngMain from "@/assets/altroz-cng-main.jpg";
 import altrozCngRear from "@/assets/altroz-cng-rear.jpg";
 import altrozCngSideRight from "@/assets/altroz-cng-side-right.jpg";
@@ -340,6 +390,178 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "hyundai-i20-sportz-at-2021-8888",
+    img: i20Sportz21Main,
+    name: "Hyundai i20 Sportz AT",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "39,593 km",
+    price: "₹7.50 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Sportz 1.2 Petrol AT",
+    color: "Starry Night (Metallic Black)",
+    registration: "8888",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai i20 Sportz (2021) petrol automatic in stylish Starry Night metallic black finish with VIP registration number 8888. Powered by a refined 1.2L Kappa petrol engine paired with a smooth automatic transmission. Features an 8-inch touchscreen infotainment system with Apple CarPlay and Android Auto, fully digital instrument cluster, multifunction steering wheel, rear parking camera and sensors, dark metallic styled wheels, and a plush black cabin.",
+    gallery: [
+      i20Sportz21Main,
+      i20Sportz21SideRight,
+      i20Sportz21SideLeft,
+      i20Sportz21Rear,
+      i20Sportz21Dash,
+      i20Sportz21Interior,
+      i20Sportz21RearSeats,
+    ],
+  },
+  {
+    slug: "toyota-innova-crysta-2-4-z-2020-1899",
+    img: crysta20Main,
+    name: "Toyota Innova Crysta 2.4Z",
+    year: 2020,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,44,437 km",
+    price: "₹22.00 L",
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Innova Crysta",
+    variant: "2.4Z Diesel MT",
+    color: "Super White",
+    registration: "1899",
+    bodyType: "MPV",
+    description:
+      "Toyota Innova Crysta 2.4Z (2020) diesel manual in pristine Super White finish. Premium top-spec 7-seater MPV powered by the reliable 2.4L GD-series turbo diesel engine with 5-speed manual transmission. Features include plush leather seating, captain seats in the second row, automatic climate control, touchscreen infotainment, steering audio controls, wooden dashboard accents, projector headlamps, and alloy wheels.",
+    gallery: [
+      crysta20Main,
+      crysta20SideRight,
+      crysta20SideLeft,
+      crysta20Rear,
+      crysta20Dash,
+      crysta20Interior,
+      crysta20RearSeats,
+      crysta20ThirdRow,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-brezza-zxi-plus-at-2022-4356",
+    img: brezza22Main,
+    name: "Maruti Suzuki Brezza ZXI+",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "33,167 km",
+    price: "₹11.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Brezza",
+    variant: "ZXI+ Smart Hybrid AT",
+    color: "Splendid Silver Dual Tone",
+    registration: "4356",
+    bodyType: "Compact SUV",
+    description:
+      "Maruti Suzuki Brezza ZXI+ (2022) Smart Hybrid automatic in splendid silver dual-tone finish with midnight black roof. Top-spec compact SUV powered by 1.5L K15C DualJet petrol engine with smooth automatic transmission and Smart Hybrid technology. Features an electric sunroof, 9-inch SmartPlay Pro+ touchscreen, push-button start/stop, paddle shifters, dual-tone precision-cut alloy wheels, rear AC vents, and premium black leatherette interior.",
+    gallery: [
+      brezza22Main,
+      brezza22SideRight,
+      brezza22SideLeft,
+      brezza22Rear,
+      brezza22Dash,
+      brezza22Interior,
+      brezza22RearSeats,
+      brezza22Sunroof,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-alto-k10-vxi-2013-3791",
+    img: altoK10Main,
+    name: "Maruti Suzuki Alto K10 VXi",
+    year: 2013,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "80,314 km",
+    price: "₹1.80 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Alto K10",
+    variant: "VXi Petrol MT",
+    color: "Tango Orange",
+    registration: "3791",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Alto K10 VXi (2013) petrol manual in vibrant tango orange finish. Powered by a responsive and fuel-efficient 1.0L K-Series engine, featuring front power windows, audio system with Pioneer player, dual-tone black & beige seat covers, fog lamps, rear roof spoiler, and low running costs. An ideal, highly economical city hatchback.",
+    gallery: [
+      altoK10Main,
+      altoK10SideRight,
+      altoK10SideLeft,
+      altoK10Rear,
+      altoK10Dash,
+      altoK10Interior,
+      altoK10RearSeats,
+    ],
+  },
+  {
+    slug: "toyota-innova-2-5-g-2012-6566",
+    img: innova12Main,
+    name: "Toyota Innova 2.5 G",
+    year: 2012,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "2,79,121 km",
+    price: "₹4.00 L",
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Innova",
+    variant: "2.5 G Diesel MT (Taxi)",
+    color: "Champagne Gold",
+    registration: "6566",
+    bodyType: "MPV",
+    description:
+      "Toyota Innova 2.5 G (2012) diesel manual in champagne gold finish — reliable 7-seater MPV with durable D-4D diesel engine, roof luggage carrier, touchscreen infotainment system, power steering, dual-tone leatherette seats, rear protection guard, and commercial/taxi registration.",
+    gallery: [
+      innova12Main,
+      innova12SideRight,
+      innova12SideLeft,
+      innova12Rear,
+      innova12Dash,
+      innova12Interior,
+      innova12RearSeats,
+      innova12ThirdRow,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ertiga-zxi-plus-2024-2793",
+    img: ertiga24Zxi2793Main,
+    name: "Maruti Suzuki Ertiga ZXI+",
+    year: 2024,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "53,276 km",
+    price: "₹11.80 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Ertiga",
+    variant: "ZXI+ Petrol MT",
+    color: "White",
+    registration: "2793",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki Ertiga ZXI+ (2024) petrol manual in pristine white — top-spec 7-seater MPV with Smart Hybrid technology, touchscreen infotainment, push-button start, dual-tone alloy wheels, rear AC vents, SUN-MAX rear bumper guard, and well-maintained dual-tone beige and grey leatherette interior.",
+    gallery: [
+      ertiga24Zxi2793Main,
+      ertiga24Zxi2793SideRight,
+      ertiga24Zxi2793SideLeft,
+      ertiga24Zxi2793Rear,
+      ertiga24Zxi2793Dash,
+      ertiga24Zxi2793Interior,
+      ertiga24Zxi2793RearSeats,
+      ertiga24Zxi2793ThirdRow,
+    ],
+  },
   {
     slug: "range-rover-evoque-diesel-2023",
     img: evoque23Main,

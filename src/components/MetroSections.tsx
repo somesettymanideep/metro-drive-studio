@@ -512,7 +512,7 @@ export function InventorySection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {filtered.map((c, i) => (
             <motion.article
-              key={c.name}
+              key={c.slug}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
