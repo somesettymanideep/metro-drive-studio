@@ -1354,7 +1354,7 @@ export function HappyCustomersSection() {
             Recently Sold at Metro Cars
           </h2>
           <p className="mt-4 text-neutral-600 max-w-2xl mx-auto">
-            Real customers, real deliveries. Join thousands who trusted us with their car journey
+            Real customers, real deliveries. Join thousands who trusted us with their car journey.
           </p>
         </div>
 
