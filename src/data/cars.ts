@@ -258,6 +258,13 @@ import i20Sportz21Rear from "@/assets/i20-21-8888-rear.jpg";
 import i20Sportz21Dash from "@/assets/i20-21-8888-dash.jpg";
 import i20Sportz21Interior from "@/assets/i20-21-8888-interior.jpg";
 import i20Sportz21RearSeats from "@/assets/i20-21-8888-rear-seats.jpg";
+import ignis18Main from "@/assets/ignis18-7079-main.jpg";
+import ignis18SideRight from "@/assets/ignis18-7079-side-right.jpg";
+import ignis18SideLeft from "@/assets/ignis18-7079-side-left.jpg";
+import ignis18Rear from "@/assets/ignis18-7079-rear.jpg";
+import ignis18Dash from "@/assets/ignis18-7079-dash.jpg";
+import ignis18Interior from "@/assets/ignis18-7079-interior.jpg";
+import ignis18RearSeats from "@/assets/ignis18-7079-rear-seats.jpg";
 import altrozCngMain from "@/assets/altroz-cng-main.jpg";
 import altrozCngRear from "@/assets/altroz-cng-rear.jpg";
 import altrozCngSideRight from "@/assets/altroz-cng-side-right.jpg";
@@ -361,6 +368,28 @@ import evoque23Dash from "@/assets/evoque23-dash.jpg";
 import evoque23RearSeats from "@/assets/evoque23-rear-seats.jpg";
 import evoque23Roof from "@/assets/evoque23-roof.jpg";
 
+import tharLx22Main from "@/assets/thar-lx-2655-main.jpg";
+import tharLx22SideRight from "@/assets/thar-lx-2655-side-right.jpg";
+import tharLx22SideLeft from "@/assets/thar-lx-2655-side-left.jpg";
+import tharLx22Rear from "@/assets/thar-lx-2655-rear.jpg";
+import tharLx22Dash from "@/assets/thar-lx-2655-dash.jpg";
+import tharLx22Interior from "@/assets/thar-lx-2655-interior.jpg";
+import tharLx22RearSeats from "@/assets/thar-lx-2655-rear-seats.jpg";
+
+import brezza22_2580_Main from "@/assets/brezza22-2580-main.jpg";
+import brezza22_2580_SideRight from "@/assets/brezza22-2580-side-right.jpg";
+import brezza22_2580_SideLeft from "@/assets/brezza22-2580-side-left.jpg";
+import brezza22_2580_Rear from "@/assets/brezza22-2580-rear.jpg";
+import brezza22_2580_Dash from "@/assets/brezza22-2580-dash.jpg";
+
+import dzire24Main from "@/assets/dzire24-1919-main.jpg";
+import dzire24Rear from "@/assets/dzire24-1919-rear.jpg";
+import dzire24SideRight from "@/assets/dzire24-1919-side-right.jpg";
+import dzire24SideLeft from "@/assets/dzire24-1919-side-left.jpg";
+import dzire24Dash from "@/assets/dzire24-1919-dash.jpg";
+import dzire24Interior from "@/assets/dzire24-1919-interior.jpg";
+import dzire24RearSeats from "@/assets/dzire24-1919-rear-seats.jpg";
+
 
 export type Car = {
   slug: string;
@@ -390,6 +419,117 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "maruti-suzuki-dzire-zxi-taxi-2024-1919",
+    img: dzire24Main,
+    name: "Maruti Suzuki Dzire ZXI Taxi",
+    year: 2024,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "22,027 km",
+    price: "₹8.50 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Dzire",
+    variant: "ZXI 1.2 Petrol MT Taxi",
+    color: "Arctic White",
+    registration: "1919",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Dzire ZXI (2024) commercial taxi in pristine Arctic White with registration number 1919. Low mileage, driven just 22,027 kms. Powered by the ultra-efficient and peppy 1.2L K-Series DualJet petrol engine paired with a 5-speed manual transmission. Premium ZXI variant featuring multi-spoke alloy wheels, touchscreen infotainment system with steering-mounted audio controls, automatic climate control, push-button start/stop, custom diamond-quilted beige leatherette seat upholstery with matching 7D floor mats, wooden finish steering wheel cover, rear AC vents, dual front airbags, ABS with EBD, reverse parking sensors, and chrome exterior accents. Ready-to-drive taxi permit vehicle with exceptional fuel economy.",
+    gallery: [
+      dzire24Main,
+      dzire24Rear,
+      dzire24SideRight,
+      dzire24SideLeft,
+      dzire24Dash,
+      dzire24Interior,
+      dzire24RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-brezza-zxi-plus-2022-2580",
+    img: brezza22_2580_Main,
+    name: "Maruti Suzuki Brezza ZXI+",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "60,673 km",
+    price: "₹8.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Brezza",
+    variant: "ZXI+ 1.5 Petrol MT",
+    color: "Premium Silver",
+    registration: "2580",
+    bodyType: "Compact SUV",
+    description:
+      "Maruti Suzuki Vitara Brezza ZXI+ (2022) petrol manual in elegant Premium Silver finish with registration number 2580. Driven 60,673 kms. Powered by the proven 1.5L K15B petrol engine paired with a smooth 5-speed manual transmission. Features precision-cut dual-tone alloy wheels, SmartPlay touchscreen infotainment system with Apple CarPlay and Android Auto, automatic climate control, push-button start/stop, steering mounted controls, rear parking camera and sensors, power windows, dual airbags, and ABS with EBD.",
+    gallery: [
+      brezza22_2580_Main,
+      brezza22_2580_SideRight,
+      brezza22_2580_SideLeft,
+      brezza22_2580_Rear,
+      brezza22_2580_Dash,
+    ],
+  },
+  {
+    slug: "mahindra-thar-lx-at-2022-2655",
+    img: tharLx22Main,
+    name: "Mahindra Thar LX AT",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "1,00,992 km",
+    price: "₹12.50 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "Thar",
+    variant: "LX 4x4 Petrol AT (Hard Top)",
+    color: "Aquamarine (Dark Green)",
+    registration: "2655",
+    bodyType: "SUV",
+    engine: "2.0L mStallion 150 TGDi Petrol",
+    description:
+      "Mahindra Thar LX (2022) petrol automatic 4x4 in stunning Aquamarine (Dark Green) finish with registration number 2655. Driven 1,00,992 kms. Top-of-the-line iconic off-roader equipped with factory Hard Top, powered by the refined 2.0L mStallion 150 TGDi turbo petrol engine with 6-speed torque converter automatic transmission and shift-on-the-fly 4WD transfer case with low range (4L/4H). Features aftermarket custom 7-slat front grille, front bonnet deflector, premium custom black leatherette seat covers with driver armrest, touchscreen infotainment display, cruise control, alloy wheels with rugged all-terrain tyres, rear-mounted spare wheel, power windows, ABS with EBD, ESP, and dual front airbags.",
+    gallery: [
+      tharLx22Main,
+      tharLx22SideRight,
+      tharLx22SideLeft,
+      tharLx22Rear,
+      tharLx22Dash,
+      tharLx22Interior,
+      tharLx22RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ignis-delta-2018-7079",
+    img: ignis18Main,
+    name: "Maruti Suzuki Ignis Delta",
+    year: 2018,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "1,19,307 km",
+    price: "₹4.30 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Ignis",
+    variant: "Delta 1.2 Petrol MT",
+    color: "Tinsel Blue",
+    registration: "7079",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Ignis Delta (2018) petrol manual in vibrant Tinsel Blue with registration number 7079. Driven 1,19,307 kms. Powered by the peppy 1.2L K12M petrol engine with 5-speed manual transmission. Features an aftermarket touchscreen infotainment display, steering mounted audio controls, custom black and cyan-accented seat covers, power windows, central locking, and rear spoiler.",
+    gallery: [
+      ignis18Main,
+      ignis18SideRight,
+      ignis18SideLeft,
+      ignis18Rear,
+      ignis18Dash,
+      ignis18Interior,
+      ignis18RearSeats,
+    ],
+  },
   {
     slug: "hyundai-i20-sportz-at-2021-8888",
     img: i20Sportz21Main,
