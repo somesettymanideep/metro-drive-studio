@@ -1,3 +1,5 @@
+import { isCarRemoved } from "@/lib/carFilters";
+
 export type InventoryItem = {
   id: string;
   name: string;
@@ -144,8 +146,14 @@ function safeParse(): InventoryItem[] {
     if (!raw) return [];
     const arr = JSON.parse(raw);
     if (!Array.isArray(arr)) return [];
-    // Backfill ids for legacy rows.
-    return arr.map((r: Partial<InventoryItem>, i: number) => normalizeInventoryItem(r, i));
+    // Backfill ids for legacy rows and prune removed cars.
+    const items = arr
+      .map((r: Partial<InventoryItem>, i: number) => normalizeInventoryItem(r, i))
+      .filter((r: InventoryItem) => !isCarRemoved(r));
+    if (items.length !== arr.length) {
+      localStorage.setItem(KEY, JSON.stringify(items));
+    }
+    return items;
   } catch {
     return [];
   }
@@ -179,7 +187,9 @@ export async function listInventoryRemote(): Promise<InventoryItem[]> {
     .select("*")
     .order("created_at", { ascending: false });
   if (error) throw new Error(error.message);
-  return ((data ?? []) as BackendInventoryRow[]).map(rowToInventory);
+  return ((data ?? []) as BackendInventoryRow[])
+    .map(rowToInventory)
+    .filter((r) => !isCarRemoved(r));
 }
 
 export async function listInventoryAdmin(): Promise<InventoryItem[]> {

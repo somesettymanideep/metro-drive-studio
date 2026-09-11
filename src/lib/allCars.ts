@@ -5,6 +5,7 @@ import {
   listInventoryRemote,
   type InventoryItem,
 } from "@/lib/inventoryStore";
+import { isCarRemoved } from "@/lib/carFilters";
 
 const slugify = (s: string) =>
   s
@@ -51,27 +52,33 @@ export function inventoryToCar(item: InventoryItem): Car {
 }
 
 export function getAllCars(): Car[] {
-  const inv = listInventory().map(inventoryToCar);
+  const inv = listInventory()
+    .filter((item) => !isCarRemoved(item))
+    .map(inventoryToCar);
   const filteredInv = inv.filter(
     (item) => !staticCars.some((sc) => sc.name.toLowerCase() === item.name.toLowerCase())
   );
-  return [...filteredInv, ...staticCars];
+  return [...filteredInv, ...staticCars].filter((c) => !isCarRemoved(c));
 }
 
 export async function getAllCarsRemote(): Promise<Car[]> {
   const inv = await listInventoryRemote();
-  const remoteCars = inv.map(inventoryToCar);
+  const remoteCars = inv
+    .filter((item) => !isCarRemoved(item))
+    .map(inventoryToCar);
   const filteredRemote = remoteCars.filter(
     (item) => !staticCars.some((sc) => sc.name.toLowerCase() === item.name.toLowerCase())
   );
-  return [...filteredRemote, ...staticCars];
+  return [...filteredRemote, ...staticCars].filter((c) => !isCarRemoved(c));
 }
 
 export function getAnyCarBySlug(slug: string): Car | undefined {
+  if (isCarRemoved({ slug })) return undefined;
   return getAllCars().find((c) => c.slug === slug);
 }
 
 export async function getAnyCarBySlugRemote(slug: string): Promise<Car | undefined> {
+  if (isCarRemoved({ slug })) return undefined;
   const cars = await getAllCarsRemote();
   return cars.find((c) => c.slug === slug) ?? getAnyCarBySlug(slug);
 }
