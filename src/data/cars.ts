@@ -383,6 +383,49 @@ import dzire24Dash from "@/assets/dzire24-1919-dash.jpg";
 import dzire24Interior from "@/assets/dzire24-1919-interior.jpg";
 import dzire24RearSeats from "@/assets/dzire24-1919-rear-seats.jpg";
 
+import storme18_0016_Main from "@/assets/storme18-0016-main.jpg";
+import storme18_0016_Rear from "@/assets/storme18-0016-rear.jpg";
+import storme18_0016_SideRight from "@/assets/storme18-0016-side-right.jpg";
+import storme18_0016_SideLeft from "@/assets/storme18-0016-side-left.jpg";
+import storme18_0016_Interior from "@/assets/storme18-0016-interior.jpg";
+import storme18_0016_Dash from "@/assets/storme18-0016-dash.jpg";
+import storme18_0016_RearSeats from "@/assets/storme18-0016-rear-seats.jpg";
+import storme18_0016_ThirdRow from "@/assets/storme18-0016-third-row.jpg";
+
+import innova13_2448_Main from "@/assets/innova13-2448-main.jpg";
+import innova13_2448_Rear from "@/assets/innova13-2448-rear.jpg";
+import innova13_2448_SideRight from "@/assets/innova13-2448-side-right.jpg";
+import innova13_2448_SideLeft from "@/assets/innova13-2448-side-left.jpg";
+import innova13_2448_Interior from "@/assets/innova13-2448-interior.jpg";
+import innova13_2448_RearSeats from "@/assets/innova13-2448-rear-seats.jpg";
+import innova13_2448_ThirdRow from "@/assets/innova13-2448-third-row.jpg";
+
+import volvoS60_16_Main from "@/assets/volvo-s60-16-main.jpg";
+import volvoS60_16_Rear from "@/assets/volvo-s60-16-rear.jpg";
+import volvoS60_16_SideRight from "@/assets/volvo-s60-16-side-right.jpg";
+import volvoS60_16_SideLeft from "@/assets/volvo-s60-16-side-left.jpg";
+import volvoS60_16_Dash from "@/assets/volvo-s60-16-dash.jpg";
+import volvoS60_16_Interior from "@/assets/volvo-s60-16-interior.jpg";
+import volvoS60_16_RearSeats from "@/assets/volvo-s60-16-rear-seats.jpg";
+
+import crysta21AtMain from "@/assets/crysta21-at-main.jpg";
+import crysta21AtSideRight from "@/assets/crysta21-at-side-right.jpg";
+import crysta21AtSideLeft from "@/assets/crysta21-at-side-left.jpg";
+import crysta21AtRear from "@/assets/crysta21-at-rear.jpg";
+import crysta21AtDash from "@/assets/crysta21-at-dash.jpg";
+import crysta21AtInterior from "@/assets/crysta21-at-interior.jpg";
+import crysta21AtRearSeats from "@/assets/crysta21-at-rear-seats.jpg";
+import crysta21AtThirdRow from "@/assets/crysta21-at-third-row.jpg";
+
+import xuv500_18_1009_Main from "@/assets/xuv500-18-1009-main.jpg";
+import xuv500_18_1009_SideRight from "@/assets/xuv500-18-1009-side-right.jpg";
+import xuv500_18_1009_SideLeft from "@/assets/xuv500-18-1009-side-left.jpg";
+import xuv500_18_1009_Rear from "@/assets/xuv500-18-1009-rear.jpg";
+import xuv500_18_1009_Dash from "@/assets/xuv500-18-1009-dash.jpg";
+import xuv500_18_1009_Interior from "@/assets/xuv500-18-1009-interior.jpg";
+import xuv500_18_1009_RearSeats from "@/assets/xuv500-18-1009-rear-seats.jpg";
+import xuv500_18_1009_ThirdRow from "@/assets/xuv500-18-1009-third-row.jpg";
+
 
 export type Car = {
   slug: string;
@@ -412,6 +455,147 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "mahindra-xuv500-w11-2018-1009",
+    img: xuv500_18_1009_Main,
+    name: "Mahindra XUV500 W11",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,50,430 km",
+    price: "₹10.00 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "XUV500",
+    variant: "W11 Diesel MT",
+    color: "Pearl White",
+    registration: "1009",
+    bodyType: "SUV",
+    description:
+      "Mahindra XUV500 W11 (2018) diesel manual in Pearl White finish with registration number 1009. Driven 1,50,430 kms. Top-end 7-seater SUV powered by the powerful 2.2L mHawk turbo diesel engine paired with a 6-speed manual gearbox. Top-spec W11 variant equipped with electric sunroof, plush tan leather upholstery with diamond quilting, touchscreen infotainment system with Android Auto & Navigation, alloy wheels, projector headlamps with DRLs, automatic climate control, cruise control, push-button start, and dual-tone premium cabin finish.",
+    gallery: [
+      xuv500_18_1009_Main,
+      xuv500_18_1009_SideRight,
+      xuv500_18_1009_SideLeft,
+      xuv500_18_1009_Rear,
+      xuv500_18_1009_Dash,
+      xuv500_18_1009_Interior,
+      xuv500_18_1009_RearSeats,
+      xuv500_18_1009_ThirdRow,
+    ],
+  },
+  {
+    slug: "toyota-innova-crysta-2-4-g-at-2021",
+    img: crysta21AtMain,
+    name: "Toyota Innova Crysta 2.4 G AT",
+    year: 2021,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "70,028 km",
+    price: "₹20.00 L",
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Innova Crysta",
+    variant: "2.4 G Diesel AT",
+    color: "Garnet Red",
+    bodyType: "MPV",
+    description:
+      "Toyota Innova Crysta 2.4 G (2021) diesel automatic in elegant Garnet Red finish. Driven 70,028 kms. Highly reliable, premium 7-seater MPV powered by the proven 2.4L GD-series turbo diesel engine paired with a smooth 6-speed automatic transmission. Features plush second-row captain seats, touchscreen infotainment system with steering-mounted audio controls, premium dual-tone interior, stylish alloy wheels, chrome body accents, door visors, and side footsteps.",
+    gallery: [
+      crysta21AtMain,
+      crysta21AtSideRight,
+      crysta21AtSideLeft,
+      crysta21AtRear,
+      crysta21AtDash,
+      crysta21AtInterior,
+      crysta21AtRearSeats,
+      crysta21AtThirdRow,
+    ],
+  },
+  {
+    slug: "volvo-s60-d5-2016",
+    img: volvoS60_16_Main,
+    name: "Volvo S60 D5",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "72,176 km",
+    price: "₹16.00 L",
+    cat: "Luxury",
+    brand: "Volvo",
+    model: "S60",
+    variant: "D5 Diesel MT",
+    color: "Onyx Black",
+    bodyType: "Luxury Sedan",
+    description:
+      "Volvo S60 D5 (2016) diesel manual in striking Onyx Black finish. Driven 72,176 kms. Scandinavian luxury sports sedan equipped with a powerful twin-turbo D5 diesel engine, 6-speed manual gearbox, dual-spoke diamond-cut alloy wheels, projector headlamps with LED daytime running lights, integrated dual exhaust finishers, rear lip spoiler, floating center console, and premium dual-tone amber tan & black leather interior with Volvo's benchmark safety architecture.",
+    gallery: [
+      volvoS60_16_Main,
+      volvoS60_16_SideRight,
+      volvoS60_16_SideLeft,
+      volvoS60_16_Rear,
+      volvoS60_16_Dash,
+      volvoS60_16_Interior,
+      volvoS60_16_RearSeats,
+    ],
+  },
+  {
+    slug: "toyota-innova-2-5-v-2013-2448",
+    img: innova13_2448_Main,
+    name: "Toyota Innova 2.5 V",
+    year: 2013,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,35,622 km",
+    price: "₹8.00 L",
+    cat: "SUV",
+    brand: "Toyota",
+    model: "Innova",
+    variant: "2.5 V Diesel MT",
+    color: "Grey",
+    registration: "2448",
+    bodyType: "MPV",
+    description:
+      "Toyota Innova 2.5 V (2013) diesel manual in elegant Grey metallic finish with registration number 2448. Driven 1,35,622 kms. Premium 7-seater MPV powered by the legendary and ultra-reliable 2.5L D-4D turbo diesel engine. Top-spec V variant featuring multi-spoke alloy wheels, front chrome bumper guard, rear Toyota step guard, rear spoiler, chrome body side mouldings, and spacious comfortable cabin.",
+    gallery: [
+      innova13_2448_Main,
+      innova13_2448_SideRight,
+      innova13_2448_SideLeft,
+      innova13_2448_Rear,
+      innova13_2448_Interior,
+      innova13_2448_RearSeats,
+      innova13_2448_ThirdRow,
+    ],
+  },
+  {
+    slug: "tata-safari-storme-vx-2018-0016",
+    img: storme18_0016_Main,
+    name: "Tata Safari Storme VX",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,33,904 km",
+    price: "₹9.00 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Safari Storme",
+    variant: "VX Diesel MT",
+    color: "Pearl White",
+    registration: "0016",
+    bodyType: "SUV",
+    description:
+      "Tata Safari Storme VX (2018) diesel manual in Pearl White with registration number 0016. Driven 1,33,904 kms. Iconic 7-seater SUV powered by the robust 2.2L VARICOR turbo diesel engine paired with a 5-speed manual transmission. Features gloss black alloy wheels, touchscreen infotainment system, dual exhaust tips, projector headlamps, integrated side foot-steps, contrast rear tailgate styling, and comfortable dual-tone leatherette interior with 3rd-row jump seats.",
+    gallery: [
+      storme18_0016_Main,
+      storme18_0016_SideRight,
+      storme18_0016_SideLeft,
+      storme18_0016_Rear,
+      storme18_0016_Dash,
+      storme18_0016_Interior,
+      storme18_0016_RearSeats,
+      storme18_0016_ThirdRow,
+    ],
+  },
   {
     slug: "maruti-suzuki-brezza-zxi-plus-2022-2580",
     img: brezza22_2580_Main,

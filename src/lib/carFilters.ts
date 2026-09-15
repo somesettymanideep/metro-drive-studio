@@ -10,12 +10,8 @@ export function isCarRemoved(item: {
   const model = (item.model || "").toLowerCase().trim();
   const slug = (item.slug || "").toLowerCase().trim();
 
-  // Tata Safari Storme VX
-  if (
-    name.includes("safari storme") ||
-    model.includes("safari storme") ||
-    slug.includes("storme")
-  ) {
+  // Tata Safari Storme VX (Old removed 2018 10.50L listing reg 0444)
+  if (slug === "tata-safari-storme-vx-2018") {
     return true;
   }
 
