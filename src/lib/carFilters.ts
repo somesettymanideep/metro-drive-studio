@@ -24,7 +24,10 @@ export function isCarRemoved(item: {
   ) {
     return true;
   }
-  if (name.includes("tiago") || model.includes("tiago") || slug.includes("tiago")) {
+  if (
+    (name.includes("tiago") || model.includes("tiago") || slug.includes("tiago")) &&
+    !slug.includes("9549")
+  ) {
     return true;
   }
   if (name.includes("aura") || model.includes("aura") || slug.includes("aura")) {

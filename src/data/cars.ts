@@ -426,6 +426,36 @@ import xuv500_18_1009_Interior from "@/assets/xuv500-18-1009-interior.jpg";
 import xuv500_18_1009_RearSeats from "@/assets/xuv500-18-1009-rear-seats.jpg";
 import xuv500_18_1009_ThirdRow from "@/assets/xuv500-18-1009-third-row.jpg";
 
+import brezza22_7879_Main from "@/assets/brezza22-7879-main.jpg";
+import brezza22_7879_Side from "@/assets/brezza22-7879-side.jpg";
+import brezza22_7879_SideRight from "@/assets/brezza22-7879-side-right.jpg";
+import brezza22_7879_Rear from "@/assets/brezza22-7879-rear.jpg";
+import brezza22_7879_Dash from "@/assets/brezza22-7879-dash.jpg";
+import brezza22_7879_Interior from "@/assets/brezza22-7879-interior.jpg";
+import brezza22_7879_RearSeats from "@/assets/brezza22-7879-rear-seats.jpg";
+
+import swift19_7528_Main from "@/assets/swift19-7528-main.jpg";
+import swift19_7528_SideRight from "@/assets/swift19-7528-side-right.jpg";
+import swift19_7528_SideLeft from "@/assets/swift19-7528-side-left.jpg";
+import swift19_7528_Rear from "@/assets/swift19-7528-rear.jpg";
+import swift19_7528_Dash from "@/assets/swift19-7528-dash.jpg";
+import swift19_7528_Interior from "@/assets/swift19-7528-interior.jpg";
+
+import xuv300_23_2246_Main from "@/assets/xuv300-23-2246-main.jpg";
+import xuv300_23_2246_SideLeft from "@/assets/xuv300-23-2246-side-left.jpg";
+import xuv300_23_2246_SideRight from "@/assets/xuv300-23-2246-side-right.jpg";
+import xuv300_23_2246_Rear from "@/assets/xuv300-23-2246-rear.jpg";
+import xuv300_23_2246_Dash from "@/assets/xuv300-23-2246-dash.jpg";
+import xuv300_23_2246_Interior from "@/assets/xuv300-23-2246-interior.jpg";
+import xuv300_23_2246_RearSeats from "@/assets/xuv300-23-2246-rear-seats.jpg";
+
+import tiago18_9549_Main from "@/assets/tiago18-9549-main.jpg";
+import tiago18_9549_SideRight from "@/assets/tiago18-9549-side-right.jpg";
+import tiago18_9549_SideLeft from "@/assets/tiago18-9549-side-left.jpg";
+import tiago18_9549_Rear from "@/assets/tiago18-9549-rear.jpg";
+import tiago18_9549_Dash from "@/assets/tiago18-9549-dash.jpg";
+import tiago18_9549_Interior from "@/assets/tiago18-9549-interior.jpg";
+import tiago18_9549_RearSeats from "@/assets/tiago18-9549-rear-seats.jpg";
 
 export type Car = {
   slug: string;
@@ -455,6 +485,117 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "tata-tiago-xza-2018-9549",
+    img: tiago18_9549_Main,
+    name: "Tata Tiago XZA",
+    year: 2018,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "81,796 km",
+    price: "₹4.00 L",
+    cat: "Hatchback",
+    brand: "Tata",
+    model: "Tiago",
+    variant: "XZA 1.2 Revotron Petrol AMT",
+    color: "Titanium Grey",
+    registration: "9549",
+    bodyType: "Hatchback",
+    description:
+      "Tata Tiago XZA (2018) petrol automatic in Titanium Grey finish with registration number 9549. Driven 81,796 kms. Top-spec automatic hatchback powered by the peppy 1.2L Revotron petrol engine paired with an Easy-Shift AMT transmission. Features include Harman 2DIN audio head unit with Bluetooth connectivity, steering-mounted audio controls, all 4 power windows, alloy wheels, rear wiper & washer, fog lamps, dual airbags, ABS with EBD & CSC, and custom grey quilted leatherette seat covers.",
+    gallery: [
+      tiago18_9549_Main,
+      tiago18_9549_SideRight,
+      tiago18_9549_SideLeft,
+      tiago18_9549_Rear,
+      tiago18_9549_Dash,
+      tiago18_9549_Interior,
+      tiago18_9549_RearSeats,
+    ],
+  },
+  {
+    slug: "mahindra-xuv300-w4-optional-2023-2246",
+    img: xuv300_23_2246_Main,
+    name: "Mahindra XUV300 W4 (O)",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "23,152 km",
+    price: "₹8.50 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "XUV300",
+    variant: "W4 (O) 1.2 Turbo Petrol MT",
+    color: "Everest White",
+    registration: "2246",
+    bodyType: "Compact SUV",
+    description:
+      "Mahindra XUV300 W4 (O) (2023) petrol manual in Everest White finish with registration number 2246. Low mileage, driven only 23,152 kms. Powered by the refined 1.2L mStallion Turbo Petrol engine paired with a 6-speed manual transmission. Features include touchscreen infotainment system, dual-tone styled alloy wheels, rear stainless steel bumper guard, door visors, side body moldings, roof rails, custom plush beige/grey quilted leatherette seats, all 4 power windows, dual airbags, ABS with EBD, and disc brakes on all four wheels.",
+    gallery: [
+      xuv300_23_2246_Main,
+      xuv300_23_2246_SideLeft,
+      xuv300_23_2246_SideRight,
+      xuv300_23_2246_Rear,
+      xuv300_23_2246_Dash,
+      xuv300_23_2246_Interior,
+      xuv300_23_2246_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-swift-vdi-2019-7528",
+    img: swift19_7528_Main,
+    name: "Maruti Suzuki Swift VDi",
+    year: 2019,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,04,179 km",
+    price: "₹5.50 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Swift",
+    variant: "VDi 1.3 Diesel MT",
+    color: "Magma Grey",
+    registration: "7528",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Swift VDi (2019) diesel manual in sleek Magma Grey finish with registration number 7528. Driven 1,04,179 kms. Powered by the fuel-efficient 1.3L DDiS 190 turbo diesel engine paired with a 5-speed manual transmission. Features include 2DIN factory audio head unit with Bluetooth connectivity, all 4 power windows, steering mounted audio controls, plush black leatherette seat covers, dual front airbags, ABS with EBD, central locking, and door visors.",
+    gallery: [
+      swift19_7528_Main,
+      swift19_7528_SideRight,
+      swift19_7528_SideLeft,
+      swift19_7528_Rear,
+      swift19_7528_Dash,
+      swift19_7528_Interior,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-brezza-vxi-2022-7879",
+    img: brezza22_7879_Main,
+    name: "Maruti Suzuki Brezza VXi",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "63,932 km",
+    price: "₹7.80 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Brezza",
+    variant: "VXi 1.5 Petrol MT",
+    color: "Sizzling Red",
+    registration: "7879",
+    bodyType: "Compact SUV",
+    description:
+      "Maruti Suzuki Vitara Brezza VXi (2022) petrol manual in Sizzling Red finish with registration number 7879. Driven 63,932 kms. Powered by the reliable 1.5L K15B petrol engine paired with a 5-speed manual transmission. Features include projector headlamps, front chrome grille, rear chrome garnish strip, factory audio head unit with Bluetooth connectivity, automatic climate control, steering mounted audio controls, power windows, electrically adjustable outer mirrors, dual airbags, ABS with EBD, and custom black leatherette seats with white stripes.",
+    gallery: [
+      brezza22_7879_Main,
+      brezza22_7879_SideRight,
+      brezza22_7879_Side,
+      brezza22_7879_Rear,
+      brezza22_7879_Dash,
+      brezza22_7879_Interior,
+      brezza22_7879_RearSeats,
+    ],
+  },
   {
     slug: "mahindra-xuv500-w11-2018-1009",
     img: xuv500_18_1009_Main,
