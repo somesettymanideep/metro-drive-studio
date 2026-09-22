@@ -457,6 +457,59 @@ import tiago18_9549_Dash from "@/assets/tiago18-9549-dash.jpg";
 import tiago18_9549_Interior from "@/assets/tiago18-9549-interior.jpg";
 import tiago18_9549_RearSeats from "@/assets/tiago18-9549-rear-seats.jpg";
 
+import mgzsev24_1234_Main from "@/assets/mgzsev24-1234-main.jpg";
+import mgzsev24_1234_SideRight from "@/assets/mgzsev24-1234-side-right.jpg";
+import mgzsev24_1234_SideLeft from "@/assets/mgzsev24-1234-side-left.jpg";
+import mgzsev24_1234_Rear from "@/assets/mgzsev24-1234-rear.jpg";
+import mgzsev24_1234_Dash from "@/assets/mgzsev24-1234-dash.jpg";
+import mgzsev24_1234_Interior from "@/assets/mgzsev24-1234-interior.jpg";
+import mgzsev24_1234_RearSeats from "@/assets/mgzsev24-1234-rear-seats.jpg";
+
+import kodiaq19_8118_Main from "@/assets/kodiaq19-8118-main.jpg";
+import kodiaq19_8118_SideRight from "@/assets/kodiaq19-8118-side-right.jpg";
+import kodiaq19_8118_SideLeft from "@/assets/kodiaq19-8118-side-left.jpg";
+import kodiaq19_8118_Rear from "@/assets/kodiaq19-8118-rear.jpg";
+import kodiaq19_8118_Interior from "@/assets/kodiaq19-8118-interior.jpg";
+import kodiaq19_8118_RearSeats from "@/assets/kodiaq19-8118-rear-seats.jpg";
+
+import wagonr17_0540_Main from "@/assets/wagonr17-0540-main.jpg";
+import wagonr17_0540_SideLeft from "@/assets/wagonr17-0540-side-left.jpg";
+import wagonr17_0540_SideRight from "@/assets/wagonr17-0540-side-right.jpg";
+import wagonr17_0540_Rear from "@/assets/wagonr17-0540-rear.jpg";
+import wagonr17_0540_Dash from "@/assets/wagonr17-0540-dash.jpg";
+import wagonr17_0540_Interior from "@/assets/wagonr17-0540-interior.jpg";
+import wagonr17_0540_RearSeats from "@/assets/wagonr17-0540-rear-seats.jpg";
+
+import i20asta21_6767_Main from "@/assets/i20asta21-6767-main.jpg";
+import i20asta21_6767_SideRight from "@/assets/i20asta21-6767-side-right.jpg";
+import i20asta21_6767_Rear from "@/assets/i20asta21-6767-rear.jpg";
+import i20asta21_6767_Dash from "@/assets/i20asta21-6767-dash.jpg";
+import i20asta21_6767_Interior from "@/assets/i20asta21-6767-interior.jpg";
+import i20asta21_6767_RearSeats from "@/assets/i20asta21-6767-rear-seats.jpg";
+import i20asta21_6767_Sunroof from "@/assets/i20asta21-6767-sunroof.jpg";
+
+import ciaz16_8793_Main from "@/assets/ciaz16-8793-main.jpg";
+import ciaz16_8793_SideRight from "@/assets/ciaz16-8793-side-right.jpg";
+import ciaz16_8793_Rear from "@/assets/ciaz16-8793-rear.jpg";
+import ciaz16_8793_Dash from "@/assets/ciaz16-8793-dash.jpg";
+import ciaz16_8793_Interior from "@/assets/ciaz16-8793-interior.jpg";
+import ciaz16_8793_RearSeats from "@/assets/ciaz16-8793-rear-seats.jpg";
+
+import storme18_1116_Main from "@/assets/storme18-1116-main.jpg";
+import storme18_1116_SideLeft from "@/assets/storme18-1116-side-left.jpg";
+import storme18_1116_SideRight from "@/assets/storme18-1116-side-right.jpg";
+import storme18_1116_Rear from "@/assets/storme18-1116-rear.jpg";
+import storme18_1116_Dash from "@/assets/storme18-1116-dash.jpg";
+import storme18_1116_RearSeats from "@/assets/storme18-1116-rear-seats.jpg";
+import storme18_1116_ThirdRow from "@/assets/storme18-1116-third-row.jpg";
+
+import tharLx9229_Main from "@/assets/thar-lx-9229-main.jpg";
+import tharLx9229_SideLeft from "@/assets/thar-lx-9229-side-left.jpg";
+import tharLx9229_Rear from "@/assets/thar-lx-9229-rear.jpg";
+import tharLx9229_Interior from "@/assets/thar-lx-9229-interior.jpg";
+import tharLx9229_Dash from "@/assets/thar-lx-9229-dash.jpg";
+import tharLx9229_RearSeats from "@/assets/thar-lx-9229-rear-seats.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -485,6 +538,199 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "mahindra-thar-lx-petrol-at-2021-9229",
+    img: tharLx9229_Main,
+    name: "Mahindra Thar LX",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "56,854 km",
+    price: "₹9.00 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "Thar",
+    variant: "LX 2.0 mStallion Petrol AT 4WD Convertible",
+    color: "Napoli Black",
+    registration: "9229",
+    bodyType: "SUV",
+    description:
+      "Mahindra Thar LX (2021) petrol automatic with convertible soft top in Napoli Black finish with TS registration number 9229. Driven 56,854 kms. Iconic 4WD off-road SUV powered by the 2.0L mStallion 150 TGDi petrol engine producing 150 bhp paired with a 6-speed torque converter automatic transmission and 4x4 manual shift-on-the-fly transfer case. Features include convertible soft top, custom black leatherette seats with diamond quilting, black alloy wheels with red brake drum accents, tailgate-mounted full-size spare tire, touchscreen infotainment system, steering mounted controls, dual airbags, ABS with EBD, ESP, and roll cage safety.",
+    gallery: [
+      tharLx9229_Main,
+      tharLx9229_SideLeft,
+      tharLx9229_Rear,
+      tharLx9229_Interior,
+      tharLx9229_Dash,
+      tharLx9229_RearSeats,
+    ],
+  },
+  {
+    slug: "tata-safari-storme-vx-2018-1116",
+    img: storme18_1116_Main,
+    name: "Tata Safari Storme VX",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,24,634 km",
+    price: "₹8.50 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Safari Storme",
+    variant: "VX 2.2 VARICOR 400 Diesel MT",
+    color: "Pearl White",
+    registration: "1116",
+    bodyType: "SUV",
+    description:
+      "Tata Safari Storme VX (2018) diesel manual in Pearl White finish with registration number 1116. Driven 1,24,634 kms. Powerful 7-seater flagship SUV powered by the 2.2L VARICOR 400 turbodiesel engine producing 156 PS and 400 Nm torque paired with a 6-speed manual transmission. Features heavy-duty front bull bar bumper guard, roof rails, side steps, dual exhaust tips, projector headlamps, chrome grille & rear trim, integrated rear spoiler, rear wiper & washer, dual airbags, and ABS with EBD.",
+    gallery: [
+      storme18_1116_Main,
+      storme18_1116_SideLeft,
+      storme18_1116_SideRight,
+      storme18_1116_Rear,
+      storme18_1116_Dash,
+      storme18_1116_RearSeats,
+      storme18_1116_ThirdRow,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ciaz-zdi-plus-2016-8793",
+    img: ciaz16_8793_Main,
+    name: "Maruti Suzuki Ciaz ZDi+",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,37,546 km",
+    price: "₹5.50 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Ciaz",
+    variant: "ZDi+ SHVS 1.3 Diesel MT",
+    color: "Pearl Arctic White",
+    registration: "8793",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Ciaz ZDi+ SHVS (2016) diesel manual in Pearl Arctic White finish with registration number 8793. Driven 1,37,546 kms. Top-spec luxury sedan powered by the 1.3L DDiS 200 diesel engine with SHVS Smart Hybrid technology paired with a 5-speed manual transmission. Features include SmartPlay touchscreen infotainment system with Navigation, custom red leatherette seats with blue door accents, black multi-spoke alloy wheels, rear trunk spoiler, rear AC vents, push-button start/stop, steering mounted controls, dual airbags, and ABS with EBD.",
+    gallery: [
+      ciaz16_8793_Main,
+      ciaz16_8793_SideRight,
+      ciaz16_8793_Rear,
+      ciaz16_8793_Dash,
+      ciaz16_8793_Interior,
+      ciaz16_8793_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-i20-asta-o-2021-6767",
+    img: i20asta21_6767_Main,
+    name: "Hyundai i20 Asta (O)",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "40,579 km",
+    price: "₹8.00 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Asta (O) 1.2 Petrol MT",
+    color: "Starry Night",
+    registration: "6767",
+    bodyType: "Premium Hatchback",
+    description:
+      "Hyundai i20 Asta (O) (2021) petrol manual in elegant Starry Night finish with registration number 6767. Driven 40,579 kms. Top-end variant powered by the refined 1.2L Kappa petrol engine paired with a 5-speed manual gearbox. Features electric sunroof, 10.25-inch HD touchscreen infotainment system with Apple CarPlay & Android Auto, Bose 7-speaker premium audio system, fully digital instrument cluster, Smart key with push-button start, wireless phone charger, automatic climate control, 16-inch diamond-cut alloy wheels, ambient lighting, 6 airbags, and ABS with EBD.",
+    gallery: [
+      i20asta21_6767_Main,
+      i20asta21_6767_SideRight,
+      i20asta21_6767_Rear,
+      i20asta21_6767_Dash,
+      i20asta21_6767_Interior,
+      i20asta21_6767_RearSeats,
+      i20asta21_6767_Sunroof,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-wagonr-vxi-o-2017-0540",
+    img: wagonr17_0540_Main,
+    name: "Maruti Suzuki WagonR VXi (O)",
+    year: 2017,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "57,826 km",
+    price: "₹3.80 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "WagonR",
+    variant: "VXi (O) 1.0 Petrol AGS AT",
+    color: "Chocolate Brown",
+    registration: "0540",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki WagonR VXi (O) (2017) petrol automatic in Glistening Chocolate Brown finish with registration number 0540. Driven 57,826 kms. Tall-boy hatchback powered by the reliable 1.0L K10B petrol engine paired with an Auto Gear Shift (AGS) automatic transmission. Features include touchscreen infotainment display, dual front airbags, ABS with EBD, dual-tone beige/black interior with seat covers & wooden bead cushions, all 4 power windows, roof rails, side body moldings, and door visors.",
+    gallery: [
+      wagonr17_0540_Main,
+      wagonr17_0540_SideLeft,
+      wagonr17_0540_SideRight,
+      wagonr17_0540_Rear,
+      wagonr17_0540_Dash,
+      wagonr17_0540_Interior,
+      wagonr17_0540_RearSeats,
+    ],
+  },
+  {
+    slug: "skoda-kodiaq-lk-4x4-2019-8118",
+    img: kodiaq19_8118_Main,
+    name: "Skoda Kodiaq L&K 4x4",
+    year: 2019,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "1,21,179 km",
+    price: "₹18.00 L",
+    cat: "SUV",
+    brand: "Skoda",
+    model: "Kodiaq",
+    variant: "L&K 2.0 TDI 4x4 DSG",
+    color: "Moon White",
+    registration: "8118",
+    bodyType: "Luxury 4x4 SUV",
+    description:
+      "Skoda Kodiaq Laurin & Klement (L&K) 4x4 (2019) diesel automatic in pristine Moon White finish with registration number 8118. Driven 1,21,179 kms. Flagship 7-seater luxury SUV powered by the refined 2.0L TDI turbo diesel engine paired with a 7-speed DSG automatic gearbox and intelligent 4x4 AWD system. Features include panoramic sunroof, Canton 10-speaker 575W sound system, Virtual Cockpit digital instrument cluster, 8-inch touchscreen infotainment with Apple CarPlay & Android Auto, 360-degree Area View camera, 12-way power-adjustable front seats with memory & L&K embossing, tri-zone climate control, 9 airbags, ambient lighting, and multi-spoke Trinity alloy wheels.",
+    gallery: [
+      kodiaq19_8118_Main,
+      kodiaq19_8118_SideRight,
+      kodiaq19_8118_SideLeft,
+      kodiaq19_8118_Rear,
+      kodiaq19_8118_Interior,
+      kodiaq19_8118_RearSeats,
+    ],
+  },
+  {
+    slug: "mg-zs-ev-exclusive-2024-1234",
+    img: mgzsev24_1234_Main,
+    name: "MG ZS EV Exclusive",
+    year: 2024,
+    fuel: "Electric",
+    trans: "Automatic",
+    km: "89,704 km",
+    price: "₹14.00 L",
+    cat: "SUV",
+    brand: "MG",
+    model: "ZS EV",
+    variant: "Exclusive Electric AT",
+    color: "Starry Black",
+    registration: "1234",
+    bodyType: "Electric SUV",
+    description:
+      "MG ZS EV Exclusive (2024) electric automatic in premium Starry Black finish with registration number 1234. Driven 89,704 kms. Powered by a 50.3 kWh battery pack producing 174 bhp with an ARAI claimed range of up to 461 km per charge. Features panoramic sunroof, 10.1-inch HD touchscreen infotainment system with Apple CarPlay & Android Auto, fully digital 7-inch instrument cluster, rotary drive selector, 360-degree camera, wireless phone charger, leatherette seats with red contrast stitching, PM2.5 air filter, 6 airbags, ABS with EBD, and stylish Tomahawk alloy wheels.",
+    gallery: [
+      mgzsev24_1234_Main,
+      mgzsev24_1234_SideRight,
+      mgzsev24_1234_SideLeft,
+      mgzsev24_1234_Rear,
+      mgzsev24_1234_Dash,
+      mgzsev24_1234_Interior,
+      mgzsev24_1234_RearSeats,
+    ],
+  },
   {
     slug: "tata-tiago-xza-2018-9549",
     img: tiago18_9549_Main,
