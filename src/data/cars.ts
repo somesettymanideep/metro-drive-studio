@@ -510,6 +510,20 @@ import tharLx9229_Interior from "@/assets/thar-lx-9229-interior.jpg";
 import tharLx9229_Dash from "@/assets/thar-lx-9229-dash.jpg";
 import tharLx9229_RearSeats from "@/assets/thar-lx-9229-rear-seats.jpg";
 
+import wrv17Main from "@/assets/wrv17-main.jpg";
+import wrv17SideRight from "@/assets/wrv17-side-right.jpg";
+import wrv17SideLeft from "@/assets/wrv17-side-left.jpg";
+import wrv17Rear from "@/assets/wrv17-rear.jpg";
+import wrv17Dash from "@/assets/wrv17-dash.jpg";
+import wrv17Interior from "@/assets/wrv17-interior.jpg";
+import wrv17RearSeats from "@/assets/wrv17-rear-seats.jpg";
+
+import dzire23_9505_Main from "@/assets/dzire23-9505-main.jpg";
+import dzire23_9505_SideRight from "@/assets/dzire23-9505-side-right.jpg";
+import dzire23_9505_SideLeft from "@/assets/dzire23-9505-side-left.jpg";
+import dzire23_9505_Interior from "@/assets/dzire23-9505-interior.jpg";
+import dzire23_9505_RearSeats from "@/assets/dzire23-9505-rear-seats.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -538,6 +552,60 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "maruti-suzuki-dzire-vxi-taxi-2023-9505",
+    img: dzire23_9505_Interior,
+    name: "Maruti Suzuki Dzire VXI Taxi",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "30,231 km",
+    price: "₹7.20 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Dzire",
+    variant: "VXI Petrol MT (Taxi)",
+    color: "White",
+    registration: "9505",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Dzire VXI (2023) petrol manual with commercial / taxi registration in pristine white finish (Registration: 9505). Driven only 30,231 kms. Powered by the reliable and ultra-efficient 1.2L K-Series DualJet petrol engine paired with a 5-speed manual transmission. Features include premium beige diamond-quilted leatherette seat covers, chrome front grille, wheel covers, door side moldings, power windows, central locking, and superb mileage.",
+    gallery: [
+      dzire23_9505_Main,
+      dzire23_9505_SideRight,
+      dzire23_9505_SideLeft,
+      dzire23_9505_Interior,
+      dzire23_9505_RearSeats,
+    ],
+  },
+  {
+    slug: "honda-wr-v-vx-petrol-2017-3663",
+    img: wrv17Main,
+    name: "Honda WR-V",
+    year: 2017,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "1,12,086 km",
+    price: "₹5.50 L",
+    cat: "SUV",
+    brand: "Honda",
+    model: "WR-V",
+    variant: "1.2 VX i-VTEC MT",
+    color: "Wine Red",
+    registration: "3663",
+    bodyType: "Compact SUV",
+    description:
+      "Honda WR-V 1.2 VX i-VTEC petrol manual in premium wine red finish (Registration: 3663) — spacious compact crossover SUV driven 1,12,086 kms, powered by a refined 1.2L i-VTEC petrol engine paired with a 5-speed manual transmission. Features include touchscreen infotainment system, steering-mounted audio controls, custom black leatherette seats with red contrast stitching, stylish dual-tone alloy wheels, silver skid plates, roof rails, and ample cabin & boot space.",
+    gallery: [
+      wrv17Main,
+      wrv17SideRight,
+      wrv17SideLeft,
+      wrv17Rear,
+      wrv17Dash,
+      wrv17Interior,
+      wrv17RearSeats,
+    ],
+  },
   {
     slug: "mahindra-thar-lx-petrol-at-2021-9229",
     img: tharLx9229_Main,
