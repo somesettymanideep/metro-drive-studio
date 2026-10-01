@@ -524,6 +524,53 @@ import dzire23_9505_SideLeft from "@/assets/dzire23-9505-side-left.jpg";
 import dzire23_9505_Interior from "@/assets/dzire23-9505-interior.jpg";
 import dzire23_9505_RearSeats from "@/assets/dzire23-9505-rear-seats.jpg";
 
+import creta23_3838_Main from "@/assets/creta23-3838-main.jpg";
+import creta23_3838_SideRight from "@/assets/creta23-3838-side-right.jpg";
+import creta23_3838_SideLeft from "@/assets/creta23-3838-side-left.jpg";
+import creta23_3838_Rear from "@/assets/creta23-3838-rear.jpg";
+import creta23_3838_Dash from "@/assets/creta23-3838-dash.jpg";
+import creta23_3838_Interior from "@/assets/creta23-3838-interior.jpg";
+import creta23_3838_RearSeats from "@/assets/creta23-3838-rear-seats.jpg";
+import creta23_3838_Sunroof from "@/assets/creta23-3838-sunroof.jpg";
+
+import brezza19_1718_Main from "@/assets/brezza19-1718-main.jpg";
+import brezza19_1718_SideRight from "@/assets/brezza19-1718-side-right.jpg";
+import brezza19_1718_SideLeft from "@/assets/brezza19-1718-side-left.jpg";
+import brezza19_1718_Rear from "@/assets/brezza19-1718-rear.jpg";
+import brezza19_1718_Dash from "@/assets/brezza19-1718-dash.jpg";
+import brezza19_1718_Interior from "@/assets/brezza19-1718-interior.jpg";
+
+import brezza23_5654_Main from "@/assets/brezza23-5654-main.jpg";
+import brezza23_5654_SideRight from "@/assets/brezza23-5654-side-right.jpg";
+import brezza23_5654_SideLeft from "@/assets/brezza23-5654-side-left.jpg";
+import brezza23_5654_Rear from "@/assets/brezza23-5654-rear.jpg";
+import brezza23_5654_Dash from "@/assets/brezza23-5654-dash.jpg";
+import brezza23_5654_Interior from "@/assets/brezza23-5654-interior.jpg";
+import brezza23_5654_RearSeats from "@/assets/brezza23-5654-rear-seats.jpg";
+
+import aura21_1142_Main from "@/assets/aura21-1142-main.jpg";
+import aura21_1142_SideRight from "@/assets/aura21-1142-side-right.jpg";
+import aura21_1142_SideLeft from "@/assets/aura21-1142-side-left.jpg";
+import aura21_1142_Rear from "@/assets/aura21-1142-rear.jpg";
+import aura21_1142_Dash from "@/assets/aura21-1142-dash.jpg";
+import aura21_1142_Interior from "@/assets/aura21-1142-interior.jpg";
+import aura21_1142_RearSeats from "@/assets/aura21-1142-rear-seats.jpg";
+
+import baleno20_1197_Main from "@/assets/baleno20-1197-main.jpg";
+import baleno20_1197_SideRight from "@/assets/baleno20-1197-side-right.jpg";
+import baleno20_1197_SideLeft from "@/assets/baleno20-1197-side-left.jpg";
+import baleno20_1197_Rear from "@/assets/baleno20-1197-rear.jpg";
+import baleno20_1197_Dash from "@/assets/baleno20-1197-dash.jpg";
+import baleno20_1197_Interior from "@/assets/baleno20-1197-interior.jpg";
+import baleno20_1197_RearSeats from "@/assets/baleno20-1197-rear-seats.jpg";
+
+import wagonr22_1832_Main from "@/assets/wagonr22-1832-main.jpg";
+import wagonr22_1832_Side from "@/assets/wagonr22-1832-side.jpg";
+import wagonr22_1832_Rear from "@/assets/wagonr22-1832-rear.jpg";
+import wagonr22_1832_Dash from "@/assets/wagonr22-1832-dash.jpg";
+import wagonr22_1832_Interior from "@/assets/wagonr22-1832-interior.jpg";
+import wagonr22_1832_RearSeats from "@/assets/wagonr22-1832-rear-seats.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -553,8 +600,175 @@ export type Car = {
 
 export const cars: Car[] = [
   {
+    slug: "maruti-suzuki-wagonr-lxi-cng-2022-1832",
+    img: wagonr22_1832_Main,
+    name: "Maruti Suzuki WagonR LXi CNG",
+    year: 2022,
+    fuel: "Petrol + CNG",
+    trans: "Manual",
+    km: "87,255 km",
+    price: "₹5.20 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "WagonR",
+    variant: "LXi 1.0 CNG MT",
+    color: "Silky Silver",
+    registration: "1832",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki WagonR LXi (2022) petrol-CNG manual in sparkling Silky Silver finish (Registration: 1832). Driven 87,255 kms. High-utility and economical tall-boy hatchback featuring the factory-fitted S-CNG technology paired with a 1.0L K-Series engine and 5-speed manual transmission. Features include dual-tone black & beige custom seat covers, power steering, front power windows, central locking, rear parking sensors, wheel covers, door visors, and outstanding fuel efficiency with dual-fuel flexibility.",
+    gallery: [
+      wagonr22_1832_Main,
+      wagonr22_1832_Side,
+      wagonr22_1832_Rear,
+      wagonr22_1832_Dash,
+      wagonr22_1832_Interior,
+      wagonr22_1832_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-baleno-zeta-petrol-2020-1197",
+    img: baleno20_1197_Main,
+    name: "Maruti Suzuki Baleno Zeta",
+    year: 2020,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "45,683 km",
+    price: "₹6.80 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Baleno",
+    variant: "Zeta 1.2 Petrol MT",
+    color: "Magma Grey",
+    registration: "1197",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Baleno Zeta (2020) petrol manual in sophisticated Magma Grey finish (Registration: 1197). Driven only 45,683 kms. Premium hatchback powered by the peppy and reliable 1.2L K12M petrol engine with a 5-speed manual transmission. Key features include SmartPlay Studio touchscreen infotainment with smartphone connectivity, precision-cut two-tone alloy wheels, push button start/stop with keyless entry, premium beige leatherette seating, auto-dimming IRVM, rear defogger and wiper, multi-function steering wheel, rear parking sensors, and spacious cabin with impressive mileage.",
+    gallery: [
+      baleno20_1197_Main,
+      baleno20_1197_SideRight,
+      baleno20_1197_SideLeft,
+      baleno20_1197_Rear,
+      baleno20_1197_Dash,
+      baleno20_1197_Interior,
+      baleno20_1197_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-aura-sx-petrol-2021-1142",
+    img: aura21_1142_Main,
+    name: "Hyundai Aura SX",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "1,19,240 km",
+    price: "₹5.80 L",
+    cat: "Sedan",
+    brand: "Hyundai",
+    model: "Aura",
+    variant: "SX 1.2 Kappa Petrol MT",
+    color: "Polar White",
+    registration: "1142",
+    bodyType: "Sedan",
+    description:
+      "Hyundai Aura SX (2021) petrol manual in pristine Polar White finish (Registration: 1142). Driven 1,19,240 kms. Modern and efficient compact sedan powered by the smooth 1.2L Kappa petrol engine paired with a 5-speed manual transmission. Packed with features including touchscreen infotainment system with smartphone connectivity, rear spoiler with integrated stop lamp, diamond-cut styled alloy wheels, premium black leatherette seat covers with red contrast stitching, multi-function steering wheel, rear parking camera and sensors, power windows, and exceptional city drivability.",
+    gallery: [
+      aura21_1142_Main,
+      aura21_1142_SideRight,
+      aura21_1142_SideLeft,
+      aura21_1142_Rear,
+      aura21_1142_Dash,
+      aura21_1142_Interior,
+      aura21_1142_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-brezza-lxi-petrol-2023-5654",
+    img: brezza23_5654_Main,
+    name: "Maruti Suzuki Brezza LXi",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "32,141 km",
+    price: "₹7.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Brezza",
+    variant: "LXi 1.5 Petrol MT",
+    color: "Magma Grey",
+    registration: "5654",
+    bodyType: "Compact SUV",
+    description:
+      "Maruti Suzuki Brezza LXi (2023) petrol manual in elegant Magma Grey finish (Registration: 5654). Driven only 32,141 kms. Next-gen compact SUV powered by the refined 1.5L K15C DualJet petrol engine paired with a 5-speed manual transmission. Features include upgraded touchscreen infotainment system, custom black ribbed leatherette seat covers, rear parking sensors, power windows, wheel covers, high ground clearance, and superb fuel efficiency.",
+    gallery: [
+      brezza23_5654_Main,
+      brezza23_5654_SideRight,
+      brezza23_5654_SideLeft,
+      brezza23_5654_Rear,
+      brezza23_5654_Dash,
+      brezza23_5654_Interior,
+      brezza23_5654_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-vitara-brezza-vdi-2019-1718",
+    img: brezza19_1718_Main,
+    name: "Maruti Suzuki Vitara Brezza VDi",
+    year: 2019,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,04,899 km",
+    price: "₹7.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Vitara Brezza",
+    variant: "VDi 1.3 DDiS MT",
+    color: "Pearl Arctic White",
+    registration: "1718",
+    bodyType: "Compact SUV",
+    description:
+      "Maruti Suzuki Vitara Brezza VDi (2019) diesel manual in Pearl Arctic White finish with sporty offset racing stripes (Registration: 1718). Driven 1,04,899 kms. Powered by the legendary 1.3L DDiS 200 turbo diesel engine delivering robust torque and exceptional fuel efficiency, paired with a 5-speed manual transmission. Features include custom sporty dual-tone leatherette seat covers, audio infotainment system, rear stainless steel bumper guard, power windows, wheel covers, silver side cladding, and high ground clearance.",
+    gallery: [
+      brezza19_1718_Main,
+      brezza19_1718_SideRight,
+      brezza19_1718_SideLeft,
+      brezza19_1718_Rear,
+      brezza19_1718_Dash,
+      brezza19_1718_Interior,
+    ],
+  },
+  {
+    slug: "hyundai-creta-sx-petrol-2023-3838",
+    img: creta23_3838_Main,
+    name: "Hyundai Creta SX",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "42,094 km",
+    price: "₹13.50 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Creta",
+    variant: "SX 1.5 Petrol MT",
+    color: "Polar White",
+    registration: "3838",
+    bodyType: "SUV",
+    description:
+      "Hyundai Creta SX (2023) petrol manual in Polar White finish (Registration: 3838). Driven 42,094 kms. Top-selling premium compact SUV powered by a smooth 1.5L MPi petrol engine paired with a 6-speed manual transmission. High-spec SX trim equipped with large 10.25-inch touchscreen infotainment system, panoramic sunroof, steering-mounted controls, dual-tone cabin with custom leatherette seats and orange accent piping, diamond-cut alloy wheels, trio-beam LED headlamps, and automatic climate control.",
+    gallery: [
+      creta23_3838_Main,
+      creta23_3838_SideRight,
+      creta23_3838_SideLeft,
+      creta23_3838_Rear,
+      creta23_3838_Sunroof,
+      creta23_3838_Dash,
+      creta23_3838_Interior,
+      creta23_3838_RearSeats,
+    ],
+  },
+  {
     slug: "maruti-suzuki-dzire-vxi-taxi-2023-9505",
-    img: dzire23_9505_Interior,
+    img: dzire23_9505_Main,
     name: "Maruti Suzuki Dzire VXI Taxi",
     year: 2023,
     fuel: "Petrol",

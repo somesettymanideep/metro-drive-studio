@@ -30,7 +30,10 @@ export function isCarRemoved(item: {
   ) {
     return true;
   }
-  if (name.includes("aura") || model.includes("aura") || slug.includes("aura")) {
+  if (
+    (name.includes("aura") || model.includes("aura") || slug.includes("aura")) &&
+    !slug.includes("1142")
+  ) {
     return true;
   }
   if (name.includes("hyryder") || model.includes("hyryder") || slug.includes("hyryder")) {
