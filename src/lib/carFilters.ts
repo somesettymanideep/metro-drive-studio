@@ -69,6 +69,21 @@ export function isCarRemoved(item: {
   if (slug === "maruti-suzuki-ertiga-zxi-plus-2024") {
     return true;
   }
+  if (slug === "mg-zs-ev-exclusive-plus-2024") {
+    return true;
+  }
+  if (
+    slug === "maruti-suzuki-brezza-vxi-2022-7879" ||
+    slug === "maruti-suzuki-brezza-zxi-plus-2022-2580" ||
+    slug === "toyota-innova-crysta-2-4-z-2020-1899" ||
+    slug === "skoda-kodiaq-lk-4x4-2019-8118" ||
+    slug === "hyundai-tucson-gls-4wd-2018" ||
+    slug === "maruti-suzuki-wagonr-vxi-o-2017-0540" ||
+    slug === "hyundai-creta-1-4-s-plus-diesel-2016" ||
+    slug === "toyota-innova-2-5-v-2013-2448"
+  ) {
+    return true;
+  }
 
   return false;
 }
