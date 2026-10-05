@@ -571,6 +571,23 @@ import wagonr22_1832_Dash from "@/assets/wagonr22-1832-dash.jpg";
 import wagonr22_1832_Interior from "@/assets/wagonr22-1832-interior.jpg";
 import wagonr22_1832_RearSeats from "@/assets/wagonr22-1832-rear-seats.jpg";
 
+import ertiga12_9160_Main from "@/assets/ertiga12-9160-main.jpg";
+import ertiga12_9160_SideRight from "@/assets/ertiga12-9160-side-right.jpg";
+import ertiga12_9160_SideLeft from "@/assets/ertiga12-9160-side-left.jpg";
+import ertiga12_9160_Dash from "@/assets/ertiga12-9160-dash.jpg";
+import ertiga12_9160_FrontSeats from "@/assets/ertiga12-9160-front-seats.jpg";
+import ertiga12_9160_RearSeats from "@/assets/ertiga12-9160-rear-seats.jpg";
+import ertiga12_9160_Interior from "@/assets/ertiga12-9160-interior.jpg";
+
+import tuv300_19_9981_Main from "@/assets/tuv300-19-9981-main.jpg";
+import tuv300_19_9981_SideLeft from "@/assets/tuv300-19-9981-side-left.jpg";
+import tuv300_19_9981_SideRight from "@/assets/tuv300-19-9981-side-right.jpg";
+import tuv300_19_9981_Rear from "@/assets/tuv300-19-9981-rear.jpg";
+import tuv300_19_9981_Dash from "@/assets/tuv300-19-9981-dash.jpg";
+import tuv300_19_9981_FrontSeats from "@/assets/tuv300-19-9981-front-seats.jpg";
+import tuv300_19_9981_RearSeats from "@/assets/tuv300-19-9981-rear-seats.jpg";
+import tuv300_19_9981_ThirdRow from "@/assets/tuv300-19-9981-third-row.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -599,6 +616,62 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "mahindra-tuv300-t8-2019-9981",
+    img: tuv300_19_9981_Main,
+    name: "Mahindra TUV300 T8",
+    year: 2019,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "86,213 km",
+    price: "₹7.50 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "TUV300",
+    variant: "T8 1.5 mHawk100 Diesel MT",
+    color: "Bold Silver",
+    registration: "9981",
+    bodyType: "Compact SUV",
+    description:
+      "Mahindra TUV300 T8 (2019) diesel manual in pristine Bold Silver finish (Registration: 9981). Driven 86,213 kms. Robust ladder-frame 7-seater compact SUV powered by the punchy 1.5L mHawk100 turbo diesel engine paired with a 5-speed manual transmission. High-spec T8 variant featuring chrome-accented front grille, stylish alloy wheels, tailgate-mounted spare wheel cover, side footsteps, roof rails, custom wine/maroon quilted leatherette seat covers with dual armrests, 2DIN audio system with steering-mounted audio controls, all 4 power windows, dual airbags, ABS with EBD, and cornering fog lamps.",
+    gallery: [
+      tuv300_19_9981_Main,
+      tuv300_19_9981_SideLeft,
+      tuv300_19_9981_SideRight,
+      tuv300_19_9981_Rear,
+      tuv300_19_9981_Dash,
+      tuv300_19_9981_FrontSeats,
+      tuv300_19_9981_RearSeats,
+      tuv300_19_9981_ThirdRow,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ertiga-vxi-petrol-2012-9160",
+    img: ertiga12_9160_Main,
+    name: "Maruti Suzuki Ertiga VXi",
+    year: 2012,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "1,14,887 km",
+    price: "₹3.80 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Ertiga",
+    variant: "VXi 1.4 Petrol MT",
+    color: "Serene Blue",
+    registration: "9160",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki Ertiga VXi (2012) petrol manual in serene blue finish (Registration: 9160). Driven 1,14,887 kms. Practical, fuel-efficient 7-seater MPV powered by a responsive 1.4L K-Series VVT petrol engine paired with a 5-speed manual transmission. Key features include Racer roof luggage carrier, factory integrated audio system with AUX/CD support, custom grey leatherette upholstery with matching steering cover, dual air conditioning with rear cooling vents, power steering, all 4 power windows, central locking, and versatile 3-row family seating.",
+    gallery: [
+      ertiga12_9160_Main,
+      ertiga12_9160_SideRight,
+      ertiga12_9160_SideLeft,
+      ertiga12_9160_Dash,
+      ertiga12_9160_FrontSeats,
+      ertiga12_9160_RearSeats,
+    ],
+  },
   {
     slug: "maruti-suzuki-wagonr-lxi-cng-2022-1832",
     img: wagonr22_1832_Main,
