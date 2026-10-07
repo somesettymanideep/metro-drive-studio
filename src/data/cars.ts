@@ -593,6 +593,8 @@ import dzire24_2141_SideRight from "@/assets/dzire24-2141-side-right.jpg";
 import dzire24_2141_SideLeft from "@/assets/dzire24-2141-side-left.jpg";
 import dzire24_2141_Rear from "@/assets/dzire24-2141-rear.jpg";
 import dzire24_2141_Interior from "@/assets/dzire24-2141-interior.jpg";
+import dzire24_2141_FrontSeats from "@/assets/dzire24-2141-front-seats.jpg";
+import dzire24_2141_RearSeats from "@/assets/dzire24-2141-rear-seats.jpg";
 
 export type Car = {
   slug: string;
@@ -646,6 +648,8 @@ export const cars: Car[] = [
       dzire24_2141_SideLeft,
       dzire24_2141_Rear,
       dzire24_2141_Interior,
+      dzire24_2141_FrontSeats,
+      dzire24_2141_RearSeats,
     ],
   },
   {
