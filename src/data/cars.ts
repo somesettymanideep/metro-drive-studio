@@ -588,6 +588,12 @@ import tuv300_19_9981_FrontSeats from "@/assets/tuv300-19-9981-front-seats.jpg";
 import tuv300_19_9981_RearSeats from "@/assets/tuv300-19-9981-rear-seats.jpg";
 import tuv300_19_9981_ThirdRow from "@/assets/tuv300-19-9981-third-row.jpg";
 
+import dzire24_2141_Main from "@/assets/dzire24-2141-main.jpg";
+import dzire24_2141_SideRight from "@/assets/dzire24-2141-side-right.jpg";
+import dzire24_2141_SideLeft from "@/assets/dzire24-2141-side-left.jpg";
+import dzire24_2141_Rear from "@/assets/dzire24-2141-rear.jpg";
+import dzire24_2141_Interior from "@/assets/dzire24-2141-interior.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -616,6 +622,32 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "maruti-suzuki-dzire-tour-taxi-2024-2141",
+    img: dzire24_2141_Main,
+    name: "Maruti Suzuki Dzire Tour Taxi",
+    year: 2024,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "70,933 km",
+    price: "₹7.50 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Dzire Tour",
+    variant: "Tour S Petrol MT (Taxi)",
+    color: "Arctic White",
+    registration: "2141",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Dzire Tour S (2024) petrol manual with commercial / taxi registration in pristine Arctic White finish (Registration: 2141). Driven 70,933 kms. Highly sought-after, ultra-reliable, and fuel-efficient commercial sedan powered by the responsive 1.2L K-Series DualJet petrol engine paired with a 5-speed manual transmission. Features include upgraded touchscreen infotainment system, chrome front bumper fog lamp bezels, chrome side body mouldings, chrome door handles, rear bumper protector guard bar with DZIRE insignia, premium beige leatherette seating, door visors, rear parking sensors, power steering, and outstanding fuel economy.",
+    gallery: [
+      dzire24_2141_Main,
+      dzire24_2141_SideRight,
+      dzire24_2141_SideLeft,
+      dzire24_2141_Rear,
+      dzire24_2141_Interior,
+    ],
+  },
   {
     slug: "mahindra-tuv300-t8-2019-9981",
     img: tuv300_19_9981_Main,
