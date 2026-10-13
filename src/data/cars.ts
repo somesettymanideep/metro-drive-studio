@@ -596,6 +596,47 @@ import dzire24_2141_Interior from "@/assets/dzire24-2141-interior.jpg";
 import dzire24_2141_FrontSeats from "@/assets/dzire24-2141-front-seats.jpg";
 import dzire24_2141_RearSeats from "@/assets/dzire24-2141-rear-seats.jpg";
 
+import creta21_0505_Main from "@/assets/creta21-0505-main.jpg";
+import creta21_0505_SideRight from "@/assets/creta21-0505-side-right.jpg";
+import creta21_0505_SideLeft from "@/assets/creta21-0505-side-left.jpg";
+import creta21_0505_Rear from "@/assets/creta21-0505-rear.jpg";
+import creta21_0505_Dash from "@/assets/creta21-0505-dash.jpg";
+import creta21_0505_FrontSeats from "@/assets/creta21-0505-front-seats.jpg";
+import creta21_0505_RearSeats from "@/assets/creta21-0505-rear-seats.jpg";
+
+import storme16_2345_Main from "@/assets/storme16-2345-main.jpg";
+import storme16_2345_SideRight from "@/assets/storme16-2345-side-right.jpg";
+import storme16_2345_SideLeft from "@/assets/storme16-2345-side-left.jpg";
+import storme16_2345_Rear from "@/assets/storme16-2345-rear.jpg";
+import storme16_2345_Dash from "@/assets/storme16-2345-dash.jpg";
+import storme16_2345_FrontSeats from "@/assets/storme16-2345-front-seats.jpg";
+import storme16_2345_RearSeats from "@/assets/storme16-2345-rear-seats.jpg";
+
+import compass19_6999_Main from "@/assets/compass19-6999-main.jpg";
+import compass19_6999_SideRight from "@/assets/compass19-6999-side-right.jpg";
+import compass19_6999_SideLeft from "@/assets/compass19-6999-side-left.jpg";
+import compass19_6999_Rear from "@/assets/compass19-6999-rear.jpg";
+import compass19_6999_Dash from "@/assets/compass19-6999-dash.jpg";
+import compass19_6999_FrontSeats from "@/assets/compass19-6999-front-seats.jpg";
+import compass19_6999_RearSeats from "@/assets/compass19-6999-rear-seats.jpg";
+import compass19_6999_Sunroof from "@/assets/compass19-6999-sunroof.jpg";
+
+import city22_9009_Main from "@/assets/city22-9009-main.jpg";
+import city22_9009_SideRight from "@/assets/city22-9009-side-right.jpg";
+import city22_9009_SideLeft from "@/assets/city22-9009-side-left.jpg";
+import city22_9009_Rear from "@/assets/city22-9009-rear.jpg";
+import city22_9009_Dash from "@/assets/city22-9009-dash.jpg";
+import city22_9009_FrontSeats from "@/assets/city22-9009-front-seats.jpg";
+import city22_9009_RearSeats from "@/assets/city22-9009-rear-seats.jpg";
+
+import mini21_8888_Main from "@/assets/mini21-8888-main.jpg";
+import mini21_8888_SideRight from "@/assets/mini21-8888-side-right.jpg";
+import mini21_8888_SideLeft from "@/assets/mini21-8888-side-left.jpg";
+import mini21_8888_Rear from "@/assets/mini21-8888-rear.jpg";
+import mini21_8888_Dash from "@/assets/mini21-8888-dash.jpg";
+import mini21_8888_FrontSeats from "@/assets/mini21-8888-front-seats.jpg";
+import mini21_8888_RearSeats from "@/assets/mini21-8888-rear-seats.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -624,6 +665,147 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "mini-cooper-s-countryman-petrol-2021-8888",
+    img: mini21_8888_Main,
+    name: "MINI Cooper S Countryman",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "59,297 km",
+    price: "₹24.00 L",
+    cat: "Luxury",
+    brand: "MINI",
+    model: "Cooper S Countryman",
+    variant: "Cooper S 2.0 Petrol AT",
+    color: "Chili Red / White Roof",
+    registration: "8888",
+    bodyType: "Luxury SUV",
+    description:
+      "MINI Cooper S Countryman (2021) petrol automatic in iconic Chili Red with contrast Aspen White roof, mirror caps, and bonnet rally stripes (Registration: 8888). Driven 59,297 kms. High-performance luxury compact crossover powered by the exhilarating 2.0L MINI TwinPower Turbo 4-cylinder petrol engine producing 192 hp and 280 Nm of torque paired with a 7-speed Steptronic Sport dual-clutch automatic transmission. Features include signature Union Jack LED taillamps, LED headlights with cornering lights, dual chrome exhaust tips, silver alloy wheels, circular central touchscreen infotainment with navigation & Apple CarPlay, digital driver cockpit display, quilted Satellite Grey leather sports seats with thigh support, aircraft-style toggle switches, JCW sport steering wheel, and selectable MINI driving modes.",
+    gallery: [
+      mini21_8888_Main,
+      mini21_8888_SideRight,
+      mini21_8888_SideLeft,
+      mini21_8888_Rear,
+      mini21_8888_Dash,
+      mini21_8888_FrontSeats,
+      mini21_8888_RearSeats,
+    ],
+  },
+  {
+    slug: "honda-city-zx-diesel-2022-9009",
+    img: city22_9009_Main,
+    name: "Honda City ZX",
+    year: 2022,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,35,677 km",
+    price: "₹9.50 L",
+    cat: "Sedan",
+    brand: "Honda",
+    model: "City",
+    variant: "ZX 1.5 i-DTEC Diesel MT",
+    color: "Platinum White Pearl",
+    registration: "9009",
+    bodyType: "Sedan",
+    description:
+      "Honda City ZX (2022) 5th Generation diesel manual in pristine Platinum White Pearl finish (Registration: 9009). Driven 1,35,677 kms. Range-topping executive sedan powered by the highly refined and exceptionally fuel-efficient 1.5L i-DTEC DOHC diesel engine paired with a 6-speed manual transmission. Flagship ZX trim equipped with full 9-array LED headlamps with L-shaped LED DRLs, dual-tone diamond-cut alloy wheels, electric sunroof, 8-inch touchscreen infotainment system with smartphone connectivity, premium beige leatherette seating, automatic climate control, chrome door mouldings, LaneWatch camera, rear parking camera and sensors, and 6 airbags.",
+    gallery: [
+      city22_9009_Main,
+      city22_9009_SideRight,
+      city22_9009_SideLeft,
+      city22_9009_Rear,
+      city22_9009_Dash,
+      city22_9009_FrontSeats,
+      city22_9009_RearSeats,
+    ],
+  },
+  {
+    slug: "jeep-compass-limited-plus-diesel-2019-6999",
+    img: compass19_6999_Main,
+    name: "Jeep Compass Limited Plus",
+    year: 2019,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,09,103 km",
+    price: "₹12.50 L",
+    cat: "SUV",
+    brand: "Jeep",
+    model: "Compass",
+    variant: "Limited Plus 2.0 Diesel MT",
+    color: "Brilliant Black",
+    registration: "6999",
+    bodyType: "SUV",
+    description:
+      "Jeep Compass Limited Plus (2019) diesel manual in striking Brilliant Black finish (Registration: 6999). Driven 1,09,103 kms. Top-of-the-line premium SUV powered by the potent 2.0L MultiJet II turbo diesel engine generating 173 PS and 350 Nm torque paired with a 6-speed manual gearbox. Range-topping Limited Plus specification equipped with dual-pane panoramic sunroof, 8.4-inch Uconnect touchscreen infotainment system, stylish 18-inch dual-tone diamond-cut alloy wheels, Bi-Xenon projector headlamps with LED DRLs, dual-zone automatic climate control, electronic parking brake with auto hold, signature 7-slot chrome grille, ski-grey leather upholstery, and comprehensive safety suite including 6 airbags, ESC, and ABS with EBD.",
+    gallery: [
+      compass19_6999_Main,
+      compass19_6999_SideRight,
+      compass19_6999_SideLeft,
+      compass19_6999_Rear,
+      compass19_6999_Dash,
+      compass19_6999_FrontSeats,
+      compass19_6999_RearSeats,
+      compass19_6999_Sunroof,
+    ],
+  },
+  {
+    slug: "tata-safari-storme-vx-2016-2345",
+    img: storme16_2345_Main,
+    name: "Tata Safari Storme VX",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,47,848 km",
+    price: "₹6.00 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Safari Storme",
+    variant: "VX 2.2 VARICOR Diesel MT",
+    color: "Pearl White",
+    registration: "2345",
+    bodyType: "SUV",
+    description:
+      "Tata Safari Storme VX (2016) diesel manual in Pearl White finish with registration number 2345. Driven 1,47,848 kms. Legendary and commanding 7-seater SUV powered by the robust 2.2L VARICOR turbo diesel engine paired with a 5-speed manual transmission. Key features include heavy-duty front bull bar bumper guard, gloss black alloy wheels with red brake caliper accents, dual exhaust tips, projector headlamps, integrated side footsteps, contrast rear tailgate styling with chrome Storme badging, roof rails, custom dual-tone beige and black leatherette seat covers, and rear parking sensors.",
+    gallery: [
+      storme16_2345_Main,
+      storme16_2345_SideRight,
+      storme16_2345_SideLeft,
+      storme16_2345_Rear,
+      storme16_2345_Dash,
+      storme16_2345_FrontSeats,
+      storme16_2345_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-creta-e-diesel-2021-0505",
+    img: creta21_0505_Main,
+    name: "Hyundai Creta E",
+    year: 2021,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,43,784 km",
+    price: "₹9.50 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Creta",
+    variant: "E 1.5 CRDi Diesel MT",
+    color: "Polar White",
+    registration: "0505",
+    bodyType: "SUV",
+    description:
+      "Hyundai Creta E (2021) diesel manual in pristine Polar White finish (Registration: 0505). Driven 1,43,784 kms. Popular premium compact SUV powered by the robust, refined and highly fuel-efficient 1.5L U2 CRDi turbo diesel engine paired with a 6-speed manual transmission. Key highlights include large touchscreen infotainment system, custom wine/maroon quilted leatherette seat covers with front center armrest, steering cover, stylish wheel covers, projector headlamps with LED DRLs, roof rails, shark fin antenna, chrome door handles, rear parking sensors, and a well-maintained, comfortable cabin.",
+    gallery: [
+      creta21_0505_Main,
+      creta21_0505_SideRight,
+      creta21_0505_SideLeft,
+      creta21_0505_Rear,
+      creta21_0505_Dash,
+      creta21_0505_FrontSeats,
+      creta21_0505_RearSeats,
+    ],
+  },
   {
     slug: "maruti-suzuki-dzire-tour-taxi-2024-2141",
     img: dzire24_2141_Main,
