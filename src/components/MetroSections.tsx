@@ -182,7 +182,7 @@ export function AboutSection() {
             Metro Cars is a leading used car dealer in Vijayawada, offering a wide range of
             thoroughly inspected and certified pre-owned vehicles. Our mission is to provide
             customers with reliable cars, transparent pricing, and exceptional service throughout
-            their buying journey.
+            their buying journey
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-3">
