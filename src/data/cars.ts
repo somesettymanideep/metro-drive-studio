@@ -637,6 +637,69 @@ import mini21_8888_Dash from "@/assets/mini21-8888-dash.jpg";
 import mini21_8888_FrontSeats from "@/assets/mini21-8888-front-seats.jpg";
 import mini21_8888_RearSeats from "@/assets/mini21-8888-rear-seats.jpg";
 
+import pulse16_4876_Main from "@/assets/pulse16-4876-main.jpg";
+import pulse16_4876_SideRight from "@/assets/pulse16-4876-side-right.jpg";
+import pulse16_4876_SideLeft from "@/assets/pulse16-4876-side-left.jpg";
+import pulse16_4876_Rear from "@/assets/pulse16-4876-rear.jpg";
+import pulse16_4876_Dash from "@/assets/pulse16-4876-dash.jpg";
+import pulse16_4876_FrontSeats from "@/assets/pulse16-4876-front-seats.jpg";
+import pulse16_4876_RearSeats from "@/assets/pulse16-4876-rear-seats.jpg";
+
+import liva13_3447_Main from "@/assets/liva13-3447-main.jpg";
+import liva13_3447_SideRight from "@/assets/liva13-3447-side-right.jpg";
+import liva13_3447_SideLeft from "@/assets/liva13-3447-side-left.jpg";
+import liva13_3447_Rear from "@/assets/liva13-3447-rear.jpg";
+import liva13_3447_Dash from "@/assets/liva13-3447-dash.jpg";
+import liva13_3447_FrontSeats from "@/assets/liva13-3447-front-seats.jpg";
+import liva13_3447_RearSeats from "@/assets/liva13-3447-rear-seats.jpg";
+
+import jazz22_0444_Main from "@/assets/jazz22-0444-main.jpg";
+import jazz22_0444_SideRight from "@/assets/jazz22-0444-side-right.jpg";
+import jazz22_0444_SideLeft from "@/assets/jazz22-0444-side-left.jpg";
+import jazz22_0444_Rear from "@/assets/jazz22-0444-rear.jpg";
+import jazz22_0444_Dash from "@/assets/jazz22-0444-dash.jpg";
+import jazz22_0444_FrontSeats from "@/assets/jazz22-0444-front-seats.jpg";
+import jazz22_0444_RearSeats from "@/assets/jazz22-0444-rear-seats.jpg";
+
+import brezza17_7333_Main from "@/assets/brezza17-7333-main.jpg";
+import brezza17_7333_SideRight from "@/assets/brezza17-7333-side-right.jpg";
+import brezza17_7333_SideLeft from "@/assets/brezza17-7333-side-left.jpg";
+import brezza17_7333_Rear from "@/assets/brezza17-7333-rear.jpg";
+import brezza17_7333_Dash from "@/assets/brezza17-7333-dash.jpg";
+import brezza17_7333_FrontSeats from "@/assets/brezza17-7333-front-seats.jpg";
+
+import storme17_1212_Main from "@/assets/storme17-1212-main.jpg";
+import storme17_1212_SideRight from "@/assets/storme17-1212-side-right.jpg";
+import storme17_1212_SideLeft from "@/assets/storme17-1212-side-left.jpg";
+import storme17_1212_Rear from "@/assets/storme17-1212-rear.jpg";
+import storme17_1212_Dash from "@/assets/storme17-1212-dash.jpg";
+import storme17_1212_FrontSeats from "@/assets/storme17-1212-front-seats.jpg";
+import storme17_1212_RearSeats from "@/assets/storme17-1212-rear-seats.jpg";
+
+import dzire19_2536_Main from "@/assets/dzire19-2536-main.jpg";
+import dzire19_2536_SideRight from "@/assets/dzire19-2536-side-right.jpg";
+import dzire19_2536_SideLeft from "@/assets/dzire19-2536-side-left.jpg";
+import dzire19_2536_Rear from "@/assets/dzire19-2536-rear.jpg";
+import dzire19_2536_Dash from "@/assets/dzire19-2536-dash.jpg";
+import dzire19_2536_FrontSeats from "@/assets/dzire19-2536-front-seats.jpg";
+import dzire19_2536_RearSeats from "@/assets/dzire19-2536-rear-seats.jpg";
+
+import wagonr24_1076_Main from "@/assets/wagonr24-1076-main.jpg";
+import wagonr24_1076_SideRight from "@/assets/wagonr24-1076-side-right.jpg";
+import wagonr24_1076_SideLeft from "@/assets/wagonr24-1076-side-left.jpg";
+import wagonr24_1076_Rear from "@/assets/wagonr24-1076-rear.jpg";
+import wagonr24_1076_Dash from "@/assets/wagonr24-1076-dash.jpg";
+import wagonr24_1076_FrontSeats from "@/assets/wagonr24-1076-front-seats.jpg";
+import wagonr24_1076_RearSeats from "@/assets/wagonr24-1076-rear-seats.jpg";
+
+import rapid16_2345_Main from "@/assets/rapid16-2345-main.jpg";
+import rapid16_2345_SideRight from "@/assets/rapid16-2345-side-right.jpg";
+import rapid16_2345_SideLeft from "@/assets/rapid16-2345-side-left.jpg";
+import rapid16_2345_Rear from "@/assets/rapid16-2345-rear.jpg";
+import rapid16_2345_Dash from "@/assets/rapid16-2345-dash.jpg";
+import rapid16_2345_FrontSeats from "@/assets/rapid16-2345-front-seats.jpg";
+import rapid16_2345_RearSeats from "@/assets/rapid16-2345-rear-seats.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -665,6 +728,229 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "skoda-rapid-ambition-diesel-at-2016-2345",
+    img: rapid16_2345_Main,
+    name: "Skoda Rapid Ambition DSG",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "1,59,585 km",
+    price: "₹6.00 L",
+    cat: "Sedan",
+    brand: "Skoda",
+    model: "Rapid",
+    variant: "Ambition 1.5 TDI DSG Automatic",
+    color: "Carbon Steel Grey",
+    registration: "2345",
+    bodyType: "Sedan",
+    description:
+      "Skoda Rapid Ambition 1.5 TDI DSG Automatic (2016) in timeless Carbon Steel Grey finish (Registration: 2345). Driven 1,59,585 kms. European-engineered executive sedan powered by the potent 1.5L TDI turbo diesel engine paired with the lightning-fast 7-speed DSG dual-clutch automatic transmission. Features include signature Skoda butterfly chrome grille, 5-spoke alloy wheels, projector headlamps, Climatronic automatic climate control, dual-tone black and beige cabin with premium leatherette upholstery, factory audio system with Bluetooth and steering-mounted controls, front and rear center armrests, rear parking sensors, dual airbags, and solid German build quality.",
+    gallery: [
+      rapid16_2345_Main,
+      rapid16_2345_SideRight,
+      rapid16_2345_SideLeft,
+      rapid16_2345_Rear,
+      rapid16_2345_Dash,
+      rapid16_2345_FrontSeats,
+      rapid16_2345_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-wagonr-vxi-petrol-at-2024-1076",
+    img: wagonr24_1076_Main,
+    name: "Maruti Suzuki WagonR VXi AT",
+    year: 2024,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "3,609 km",
+    price: "₹6.20 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "WagonR",
+    variant: "VXi 1.0 Petrol AGS Automatic",
+    color: "Nutmeg Brown",
+    registration: "1076",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki WagonR VXi Automatic (2024) petrol AGS in stylish Nutmeg Brown metallic finish (Registration: 1076). Virtually brand new with an incredible ultra-low mileage of just 3,609 kms. India's favorite tall-boy hatchback powered by the efficient 1.0L K-Series DualJet petrol engine paired with Maruti's effortless Auto Gear Shift (AGS/AMT) transmission. Key features include factory integrated SmartPlay audio system with Bluetooth and steering controls, dual-tone cabin with custom black and beige leatherette upholstery, all four power windows, electrically adjustable ORVMs, rear parking sensors, stainless steel rear bumper guard, wheel covers, and generous tall-boy cabin with cavernous headroom and luggage space.",
+    gallery: [
+      wagonr24_1076_Main,
+      wagonr24_1076_SideRight,
+      wagonr24_1076_SideLeft,
+      wagonr24_1076_Rear,
+      wagonr24_1076_Dash,
+      wagonr24_1076_FrontSeats,
+      wagonr24_1076_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-dzire-vxi-petrol-2019-2536",
+    img: dzire19_2536_Main,
+    name: "Maruti Suzuki Dzire VXi",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "37,243 km",
+    price: "₹6.30 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Dzire",
+    variant: "VXi 1.2 Petrol MT",
+    color: "Silky Silver",
+    registration: "2536",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Dzire VXi (2019) petrol manual in elegant Silky Silver finish (Registration: 2536). Low mileage, driven only 37,243 kms. India's favorite compact sedan powered by the peppy and ultra fuel-efficient 1.2L K-Series 4-cylinder petrol engine mated to a crisp 5-speed manual transmission. Key features include upgraded large touchscreen infotainment display, premium dual-tone beige interior with burl wood ornamentation, custom beige leatherette upholstery, all four power windows, electrically adjustable ORVMs with turn indicators, rear AC vents, remote keyless entry, front fog lamps, and chrome side door mouldings.",
+    gallery: [
+      dzire19_2536_Main,
+      dzire19_2536_SideRight,
+      dzire19_2536_SideLeft,
+      dzire19_2536_Rear,
+      dzire19_2536_Dash,
+      dzire19_2536_FrontSeats,
+      dzire19_2536_RearSeats,
+    ],
+  },
+  {
+    slug: "tata-safari-storme-vx-diesel-2017-1212",
+    img: storme17_1212_Main,
+    name: "Tata Safari Storme VX",
+    year: 2017,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,55,716 km",
+    price: "₹7.50 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Safari Storme",
+    variant: "VX 2.2 VARICOR Diesel MT",
+    color: "Charcoal Grey",
+    registration: "1212",
+    bodyType: "SUV",
+    description:
+      "Tata Safari Storme VX (2017) diesel manual in commanding Charcoal Grey finish (Registration: 1212). Driven 1,55,716 kms. Powerful and iconic 7-seater true-blue SUV powered by the robust 2.2L VARICOR turbo diesel engine delivering authoritative performance paired with a 5-speed manual transmission. Premium VX trim equipped with chrome STORME hood and tailgate lettering, projector headlamps, silver alloy wheels, integrated side footsteps, dual chrome exhaust outlets, rear fold-down footstep, roof rails, audio entertainment system with Bluetooth connectivity, comfortable tan leatherette upholstery with individual armrests, and high ground clearance.",
+    gallery: [
+      storme17_1212_Main,
+      storme17_1212_SideRight,
+      storme17_1212_SideLeft,
+      storme17_1212_Rear,
+      storme17_1212_Dash,
+      storme17_1212_FrontSeats,
+      storme17_1212_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-brezza-zdi-plus-diesel-2017-7333",
+    img: brezza17_7333_Main,
+    name: "Maruti Suzuki Brezza ZDi+",
+    year: 2017,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,59,642 km",
+    price: "₹6.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Brezza",
+    variant: "ZDi+ 1.3 DDiS MT",
+    color: "Granite Grey",
+    registration: "7333",
+    bodyType: "Compact SUV",
+    description:
+      "Maruti Suzuki Brezza ZDi+ (2017) diesel manual in sophisticated Granite Grey finish (Registration: 7333). Driven 1,59,642 kms. Top-of-the-line ZDi+ variant powered by the proven and economical 1.3L DDiS turbo diesel engine paired with a 5-speed manual transmission. Premium features include touchscreen SmartPlay infotainment system, engine push start/stop button, automatic climate control, steering-mounted audio and calling controls, dual-tone cabin with bead seat cooling cushions, stylish alloy wheels, projector headlamps, front fog lamps, and rear steel bumper protector guard.",
+    gallery: [
+      brezza17_7333_Main,
+      brezza17_7333_SideRight,
+      brezza17_7333_SideLeft,
+      brezza17_7333_Rear,
+      brezza17_7333_Dash,
+      brezza17_7333_FrontSeats,
+    ],
+  },
+  {
+    slug: "honda-jazz-vx-cvt-petrol-2022-0444",
+    img: jazz22_0444_Main,
+    name: "Honda Jazz VX CVT",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "36,997 km",
+    price: "₹7.30 L",
+    cat: "Hatchback",
+    brand: "Honda",
+    model: "Jazz",
+    variant: "VX 1.2 i-VTEC CVT Automatic",
+    color: "Platinum White Pearl",
+    registration: "0444",
+    bodyType: "Hatchback",
+    description:
+      "Honda Jazz VX CVT (2022) petrol automatic in pristine Platinum White Pearl finish (Registration: 0444). Driven only 36,997 kms. Powered by Honda's refined 1.2L i-VTEC 4-cylinder petrol engine mated to a silky-smooth CVT automatic transmission with steering paddle shifters. Premium VX variant equipped with touchscreen infotainment system with Apple CarPlay & Android Auto, automatic climate control with touch panel, engine start/stop button with smart key, electric sunroof, multi-function steering wheel with cruise control, dual-tone cabin with diamond floor mats, multi-spoke alloy wheels, and rear parking camera.",
+    gallery: [
+      jazz22_0444_Main,
+      jazz22_0444_SideRight,
+      jazz22_0444_SideLeft,
+      jazz22_0444_Rear,
+      jazz22_0444_Dash,
+      jazz22_0444_FrontSeats,
+      jazz22_0444_RearSeats,
+    ],
+  },
+  {
+    slug: "toyota-etios-liva-g-petrol-2013-3447",
+    img: liva13_3447_Main,
+    name: "Toyota Etios Liva G",
+    year: 2013,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "41,274 km",
+    price: "₹3.50 L",
+    cat: "Hatchback",
+    brand: "Toyota",
+    model: "Etios Liva",
+    variant: "G 1.2 Petrol MT",
+    color: "Classic White",
+    registration: "3447",
+    bodyType: "Hatchback",
+    description:
+      "Toyota Etios Liva G (2013) petrol manual in immaculate Classic White finish (Registration: 3447). Very low mileage, driven only 41,274 kms. Powered by Toyota's bulletproof, ultra-reliable 1.2L 4-cylinder DOHC petrol engine paired with a 5-speed manual transmission. Key features include touchscreen infotainment system with media connectivity, central digital-analog instrument console, chilling air conditioning, power steering, power windows, bead seat cushions, body-colored bumpers with front fog lamps, full wheel covers, and spacious cabin with class-leading rear legroom.",
+    gallery: [
+      liva13_3447_Main,
+      liva13_3447_SideRight,
+      liva13_3447_SideLeft,
+      liva13_3447_Rear,
+      liva13_3447_Dash,
+      liva13_3447_FrontSeats,
+      liva13_3447_RearSeats,
+    ],
+  },
+  {
+    slug: "renault-pulse-rxl-diesel-2016-4876",
+    img: pulse16_4876_Main,
+    name: "Renault Pulse RxL",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "88,541 km",
+    price: "₹3.20 L",
+    cat: "Hatchback",
+    brand: "Renault",
+    model: "Pulse",
+    variant: "RxL dCi Diesel MT",
+    color: "Metallic Red",
+    registration: "4876",
+    bodyType: "Hatchback",
+    description:
+      "Renault Pulse RxL (2016) diesel manual in vibrant Metallic Red finish (Registration: 4876). Driven 88,541 kms. Powered by Renault's reliable and ultra fuel-efficient 1.5L dCi K9K turbo-diesel engine paired with a 5-speed manual transmission. Key features include touchscreen infotainment display, automatic climate control, dual-tone cabin with black and contrast-trimmed leatherette seat covers, power steering, all four power windows, electrically adjustable ORVMs, rear wiper and defogger, remote central locking, and sporty hatchback styling.",
+    gallery: [
+      pulse16_4876_Main,
+      pulse16_4876_SideRight,
+      pulse16_4876_SideLeft,
+      pulse16_4876_Rear,
+      pulse16_4876_Dash,
+      pulse16_4876_FrontSeats,
+      pulse16_4876_RearSeats,
+    ],
+  },
   {
     slug: "mini-cooper-s-countryman-petrol-2021-8888",
     img: mini21_8888_Main,
