@@ -700,6 +700,63 @@ import rapid16_2345_Dash from "@/assets/rapid16-2345-dash.jpg";
 import rapid16_2345_FrontSeats from "@/assets/rapid16-2345-front-seats.jpg";
 import rapid16_2345_RearSeats from "@/assets/rapid16-2345-rear-seats.jpg";
 
+import alto19_6230_Main from "@/assets/alto19-6230-main.jpg";
+import alto19_6230_SideRight from "@/assets/alto19-6230-side-right.jpg";
+import alto19_6230_SideLeft from "@/assets/alto19-6230-side-left.jpg";
+import alto19_6230_Rear from "@/assets/alto19-6230-rear.jpg";
+import alto19_6230_Dash from "@/assets/alto19-6230-dash.jpg";
+import alto19_6230_FrontSeats from "@/assets/alto19-6230-front-seats.jpg";
+import alto19_6230_RearSeats from "@/assets/alto19-6230-rear-seats.jpg";
+
+import xl6_22_7130_Main from "@/assets/xl6-22-7130-main.jpg";
+import xl6_22_7130_SideRight from "@/assets/xl6-22-7130-side-right.jpg";
+import xl6_22_7130_SideLeft from "@/assets/xl6-22-7130-side-left.jpg";
+import xl6_22_7130_Rear from "@/assets/xl6-22-7130-rear.jpg";
+import xl6_22_7130_Dash from "@/assets/xl6-22-7130-dash.jpg";
+import xl6_22_7130_FrontSeats from "@/assets/xl6-22-7130-front-seats.jpg";
+import xl6_22_7130_RearSeats from "@/assets/xl6-22-7130-rear-seats.jpg";
+import compass18_7511_Main from "@/assets/compass18-7511-main.jpg";
+import compass18_7511_SideRight from "@/assets/compass18-7511-side-right.jpg";
+import compass18_7511_SideLeft from "@/assets/compass18-7511-side-left.jpg";
+import compass18_7511_Rear from "@/assets/compass18-7511-rear.jpg";
+import compass18_7511_Dash from "@/assets/compass18-7511-dash.jpg";
+import compass18_7511_FrontSeats from "@/assets/compass18-7511-front-seats.jpg";
+import compass18_7511_RearSeats from "@/assets/compass18-7511-rear-seats.jpg";
+import nexon24_3741_Main from "@/assets/nexon24-3741-main.jpg";
+import nexon24_3741_SideRight from "@/assets/nexon24-3741-side-right.jpg";
+import nexon24_3741_Rear from "@/assets/nexon24-3741-rear.jpg";
+import nexon24_3741_Dash from "@/assets/nexon24-3741-dash.jpg";
+import nexon24_3741_FrontSeats from "@/assets/nexon24-3741-front-seats.jpg";
+import nexon24_3741_RearSeats from "@/assets/nexon24-3741-rear-seats.jpg";
+import altoK10_18_8483_Main from "@/assets/altok10-18-8483-main.jpg";
+import altoK10_18_8483_SideRight from "@/assets/altok10-18-8483-side-right.jpg";
+import altoK10_18_8483_SideLeft from "@/assets/altok10-18-8483-side-left.jpg";
+import altoK10_18_8483_Rear from "@/assets/altok10-18-8483-rear.jpg";
+import altoK10_18_8483_Dash from "@/assets/altok10-18-8483-dash.jpg";
+import altoK10_18_8483_FrontSeats from "@/assets/altok10-18-8483-front-seats.jpg";
+import altoK10_18_8483_RearSeats from "@/assets/altok10-18-8483-rear-seats.jpg";
+import redigo20_7869_Main from "@/assets/redigo20-7869-main.jpg";
+import redigo20_7869_SideRight from "@/assets/redigo20-7869-side-right.jpg";
+import redigo20_7869_SideLeft from "@/assets/redigo20-7869-side-left.jpg";
+import redigo20_7869_Rear from "@/assets/redigo20-7869-rear.jpg";
+import redigo20_7869_Dash from "@/assets/redigo20-7869-dash.jpg";
+import redigo20_7869_FrontSeats from "@/assets/redigo20-7869-front-seats.jpg";
+import redigo20_7869_RearSeats from "@/assets/redigo20-7869-rear-seats.jpg";
+import brio13_3473_Main from "@/assets/brio13-3473-main.jpg";
+import brio13_3473_SideRight from "@/assets/brio13-3473-side-right.jpg";
+import brio13_3473_SideLeft from "@/assets/brio13-3473-side-left.jpg";
+import brio13_3473_Rear from "@/assets/brio13-3473-rear.jpg";
+import brio13_3473_Dash from "@/assets/brio13-3473-dash.jpg";
+import brio13_3473_FrontSeats from "@/assets/brio13-3473-front-seats.jpg";
+import brio13_3473_RearSeats from "@/assets/brio13-3473-rear-seats.jpg";
+import polo15_2956_Main from "@/assets/polo15-2956-main.jpg";
+import polo15_2956_SideRight from "@/assets/polo15-2956-side-right.jpg";
+import polo15_2956_SideLeft from "@/assets/polo15-2956-side-left.jpg";
+import polo15_2956_Rear from "@/assets/polo15-2956-rear.jpg";
+import polo15_2956_Dash from "@/assets/polo15-2956-dash.jpg";
+import polo15_2956_FrontSeats from "@/assets/polo15-2956-front-seats.jpg";
+import polo15_2956_RearSeats from "@/assets/polo15-2956-rear-seats.jpg";
+
 export type Car = {
   slug: string;
   img: string;
@@ -728,6 +785,229 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "volkswagen-polo-gt-tsi-petrol-automatic-2015-2956",
+    img: polo15_2956_Main,
+    name: "Volkswagen Polo GT TSI",
+    year: 2015,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "27,694 km",
+    price: "₹6.20 L",
+    cat: "Hatchback",
+    brand: "Volkswagen",
+    model: "Polo",
+    variant: "VW GT TSI (GT Line) Petrol AT",
+    color: "Candy White with Black Roof",
+    registration: "2956",
+    bodyType: "Hatchback",
+    description:
+      "Volkswagen Polo GT TSI (2015) petrol automatic in pristine Candy White finish with contrast black roof and sporty spoiler (Registration: 2956). Exceptionally low mileage with only 27,694 kms driven. India's favorite hot hatchback powered by the punchy 1.2L TSI turbocharged 4-cylinder petrol engine paired with Volkswagen's lightning-fast 7-speed DSG dual-clutch automatic transmission with Tiptronic manual mode. Features include custom dual-tone tan and black leatherette seats, touchscreen infotainment system with media connectivity, flat-bottom leather-wrapped multifunction steering wheel, aluminum sport pedals, iconic GT badging on front grille and tailgate, GT TSI badging on C-pillar, alloy wheels, automatic climate control, electronic stability control (ESC), and hill-hold assist.",
+    gallery: [
+      polo15_2956_Main,
+      polo15_2956_SideRight,
+      polo15_2956_SideLeft,
+      polo15_2956_Rear,
+      polo15_2956_Dash,
+      polo15_2956_FrontSeats,
+      polo15_2956_RearSeats,
+    ],
+  },
+  {
+    slug: "honda-brio-s-petrol-2013-3473",
+    img: brio13_3473_Main,
+    name: "Honda Brio S",
+    year: 2013,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "1,77,937 km",
+    price: "₹1.70 L",
+    cat: "Hatchback",
+    brand: "Honda",
+    model: "Brio",
+    variant: "S 1.2 i-VTEC MT",
+    color: "Urban Titanium Metallic",
+    registration: "3473",
+    bodyType: "Hatchback",
+    description:
+      "Honda Brio S 1.2 i-VTEC (2013) petrol manual in sophisticated Urban Titanium Metallic finish (Registration: 3473). Driven 1,77,937 kms. Fun-to-drive, ultra-reliable Japanese compact hatchback powered by Honda's legendary 1.2L 4-cylinder i-VTEC petrol engine delivering 88 PS paired with a slick 5-speed manual gearbox. Features include aftermarket large touchscreen infotainment system with media connectivity, steering-mounted audio controls, custom dual-tone wine red and beige leatherette upholstery, all-power windows, electric ORVMs, iconic all-glass rear hatch, and remarkably compact footprint offering class-leading agility and parking ease.",
+    gallery: [
+      brio13_3473_Main,
+      brio13_3473_SideRight,
+      brio13_3473_SideLeft,
+      brio13_3473_Rear,
+      brio13_3473_Dash,
+      brio13_3473_FrontSeats,
+      brio13_3473_RearSeats,
+    ],
+  },
+  {
+    slug: "datsun-redi-go-t-o-petrol-2020-7869",
+    img: redigo20_7869_Main,
+    name: "Datsun redi-GO T (O)",
+    year: 2020,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "37,857 km",
+    price: "₹2.50 L",
+    cat: "Hatchback",
+    brand: "Datsun",
+    model: "redi-GO",
+    variant: "T (O) Petrol MT",
+    color: "Bronze Grey",
+    registration: "7869",
+    bodyType: "Hatchback",
+    description:
+      "Datsun redi-GO T (O) (2020) facelift petrol manual in attractive Bronze Grey metallic finish (Registration: 7869). Driven 37,857 kms. Stylish and economical urban tall-boy hatchback featuring the refreshed bold front octagonal chrome grille, L-shaped LED daytime running lights, high ground clearance of 187mm, front power windows, custom dual-tone black and silver leatherette seat upholstery, sporty roof rails, stylish dual-tone wheel covers, rear stainless steel bumper protector guard, and easy maneuverability with tight turning radius for hassle-free city driving.",
+    gallery: [
+      redigo20_7869_Main,
+      redigo20_7869_SideRight,
+      redigo20_7869_SideLeft,
+      redigo20_7869_Rear,
+      redigo20_7869_Dash,
+      redigo20_7869_FrontSeats,
+      redigo20_7869_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-alto-k10-vxi-ags-petrol-2018-8483",
+    img: altoK10_18_8483_Main,
+    name: "Maruti Suzuki Alto K10 VXi AT",
+    year: 2018,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "26,890 km",
+    price: "₹2.90 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Alto K10",
+    variant: "VXi AGS Automatic",
+    color: "Superior White",
+    registration: "8483",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Alto K10 VXi AGS Automatic (2018) petrol in pristine Superior White finish (Registration: 8483). Low mileage with only 26,890 kms driven. Compact and peppy city hatchback powered by the lively 1.0L K10B petrol engine paired with Maruti's convenient Auto Gear Shift (AGS/AMT) automatic transmission for effortless bumper-to-bumper city commuting. Equipped with factory integrated audio system with USB/AUX/CD, front power windows, custom black leatherette seat covers with white racing stripe accents, dual-tone dashboard, digital clock, wheel caps, and exceptional fuel economy.",
+    gallery: [
+      altoK10_18_8483_Main,
+      altoK10_18_8483_SideRight,
+      altoK10_18_8483_SideLeft,
+      altoK10_18_8483_Rear,
+      altoK10_18_8483_Dash,
+      altoK10_18_8483_FrontSeats,
+      altoK10_18_8483_RearSeats,
+    ],
+  },
+  {
+    slug: "tata-nexon-pure-s-diesel-2024-3741",
+    img: nexon24_3741_Main,
+    name: "Tata Nexon Pure S",
+    year: 2024,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "43,984 km",
+    price: "₹10.50 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Nexon",
+    variant: "Pure S 1.5 Revotorq Diesel MT",
+    color: "Pristine White with Black Roof",
+    registration: "3741",
+    bodyType: "Compact SUV",
+    description:
+      "Tata Nexon Pure S (2024) diesel manual in striking dual-tone Pristine White with contrasting black roof (Registration: 3741). Driven 43,984 kms. The new facelifted Tata Nexon powered by the punchy and efficient 1.5L Revotorq turbo diesel engine producing 115 PS and 260 Nm of torque paired with a 6-speed manual gearbox. The 'Pure S' trim comes equipped with an electric sunroof ('S' denotes Sunroof), revolutionary 2-spoke steering wheel with illuminated Tata logo, full digital instrument cluster, floating touchscreen infotainment system with smartphone connectivity, touch capacitive AC controls, multiple drive modes (Eco, City, Sport), stylish multi-spoke machined alloy wheels, bi-function LED headlamps with sequential DRLs, and a 5-star GNCAP safety rated fortress body structure.",
+    gallery: [
+      nexon24_3741_Main,
+      nexon24_3741_SideRight,
+      nexon24_3741_Rear,
+      nexon24_3741_Dash,
+      nexon24_3741_FrontSeats,
+      nexon24_3741_RearSeats,
+    ],
+  },
+  {
+    slug: "jeep-compass-limited-diesel-2018-7511",
+    img: compass18_7511_Main,
+    name: "Jeep Compass Limited",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "93,000 km",
+    price: "₹9.50 L",
+    cat: "SUV",
+    brand: "Jeep",
+    model: "Compass",
+    variant: "Limited 2.0 Multijet II MT",
+    color: "Billet Silver with Black Roof",
+    registration: "7511",
+    bodyType: "SUV",
+    description:
+      "Jeep Compass Limited 2.0 Multijet II (2018) diesel manual in striking dual-tone Billet Silver with contrasting black roof (Registration: 7511). Driven 93,000 kms. Premium American SUV built like a tank, powered by the formidable 2.0L turbo diesel engine producing 173 PS and 350 Nm torque paired with a slick 6-speed manual transmission. Key features include signature 7-slot chrome grille, dual-tone 17-inch alloy wheels, projector headlamps with LED DRLs, touchscreen Uconnect infotainment system, dual-zone automatic climate control, electronic parking brake with auto hold, multi-function leather-wrapped steering wheel, ski-grey and black dual-tone leatherette upholstery, push-button start, and legendary Jeep driving dynamics.",
+    gallery: [
+      compass18_7511_Main,
+      compass18_7511_SideRight,
+      compass18_7511_SideLeft,
+      compass18_7511_Rear,
+      compass18_7511_Dash,
+      compass18_7511_FrontSeats,
+      compass18_7511_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-xl6-alpha-plus-smart-hybrid-2022-7130",
+    img: xl6_22_7130_Main,
+    name: "Maruti Suzuki XL6 Alpha+ Smart Hybrid",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "39,038 km",
+    price: "₹10.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "XL6",
+    variant: "Alpha+ Smart Hybrid MT",
+    color: "Magma Grey",
+    registration: "7130",
+    bodyType: "MPV",
+    description:
+      "Maruti Suzuki XL6 Alpha+ Smart Hybrid (2022) petrol manual in sophisticated Magma Grey finish (Registration: 7130). Driven 39,038 kms. Top-of-the-line 6-seater premium MPV powered by the refined 1.5L K15C DualJet petrol engine with advanced Smart Hybrid idle start-stop technology and a 5-speed manual transmission. Premium features include 7-inch SmartPlay Pro touchscreen with Apple CarPlay and Android Auto, cruise control, ventilated front leatherette seats, second-row captain chairs, automatic climate control, engine push-start button, quad-chamber LED headlamps, 16-inch dual-tone machined alloy wheels, shark fin antenna, roof rails, and rear parking sensors.",
+    gallery: [
+      xl6_22_7130_Main,
+      xl6_22_7130_SideRight,
+      xl6_22_7130_SideLeft,
+      xl6_22_7130_Rear,
+      xl6_22_7130_Dash,
+      xl6_22_7130_FrontSeats,
+      xl6_22_7130_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-alto-800-lxi-petrol-2019-6230",
+    img: alto19_6230_Main,
+    name: "Maruti Suzuki Alto 800 LXi",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "37,891 km",
+    price: "₹2.70 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Alto 800",
+    variant: "LXi Petrol MT",
+    color: "Uptown Red",
+    registration: "6230",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Alto 800 LXi (2019) petrol manual in eye-catching Uptown Red finish (Registration: 6230). Driven only 37,891 kms. India's favorite reliable and budget-friendly city car powered by the peppy and ultra fuel-efficient 796cc F8D petrol engine with a smooth 5-speed manual transmission. Features include factory air conditioning with heater, front power windows, 1-DIN stereo audio system with USB/AUX, custom sporty black, silver and red stitched seat upholstery, steering wheel cover, clear-lens headlamps, body side moldings, and door visors. Exceptionally low maintenance and high fuel economy make it the ideal daily city commuter.",
+    gallery: [
+      alto19_6230_Main,
+      alto19_6230_SideRight,
+      alto19_6230_SideLeft,
+      alto19_6230_Rear,
+      alto19_6230_Dash,
+      alto19_6230_FrontSeats,
+      alto19_6230_RearSeats,
+    ],
+  },
   {
     slug: "skoda-rapid-ambition-diesel-at-2016-2345",
     img: rapid16_2345_Main,
