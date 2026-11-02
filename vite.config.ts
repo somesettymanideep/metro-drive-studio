@@ -19,5 +19,8 @@ export default defineConfig(({ command }) => ({
   base: "/",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   server: { host: "::", port: 8080 },
+  build: {
+    sourcemap: false,
+  },
   customLogger: logger,
 }));
