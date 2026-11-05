@@ -756,6 +756,34 @@ import polo15_2956_Rear from "@/assets/polo15-2956-rear.jpg";
 import polo15_2956_Dash from "@/assets/polo15-2956-dash.jpg";
 import polo15_2956_FrontSeats from "@/assets/polo15-2956-front-seats.jpg";
 import polo15_2956_RearSeats from "@/assets/polo15-2956-rear-seats.jpg";
+import dzire18_7830_Main from "@/assets/dzire18-7830-main.jpg";
+import dzire18_7830_SideRight from "@/assets/dzire18-7830-side-right.jpg";
+import dzire18_7830_SideLeft from "@/assets/dzire18-7830-side-left.jpg";
+import dzire18_7830_Rear from "@/assets/dzire18-7830-rear.jpg";
+import dzire18_7830_Dash from "@/assets/dzire18-7830-dash.jpg";
+import dzire18_7830_FrontSeats from "@/assets/dzire18-7830-front-seats.jpg";
+import dzire18_7830_RearSeats from "@/assets/dzire18-7830-rear-seats.jpg";
+import amaze23_3536_Main from "@/assets/amaze23-3536-main.jpg";
+import amaze23_3536_SideRight from "@/assets/amaze23-3536-side-right.jpg";
+import amaze23_3536_SideLeft from "@/assets/amaze23-3536-side-left.jpg";
+import amaze23_3536_Rear from "@/assets/amaze23-3536-rear.jpg";
+import amaze23_3536_Dash from "@/assets/amaze23-3536-dash.jpg";
+import amaze23_3536_FrontSeats from "@/assets/amaze23-3536-front-seats.jpg";
+import amaze23_3536_RearSeats from "@/assets/amaze23-3536-rear-seats.jpg";
+import xuv500_19_4858_Main from "@/assets/xuv500-19-4858-main.jpg";
+import xuv500_19_4858_SideRight from "@/assets/xuv500-19-4858-side-right.jpg";
+import xuv500_19_4858_SideLeft from "@/assets/xuv500-19-4858-side-left.jpg";
+import xuv500_19_4858_Rear from "@/assets/xuv500-19-4858-rear.jpg";
+import xuv500_19_4858_Dash from "@/assets/xuv500-19-4858-dash.jpg";
+import xuv500_19_4858_FrontSeats from "@/assets/xuv500-19-4858-front-seats.jpg";
+import xuv500_19_4858_RearSeats from "@/assets/xuv500-19-4858-rear-seats.jpg";
+import lodgy15_8818_Main from "@/assets/lodgy15-8818-main.jpg";
+import lodgy15_8818_SideRight from "@/assets/lodgy15-8818-side-right.jpg";
+import lodgy15_8818_SideLeft from "@/assets/lodgy15-8818-side-left.jpg";
+import lodgy15_8818_Rear from "@/assets/lodgy15-8818-rear.jpg";
+import lodgy15_8818_Dash from "@/assets/lodgy15-8818-dash.jpg";
+import lodgy15_8818_RearSeats from "@/assets/lodgy15-8818-rear-seats.jpg";
+import lodgy15_8818_ThirdRow from "@/assets/lodgy15-8818-third-row.jpg";
 
 export type Car = {
   slug: string;
@@ -785,6 +813,118 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "renault-lodgy-stepway-rxz-diesel-2015-8818",
+    img: lodgy15_8818_Main,
+    name: "Renault Lodgy Stepway",
+    year: 2015,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "2,28,717 km",
+    price: "₹4.00 L",
+    cat: "SUV",
+    brand: "Renault",
+    model: "Lodgy",
+    variant: "Stepway RxZ 1.5 dCi MT",
+    color: "Pearl White",
+    registration: "8818",
+    bodyType: "MPV",
+    description:
+      "Renault Lodgy Stepway RxZ (2015) diesel manual in pearl white finish (Registration: 8818). Driven 2,28,717 kms. Rugged, versatile and spacious 7-seater MPV powered by Renault's ultra-reliable and efficient 1.5L dCi turbo diesel engine paired with a 5-speed manual gearbox. Stepway cross-over styling pack with rugged protective body cladding, front and rear silver skid plates, gunmetal-finish alloy wheels, chrome grille inserts, touchscreen MediaNAV infotainment system with navigation and Bluetooth connectivity, rear parking sensors with camera, all power windows, roof rails, dual front airbags, and ABS with EBD.",
+    gallery: [
+      lodgy15_8818_Main,
+      lodgy15_8818_SideRight,
+      lodgy15_8818_SideLeft,
+      lodgy15_8818_Rear,
+      lodgy15_8818_Dash,
+      lodgy15_8818_RearSeats,
+      lodgy15_8818_ThirdRow,
+    ],
+  },
+  {
+    slug: "mahindra-xuv500-w7-diesel-2019-4858",
+    img: xuv500_19_4858_Main,
+    name: "Mahindra XUV500 W7",
+    year: 2019,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,43,693 km",
+    price: "₹9.50 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "XUV500",
+    variant: "W7 2.2 mHawk Diesel MT",
+    color: "Pearl White",
+    registration: "4858",
+    bodyType: "SUV",
+    description:
+      "Mahindra XUV500 W7 (2019) diesel manual in elegant Pearl White finish (Registration: 4858). Driven 1,43,693 kms. Imposing 7-seater premium SUV powered by the robust 2.2L mHawk turbo diesel engine generating 155 bhp and 360 Nm of torque paired with a 6-speed manual transmission. Key features include front heavy-duty stainless steel bull bar / bumper guard, rear stainless steel bumper protector guard with Mahindra branding, touchscreen infotainment system with GPS navigation, push-button start/stop, multifunction steering wheel, dual-tone tan and black quilted leatherette upholstery, projector headlamps with LED DRLs, roof rails, integrated side footsteps, automatic climate control, cruise control, dual front airbags, and ABS with EBD.",
+    gallery: [
+      xuv500_19_4858_Main,
+      xuv500_19_4858_SideRight,
+      xuv500_19_4858_SideLeft,
+      xuv500_19_4858_Rear,
+      xuv500_19_4858_Dash,
+      xuv500_19_4858_FrontSeats,
+      xuv500_19_4858_RearSeats,
+    ],
+  },
+  {
+    slug: "honda-amaze-s-petrol-2023-3536",
+    img: amaze23_3536_Main,
+    name: "Honda Amaze S",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "22,999 km",
+    price: "₹7.00 L",
+    cat: "Sedan",
+    brand: "Honda",
+    model: "Amaze",
+    variant: "S 1.2 i-VTEC MT",
+    color: "Meteoroid Grey Metallic",
+    registration: "3536",
+    bodyType: "Sedan",
+    description:
+      "Honda Amaze S (2023) petrol manual in sophisticated Meteoroid Grey Metallic finish (Registration: 3536). Low mileage with only 22,999 kms driven. Reliable and spacious compact family sedan powered by the smooth 1.2L 4-cylinder i-VTEC petrol engine paired with a slick 5-speed manual transmission. Features include 2-DIN integrated audio system with Bluetooth and steering-mounted controls, custom tan leatherette upholstery, all 4 power windows, electrically adjustable and folding ORVMs with turn indicators, rear parking sensors, LED daytime running lights, front fog lamps with chrome bezels, dual front airbags, ABS with EBD, and ISOFIX child seat mounts.",
+    gallery: [
+      amaze23_3536_Main,
+      amaze23_3536_SideRight,
+      amaze23_3536_SideLeft,
+      amaze23_3536_Rear,
+      amaze23_3536_Dash,
+      amaze23_3536_FrontSeats,
+      amaze23_3536_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-dzire-vdi-diesel-2018-7830",
+    img: dzire18_7830_Main,
+    name: "Maruti Suzuki Dzire VDi",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,41,989 km",
+    price: "₹6.00 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Dzire",
+    variant: "VDi 1.3 DDiS MT",
+    color: "Pearl Arctic White",
+    registration: "7830",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Dzire VDi (2018) diesel manual in pristine Pearl Arctic White finish (Registration: 7830). Driven 1,41,989 kms. Powered by the iconic and fuel-efficient 1.3L DDiS 4-cylinder turbo diesel engine paired with a crisp 5-speed manual transmission. Features include factory integrated 2-DIN audio system with Bluetooth/USB/AUX connectivity, flat-bottom steering wheel with audio and phone controls, dual-tone beige interior with burl wood dashboard trim, custom beige leatherette upholstery, all 4 power windows, electric ORVMs, rear AC vents, front fog lamps with chrome bezels, chrome side body mouldings, chrome door handles, door visors, dual airbags, and ABS with EBD.",
+    gallery: [
+      dzire18_7830_Main,
+      dzire18_7830_SideRight,
+      dzire18_7830_SideLeft,
+      dzire18_7830_Rear,
+      dzire18_7830_Dash,
+      dzire18_7830_FrontSeats,
+      dzire18_7830_RearSeats,
+    ],
+  },
   {
     slug: "volkswagen-polo-gt-tsi-petrol-automatic-2015-2956",
     img: polo15_2956_Main,
