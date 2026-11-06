@@ -48,10 +48,20 @@ export function ScrollReveal() {
       });
     };
 
-    attach();
+    let rafScheduled = false;
+    const scheduleAttach = () => {
+      if (rafScheduled) return;
+      rafScheduled = true;
+      requestAnimationFrame(() => {
+        rafScheduled = false;
+        attach();
+      });
+    };
 
-    // Re-scan when route/content changes
-    const mo = new MutationObserver(() => attach());
+    scheduleAttach();
+
+    // Re-scan when route/content changes without thrashing layouts
+    const mo = new MutationObserver(scheduleAttach);
     mo.observe(document.body, { childList: true, subtree: true });
 
     return () => {

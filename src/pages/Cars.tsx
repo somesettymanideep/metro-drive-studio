@@ -16,6 +16,12 @@ const parsePrice = (p: string) => {
   return num;
 };
 
+const parseSerial = (sn?: string): number => {
+  if (!sn) return 0;
+  const match = sn.match(/\d+/);
+  return match ? parseInt(match[0], 10) : 0;
+};
+
 const priceMin = 0;
 
 export default function Cars() {
@@ -42,7 +48,7 @@ export default function Cars() {
   const filtered = useMemo(() => {
     let out = cars.filter((c) => {
       const brand = c.brand || c.name.split(" ")[0];
-      const searchTarget = `${c.name} ${brand} ${c.model || ""} ${c.variant || ""} ${c.registration || ""} ${c.fuel} ${c.trans}`.toLowerCase();
+      const searchTarget = `${c.name} ${brand} ${c.model || ""} ${c.variant || ""} ${c.registration || ""} ${c.serialNumber || ""} ${c.fuel} ${c.trans}`.toLowerCase();
       if (q && !searchTarget.includes(q.toLowerCase())) return false;
       if (brands.length && !brands.includes(brand)) return false;
       if (fuels.length && !fuels.includes(c.fuel)) return false;
@@ -52,7 +58,12 @@ export default function Cars() {
     });
     if (sort === "price-asc") out = [...out].sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
     else if (sort === "price-desc") out = [...out].sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
-    else if (sort === "newest") out = [...out].sort((a, b) => b.year - a.year);
+    else if (sort === "year") out = [...out].sort((a, b) => b.year - a.year);
+    else if (sort === "serial-asc") out = [...out].sort((a, b) => parseSerial(a.serialNumber) - parseSerial(b.serialNumber));
+    else out = [...out].sort((a, b) => {
+      const diff = parseSerial(b.serialNumber) - parseSerial(a.serialNumber);
+      return diff !== 0 ? diff : b.year - a.year;
+    });
     return out;
   }, [q, brands, fuels, trans, max, sort, cars]);
 
@@ -172,7 +183,9 @@ export default function Cars() {
                 onChange={(e) => setSort(e.target.value)}
                 className="px-3 py-2 rounded-lg bg-white border border-black/10 text-sm text-black outline-none"
               >
-                <option value="newest">Newest First</option>
+                <option value="newest">Recent Added (MC173 → MC100)</option>
+                <option value="serial-asc">Oldest Stock (MC100 → MC173)</option>
+                <option value="year">Model Year: Newest First</option>
                 <option value="price-asc">Price: Low to High</option>
                 <option value="price-desc">Price: High to Low</option>
               </select>
@@ -269,6 +282,11 @@ function CarCard({ car }: { car: Car }) {
         <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-black/60 backdrop-blur text-[10px] uppercase tracking-wider text-white/90 border border-white/10">
           <span className="inline-flex items-center gap-1"><Calendar className="size-3" />{car.year}</span>
         </div>
+        {car.serialNumber && (
+          <div className="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-black/80 backdrop-blur-md text-white text-[11px] font-black tracking-wider border border-white/20 shadow-sm">
+            {car.serialNumber}
+          </div>
+        )}
         {car.bodyType && (
           <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-primary text-primary-foreground text-[10px] uppercase tracking-wider font-semibold">
             {car.bodyType}

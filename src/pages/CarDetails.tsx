@@ -150,6 +150,11 @@ export default function CarDetails() {
                 >
                   Certified
                 </div>
+                {car.serialNumber && (
+                  <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-white text-xs font-black tracking-wider border border-white/20 shadow-md">
+                    {car.serialNumber}
+                  </div>
+                )}
 
 
               </div>
@@ -234,12 +239,13 @@ export default function CarDetails() {
                   <Spec icon={Gauge} label="Driven" value={car.km} />
                 </div>
 
-                {(car.variant || car.color || car.owners || car.registration || car.engine || car.mileage || car.insurance) && (
+                {(car.variant || car.color || car.owners || car.registration || car.serialNumber || car.engine || car.mileage || car.insurance) && (
                   <dl className="mt-6 divide-y divide-black/5 border-y border-black/5">
+                    <Row label="Serial No" value={car.serialNumber} />
                     <Row label="Variant" value={car.variant} />
                     <Row label="Color" value={car.color} />
                     <Row label="Ownership" value={car.owners} />
-                    <Row label="Registration" value={car.registration} />
+                    <Row label="Car No" value={car.registration} />
                     <Row label="Engine" value={car.engine} />
                     <Row label="Mileage" value={car.mileage} />
                     <Row label="Insurance" value={car.insurance} />

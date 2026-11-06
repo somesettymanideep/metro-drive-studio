@@ -1,4 +1,4 @@
-import carSedan from "@/assets/car-sedan.webp";
+﻿import carSedan from "@/assets/car-sedan.webp";
 import tigorMain from "@/assets/tigor-main.webp";
 import tigorSideRight from "@/assets/tigor-side-right.webp";
 import tigorSideLeft from "@/assets/tigor-side-left.webp";
@@ -802,6 +802,7 @@ export type Car = {
   color?: string;
   owners?: string;
   registration?: string;
+  serialNumber?: string;
   engine?: string;
   mileage?: string;
   bodyType?: string;
@@ -815,6 +816,7 @@ export type Car = {
 export const cars: Car[] = [
   {
     slug: "renault-lodgy-stepway-rxz-diesel-2015-8818",
+    serialNumber: "MC173",
     img: lodgy15_8818_Main,
     name: "Renault Lodgy Stepway",
     year: 2015,
@@ -843,6 +845,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-xuv500-w7-diesel-2019-4858",
+    serialNumber: "MC172",
     img: xuv500_19_4858_Main,
     name: "Mahindra XUV500 W7",
     year: 2019,
@@ -871,6 +874,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-amaze-s-petrol-2023-3536",
+    serialNumber: "MC171",
     img: amaze23_3536_Main,
     name: "Honda Amaze S",
     year: 2023,
@@ -899,6 +903,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-dzire-vdi-diesel-2018-7830",
+    serialNumber: "MC170",
     img: dzire18_7830_Main,
     name: "Maruti Suzuki Dzire VDi",
     year: 2018,
@@ -927,6 +932,7 @@ export const cars: Car[] = [
   },
   {
     slug: "volkswagen-polo-gt-tsi-petrol-automatic-2015-2956",
+    serialNumber: "MC169",
     img: polo15_2956_Main,
     name: "Volkswagen Polo GT TSI",
     year: 2015,
@@ -955,6 +961,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-brio-s-petrol-2013-3473",
+    serialNumber: "MC168",
     img: brio13_3473_Main,
     name: "Honda Brio S",
     year: 2013,
@@ -983,6 +990,7 @@ export const cars: Car[] = [
   },
   {
     slug: "datsun-redi-go-t-o-petrol-2020-7869",
+    serialNumber: "MC167",
     img: redigo20_7869_Main,
     name: "Datsun redi-GO T (O)",
     year: 2020,
@@ -1011,6 +1019,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-alto-k10-vxi-ags-petrol-2018-8483",
+    serialNumber: "MC166",
     img: altoK10_18_8483_Main,
     name: "Maruti Suzuki Alto K10 VXi AT",
     year: 2018,
@@ -1039,6 +1048,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-nexon-pure-s-diesel-2024-3741",
+    serialNumber: "MC165",
     img: nexon24_3741_Main,
     name: "Tata Nexon Pure S",
     year: 2024,
@@ -1066,6 +1076,7 @@ export const cars: Car[] = [
   },
   {
     slug: "jeep-compass-limited-diesel-2018-7511",
+    serialNumber: "MC164",
     img: compass18_7511_Main,
     name: "Jeep Compass Limited",
     year: 2018,
@@ -1094,6 +1105,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-xl6-alpha-plus-smart-hybrid-2022-7130",
+    serialNumber: "MC163",
     img: xl6_22_7130_Main,
     name: "Maruti Suzuki XL6 Alpha+ Smart Hybrid",
     year: 2022,
@@ -1122,6 +1134,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-alto-800-lxi-petrol-2019-6230",
+    serialNumber: "MC162",
     img: alto19_6230_Main,
     name: "Maruti Suzuki Alto 800 LXi",
     year: 2019,
@@ -1150,6 +1163,7 @@ export const cars: Car[] = [
   },
   {
     slug: "skoda-rapid-ambition-diesel-at-2016-2345",
+    serialNumber: "MC161",
     img: rapid16_2345_Main,
     name: "Skoda Rapid Ambition DSG",
     year: 2016,
@@ -1178,6 +1192,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-wagonr-vxi-petrol-at-2024-1076",
+    serialNumber: "MC160",
     img: wagonr24_1076_Main,
     name: "Maruti Suzuki WagonR VXi AT",
     year: 2024,
@@ -1206,6 +1221,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-dzire-vxi-petrol-2019-2536",
+    serialNumber: "MC159",
     img: dzire19_2536_Main,
     name: "Maruti Suzuki Dzire VXi",
     year: 2019,
@@ -1234,6 +1250,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-safari-storme-vx-diesel-2017-1212",
+    serialNumber: "MC158",
     img: storme17_1212_Main,
     name: "Tata Safari Storme VX",
     year: 2017,
@@ -1262,6 +1279,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-brezza-zdi-plus-diesel-2017-7333",
+    serialNumber: "MC157",
     img: brezza17_7333_Main,
     name: "Maruti Suzuki Brezza ZDi+",
     year: 2017,
@@ -1289,6 +1307,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-jazz-vx-cvt-petrol-2022-0444",
+    serialNumber: "MC156",
     img: jazz22_0444_Main,
     name: "Honda Jazz VX CVT",
     year: 2022,
@@ -1317,6 +1336,7 @@ export const cars: Car[] = [
   },
   {
     slug: "toyota-etios-liva-g-petrol-2013-3447",
+    serialNumber: "MC155",
     img: liva13_3447_Main,
     name: "Toyota Etios Liva G",
     year: 2013,
@@ -1345,6 +1365,7 @@ export const cars: Car[] = [
   },
   {
     slug: "renault-pulse-rxl-diesel-2016-4876",
+    serialNumber: "MC154",
     img: pulse16_4876_Main,
     name: "Renault Pulse RxL",
     year: 2016,
@@ -1373,6 +1394,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mini-cooper-s-countryman-petrol-2021-8888",
+    serialNumber: "MC153",
     img: mini21_8888_Main,
     name: "MINI Cooper S Countryman",
     year: 2021,
@@ -1401,6 +1423,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-city-zx-diesel-2022-9009",
+    serialNumber: "MC152",
     img: city22_9009_Main,
     name: "Honda City ZX",
     year: 2022,
@@ -1429,6 +1452,7 @@ export const cars: Car[] = [
   },
   {
     slug: "jeep-compass-limited-plus-diesel-2019-6999",
+    serialNumber: "MC151",
     img: compass19_6999_Main,
     name: "Jeep Compass Limited Plus",
     year: 2019,
@@ -1458,6 +1482,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-safari-storme-vx-2016-2345",
+    serialNumber: "MC150",
     img: storme16_2345_Main,
     name: "Tata Safari Storme VX",
     year: 2016,
@@ -1486,6 +1511,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-creta-e-diesel-2021-0505",
+    serialNumber: "MC149",
     img: creta21_0505_Main,
     name: "Hyundai Creta E",
     year: 2021,
@@ -1514,6 +1540,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-dzire-tour-taxi-2024-2141",
+    serialNumber: "MC148",
     img: dzire24_2141_Main,
     name: "Maruti Suzuki Dzire Tour Taxi",
     year: 2024,
@@ -1542,6 +1569,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-tuv300-t8-2019-9981",
+    serialNumber: "MC147",
     img: tuv300_19_9981_Main,
     name: "Mahindra TUV300 T8",
     year: 2019,
@@ -1571,6 +1599,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-ertiga-vxi-petrol-2012-9160",
+    serialNumber: "MC146",
     img: ertiga12_9160_Main,
     name: "Maruti Suzuki Ertiga VXi",
     year: 2012,
@@ -1598,6 +1627,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-wagonr-lxi-cng-2022-1832",
+    serialNumber: "MC145",
     img: wagonr22_1832_Main,
     name: "Maruti Suzuki WagonR LXi CNG",
     year: 2022,
@@ -1625,6 +1655,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-baleno-zeta-petrol-2020-1197",
+    serialNumber: "MC144",
     img: baleno20_1197_Main,
     name: "Maruti Suzuki Baleno Zeta",
     year: 2020,
@@ -1653,6 +1684,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-aura-sx-petrol-2021-1142",
+    serialNumber: "MC143",
     img: aura21_1142_Main,
     name: "Hyundai Aura SX",
     year: 2021,
@@ -1681,6 +1713,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-brezza-lxi-petrol-2023-5654",
+    serialNumber: "MC142",
     img: brezza23_5654_Main,
     name: "Maruti Suzuki Brezza LXi",
     year: 2023,
@@ -1709,6 +1742,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-vitara-brezza-vdi-2019-1718",
+    serialNumber: "MC141",
     img: brezza19_1718_Main,
     name: "Maruti Suzuki Vitara Brezza VDi",
     year: 2019,
@@ -1736,6 +1770,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-creta-sx-petrol-2023-3838",
+    serialNumber: "MC140",
     img: creta23_3838_Main,
     name: "Hyundai Creta SX",
     year: 2023,
@@ -1765,6 +1800,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-dzire-vxi-taxi-2023-9505",
+    serialNumber: "MC139",
     img: dzire23_9505_Main,
     name: "Maruti Suzuki Dzire VXI Taxi",
     year: 2023,
@@ -1791,6 +1827,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-wr-v-vx-petrol-2017-3663",
+    serialNumber: "MC138",
     img: wrv17Main,
     name: "Honda WR-V",
     year: 2017,
@@ -1819,6 +1856,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-thar-lx-petrol-at-2021-9229",
+    serialNumber: "MC137",
     img: tharLx9229_Main,
     name: "Mahindra Thar LX",
     year: 2021,
@@ -1846,6 +1884,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-safari-storme-vx-2018-1116",
+    serialNumber: "MC136",
     img: storme18_1116_Main,
     name: "Tata Safari Storme VX",
     year: 2018,
@@ -1874,6 +1913,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-ciaz-zdi-plus-2016-8793",
+    serialNumber: "MC135",
     img: ciaz16_8793_Main,
     name: "Maruti Suzuki Ciaz ZDi+",
     year: 2016,
@@ -1901,6 +1941,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-i20-asta-o-2021-6767",
+    serialNumber: "MC134",
     img: i20asta21_6767_Main,
     name: "Hyundai i20 Asta (O)",
     year: 2021,
@@ -1929,6 +1970,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mg-zs-ev-exclusive-2024-1234",
+    serialNumber: "MC133",
     img: mgzsev24_1234_Main,
     name: "MG ZS EV Exclusive",
     year: 2024,
@@ -1957,6 +1999,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-tiago-xza-2018-9549",
+    serialNumber: "MC132",
     img: tiago18_9549_Main,
     name: "Tata Tiago XZA",
     year: 2018,
@@ -1985,6 +2028,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-xuv300-w4-optional-2023-2246",
+    serialNumber: "MC131",
     img: xuv300_23_2246_Main,
     name: "Mahindra XUV300 W4 (O)",
     year: 2023,
@@ -2013,6 +2057,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-swift-vdi-2019-7528",
+    serialNumber: "MC130",
     img: swift19_7528_Main,
     name: "Maruti Suzuki Swift VDi",
     year: 2019,
@@ -2040,6 +2085,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-xuv500-w11-2018-1009",
+    serialNumber: "MC129",
     img: xuv500_18_1009_Main,
     name: "Mahindra XUV500 W11",
     year: 2018,
@@ -2069,6 +2115,7 @@ export const cars: Car[] = [
   },
   {
     slug: "toyota-innova-crysta-2-4-g-at-2021",
+    serialNumber: "MC128",
     img: crysta21AtMain,
     name: "Toyota Innova Crysta 2.4 G AT",
     year: 2021,
@@ -2097,6 +2144,7 @@ export const cars: Car[] = [
   },
   {
     slug: "volvo-s60-d5-2016",
+    serialNumber: "MC127",
     img: volvoS60_16_Main,
     name: "Volvo S60 D5",
     year: 2016,
@@ -2124,6 +2172,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-safari-storme-vx-2018-0016",
+    serialNumber: "MC126",
     img: storme18_0016_Main,
     name: "Tata Safari Storme VX",
     year: 2018,
@@ -2153,6 +2202,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-thar-lx-at-2022-2655",
+    serialNumber: "MC125",
     img: tharLx22Main,
     name: "Mahindra Thar LX AT",
     year: 2022,
@@ -2182,6 +2232,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-ignis-delta-2018-7079",
+    serialNumber: "MC124",
     img: ignis18Main,
     name: "Maruti Suzuki Ignis Delta",
     year: 2018,
@@ -2210,6 +2261,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-i20-sportz-at-2021-8888",
+    serialNumber: "MC123",
     img: i20Sportz21Main,
     name: "Hyundai i20 Sportz AT",
     year: 2021,
@@ -2238,6 +2290,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-alto-k10-vxi-2013-3791",
+    serialNumber: "MC122",
     img: altoK10Main,
     name: "Maruti Suzuki Alto K10 VXi",
     year: 2013,
@@ -2266,6 +2319,7 @@ export const cars: Car[] = [
   },
   {
     slug: "toyota-innova-2-5-g-2012-6566",
+    serialNumber: "MC121",
     img: innova12Main,
     name: "Toyota Innova 2.5 G",
     year: 2012,
@@ -2295,6 +2349,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-ertiga-zxi-plus-2024-2793",
+    serialNumber: "MC120",
     img: ertiga24Zxi2793Main,
     name: "Maruti Suzuki Ertiga ZXI+",
     year: 2024,
@@ -2324,6 +2379,7 @@ export const cars: Car[] = [
   },
   {
     slug: "range-rover-evoque-diesel-2023",
+    serialNumber: "MC119",
     img: evoque23Main,
     name: "Range Rover Evoque",
     year: 2023,
@@ -2353,6 +2409,7 @@ export const cars: Car[] = [
   },
   {
     slug: "toyota-innova-crysta-2-4-z-2020",
+    serialNumber: "MC118",
     img: innovaMain,
     name: "Toyota Innova Crysta 2.4Z",
     year: 2020,
@@ -2380,6 +2437,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-creta-1-5-e-diesel-2021",
+    serialNumber: "MC117",
     img: creta21Main,
     name: "Hyundai Creta 1.5 E Diesel",
     year: 2021,
@@ -2399,6 +2457,7 @@ export const cars: Car[] = [
   },
   {
     slug: "tata-tigor-xz-2017",
+    serialNumber: "MC116",
     img: tigorMain,
     name: "Tata Tigor XZ",
     year: 2017,
@@ -2418,6 +2477,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-i20-asta-petrol-2018",
+    serialNumber: "MC115",
     img: i20AstaPMain,
     name: "Hyundai i20 Asta",
     year: 2018,
@@ -2437,6 +2497,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-i20-asta-2018",
+    serialNumber: "MC114",
     img: i20AstaRedFront,
     name: "Hyundai i20 Asta",
     year: 2018,
@@ -2465,6 +2526,7 @@ export const cars: Car[] = [
   },
   {
     slug: "renault-kwid-rxt-2017",
+    serialNumber: "MC113",
     img: kwidMain,
     name: "Renault Kwid RXT",
     year: 2017,
@@ -2493,6 +2555,7 @@ export const cars: Car[] = [
   },
   {
     slug: "nissan-terrano-xv-2014",
+    serialNumber: "MC112",
     img: terranoMain,
     name: "Nissan Terrano XV",
     year: 2014,
@@ -2521,6 +2584,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-i20-asta-o-2018",
+    serialNumber: "MC111",
     img: astamaino,
     name: "Hyundai i20 Asta (O)",
     year: 2018,
@@ -2541,6 +2605,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mahindra-xuv-500-2019",
+    serialNumber: "MC110",
     img: xuvMain,
     name: "Mahindra XUV 500",
     year: 2019,
@@ -2559,6 +2624,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-amaze-2024",
+    serialNumber: "MC109",
     img: amazeFront,
     name: "Honda Amaze",
     year: 2024,
@@ -2577,6 +2643,7 @@ export const cars: Car[] = [
   },
   {
     slug: "ford-ecosport-2016",
+    serialNumber: "MC108",
     img: ecosportMain,
     name: "Ford EcoSport",
     year: 2016,
@@ -2595,6 +2662,7 @@ export const cars: Car[] = [
   },
   {
     slug: "bmw-x1-2017",
+    serialNumber: "MC107",
     img: bmwX1Main,
     name: "BMW X1",
     year: 2017,
@@ -2613,6 +2681,7 @@ export const cars: Car[] = [
   },
   {
     slug: "audi-q3-2016",
+    serialNumber: "MC106",
     img: audiQ3Main,
     name: "Audi Q3",
     year: 2016,
@@ -2631,6 +2700,7 @@ export const cars: Car[] = [
   },
   {
     slug: "honda-amaze-2019",
+    serialNumber: "MC105",
     img: amaze19Main,
     name: "Honda Amaze",
     year: 2019,
@@ -2650,6 +2720,7 @@ export const cars: Car[] = [
   },
   {
     slug: "toyota-innova-2-5-v-2005",
+    serialNumber: "MC104",
     img: innova05Main,
     name: "Toyota Innova 2.5 V",
     year: 2005,
@@ -2676,6 +2747,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-ertiga-vxi-2019",
+    serialNumber: "MC103",
     img: ertiga19Main,
     name: "Maruti Suzuki Ertiga Vxi",
     year: 2019,
@@ -2704,6 +2776,7 @@ export const cars: Car[] = [
   },
   {
     slug: "maruti-suzuki-ertiga-zxi-plus-2019",
+    serialNumber: "MC102",
     img: ertigaZxi19Main,
     name: "Maruti Suzuki Ertiga ZXI+",
     year: 2019,
@@ -2732,6 +2805,7 @@ export const cars: Car[] = [
   },
   {
     slug: "mg-hector-diesel-2023",
+    serialNumber: "MC101",
     img: hector23Main,
     name: "MG Hector",
     year: 2023,
@@ -2759,6 +2833,7 @@ export const cars: Car[] = [
   },
   {
     slug: "hyundai-i20-asta-cvt-2018",
+    serialNumber: "MC100",
     img: i20Cvt18Main,
     name: "Hyundai i20 Asta CVT",
     year: 2018,

@@ -45,6 +45,7 @@ export function inventoryToCar(item: InventoryItem): Car {
     model: item.model,
     variant: item.variant,
     color: item.color,
+    serialNumber: item.serialNumber,
     bodyType: item.bodyType,
     description: item.description,
     gallery: item.images && item.images.length ? item.images : primary ? [primary] : [],

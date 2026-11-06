@@ -14,6 +14,7 @@ export type InventoryItem = {
   cat: string;
   bodyType: string;
   color: string;
+  serialNumber?: string;
   description: string;
   images: string[];
   createdAt: string;
@@ -37,6 +38,7 @@ type BackendInventoryRow = {
   cat: string;
   body_type: string;
   color: string;
+  serialNumber?: string;
   description: string;
   images: string[];
   created_at: string;
