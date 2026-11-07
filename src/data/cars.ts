@@ -1,4 +1,4 @@
-﻿import carSedan from "@/assets/car-sedan.webp";
+import carSedan from "@/assets/car-sedan.webp";
 import tigorMain from "@/assets/tigor-main.webp";
 import tigorSideRight from "@/assets/tigor-side-right.webp";
 import tigorSideLeft from "@/assets/tigor-side-left.webp";
@@ -784,6 +784,46 @@ import lodgy15_8818_Rear from "@/assets/lodgy15-8818-rear.jpg";
 import lodgy15_8818_Dash from "@/assets/lodgy15-8818-dash.jpg";
 import lodgy15_8818_RearSeats from "@/assets/lodgy15-8818-rear-seats.jpg";
 import lodgy15_8818_ThirdRow from "@/assets/lodgy15-8818-third-row.jpg";
+import audia4_13_2345_Main from "@/assets/audia4-13-2345-main.jpg";
+import audia4_13_2345_SideRight from "@/assets/audia4-13-2345-side-right.jpg";
+import audia4_13_2345_SideLeft from "@/assets/audia4-13-2345-side-left.jpg";
+import audia4_13_2345_Rear from "@/assets/audia4-13-2345-rear.jpg";
+import audia4_13_2345_RearSeats from "@/assets/audia4-13-2345-rear-seats.jpg";
+import audia4_13_2345_FrontSeats from "@/assets/audia4-13-2345-front-seats.jpg";
+import audia4_13_2345_Sunroof from "@/assets/audia4-13-2345-sunroof.jpg";
+import ignis19_1773_Main from "@/assets/ignis19-1773-main.jpg";
+import ignis19_1773_SideRight from "@/assets/ignis19-1773-side-right.jpg";
+import ignis19_1773_SideLeft from "@/assets/ignis19-1773-side-left.jpg";
+import ignis19_1773_Rear from "@/assets/ignis19-1773-rear.jpg";
+import ignis19_1773_Dash from "@/assets/ignis19-1773-dash.jpg";
+import ignis19_1773_FrontSeats from "@/assets/ignis19-1773-front-seats.jpg";
+import ignis23_4356_Main from "@/assets/ignis23-4356-main.jpg";
+import ignis23_4356_SideRight from "@/assets/ignis23-4356-side-right.jpg";
+import ignis23_4356_SideLeft from "@/assets/ignis23-4356-side-left.jpg";
+import ignis23_4356_Rear from "@/assets/ignis23-4356-rear.jpg";
+import ignis23_4356_Dash from "@/assets/ignis23-4356-dash.jpg";
+import ignis23_4356_FrontSeats from "@/assets/ignis23-4356-front-seats.jpg";
+import ignis23_4356_RearSeats from "@/assets/ignis23-4356-rear-seats.jpg";
+import brezza16_9333_Main from "@/assets/brezza16-9333-main.jpg";
+import brezza16_9333_SideRight from "@/assets/brezza16-9333-side-right.jpg";
+import brezza16_9333_SideLeft from "@/assets/brezza16-9333-side-left.jpg";
+import brezza16_9333_Rear from "@/assets/brezza16-9333-rear.jpg";
+import brezza16_9333_Dash from "@/assets/brezza16-9333-dash.jpg";
+import brezza16_9333_FrontSeats from "@/assets/brezza16-9333-front-seats.jpg";
+import kwid21_1610_Main from "@/assets/kwid21-1610-main.jpg";
+import kwid21_1610_SideRight from "@/assets/kwid21-1610-side-right.jpg";
+import kwid21_1610_SideLeft from "@/assets/kwid21-1610-side-left.jpg";
+import kwid21_1610_Rear from "@/assets/kwid21-1610-rear.jpg";
+import kwid21_1610_Dash from "@/assets/kwid21-1610-dash.jpg";
+import kwid21_1610_FrontSeats from "@/assets/kwid21-1610-front-seats.jpg";
+import kwid21_1610_RearSeats from "@/assets/kwid21-1610-rear-seats.jpg";
+import harrier22_0231_Main from "@/assets/harrier22-0231-main.jpg";
+import harrier22_0231_SideRight from "@/assets/harrier22-0231-side-right.jpg";
+import harrier22_0231_SideLeft from "@/assets/harrier22-0231-side-left.jpg";
+import harrier22_0231_Rear from "@/assets/harrier22-0231-rear.jpg";
+import harrier22_0231_Dash from "@/assets/harrier22-0231-dash.jpg";
+import harrier22_0231_FrontSeats from "@/assets/harrier22-0231-front-seats.jpg";
+import harrier22_0231_RearSeats from "@/assets/harrier22-0231-rear-seats.jpg";
 
 export type Car = {
   slug: string;
@@ -802,6 +842,7 @@ export type Car = {
   color?: string;
   owners?: string;
   registration?: string;
+  stateRegistration?: string;
   serialNumber?: string;
   engine?: string;
   mileage?: string;
@@ -814,6 +855,179 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "tata-harrier-xza-plus-diesel-automatic-2022-0231",
+    serialNumber: "MC179",
+    img: harrier22_0231_Main,
+    name: "Tata Harrier XZA+",
+    year: 2022,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "1,22,490 km",
+    price: "₹15.50 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Harrier",
+    variant: "XZA+ 2.0 Kryotec AT",
+    color: "Oberon Black",
+    registration: "0231",
+    bodyType: "Mid-Size SUV",
+    description:
+      "Tata Harrier XZA+ (2022) diesel automatic in commanding Oberon Black finish (Car No: 0231). Driven 1,22,490 kms. Flagship premium SUV built on the Land Rover-derived OMEGArc platform, powered by the potent 2.0L Kryotec turbo diesel engine producing 170 PS and 350 Nm of torque paired with a seamless 6-speed torque converter automatic gearbox. Top-of-the-line XZA+ trim equipped with floating touchscreen infotainment system with Apple CarPlay & Android Auto, 9-speaker JBL premium acoustics, digital-analogue instrument cluster, black perforated leatherette upholstery, electronic parking brake with auto hold, multi-drive modes with Terrain Response modes, 18-inch diamond-cut alloy wheels, rear parking camera with sensors, 6 airbags, ESP, and ABS with EBD.",
+    gallery: [
+      harrier22_0231_Main,
+      harrier22_0231_SideRight,
+      harrier22_0231_SideLeft,
+      harrier22_0231_Rear,
+      harrier22_0231_Dash,
+      harrier22_0231_FrontSeats,
+      harrier22_0231_RearSeats,
+    ],
+  },
+  {
+    slug: "renault-kwid-neotech-easy-r-petrol-automatic-2021-1610",
+    serialNumber: "MC178",
+    img: kwid21_1610_Main,
+    name: "Renault Kwid Neotech Easy-R",
+    year: 2021,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "28,102 km",
+    price: "₹3.80 L",
+    cat: "Hatchback",
+    brand: "Renault",
+    model: "Kwid",
+    variant: "Neotech 1.0 AMT (Easy-R)",
+    color: "Zanskar Blue with Silver Roof",
+    registration: "1610",
+    bodyType: "Hatchback",
+    description:
+      "Renault Kwid Neotech Easy-R (2021) petrol automatic in stylish dual-tone Zanskar Blue with contrast Silver roof (Car No: 1610). Low mileage with only 28,102 kms driven. Special Neotech edition powered by the responsive 1.0L 3-cylinder SCe petrol engine paired with an Easy-R AMT automatic transmission featuring a convenient console rotary shift dial. Striking aesthetics with exclusive Neotech body decals, gunmetal styled wheels, dual-tone roof, and cyan interior highlights. Features include an 8-inch touchscreen MediaNAV Evolution infotainment system with Apple CarPlay & Android Auto, digital LED instrument cluster, front power windows, remote central locking, reverse parking camera with sensors, driver airbag, and ABS with EBD.",
+    gallery: [
+      kwid21_1610_Main,
+      kwid21_1610_SideRight,
+      kwid21_1610_SideLeft,
+      kwid21_1610_Rear,
+      kwid21_1610_Dash,
+      kwid21_1610_FrontSeats,
+      kwid21_1610_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-vitara-brezza-zdi-plus-diesel-2016-9333",
+    serialNumber: "MC177",
+    img: brezza16_9333_Main,
+    name: "Maruti Suzuki Vitara Brezza ZDi+",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,40,475 km",
+    price: "₹6.50 L",
+    cat: "SUV",
+    brand: "Maruti Suzuki",
+    model: "Vitara Brezza",
+    variant: "ZDi+ 1.3 DDiS MT",
+    color: "Blazing Red with Midnight Black Roof",
+    registration: "9333",
+    stateRegistration: "Telangana (TS)",
+    bodyType: "Compact SUV",
+    description:
+      "Maruti Suzuki Vitara Brezza ZDi+ (2016) diesel manual in striking Blazing Red with dual-tone Midnight Black roof (Car No: 9333, State Registration: Telangana (TS)). Driven 1,40,475 kms. Top-of-the-line compact SUV powered by the legendary 1.3L DDiS 200 4-cylinder turbo diesel engine paired with a 5-speed manual transmission delivering outstanding torque and fuel efficiency. Top-spec ZDi+ trim loaded with SmartPlay touchscreen infotainment system with navigation and Apple CarPlay, automatic climate control, cruise control, push-button start/stop with Smart Key, projector headlamps with signature LED light guide DRLs, front fog lamps, 16-inch multi-spoke alloy wheels, electrically folding ORVMs, rear parking camera with sensors, rear wiper and defogger, dual airbags, and ABS with EBD.",
+    gallery: [
+      brezza16_9333_Main,
+      brezza16_9333_SideRight,
+      brezza16_9333_SideLeft,
+      brezza16_9333_Rear,
+      brezza16_9333_Dash,
+      brezza16_9333_FrontSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ignis-zeta-petrol-2023-4356",
+    serialNumber: "MC176",
+    img: ignis23_4356_Main,
+    name: "Maruti Suzuki Ignis Zeta",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "91,658 km",
+    price: "₹6.20 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Ignis",
+    variant: "Zeta 1.2 VVT MT",
+    color: "Celestial Blue",
+    registration: "4356",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Ignis Zeta (2023) petrol manual in elegant Celestial Blue finish (Car No: 4356). Driven 91,658 kms. Premium urban compact crossover powered by the refined 1.2L 4-cylinder K12M DualJet Dual VVT petrol engine paired with a 5-speed manual transmission. Feature-packed Zeta variant featuring toothed chrome front grille, 15-inch gloss black alloy wheels, roof rails, rear spoiler, SmartPlay Studio touchscreen infotainment system with Apple CarPlay & Android Auto, steering-mounted audio controls, push-button start/stop with keyless entry, rear wiper and defogger, reverse parking sensors, dual front airbags, and ABS with EBD.",
+    gallery: [
+      ignis23_4356_Main,
+      ignis23_4356_SideRight,
+      ignis23_4356_SideLeft,
+      ignis23_4356_Rear,
+      ignis23_4356_Dash,
+      ignis23_4356_FrontSeats,
+      ignis23_4356_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-ignis-alpha-petrol-2019-1773",
+    serialNumber: "MC175",
+    img: ignis19_1773_Main,
+    name: "Maruti Suzuki Ignis Alpha",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "60,971 km",
+    price: "₹5.20 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Ignis",
+    variant: "Alpha 1.2 VVT MT",
+    color: "Nexa Blue",
+    registration: "1773",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Ignis Alpha (2019) petrol manual in stunning Nexa Blue finish (Car No: 1773). Driven 60,971 kms. Top-of-the-line urban compact crossover powered by the responsive 1.2L 4-cylinder K12M VVT petrol engine paired with a 5-speed manual transmission. Top-spec Alpha variant featuring LED projector headlamps with signature U-shaped DRLs, touchscreen infotainment system with Apple CarPlay & Android Auto, automatic climate control with aircraft-style toggle switches, push-button start/stop with keyless entry, multifunction steering wheel, 15-inch gloss black alloy wheels, roof rails, rear wiper and washer, reverse parking sensors with camera, all 4 power windows, dual front airbags, and ABS with EBD.",
+    gallery: [
+      ignis19_1773_Main,
+      ignis19_1773_SideRight,
+      ignis19_1773_SideLeft,
+      ignis19_1773_Rear,
+      ignis19_1773_Dash,
+      ignis19_1773_FrontSeats,
+    ],
+  },
+  {
+    slug: "audi-a4-2-0-tdi-diesel-automatic-2013-2345",
+    serialNumber: "MC174",
+    img: audia4_13_2345_Main,
+    name: "Audi A4 2.0 TDI",
+    year: 2013,
+    fuel: "Diesel",
+    trans: "Automatic",
+    km: "1,25,340 km",
+    price: "₹9.00 L",
+    cat: "Luxury",
+    brand: "Audi",
+    model: "A4",
+    variant: "2.0 TDI Multitronic",
+    color: "Ibis White",
+    registration: "2345",
+    bodyType: "Luxury Sedan",
+    description:
+      "Audi A4 2.0 TDI (2013) diesel automatic in elegant Ibis White finish with sporty gloss black alloy wheels and red brake calipers (Car No: 2345). Driven 1,25,340 kms. Executive luxury sedan powered by Audi's refined 2.0L TDI turbocharged 4-cylinder diesel engine paired with a smooth Multitronic automatic transmission. Features include bi-xenon headlamps with signature LED daytime running lights, electric sunroof, plush beige leather upholstery, rear AC vents, Audi Concert audio system with multimedia interface, dual-zone automatic climate control, electronic parking brake, all power windows, rear window sunblinds, front and rear parking sensors, dual front and side airbags, ESP, and ABS with EBD.",
+    gallery: [
+      audia4_13_2345_Main,
+      audia4_13_2345_SideRight,
+      audia4_13_2345_SideLeft,
+      audia4_13_2345_Rear,
+      audia4_13_2345_Sunroof,
+      audia4_13_2345_FrontSeats,
+      audia4_13_2345_RearSeats,
+    ],
+  },
   {
     slug: "renault-lodgy-stepway-rxz-diesel-2015-8818",
     serialNumber: "MC173",

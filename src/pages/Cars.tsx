@@ -48,7 +48,7 @@ export default function Cars() {
   const filtered = useMemo(() => {
     let out = cars.filter((c) => {
       const brand = c.brand || c.name.split(" ")[0];
-      const searchTarget = `${c.name} ${brand} ${c.model || ""} ${c.variant || ""} ${c.registration || ""} ${c.serialNumber || ""} ${c.fuel} ${c.trans}`.toLowerCase();
+      const searchTarget = `${c.name} ${brand} ${c.model || ""} ${c.variant || ""} ${c.registration || ""} ${c.stateRegistration || ""} ${c.serialNumber || ""} ${c.fuel} ${c.trans}`.toLowerCase();
       if (q && !searchTarget.includes(q.toLowerCase())) return false;
       if (brands.length && !brands.includes(brand)) return false;
       if (fuels.length && !fuels.includes(c.fuel)) return false;
