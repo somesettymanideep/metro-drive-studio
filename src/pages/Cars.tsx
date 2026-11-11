@@ -183,8 +183,8 @@ export default function Cars() {
                 onChange={(e) => setSort(e.target.value)}
                 className="px-3 py-2 rounded-lg bg-white border border-black/10 text-sm text-black outline-none"
               >
-                <option value="newest">Recent Added (MC173 → MC100)</option>
-                <option value="serial-asc">Oldest Stock (MC100 → MC173)</option>
+                <option value="newest">Recent Added (MC138 → MC100)</option>
+                <option value="serial-asc">Oldest Stock (MC100 → MC138)</option>
                 <option value="year">Model Year: Newest First</option>
                 <option value="price-asc">Price: Low to High</option>
                 <option value="price-desc">Price: High to Low</option>

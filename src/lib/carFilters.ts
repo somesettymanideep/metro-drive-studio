@@ -5,10 +5,25 @@ export function isCarRemoved(item: {
   slug?: string;
   brand?: string;
 }): boolean {
-  if (item.id === "b833839a-79cf-445f-9cbc-7cdbf67dbcf2") return true;
+  if (
+    item.id === "b833839a-79cf-445f-9cbc-7cdbf67dbcf2" ||
+    item.id === "2526bc04-add7-4b66-b73d-29dd091486da"
+  ) {
+    return true;
+  }
   const name = (item.name || "").toLowerCase().trim();
   const model = (item.model || "").toLowerCase().trim();
   const slug = (item.slug || "").toLowerCase().trim();
+
+  // Hyundai i20 Asta (2018 Diesel MT, 80,324 km, ₹6.50 L)
+  if (
+    slug === "hyundai-i20-asta-2018" ||
+    slug.includes("i20-asta") ||
+    (name.includes("i20") && name.includes("asta")) ||
+    (model.includes("i20") && name.includes("asta"))
+  ) {
+    return true;
+  }
 
   // Tata Safari Storme VX (Old removed 2018 10.50L listing reg 0444)
   if (slug === "tata-safari-storme-vx-2018") {
