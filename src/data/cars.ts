@@ -335,6 +335,34 @@ import xuv500_20_9599_Rear from "@/assets/xuv500-20-9599-rear.jpg";
 import xuv500_20_9599_Dash from "@/assets/xuv500-20-9599-dash.jpg";
 import xuv500_20_9599_RearSeats from "@/assets/xuv500-20-9599-rear-seats.jpg";
 import xuv500_20_9599_ThirdRow from "@/assets/xuv500-20-9599-third-row.jpg";
+import celerio19_8181_Main from "@/assets/celerio19-8181-main.jpg";
+import celerio19_8181_SideRight from "@/assets/celerio19-8181-side-right.jpg";
+import celerio19_8181_SideLeft from "@/assets/celerio19-8181-side-left.jpg";
+import celerio19_8181_Rear from "@/assets/celerio19-8181-rear.jpg";
+import celerio19_8181_Dash from "@/assets/celerio19-8181-dash.jpg";
+import celerio19_8181_FrontSeats from "@/assets/celerio19-8181-front-seats.jpg";
+import celerio19_8181_RearSeats from "@/assets/celerio19-8181-rear-seats.jpg";
+import dzire22_5557_Main from "@/assets/dzire22-5557-main.jpg";
+import dzire22_5557_SideRight from "@/assets/dzire22-5557-side-right.jpg";
+import dzire22_5557_SideLeft from "@/assets/dzire22-5557-side-left.jpg";
+import dzire22_5557_Rear from "@/assets/dzire22-5557-rear.jpg";
+import dzire22_5557_Dash from "@/assets/dzire22-5557-dash.jpg";
+import dzire22_5557_FrontSeats from "@/assets/dzire22-5557-front-seats.jpg";
+import ecosport18_7910_Main from "@/assets/ecosport18-7910-main.jpg";
+import ecosport18_7910_SideRight from "@/assets/ecosport18-7910-side-right.jpg";
+import ecosport18_7910_SideLeft from "@/assets/ecosport18-7910-side-left.jpg";
+import ecosport18_7910_Rear from "@/assets/ecosport18-7910-rear.jpg";
+import ecosport18_7910_Dash from "@/assets/ecosport18-7910-dash.jpg";
+import ecosport18_7910_FrontSeats from "@/assets/ecosport18-7910-front-seats.jpg";
+import ecosport18_7910_RearSeats from "@/assets/ecosport18-7910-rear-seats.jpg";
+import kylaq25_9972_Main from "@/assets/kylaq25-9972-main.jpg";
+import kylaq25_9972_SideRight from "@/assets/kylaq25-9972-side-right.jpg";
+import kylaq25_9972_SideLeft from "@/assets/kylaq25-9972-side-left.jpg";
+import kylaq25_9972_Rear from "@/assets/kylaq25-9972-rear.jpg";
+import kylaq25_9972_Dash from "@/assets/kylaq25-9972-dash.jpg";
+import kylaq25_9972_FrontSeats from "@/assets/kylaq25-9972-front-seats.jpg";
+import kylaq25_9972_RearSeats from "@/assets/kylaq25-9972-rear-seats.jpg";
+import kylaq25_9972_Sunroof from "@/assets/kylaq25-9972-sunroof.jpg";
 
 export type Car = {
   slug: string;
@@ -366,6 +394,122 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "skoda-kylaq-prestige-petrol-automatic-2025-9972",
+    serialNumber: "MC142",
+    img: kylaq25_9972_Main,
+    name: "Skoda Kylaq Prestige",
+    year: 2025,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "33,528 km",
+    price: "₹12.50 L",
+    cat: "SUV",
+    brand: "Skoda",
+    model: "Kylaq",
+    variant: "Prestige 1.0 TSI AT",
+    color: "Candy White",
+    registration: "9972",
+    bodyType: "SUV",
+    description:
+      "Skoda Kylaq Prestige (2025) petrol automatic in pristine Candy White finish (Car No: 9972). Driven 33,528 kms. Premium European compact SUV engineered on the high-strength MQB-A0-IN platform. Powered by the energetic 1.0L TSI turbo petrol engine paired with a refined 6-speed torque converter automatic transmission. Range-topping Prestige trim packed with top-shelf features: split LED projector headlights with crystal DRLs, 17-inch dual-tone alloy wheels, electric sunroof, 10-inch touchscreen infotainment with wireless Apple CarPlay & Android Auto, 8-inch digital virtual cockpit cluster, ventilated front leatherette seats, automatic climate control, cruise control, paddle shifters, 6 airbags standard, and rear parking camera with sensors.",
+    gallery: [
+      kylaq25_9972_Main,
+      kylaq25_9972_SideRight,
+      kylaq25_9972_SideLeft,
+      kylaq25_9972_Rear,
+      kylaq25_9972_Dash,
+      kylaq25_9972_FrontSeats,
+      kylaq25_9972_RearSeats,
+      kylaq25_9972_Sunroof,
+    ],
+  },
+  {
+    slug: "ford-ecosport-titanium-plus-diesel-manual-2018-7910",
+    serialNumber: "MC141",
+    img: ecosport18_7910_Main,
+    name: "Ford EcoSport Titanium+",
+    year: 2018,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "85,240 km",
+    price: "₹6.50 L",
+    cat: "SUV",
+    brand: "Ford",
+    model: "EcoSport",
+    variant: "Titanium+ 1.5 TDCi MT",
+    color: "Diamond White",
+    registration: "7910",
+    bodyType: "SUV",
+    description:
+      "Ford EcoSport Titanium+ (2018) diesel manual in pristine Diamond White finish (Car No: 7910). Driven 85,240 kms. Robust, agile, and solidly built compact SUV powered by Ford's responsive and proven 1.5L TDCi turbo diesel engine paired with a 5-speed manual transmission. Premium Titanium+ variant featuring signature projector headlamps with LED DRLs, 17-inch alloy wheels, tailgate-mounted full-size spare wheel, roof rails, electric sunroof, automatic climate control, touchscreen infotainment system with smartphone connectivity, premium black leatherette seats with rear center armrest & cup holders, push-button start/stop with keyless entry, rear parking sensors with camera, multiple airbags, and ABS with EBD.",
+    gallery: [
+      ecosport18_7910_Main,
+      ecosport18_7910_SideRight,
+      ecosport18_7910_SideLeft,
+      ecosport18_7910_Rear,
+      ecosport18_7910_Dash,
+      ecosport18_7910_FrontSeats,
+      ecosport18_7910_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-dzire-zxi-plus-petrol-automatic-2022-5557",
+    serialNumber: "MC140",
+    img: dzire22_5557_Main,
+    name: "Maruti Suzuki Dzire ZXi+",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "40,458 km",
+    price: "₹7.50 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Dzire",
+    variant: "ZXi+ AGS Petrol",
+    color: "Magma Grey",
+    registration: "5557",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Dzire ZXi+ AGS (2022) petrol automatic in sophisticated Magma Grey finish (Car No: 5557). Low mileage with only 40,458 kms driven. India's top-selling compact sedan powered by the highly refined and efficient 1.2L DualJet Dual VVT K-Series petrol engine with Idle Start-Stop technology, paired with Maruti's effortless Auto Gear Shift (AGS/AMT) automatic transmission. Top-of-the-line ZXi+ variant packed with premium features including LED projector headlamps with LED DRLs, precision-cut dual-tone alloy wheels, front fog lamps with chrome bezels, chrome window lining, SmartPlay Studio touchscreen infotainment system with Android Auto & Apple CarPlay, leather-wrapped flat-bottom steering wheel with mounted audio and cruise controls, push-button start/stop with keyless entry, automatic climate control with rear AC vents, custom beige leatherette upholstery with contrast piping, rear bumper crash guard, reverse parking camera with sensors, dual front airbags, and ABS with EBD.",
+    gallery: [
+      dzire22_5557_Main,
+      dzire22_5557_SideRight,
+      dzire22_5557_SideLeft,
+      dzire22_5557_Rear,
+      dzire22_5557_Dash,
+      dzire22_5557_FrontSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-celerio-zxi-o-petrol-automatic-2019-8181",
+    serialNumber: "MC139",
+    img: celerio19_8181_Main,
+    name: "Maruti Suzuki Celerio ZXi (O)",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "66,495 km",
+    price: "₹4.50 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Celerio",
+    variant: "ZXi (O) AMT Petrol",
+    color: "Blazing Red",
+    registration: "8181",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Celerio ZXi (O) AMT (2019) petrol automatic in vibrant Blazing Red finish (Car No: 8181). Driven 66,495 kms. Agile, highly reliable and exceptionally fuel-efficient urban hatchback powered by the peppy 1.0L K10B petrol engine paired with Maruti's effortless Auto Gear Shift (AGS/AMT) automatic transmission. Top-tier (O) safety trim loaded with dual front airbags, ABS with EBD, and reverse parking sensors. Key features include steering-mounted audio controls, factory integrated 2-DIN audio system with Bluetooth and AUX/USB connectivity, custom sporty black leatherette seat covers with red piping, all four power windows, electrically adjustable ORVMs with integrated turn indicators, rear wiper and washer, rear defogger, door visors, side body moldings, and full wheel covers.",
+    gallery: [
+      celerio19_8181_Main,
+      celerio19_8181_SideRight,
+      celerio19_8181_SideLeft,
+      celerio19_8181_Rear,
+      celerio19_8181_Dash,
+      celerio19_8181_FrontSeats,
+      celerio19_8181_RearSeats,
+    ],
+  },
   {
     slug: "mahindra-xuv500-w7-diesel-2020-9599",
     serialNumber: "MC138",
