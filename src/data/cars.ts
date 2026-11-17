@@ -363,6 +363,48 @@ import kylaq25_9972_Dash from "@/assets/kylaq25-9972-dash.jpg";
 import kylaq25_9972_FrontSeats from "@/assets/kylaq25-9972-front-seats.jpg";
 import kylaq25_9972_RearSeats from "@/assets/kylaq25-9972-rear-seats.jpg";
 import kylaq25_9972_Sunroof from "@/assets/kylaq25-9972-sunroof.jpg";
+import amaze22_9799_Main from "@/assets/amaze22-9799-main.jpg";
+import amaze22_9799_SideRight from "@/assets/amaze22-9799-side-right.jpg";
+import amaze22_9799_SideLeft from "@/assets/amaze22-9799-side-left.jpg";
+import amaze22_9799_Rear from "@/assets/amaze22-9799-rear.jpg";
+import amaze22_9799_Dash from "@/assets/amaze22-9799-dash.jpg";
+import amaze22_9799_FrontSeats from "@/assets/amaze22-9799-front-seats.jpg";
+import amaze22_9799_RearSeats from "@/assets/amaze22-9799-rear-seats.jpg";
+import dzireTour24_3414_Main from "@/assets/dziretour24-3414-main.jpg";
+import dzireTour24_3414_SideRight from "@/assets/dziretour24-3414-side-right.jpg";
+import dzireTour24_3414_SideLeft from "@/assets/dziretour24-3414-side-left.jpg";
+import dzireTour24_3414_Rear from "@/assets/dziretour24-3414-rear.jpg";
+import dzireTour24_3414_Dash from "@/assets/dziretour24-3414-dash.jpg";
+import dzireTour24_3414_FrontSeats from "@/assets/dziretour24-3414-front-seats.jpg";
+import dzireTour24_3414_RearSeats from "@/assets/dziretour24-3414-rear-seats.jpg";
+import thar19_1818_Main from "@/assets/thar19-1818-main.jpg";
+import thar19_1818_SideRight from "@/assets/thar19-1818-side-right.jpg";
+import thar19_1818_SideLeft from "@/assets/thar19-1818-side-left.jpg";
+import thar19_1818_Rear from "@/assets/thar19-1818-rear.jpg";
+import thar19_1818_Dash from "@/assets/thar19-1818-dash.jpg";
+import thar19_1818_RearSeats from "@/assets/thar19-1818-rear-seats.jpg";
+import xuv500_15_9321_Main from "@/assets/xuv500-15-9321-main.jpg";
+import xuv500_15_9321_SideRight from "@/assets/xuv500-15-9321-side-right.jpg";
+import xuv500_15_9321_SideLeft from "@/assets/xuv500-15-9321-side-left.jpg";
+import xuv500_15_9321_Rear from "@/assets/xuv500-15-9321-rear.jpg";
+import xuv500_15_9321_Dash from "@/assets/xuv500-15-9321-dash.jpg";
+import xuv500_15_9321_FrontSeats from "@/assets/xuv500-15-9321-front-seats.jpg";
+import xuv500_15_9321_ThirdRow from "@/assets/xuv500-15-9321-third-row.jpg";
+import xuv500_15_9321_Sunroof from "@/assets/xuv500-15-9321-sunroof.jpg";
+import ameo16_1099_Main from "@/assets/ameo16-1099-main.jpg";
+import ameo16_1099_SideRight from "@/assets/ameo16-1099-side-right.jpg";
+import ameo16_1099_SideLeft from "@/assets/ameo16-1099-side-left.jpg";
+import ameo16_1099_Rear from "@/assets/ameo16-1099-rear.jpg";
+import ameo16_1099_Dash from "@/assets/ameo16-1099-dash.jpg";
+import ameo16_1099_FrontSeats from "@/assets/ameo16-1099-front-seats.jpg";
+import ameo16_1099_RearSeats from "@/assets/ameo16-1099-rear-seats.jpg";
+import mgZsEv21_8181_Main from "@/assets/mgzsev21-8181-main.jpg";
+import mgZsEv21_8181_SideRight from "@/assets/mgzsev21-8181-side-right.jpg";
+import mgZsEv21_8181_SideLeft from "@/assets/mgzsev21-8181-side-left.jpg";
+import mgZsEv21_8181_Rear from "@/assets/mgzsev21-8181-rear.jpg";
+import mgZsEv21_8181_Dash from "@/assets/mgzsev21-8181-dash.jpg";
+import mgZsEv21_8181_FrontSeats from "@/assets/mgzsev21-8181-front-seats.jpg";
+import mgZsEv21_8181_RearSeats from "@/assets/mgzsev21-8181-rear-seats.jpg";
 
 export type Car = {
   slug: string;
@@ -394,6 +436,180 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "mg-zs-ev-electric-automatic-2021-8181",
+    serialNumber: "MC148",
+    img: mgZsEv21_8181_Main,
+    name: "MG ZS EV",
+    year: 2021,
+    fuel: "Electric",
+    trans: "Automatic",
+    km: "71,948 km",
+    price: "₹8.80 L",
+    cat: "SUV",
+    brand: "MG",
+    model: "ZS EV",
+    variant: "Excite Electric AT",
+    color: "Ferris White",
+    registration: "8181",
+    bodyType: "SUV",
+    description:
+      "MG ZS EV (2021) pure electric automatic SUV in pristine Ferris White finish (Car No: 8181). Driven 71,948 kms. High-tech and ultra-refined zero-emission electric compact SUV powered by a permanent magnet synchronous electric motor producing 141 bhp and 353 Nm of instant torque, paired with a 44.5 kWh liquid-cooled lithium-ion battery pack and a single-speed automatic transmission with drive modes (Eco, Normal, Sport) and KERS (Kinetic Energy Recovery System). Features iconic London Eye projector headlamps with LED DRLs, concave front grille with integrated illuminated breathable charging port, 17-inch dual-tone diamond-cut aero alloy wheels, roof rails, premium black leather upholstery with contrast white stitching, 6-way power-adjustable driver seat, 8-inch touchscreen infotainment display with connected car tech, rotary gear shifter dial, push-button start/stop with keyless entry, electronic parking brake with auto-hold, green EV registration, 6 airbags standard, and rear parking camera with sensors.",
+    gallery: [
+      mgZsEv21_8181_Main,
+      mgZsEv21_8181_SideRight,
+      mgZsEv21_8181_SideLeft,
+      mgZsEv21_8181_Rear,
+      mgZsEv21_8181_Dash,
+      mgZsEv21_8181_FrontSeats,
+      mgZsEv21_8181_RearSeats,
+    ],
+  },
+  {
+    slug: "volkswagen-ameo-comfortline-petrol-manual-2016-1099",
+    serialNumber: "MC147",
+    img: ameo16_1099_Main,
+    name: "Volkswagen Ameo Comfortline",
+    year: 2016,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "91,710 km",
+    price: "₹3.80 L",
+    cat: "Sedan",
+    brand: "Volkswagen",
+    model: "Ameo",
+    variant: "Comfortline 1.2 MPI MT",
+    color: "Carbon Steel Grey",
+    registration: "1099",
+    bodyType: "Sedan",
+    description:
+      "Volkswagen Ameo Comfortline (2016) petrol manual in sophisticated Carbon Steel Grey finish (Car No: 1099). Driven 91,710 kms. Solid German-engineered compact sedan built on Volkswagen's robust PQ25 platform with laser-welded high-tensile steel construction. Powered by the dependable 1.2L MPI naturally aspirated petrol engine paired with an ultra-precise 5-speed manual gearbox. Comfortline trim featuring dual-beam halogen headlamps, front and rear fog lamps, sporty flat-bottom steering wheel, factory-integrated 2-DIN audio system with Bluetooth, USB & AUX connectivity, ambient footwell lighting, custom dual-tone black & beige upholstery, all four power windows with one-touch operation, electrically adjustable ORVMs, dual front airbags, and ABS standard.",
+    gallery: [
+      ameo16_1099_Main,
+      ameo16_1099_SideRight,
+      ameo16_1099_SideLeft,
+      ameo16_1099_Rear,
+      ameo16_1099_Dash,
+      ameo16_1099_FrontSeats,
+      ameo16_1099_RearSeats,
+    ],
+  },
+  {
+    slug: "mahindra-xuv500-w10-diesel-manual-2015-9321",
+    serialNumber: "MC146",
+    img: xuv500_15_9321_Main,
+    name: "Mahindra XUV500 W10",
+    year: 2015,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,96,256 km",
+    price: "₹6.50 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "XUV 500",
+    variant: "W10 2.2 mHawk MT",
+    color: "Opulent Purple",
+    registration: "9321",
+    bodyType: "SUV",
+    description:
+      "Mahindra XUV500 W10 (2015) diesel manual in rich Opulent Purple metallic finish (Car No: 9321). Driven 1,96,256 kms. Imposing and spacious 7-seater flagship SUV powered by the proven 2.2L mHawk turbo diesel engine producing 140 bhp, paired with a 6-speed manual gearbox. Range-topping W10 variant featuring static bending projector headlamps with LED light guides, heavy-duty stainless steel front bull bar / bumper guard, dual-tone cabin with beige leather seats and 6-way power-adjustable driver seat, 7-inch touchscreen infotainment display with GPS navigation, electric sunroof, automatic climate control, cruise control, push-button start/stop with keyless entry, side foot steps, rear spoiler, dual exhaust pipes, multiple airbags, and ABS with EBD.",
+    gallery: [
+      xuv500_15_9321_Main,
+      xuv500_15_9321_SideRight,
+      xuv500_15_9321_SideLeft,
+      xuv500_15_9321_Rear,
+      xuv500_15_9321_Dash,
+      xuv500_15_9321_FrontSeats,
+      xuv500_15_9321_ThirdRow,
+      xuv500_15_9321_Sunroof,
+    ],
+  },
+  {
+    slug: "mahindra-thar-crde-4wd-diesel-manual-2019-1818",
+    serialNumber: "MC145",
+    img: thar19_1818_Main,
+    name: "Mahindra Thar 4WD",
+    year: 2019,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "59,395 km",
+    price: "₹5.50 L",
+    cat: "SUV",
+    brand: "Mahindra",
+    model: "Thar",
+    variant: "CRDe 4x4 MT",
+    color: "Rocky Black",
+    registration: "1818",
+    bodyType: "SUV",
+    description:
+      "Mahindra Thar 4WD CRDe (2019) diesel manual in menacing Rocky Black finish (Car No: 1818). Low running with only 59,395 kms driven. Legendary true-blue 4x4 off-roader built on a rugged ladder-frame chassis. Powered by the proven and punchy 2.5L CRDe turbo diesel engine generating robust low-end torque, paired with a 5-speed manual transmission and BorgWarner mechanical shift-on-the-fly 4WD transfer case with 4-High and 4-Low gearing with auto-locking hubs. Features classic round halogen headlamps with iconic vertical 7-slot front grille, sturdy metal front bumper, removable canvas soft-top canopy, rear-mounted full-size spare tire, custom sporty dual-tone black & red leatherette upholstery with side-facing rear bench seats, power steering, air conditioning with heater, tubular rock-slider side foot steps, and heavy-duty steel wheels.",
+    gallery: [
+      thar19_1818_Main,
+      thar19_1818_SideRight,
+      thar19_1818_SideLeft,
+      thar19_1818_Rear,
+      thar19_1818_Dash,
+      thar19_1818_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-dzire-tour-s-cng-2024-3414",
+    serialNumber: "MC144",
+    img: dzireTour24_3414_Main,
+    name: "Maruti Suzuki Dzire Tour S Taxi",
+    year: 2024,
+    fuel: "Petrol + CNG",
+    trans: "Manual",
+    km: "78,722 km",
+    price: "₹7.30 L",
+    cat: "Sedan",
+    brand: "Maruti Suzuki",
+    model: "Dzire Tour S",
+    variant: "Tour S CNG (Taxi)",
+    color: "Pearl Arctic White",
+    registration: "3414",
+    bodyType: "Sedan",
+    description:
+      "Maruti Suzuki Dzire Tour S Taxi (2024) Petrol + CNG in immaculate Pearl Arctic White finish (Car No: 3414). Driven 78,722 kms. Highly sought-after commercial taxi sedan renowned for industry-leading fuel economy, low maintenance, and unmatched passenger comfort. Powered by the reliable 1.2L DualJet Dual VVT K-Series bi-fuel petrol + factory-fitted S-CNG powertrain paired with a 5-speed manual transmission. Features custom diamond-quilted black & white leatherette seats with Dzire embossing, dual-tone dashboard, power steering, manual air conditioning with heater, front power windows, body side moldings with chrome trim, chrome door handles, wheel covers, yellow commercial plate registration, dual front airbags, ABS with EBD, and rear parking sensors.",
+    gallery: [
+      dzireTour24_3414_Main,
+      dzireTour24_3414_SideRight,
+      dzireTour24_3414_SideLeft,
+      dzireTour24_3414_Rear,
+      dzireTour24_3414_Dash,
+      dzireTour24_3414_FrontSeats,
+      dzireTour24_3414_RearSeats,
+    ],
+  },
+  {
+    slug: "honda-amaze-vx-cvt-petrol-automatic-2022-9799",
+    serialNumber: "MC143",
+    img: amaze22_9799_Main,
+    name: "Honda Amaze VX CVT",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "83,861 km",
+    price: "₹6.50 L",
+    cat: "Sedan",
+    brand: "Honda",
+    model: "Amaze",
+    variant: "VX CVT Petrol",
+    color: "Modern Steel Metallic",
+    registration: "9799",
+    bodyType: "Sedan",
+    description:
+      "Honda Amaze VX CVT (2022) petrol automatic in sophisticated Modern Steel Metallic finish (Car No: 9799). Driven 83,861 kms. Premium, reliable and comfortable compact sedan powered by Honda's refined 1.2L i-VTEC petrol engine paired with an ultra-smooth CVT automatic transmission. Top-spec VX variant loaded with advanced LED projector headlamps with integrated LED DRLs, sleek chrome front grille, stylish dual-tone diamond-cut alloy wheels, front fog lamps with chrome garnish, rear chrome trunk garnish, premium dual-tone black & beige leatherette seat covers, rear seat center armrest with integrated cup holders, touchscreen infotainment display with smartphone connectivity, automatic climate control, multi-function steering wheel with paddle shifters and audio controls, push-button start/stop with smart keyless entry, reverse parking camera with guidelines, dual front airbags, and ABS with EBD.",
+    gallery: [
+      amaze22_9799_Main,
+      amaze22_9799_SideRight,
+      amaze22_9799_SideLeft,
+      amaze22_9799_Rear,
+      amaze22_9799_Dash,
+      amaze22_9799_FrontSeats,
+      amaze22_9799_RearSeats,
+    ],
+  },
   {
     slug: "skoda-kylaq-prestige-petrol-automatic-2025-9972",
     serialNumber: "MC142",
