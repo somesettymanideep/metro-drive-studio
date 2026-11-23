@@ -405,6 +405,16 @@ import mgZsEv21_8181_Rear from "@/assets/mgzsev21-8181-rear.jpg";
 import mgZsEv21_8181_Dash from "@/assets/mgzsev21-8181-dash.jpg";
 import mgZsEv21_8181_FrontSeats from "@/assets/mgzsev21-8181-front-seats.jpg";
 import mgZsEv21_8181_RearSeats from "@/assets/mgzsev21-8181-rear-seats.jpg";
+import nexonEv21_2203_Main from "@/assets/nexonev21-2203-main.jpg";
+import nexonEv21_2203_SideRight from "@/assets/nexonev21-2203-side-right.jpg";
+import nexonEv21_2203_SideLeft from "@/assets/nexonev21-2203-side-left.jpg";
+import nexonEv21_2203_Rear from "@/assets/nexonev21-2203-rear.jpg";
+import nexonEv21_2203_Interior from "@/assets/nexonev21-2203-interior.jpg";
+import magnite23_6476_Main from "@/assets/magnite23-6476-main.jpg";
+import magnite23_6476_SideRight from "@/assets/magnite23-6476-side-right.jpg";
+import magnite23_6476_SideLeft from "@/assets/magnite23-6476-side-left.jpg";
+import magnite23_6476_Rear from "@/assets/magnite23-6476-rear.jpg";
+import magnite23_6476_Dash from "@/assets/magnite23-6476-dash.jpg";
 
 export type Car = {
   slug: string;
@@ -436,6 +446,64 @@ export type Car = {
 };
 
 export const cars: Car[] = [
+  {
+    slug: "nissan-magnite-xv-premium-petrol-manual-2023-6476",
+    serialNumber: "MC150",
+    img: magnite23_6476_Main,
+    name: "Nissan Magnite XV Premium",
+    year: 2023,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "1,44,228 km",
+    price: "₹7.30 L",
+    cat: "SUV",
+    brand: "Nissan",
+    model: "Magnite",
+    variant: "XV Premium 1.0L Petrol MT",
+    color: "Sandstone Brown",
+    registration: "6476",
+    bodyType: "SUV",
+    engine: "1.0L Dual VVT Petrol Engine (71 bhp, 96 Nm)",
+    mileage: "18.75 kmpl",
+    description:
+      "Nissan Magnite XV Premium (2023) compact SUV in sophisticated Sandstone Brown metallic finish (Car No: 6476). Driven 1,44,228 kms. Powered by a responsive 1.0L Dual VVT petrol engine paired with a 5-speed manual transmission delivering smooth drivability and exceptional fuel economy. As the top-tier XV Premium trim, it boasts sleek Bi-Projector LED headlamps with L-shaped LED DRLs, a signature chrome-surround front grille, 16-inch dual-tone diamond-cut alloy wheels, functional silver roof rails, and high 205 mm ground clearance. Inside, the modern cabin features custom diamond-quilted two-tone leatherette seats, an 8-inch full-touchscreen infotainment system with wireless Apple CarPlay & Android Auto, a 7-inch TFT advanced drive-assist digital instrument cluster, push-button start/stop with Nissan Smart i-Key, automatic climate control, cruise control, rear parking camera with sensors, rear wiper and defogger, dual front airbags, and ABS with EBD.",
+    gallery: [
+      magnite23_6476_Main,
+      magnite23_6476_SideRight,
+      magnite23_6476_SideLeft,
+      magnite23_6476_Rear,
+      magnite23_6476_Dash,
+    ],
+  },
+  {
+    slug: "tata-nexon-ev-electric-automatic-2021-2203",
+    serialNumber: "MC149",
+    img: nexonEv21_2203_Main,
+    name: "Tata Nexon EV",
+    year: 2021,
+    fuel: "Electric",
+    trans: "Automatic",
+    km: "66,766 km",
+    price: "₹8.00 L",
+    cat: "SUV",
+    brand: "Tata",
+    model: "Nexon EV",
+    variant: "XZ+ Electric AT",
+    color: "Glacier White Dual-Tone",
+    registration: "2203",
+    bodyType: "SUV",
+    engine: "Permanent Magnet AC Synchronous Motor (Ziptron Tech, 127 bhp, 245 Nm)",
+    mileage: "312 km Range (ARAI)",
+    description:
+      "Tata Nexon EV (2021) pure electric automatic compact SUV in Glacier White with signature electric teal blue accents and dual-tone roof (Car No: 2203). Driven 66,766 kms. Powered by Tata's state-of-the-art Ziptron high-voltage architecture with a 30.2 kWh liquid-cooled lithium-ion battery pack and permanent magnet AC synchronous motor delivering 127 bhp and 245 Nm of instant peak torque, paired with a seamless single-speed automatic transmission with Drive and Sport modes. Features projector headlamps with signature tri-arrow LED DRLs, 16-inch diamond-cut alloy wheels, electric sunroof with tilt function, premium off-white perforated leatherette upholstery with tri-arrow patterns, 7-inch Harman floating touchscreen infotainment system with smartphone connectivity, automatic climate control, rotary gear selector dial with illuminated indicators, multi-function leather-wrapped flat-bottom steering wheel, push-button start/stop with smart key, reverse parking camera with dynamic guidelines, green EV registration, dual front airbags, ABS with EBD, and multi-level regenerative braking.",
+    gallery: [
+      nexonEv21_2203_Main,
+      nexonEv21_2203_SideRight,
+      nexonEv21_2203_SideLeft,
+      nexonEv21_2203_Rear,
+      nexonEv21_2203_Interior,
+    ],
+  },
   {
     slug: "mg-zs-ev-electric-automatic-2021-8181",
     serialNumber: "MC148",
