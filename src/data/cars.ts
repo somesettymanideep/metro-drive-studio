@@ -454,7 +454,7 @@ export const cars: Car[] = [
     year: 2023,
     fuel: "Petrol",
     trans: "Manual",
-    km: "1,44,228 km",
+    km: "14,428 km",
     price: "₹7.30 L",
     cat: "SUV",
     brand: "Nissan",
@@ -466,7 +466,7 @@ export const cars: Car[] = [
     engine: "1.0L Dual VVT Petrol Engine (71 bhp, 96 Nm)",
     mileage: "18.75 kmpl",
     description:
-      "Nissan Magnite XV Premium (2023) compact SUV in sophisticated Sandstone Brown metallic finish (Car No: 6476). Driven 1,44,228 kms. Powered by a responsive 1.0L Dual VVT petrol engine paired with a 5-speed manual transmission delivering smooth drivability and exceptional fuel economy. As the top-tier XV Premium trim, it boasts sleek Bi-Projector LED headlamps with L-shaped LED DRLs, a signature chrome-surround front grille, 16-inch dual-tone diamond-cut alloy wheels, functional silver roof rails, and high 205 mm ground clearance. Inside, the modern cabin features custom diamond-quilted two-tone leatherette seats, an 8-inch full-touchscreen infotainment system with wireless Apple CarPlay & Android Auto, a 7-inch TFT advanced drive-assist digital instrument cluster, push-button start/stop with Nissan Smart i-Key, automatic climate control, cruise control, rear parking camera with sensors, rear wiper and defogger, dual front airbags, and ABS with EBD.",
+      "Nissan Magnite XV Premium (2023) compact SUV in sophisticated Sandstone Brown metallic finish (Car No: 6476). Driven 14,428 kms. Powered by a responsive 1.0L Dual VVT petrol engine paired with a 5-speed manual transmission delivering smooth drivability and exceptional fuel economy. As the top-tier XV Premium trim, it boasts sleek Bi-Projector LED headlamps with L-shaped LED DRLs, a signature chrome-surround front grille, 16-inch dual-tone diamond-cut alloy wheels, functional silver roof rails, and high 205 mm ground clearance. Inside, the modern cabin features custom diamond-quilted two-tone leatherette seats, an 8-inch full-touchscreen infotainment system with wireless Apple CarPlay & Android Auto, a 7-inch TFT advanced drive-assist digital instrument cluster, push-button start/stop with Nissan Smart i-Key, automatic climate control, cruise control, rear parking camera with sensors, rear wiper and defogger, dual front airbags, and ABS with EBD.",
     gallery: [
       magnite23_6476_Main,
       magnite23_6476_SideRight,
