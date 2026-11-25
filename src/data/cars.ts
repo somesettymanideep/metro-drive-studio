@@ -415,6 +415,70 @@ import magnite23_6476_SideRight from "@/assets/magnite23-6476-side-right.jpg";
 import magnite23_6476_SideLeft from "@/assets/magnite23-6476-side-left.jpg";
 import magnite23_6476_Rear from "@/assets/magnite23-6476-rear.jpg";
 import magnite23_6476_Dash from "@/assets/magnite23-6476-dash.jpg";
+import city16_5959_Main from "@/assets/city16-5959-main.jpg";
+import city16_5959_SideRight from "@/assets/city16-5959-side-right.jpg";
+import city16_5959_SideLeft from "@/assets/city16-5959-side-left.jpg";
+import city16_5959_Rear from "@/assets/city16-5959-rear.jpg";
+import city16_5959_Dash from "@/assets/city16-5959-dash.jpg";
+import city16_5959_FrontSeats from "@/assets/city16-5959-front-seats.jpg";
+import city16_5959_RearSeats from "@/assets/city16-5959-rear-seats.jpg";
+import i20_19_1855_Main from "@/assets/i20-19-1855-main.jpg";
+import i20_19_1855_SideRight from "@/assets/i20-19-1855-side-right.jpg";
+import i20_19_1855_SideLeft from "@/assets/i20-19-1855-side-left.jpg";
+import i20_19_1855_Rear from "@/assets/i20-19-1855-rear.jpg";
+import i20_19_1855_Dash from "@/assets/i20-19-1855-dash.jpg";
+import i20_19_1855_FrontSeats from "@/assets/i20-19-1855-front-seats.jpg";
+import i20_19_1855_RearSeats from "@/assets/i20-19-1855-rear-seats.jpg";
+import venue22_5035_Main from "@/assets/venue22-5035-main.jpg";
+import venue22_5035_SideRight from "@/assets/venue22-5035-side-right.jpg";
+import venue22_5035_SideLeft from "@/assets/venue22-5035-side-left.jpg";
+import venue22_5035_Rear from "@/assets/venue22-5035-rear.jpg";
+import venue22_5035_Dash from "@/assets/venue22-5035-dash.jpg";
+import venue22_5035_Sunroof from "@/assets/venue22-5035-sunroof.jpg";
+import venue22_5035_FrontSeats from "@/assets/venue22-5035-front-seats.jpg";
+import venue22_5035_RearSeats from "@/assets/venue22-5035-rear-seats.jpg";
+import i10_16_3584_Main from "@/assets/i10-16-3584-main.jpg";
+import i10_16_3584_SideRight from "@/assets/i10-16-3584-side-right.jpg";
+import i10_16_3584_SideLeft from "@/assets/i10-16-3584-side-left.jpg";
+import i10_16_3584_Rear from "@/assets/i10-16-3584-rear.jpg";
+import i10_16_3584_Dash from "@/assets/i10-16-3584-dash.jpg";
+import i10_16_3584_FrontSeats from "@/assets/i10-16-3584-front-seats.jpg";
+import i10_16_3584_RearSeats from "@/assets/i10-16-3584-rear-seats.jpg";
+import amaze24_3912_Main from "@/assets/amaze24-3912-main.jpg";
+import amaze24_3912_SideRight from "@/assets/amaze24-3912-side-right.jpg";
+import amaze24_3912_SideLeft from "@/assets/amaze24-3912-side-left.jpg";
+import amaze24_3912_Rear from "@/assets/amaze24-3912-rear.jpg";
+import amaze24_3912_Dash from "@/assets/amaze24-3912-dash.jpg";
+import amaze24_3912_FrontSeats from "@/assets/amaze24-3912-front-seats.jpg";
+import amaze24_3912_RearSeats from "@/assets/amaze24-3912-rear-seats.jpg";
+import swift17_3153_Main from "@/assets/swift17-3153-main.jpg";
+import swift17_3153_SideRight from "@/assets/swift17-3153-side-right.jpg";
+import swift17_3153_SideLeft from "@/assets/swift17-3153-side-left.jpg";
+import swift17_3153_Rear from "@/assets/swift17-3153-rear.jpg";
+import swift17_3153_Dash from "@/assets/swift17-3153-dash.jpg";
+import swift17_3153_FrontSeats from "@/assets/swift17-3153-front-seats.jpg";
+import swift17_3153_RearSeats from "@/assets/swift17-3153-rear-seats.jpg";
+import venue20_4454_Main from "@/assets/venue20-4454-main.jpg";
+import venue20_4454_SideRight from "@/assets/venue20-4454-side-right.jpg";
+import venue20_4454_SideLeft from "@/assets/venue20-4454-side-left.jpg";
+import venue20_4454_Rear from "@/assets/venue20-4454-rear.jpg";
+import venue20_4454_Dash from "@/assets/venue20-4454-dash.jpg";
+import venue20_4454_FrontSeats from "@/assets/venue20-4454-front-seats.jpg";
+import venue20_4454_RearSeats from "@/assets/venue20-4454-rear-seats.jpg";
+import i20_19_8423_Main from "@/assets/i20-19-8423-main.jpg";
+import i20_19_8423_SideRight from "@/assets/i20-19-8423-side-right.jpg";
+import i20_19_8423_SideLeft from "@/assets/i20-19-8423-side-left.jpg";
+import i20_19_8423_Rear from "@/assets/i20-19-8423-rear.jpg";
+import i20_19_8423_Dash from "@/assets/i20-19-8423-dash.jpg";
+import i20_19_8423_Interior from "@/assets/i20-19-8423-interior.jpg";
+import i20_19_8423_RearSeats from "@/assets/i20-19-8423-rear-seats.jpg";
+import nano15_8155_Main from "@/assets/nano15-8155-main.jpg";
+import nano15_8155_SideRight from "@/assets/nano15-8155-side-right.jpg";
+import nano15_8155_SideLeft from "@/assets/nano15-8155-side-left.jpg";
+import nano15_8155_Rear from "@/assets/nano15-8155-rear.jpg";
+import nano15_8155_Dash from "@/assets/nano15-8155-dash.jpg";
+import nano15_8155_FrontSeats from "@/assets/nano15-8155-front-seats.jpg";
+import nano15_8155_RearSeats from "@/assets/nano15-8155-rear-seats.jpg";
 
 export type Car = {
   slug: string;
@@ -447,6 +511,270 @@ export type Car = {
 
 export const cars: Car[] = [
   {
+    slug: "tata-nano-twist-xt-petrol-manual-2015-8155",
+    serialNumber: "MC159",
+    img: nano15_8155_Main,
+    name: "Tata Nano Twist XT",
+    year: 2015,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "50,652 km",
+    price: "₹1.10 L",
+    cat: "Hatchback",
+    brand: "Tata",
+    model: "Nano",
+    variant: "Twist XT 0.6 Petrol MT",
+    color: "Damson Red",
+    registration: "8155",
+    bodyType: "Hatchback",
+    description:
+      "Tata Nano Twist XT (2015) petrol manual in vibrant Damson Red finish (Car No: 8155). Driven only 50,652 kms. Incredibly compact, economical, and agile city hatchback featuring Electric Power Assisted Steering (EPAS) with active return function for effortless maneuvering in tight spaces and traffic. Powered by a responsive rear-mounted 624cc 2-cylinder MPFI petrol engine paired with a 4-speed manual gearbox. The top-of-the-line Twist XT variant comes equipped with body-colored bumpers, front fog lamps, full wheel covers, side door beadings, and rear roof spoiler styling. Inside, it offers comfortable maroon/berry red leatherette seat covers, an AmphiStream 4-speaker audio system with Bluetooth, USB, and AUX connectivity, front power windows, powerful air conditioning with heater, central locking with remote keyless entry, rear parcel tray, and an ultra-tight 4-meter turning radius delivering unmatched parking convenience.",
+    gallery: [
+      nano15_8155_Main,
+      nano15_8155_SideRight,
+      nano15_8155_SideLeft,
+      nano15_8155_Rear,
+      nano15_8155_Dash,
+      nano15_8155_FrontSeats,
+      nano15_8155_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-i20-sportz-petrol-automatic-2019-8423",
+    serialNumber: "MC158",
+    img: i20_19_8423_Main,
+    name: "Hyundai i20 Sportz",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Automatic",
+    km: "37,855 km",
+    price: "₹6.50 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Sportz 1.2 Petrol CVT",
+    color: "Polar White",
+    registration: "8423",
+    stateRegistration: "TS (Telangana)",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai Elite i20 Sportz 1.2 CVT (2019) petrol automatic in pristine Polar White finish with Telangana (TS) registration (Car No: 8423). Low genuine mileage with only 37,855 kms driven. Premium and stress-free city hatchback powered by Hyundai's refined 1.2L 4-cylinder Kappa petrol engine mated to an ultra-smooth Continuous Variable Transmission (CVT Automatic). The popular Sportz trim comes stylishly appointed with Hyundai's signature black cascading front grille with chrome surround, projector headlamps with LED DRLs, front fog lamps, sporty gunmetal dark grey alloy wheels, and rear parking camera with display guidelines. Inside, the cabin features custom tan leatherette seat covers with matching steering wheel wrap, an integrated 7-inch touchscreen infotainment display supporting Apple CarPlay, Android Auto, and Bluetooth connectivity, rear AC vents, cooled glovebox, all four power windows, electrically folding ORVMs, dual front airbags, and ABS with EBD.",
+    gallery: [
+      i20_19_8423_Main,
+      i20_19_8423_SideRight,
+      i20_19_8423_SideLeft,
+      i20_19_8423_Rear,
+      i20_19_8423_Dash,
+      i20_19_8423_Interior,
+      i20_19_8423_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-venue-s-petrol-manual-2020-4454",
+    serialNumber: "MC157",
+    img: venue20_4454_Main,
+    name: "Hyundai Venue S",
+    year: 2020,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "75,152 km",
+    price: "₹6.30 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Venue",
+    variant: "S 1.2 Petrol MT",
+    color: "Denim Blue",
+    registration: "4454",
+    bodyType: "SUV",
+    description:
+      "Hyundai Venue S 1.2 (2020) petrol manual in striking Denim Blue finish (Car No: 4454). Driven 75,152 kms. Highly sought-after compact SUV powered by Hyundai's smooth and refined 1.2L Kappa 4-cylinder petrol engine paired with an easy-shifting 5-speed manual transmission. The well-equipped S variant stands out with an imposing dark chrome front grille, split headlamp setup, sporty roof rails, custom black & machined dual-tone alloy wheels with sporty red brake calipers, chrome door handles, window visors, and chrome tailgate garnish. Inside, the modern cabin offers dual-tone premium seat upholstery, an integrated touchscreen infotainment system with steering-mounted audio & phone controls, rear AC vents, all four power windows, electrically adjustable ORVMs, central locking, rear parking sensors, dual front airbags, and ABS with EBD.",
+    gallery: [
+      venue20_4454_Main,
+      venue20_4454_SideRight,
+      venue20_4454_SideLeft,
+      venue20_4454_Rear,
+      venue20_4454_Dash,
+      venue20_4454_FrontSeats,
+      venue20_4454_RearSeats,
+    ],
+  },
+  {
+    slug: "maruti-suzuki-swift-vdi-diesel-manual-2017-3153",
+    serialNumber: "MC156",
+    img: swift17_3153_Main,
+    name: "Maruti Suzuki Swift VDi",
+    year: 2017,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "1,41,982 km",
+    price: "₹4.80 L",
+    cat: "Hatchback",
+    brand: "Maruti Suzuki",
+    model: "Swift",
+    variant: "VDi 1.3 Diesel MT",
+    color: "Glistening Grey",
+    registration: "3153",
+    bodyType: "Hatchback",
+    description:
+      "Maruti Suzuki Swift VDi (2017) diesel manual in classy Glistening Grey finish (Car No: 3153). Driven 1,41,982 kms. Known for exceptional fuel economy, peppy punch, and low maintenance, powered by the legendary 1.3L DDiS 190 turbo diesel engine mated to a slick 5-speed manual gearbox. The popular VDi variant comes equipped with custom black diamond-quilted leatherette seat covers with white contrast piping, an integrated 2-DIN audio system with CD/AUX/USB connectivity, all four power windows, electrically adjustable ORVMs with integrated turn indicators, stylish full wheel covers, front fog lamps with silver accents, side body moldings with Swift badging, door visors, central locking with remote key, and dual airbags with ABS & EBD.",
+    gallery: [
+      swift17_3153_Main,
+      swift17_3153_SideRight,
+      swift17_3153_SideLeft,
+      swift17_3153_Rear,
+      swift17_3153_Dash,
+      swift17_3153_FrontSeats,
+      swift17_3153_RearSeats,
+    ],
+  },
+  {
+    slug: "honda-amaze-s-petrol-manual-2024-3912",
+    serialNumber: "MC155",
+    img: amaze24_3912_Main,
+    name: "Honda Amaze S",
+    year: 2024,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "59,882 km",
+    price: "₹7.50 L",
+    cat: "Sedan",
+    brand: "Honda",
+    model: "Amaze",
+    variant: "S 1.2 i-VTEC MT",
+    color: "Platinum White Pearl",
+    registration: "3912",
+    bodyType: "Sedan",
+    description:
+      "Honda Amaze S 1.2 i-VTEC (2024) petrol manual in immaculate Platinum White Pearl finish (Car No: 3912). Driven 59,882 kms. Highly reliable, elegant, and fuel-efficient compact sedan powered by Honda's renowned 1.2L 4-cylinder i-VTEC petrol engine paired with an effortless 5-speed manual transmission. The popular S variant features Honda's signature solid-wing chrome front grille, sleek headlamps, body-colored power-folding ORVMs with integrated LED turn indicators, stylish full wheel covers, side door body moldings, and chrome rear bumper garnish. Inside, it boasts premium tan/cognac diamond-quilted leatherette seat covers, an integrated 2-DIN audio system with steering-mounted audio controls and Bluetooth connectivity, all four power windows with driver one-touch auto-down, power-adjustable & folding mirrors, height-adjustable driver seat, rear parking sensors, dual airbags, ABS with EBD, and generous 420-liter trunk space.",
+    gallery: [
+      amaze24_3912_Main,
+      amaze24_3912_SideRight,
+      amaze24_3912_SideLeft,
+      amaze24_3912_Rear,
+      amaze24_3912_Dash,
+      amaze24_3912_FrontSeats,
+      amaze24_3912_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-i10-sportz-1-1-petrol-manual-2016-3584",
+    serialNumber: "MC154",
+    img: i10_16_3584_Main,
+    name: "Hyundai i10 Sportz",
+    year: 2016,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "41,301 km",
+    price: "₹3.60 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i10",
+    variant: "Sportz 1.1 iRDE2 MT",
+    color: "Garnet Red",
+    registration: "3584",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai i10 Sportz 1.1 iRDE2 (2016) petrol manual in elegant Garnet Red finish (Car No: 3584). Low mileage with only 41,301 kms driven. Highly reliable, compact, and economical city hatchback powered by Hyundai's proven 1.1L 4-cylinder iRDE2 petrol engine paired with an ergonomic dash-mounted 5-speed manual gearbox. The popular Sportz trim features a stylish front chrome wing grille, front fog lamps, clear-lens headlamps, full wheel covers, body side moldings, and window door visors. Inside, the spacious cabin offers dual-tone beige and black upholstery with custom two-tone seat covers, an integrated 2-DIN audio system with AUX/USB/CD connectivity, front and rear power windows, electrically adjustable ORVMs, motor-driven power steering with tilt adjustment, powerful air conditioning with heater, rear defogger, central locking with keyless entry, and exceptional maneuverability ideal for city commuting.",
+    gallery: [
+      i10_16_3584_Main,
+      i10_16_3584_SideRight,
+      i10_16_3584_SideLeft,
+      i10_16_3584_Rear,
+      i10_16_3584_Dash,
+      i10_16_3584_FrontSeats,
+      i10_16_3584_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-venue-sx-turbo-imt-petrol-2022-5035",
+    serialNumber: "MC153",
+    img: venue22_5035_Main,
+    name: "Hyundai Venue SX iMT",
+    year: 2022,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "68,258 km",
+    price: "₹8.00 L",
+    cat: "SUV",
+    brand: "Hyundai",
+    model: "Venue",
+    variant: "SX 1.0 Turbo iMT Petrol",
+    color: "Fiery Red",
+    registration: "5035",
+    stateRegistration: "TS (Telangana)",
+    bodyType: "SUV",
+    description:
+      "Hyundai Venue SX 1.0 Turbo iMT (2022) compact SUV in eye-catching Fiery Red finish with Telangana (TS) registration (Car No: 5035). Driven 68,258 kms. Powered by Hyundai's spirited 1.0L Turbo GDi petrol engine producing an exhilarating 118 bhp and 172 Nm of torque, paired with a revolutionary 6-speed Intelligent Manual Transmission (iMT) that provides two-pedal clutchless driving ease without sacrificing manual gearshift control. Feature-packed SX trim equipped with a dark chrome cascading front grille, split projector headlamps with LED DRL surrounds, front cornering lamps, stylish 16-inch diamond-cut alloy wheels, silver roof rails, and high ground clearance. Inside, the sporty cabin boasts black leatherette seat upholstery with contrast red stitching, an 8-inch floating touchscreen infotainment display with smartphone connectivity, automatic temperature control, push-button start/stop with smart key, leather-wrapped flat-bottom steering wheel, electric sunroof, rear AC vents, rear parking camera with dynamic guidelines, dual front airbags, ABS with EBD, and electronic stability control.",
+    gallery: [
+      venue22_5035_Main,
+      venue22_5035_SideRight,
+      venue22_5035_SideLeft,
+      venue22_5035_Rear,
+      venue22_5035_Sunroof,
+      venue22_5035_Dash,
+      venue22_5035_FrontSeats,
+      venue22_5035_RearSeats,
+    ],
+  },
+  {
+    slug: "hyundai-i20-asta-optional-petrol-manual-2019-1855",
+    serialNumber: "MC152",
+    img: i20_19_1855_Main,
+    name: "Hyundai i20 Asta (O)",
+    year: 2019,
+    fuel: "Petrol",
+    trans: "Manual",
+    km: "41,335 km",
+    price: "₹6.50 L",
+    cat: "Hatchback",
+    brand: "Hyundai",
+    model: "i20",
+    variant: "Asta (Optional) 1.2 Petrol MT",
+    color: "Fiery Red",
+    registration: "1855",
+    bodyType: "Hatchback",
+    description:
+      "Hyundai Elite i20 Asta (Optional) petrol manual in striking Fiery Red finish (Car No: 1855). Driven only 41,335 kms. Top-of-the-line premium hatchback powered by Hyundai's refined 1.2L Kappa Dual VTVT 4-cylinder petrol engine paired with a crisp 5-speed manual gearbox. As the flagship Asta (O) variant, it is loaded with top-tier convenience and safety features, including projector headlamps with cornering lamps and LED DRLs, cascading front grille, 16-inch diamond-cut alloy wheels, chrome door handles, and rear wiper with washer. The dual-tone black and beige interior features custom diamond-quilted leatherette seat covers, a 7-inch touchscreen infotainment system with Apple CarPlay & Android Auto, automatic climate control with rear AC vents, push-button start/stop with smart keyless entry, leather-wrapped multifunction steering wheel, rear parking camera with dynamic guidelines, 6 airbags standard for ultimate safety, ABS with EBD, and ISOFIX child seat mounts.",
+    gallery: [
+      i20_19_1855_Main,
+      i20_19_1855_SideRight,
+      i20_19_1855_SideLeft,
+      i20_19_1855_Rear,
+      i20_19_1855_Dash,
+      i20_19_1855_FrontSeats,
+      i20_19_1855_RearSeats,
+    ],
+  },
+  {
+    slug: "honda-city-v-diesel-manual-2016-5959",
+    serialNumber: "MC151",
+    img: city16_5959_Main,
+    name: "Honda City V",
+    year: 2016,
+    fuel: "Diesel",
+    trans: "Manual",
+    km: "71,937 km",
+    price: "₹6.00 L",
+    cat: "Sedan",
+    brand: "Honda",
+    model: "City",
+    variant: "V i-DTEC MT",
+    color: "Taffeta White",
+    registration: "5959",
+    bodyType: "Sedan",
+    description:
+      "Honda City V i-DTEC (2016) executive sedan in pristine Taffeta White finish (Car No: 5959). Driven 71,937 kms. Powered by Honda's ultra-reliable and exceptionally fuel-efficient 1.5L Earth Dreams i-DTEC diesel engine paired with an engaging 6-speed manual transmission, delivering an impressive blend of highway punch and outstanding fuel economy of up to 25.6 kmpl. As the desirable V grade, this car features a signature chrome front grille, front fog lamps, dual-barrel headlamps, aftermarket black multi-spoke alloy wheels, shark-fin antenna, and chrome door handles. Inside, the spacious cabin offers premium beige leatherette seating, a touchscreen infotainment system, leather-wrapped multifunction steering wheel with audio and cruise controls, automatic climate control with a sleek touch panel, rear AC vents, push-button start/stop with Honda smart keyless entry, electrically foldable ORVMs with turn indicators, dual front airbags, ABS with EBD, and rear parking camera with sensors.",
+    gallery: [
+      city16_5959_Main,
+      city16_5959_SideRight,
+      city16_5959_SideLeft,
+      city16_5959_Rear,
+      city16_5959_Dash,
+      city16_5959_FrontSeats,
+      city16_5959_RearSeats,
+    ],
+  },
+  {
     slug: "nissan-magnite-xv-premium-petrol-manual-2023-6476",
     serialNumber: "MC150",
     img: magnite23_6476_Main,
@@ -463,8 +791,6 @@ export const cars: Car[] = [
     color: "Sandstone Brown",
     registration: "6476",
     bodyType: "SUV",
-    engine: "1.0L Dual VVT Petrol Engine (71 bhp, 96 Nm)",
-    mileage: "18.75 kmpl",
     description:
       "Nissan Magnite XV Premium (2023) compact SUV in sophisticated Sandstone Brown metallic finish (Car No: 6476). Driven 14,428 kms. Powered by a responsive 1.0L Dual VVT petrol engine paired with a 5-speed manual transmission delivering smooth drivability and exceptional fuel economy. As the top-tier XV Premium trim, it boasts sleek Bi-Projector LED headlamps with L-shaped LED DRLs, a signature chrome-surround front grille, 16-inch dual-tone diamond-cut alloy wheels, functional silver roof rails, and high 205 mm ground clearance. Inside, the modern cabin features custom diamond-quilted two-tone leatherette seats, an 8-inch full-touchscreen infotainment system with wireless Apple CarPlay & Android Auto, a 7-inch TFT advanced drive-assist digital instrument cluster, push-button start/stop with Nissan Smart i-Key, automatic climate control, cruise control, rear parking camera with sensors, rear wiper and defogger, dual front airbags, and ABS with EBD.",
     gallery: [
@@ -492,8 +818,6 @@ export const cars: Car[] = [
     color: "Glacier White Dual-Tone",
     registration: "2203",
     bodyType: "SUV",
-    engine: "Permanent Magnet AC Synchronous Motor (Ziptron Tech, 127 bhp, 245 Nm)",
-    mileage: "312 km Range (ARAI)",
     description:
       "Tata Nexon EV (2021) pure electric automatic compact SUV in Glacier White with signature electric teal blue accents and dual-tone roof (Car No: 2203). Driven 66,766 kms. Powered by Tata's state-of-the-art Ziptron high-voltage architecture with a 30.2 kWh liquid-cooled lithium-ion battery pack and permanent magnet AC synchronous motor delivering 127 bhp and 245 Nm of instant peak torque, paired with a seamless single-speed automatic transmission with Drive and Sport modes. Features projector headlamps with signature tri-arrow LED DRLs, 16-inch diamond-cut alloy wheels, electric sunroof with tilt function, premium off-white perforated leatherette upholstery with tri-arrow patterns, 7-inch Harman floating touchscreen infotainment system with smartphone connectivity, automatic climate control, rotary gear selector dial with illuminated indicators, multi-function leather-wrapped flat-bottom steering wheel, push-button start/stop with smart key, reverse parking camera with dynamic guidelines, green EV registration, dual front airbags, ABS with EBD, and multi-level regenerative braking.",
     gallery: [

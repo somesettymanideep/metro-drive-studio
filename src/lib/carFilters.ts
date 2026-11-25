@@ -17,10 +17,10 @@ export function isCarRemoved(item: {
 
   // Hyundai i20 Asta (2018 Diesel MT, 80,324 km, ₹6.50 L)
   if (
-    slug === "hyundai-i20-asta-2018" ||
-    slug.includes("i20-asta") ||
-    (name.includes("i20") && name.includes("asta")) ||
-    (model.includes("i20") && name.includes("asta"))
+    !slug.includes("1855") &&
+    (slug === "hyundai-i20-asta-2018" ||
+      slug.includes("i20-asta-2018") ||
+      (name.includes("i20") && name.includes("asta") && !name.includes("1855") && !slug.includes("1855")))
   ) {
     return true;
   }
